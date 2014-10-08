@@ -20,12 +20,14 @@ public class TP_Controller : MonoBehaviour
             return;
         }
         GetLocomotionInput();
+        HandleActionInput();
         TP_Motor.instance.UpdateMotor();
     }
 
     void GetLocomotionInput()
     {
         var deadZone = 0.1f;
+        TP_Motor.instance.verticalVelocity = TP_Motor.instance.MoveVector.y;
         TP_Motor.instance.MoveVector = Vector3.zero;
 
         if (Input.GetAxis("Vertical") > deadZone || Input.GetAxis("Vertical") < -deadZone)
@@ -37,5 +39,23 @@ public class TP_Controller : MonoBehaviour
         {
             TP_Motor.instance.MoveVector += new Vector3(Input.GetAxis("Horizontal"), 0, 0);
         }
+        TP_Animator.instance.DetermineCurrentMoveDirection();
+    }
+
+    void HandleActionInput()
+    {
+        if (Input.GetButton("Jump"))
+        {
+            Jump();
+        }
+
+        //Other actions will go here!
+    }
+
+    void Jump()
+    {
+        //Play Jumping animation
+
+        TP_Motor.instance.Jump();
     }
 }
