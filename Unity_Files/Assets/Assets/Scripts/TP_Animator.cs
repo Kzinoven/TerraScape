@@ -16,22 +16,9 @@ public class TP_Animator : MonoBehaviour
         RightBackward,
     }
 
-    public enum MotionState
-    {
-        Walk,
-        Run,
-        Jump,
-        Fall,
-        Swim,
-        Damage,
-        Action,
-        Tool,
-    }
-
     public static TP_Animator instance;
 
     public Direction moveDirection;
-    public MotionState currentMotionState;
 
     void Awake()
     {
@@ -78,10 +65,5 @@ public class TP_Animator : MonoBehaviour
             moveDirection = Direction.Right;
         else
             moveDirection = Direction.Stationary;
-    }
-
-    public void DetermineCurrentMotionState()
-    {
-
     }
 }

@@ -71,6 +71,7 @@ public class TP_Camera : MonoBehaviour
     {
         float deadZone = 0.01f;
 
+        //on right click and drag, move camera
         if (Input.GetMouseButton(1))
         {
             mouseX += Input.GetAxis("Mouse X") * mouseSensitivityX;
@@ -79,6 +80,7 @@ public class TP_Camera : MonoBehaviour
 
         mouseY = Helper.ClampAngle(mouseY, minLimitY, maxLimitY);
 
+        //on mouse wheel, zoom in/out
         if (Input.GetAxis("Mouse ScrollWheel") < -deadZone || Input.GetAxis("Mouse ScrollWheel") > deadZone)
         {
             desiredDistance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * mouseWheelSensitivity, minDistance, maxDistance);

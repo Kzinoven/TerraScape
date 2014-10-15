@@ -30,6 +30,7 @@ public class TP_Controller : MonoBehaviour
         TP_Motor.instance.verticalVelocity = TP_Motor.instance.MoveVector.y;
         TP_Motor.instance.MoveVector = Vector3.zero;
 
+        //ensure that the input exists outside of the dead zone
         if (Input.GetAxis("Vertical") > deadZone || Input.GetAxis("Vertical") < -deadZone)
         {
             TP_Motor.instance.MoveVector += new Vector3(0, 0, Input.GetAxis("Vertical"));
@@ -39,6 +40,7 @@ public class TP_Controller : MonoBehaviour
         {
             TP_Motor.instance.MoveVector += new Vector3(Input.GetAxis("Horizontal"), 0, 0);
         }
+        //Call on TP_Animator to decide what animation to play depending on the input
         TP_Animator.instance.DetermineCurrentMoveDirection();
     }
 
