@@ -4,21 +4,6 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour 
 {
-    public enum ActionState
-    {
-        None,
-        Walk,
-        Run,
-        Swim,
-        Tiptoe,
-        Wade,
-        TakeDamage,
-        Dead,
-        DigHole,
-        SetClaw,
-        Shield,
-        PickUp,
-    }
     public float maxHealth = 100;
     public float currentHealth = 100;
 
@@ -27,7 +12,6 @@ public class Player : MonoBehaviour
 
     public List<GameItem> inventory = new List<GameItem>();
     public static Player instance;
-    public ActionState currentActionState;
 
     void Awake()
     {
@@ -36,7 +20,6 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float dmgAmt)
     {
-        currentActionState = ActionState.TakeDamage;
         currentHealth -= dmgAmt;
 
         if (currentHealth <= 0)
@@ -47,12 +30,12 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-        currentActionState = ActionState.Dead;
         //restart the level
     }
 
     public void CollectItem(GameItem item)
     {
+        Debug.Log("Collected a(n): " + item.itemName + "!");
         inventory.Add(item);
     }
 

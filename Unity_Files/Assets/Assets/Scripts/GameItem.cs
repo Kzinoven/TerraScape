@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 [System.Serializable]
-public class GameItem
+public class GameItem : MonoBehaviour
 {
     public enum ItemType
     {

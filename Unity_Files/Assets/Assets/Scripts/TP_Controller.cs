@@ -57,7 +57,17 @@ public class TP_Controller : MonoBehaviour
     void Jump()
     {
         //Play Jumping animation
-
         TP_Motor.instance.Jump();
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        //Collided with a trigger!
+        if (collider.gameObject.tag == "Item")
+        {
+            Debug.Log("Collect this item!");
+            Player.instance.CollectItem(collider.gameObject.GetComponent<GameItem>());
+            Destroy(collider.gameObject);
+        }
     }
 }
