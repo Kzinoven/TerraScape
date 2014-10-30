@@ -6,6 +6,8 @@ public class TP_Controller : MonoBehaviour
     public static CharacterController characterController;
     public static TP_Controller instance;
 
+    public GameItem interactingItem = null;
+
     void Awake()
     {
         characterController = GetComponent("CharacterController") as CharacterController;
@@ -51,12 +53,44 @@ public class TP_Controller : MonoBehaviour
             Jump();
         }
 
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            //cycle items LEFT
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            //Cycle items RIGHT
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            //Use selected item or tool
+            Player.instance.UseItem(Player.instance.selectedIndex);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            //Interact or pick up item
+            if (interactingItem == null)
+            {
+                //the controller is NOT currently intersecting a GameItem
+                TP_Animator.instance.Interact(false);
+            }
+            else
+            {
+                //the controller IS currently intersecting a GameItem
+                TP_Animator.instance.Interact(true);
+                Player.instance.CollectItem(interactingItem);
+                Destroy(interactingItem.gameObject);
+            }
+        }
         //Other actions will go here!
     }
 
     void Jump()
     {
-        //Play Jumping animation
+        TP_Animator.instance.Jump();
         TP_Motor.instance.Jump();
     }
 
@@ -65,9 +99,16 @@ public class TP_Controller : MonoBehaviour
         //Collided with a trigger!
         if (collider.gameObject.tag == "Item")
         {
-            Debug.Log("Collect this item!");
-            Player.instance.CollectItem(collider.gameObject.GetComponent<GameItem>());
-            Destroy(collider.gameObject);
+            interactingItem = collider.gameObject.GetComponent<GameItem>();
+        }
+    }
+
+    void OnTriggerExit(Collider collider)
+    {
+        //Stopped colliding with a trigger!
+        if (collider.gameObject.tag == "Item")
+        {
+            interactingItem = null;
         }
     }
 }

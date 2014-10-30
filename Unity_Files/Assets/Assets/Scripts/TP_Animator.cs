@@ -3,6 +3,8 @@ using System.Collections;
 
 public class TP_Animator : MonoBehaviour
 {
+
+    #region Variables
     public enum Direction
     {
         Stationary,
@@ -38,9 +40,15 @@ public class TP_Animator : MonoBehaviour
 
     public static TP_Animator instance;
 
+    private ActionState lastState;
+
     public Direction moveDirection { get; set; }
     public ActionState currentState { get; set; }
+    public bool isDead { get; set; }
 
+    #endregion
+
+    #region Determining Functions
     void Awake()
     {
         instance = this;
@@ -50,7 +58,7 @@ public class TP_Animator : MonoBehaviour
     {
         DetermineCurrentActionState();
         ProcessCurrentState();
-        //Debug.Log("Current action state: " + currentState.ToString());
+        GUI_Manager.charState.text = "Character State: " + currentState.ToString();
     }
 
     public void DetermineCurrentMoveDirection()
@@ -107,7 +115,7 @@ public class TP_Animator : MonoBehaviour
                 currentState != ActionState.Jump && 
                 currentState != ActionState.Land)
             {
-                //Start falling at this point
+                Fall();
             }
         }
 
@@ -121,12 +129,21 @@ public class TP_Animator : MonoBehaviour
             currentState != ActionState.SetClaw && 
             currentState != ActionState.Shield && 
             currentState != ActionState.Shovel &&
-            currentState != ActionState.Slide &&
             currentState != ActionState.TakeDamage)
         {
-            //determine whether idle, walking, or running
+            if (moveDirection != Direction.Stationary)
+            {
+                //are we walking, sliding, or running?  Assume walking
+                currentState = ActionState.Walk;
+            }
+            else
+            {
+                currentState = ActionState.Idle;
+            }
         }
     }
+
+    #endregion
 
     void ProcessCurrentState()
     {
@@ -136,18 +153,28 @@ public class TP_Animator : MonoBehaviour
                 Idle();
                 break;
             case ActionState.Walk:
+                Walking();
                 break;
             case ActionState.Run:
+                Running();
                 break;
             case ActionState.Jump:
+                Jumping();
                 break;
             case ActionState.Fall:
+                Falling();
                 break;
             case ActionState.Land:
+                Landing();
                 break;
             case ActionState.Interact:
+                Interacting();
                 break;
             case ActionState.CollectItem:
+                Interacting();
+                break;
+            case ActionState.Slide:
+                Sliding();
                 break;
             case ActionState.Climb:
                 break;
@@ -166,8 +193,149 @@ public class TP_Animator : MonoBehaviour
         }
     }
 
+    #region Action State Methods
     void Idle()
     {
-        //play the idle animation
+        //crossfade the idle animation
     }
+
+    void Walking()
+    {
+        //crossfade the walking animation
+    }
+
+    void Running()
+    {
+        //crossfade the running animation
+    }
+
+    void Interacting()
+    {
+        if (/*!animation.isPlaying*/true)
+        {
+            currentState = ActionState.Idle;
+            Idle();
+        }    
+    }
+
+    void Jumping()
+    {
+        //make sure we are on the ground and play the proper Landing animation
+        if (/*(!animation.isPlaying && TP_Controller.characterController.isGrounded)
+            || */TP_Controller.characterController.isGrounded)
+        {
+            if (lastState == ActionState.Run)
+            {
+                //crossfade the Running Land animation
+            }
+            else
+            {
+                //crossfade the Landing animation
+            }
+            currentState = ActionState.Land;
+        }
+        else if(/*!animation.IsPlaying("Jump")*/ true)
+        {
+            currentState = ActionState.Fall;
+            //crossfade the Falling animation
+        }
+        else
+        {
+            currentState = ActionState.Jump;
+            // Determine if we fell too far
+        }
+    }
+
+    void Falling()
+    {
+        if (TP_Controller.characterController.isGrounded)
+        {
+            if (lastState == ActionState.Run)
+            {
+                //crossfade the Running Land animation
+            }
+            else
+            {
+                //crossfade the Landing animation
+            }
+            currentState = ActionState.Land;
+        }
+    }
+
+    void Landing()
+    {
+        if (lastState == ActionState.Run)
+        {
+            if (/*!animation.IsPlaying("RunLand")*/ true)
+            {
+                currentState = ActionState.Run;
+                //Play the Running animation
+            }
+        }
+        else
+        {
+            if (/*!animation.IsPlaying("JumpLand")*/ true)
+            {
+                currentState = ActionState.Idle;
+                //Play the Idle animation
+            }
+        }
+    }
+
+    void Sliding()
+    {
+        if (!TP_Motor.instance.isSliding)
+        {
+            currentState = ActionState.Idle;
+            Idle();
+        }
+    }
+
+    #endregion
+
+    #region Start Action Methods
+
+    public void Interact(bool hasItem)
+    {
+        if (hasItem)
+        {
+            currentState = ActionState.CollectItem;
+            //crossfade the CollectItem animation
+        }
+        else
+        {
+            currentState = ActionState.Interact;
+            //crossfade the Interacting animation
+        }
+    }
+
+    public void Jump()
+    {
+        if (!TP_Controller.characterController.isGrounded || isDead || currentState == ActionState.Jump)
+        {
+            return;
+        }
+        lastState = currentState;
+        currentState = ActionState.Jump;
+        //crossfade the Jumping animation
+    }
+
+    public void Fall()
+    {
+        if (isDead)
+            return;
+
+        lastState = currentState;
+        currentState = ActionState.Fall;
+        //check how far we are falling
+        //crossfade the Falling animation
+    }
+
+    public void Slide()
+    {
+        currentState = ActionState.Slide;
+        //crossfade the Sliding animation depending on whether or not the Shield is equipped
+    }
+
+    #endregion
 }

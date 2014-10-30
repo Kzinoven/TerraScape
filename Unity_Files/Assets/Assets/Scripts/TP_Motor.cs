@@ -19,6 +19,7 @@ public class TP_Motor : MonoBehaviour
 
     public Vector3 MoveVector { get; set; }
     public float verticalVelocity { get; set; }
+    public bool isSliding { get; set; }
 
     void Awake()
     {
@@ -100,7 +101,7 @@ public class TP_Motor : MonoBehaviour
                 break;
         }
 
-        if (slideDirection.magnitude > 0)
+        if (isSliding)
         {
             moveSpeed = slideSpeed;
         }
@@ -136,6 +137,15 @@ public class TP_Motor : MonoBehaviour
             if (hitInfo.normal.y < slideThreshold)
             {
                 slideDirection = new Vector3(hitInfo.normal.x, -hitInfo.normal.y, hitInfo.normal.z);
+                if (!isSliding)
+                {
+                    TP_Animator.instance.Slide();
+                }
+                isSliding = true;
+            }
+            else
+            {
+                isSliding = false;
             }
         }
 
