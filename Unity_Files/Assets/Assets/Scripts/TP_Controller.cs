@@ -7,6 +7,7 @@ public class TP_Controller : MonoBehaviour
     public static TP_Controller instance;
 
     public GameItem interactingItem = null;
+    public GameObject activeHotspot = null;
 
     void Awake()
     {
@@ -56,11 +57,13 @@ public class TP_Controller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             //cycle items LEFT
+            Player.instance.CycleItems(true);
         }
 
         if (Input.GetKeyDown(KeyCode.E))
         {
             //Cycle items RIGHT
+            Player.instance.CycleItems(false);
         }
 
         if (Input.GetKeyDown(KeyCode.F))
@@ -101,6 +104,10 @@ public class TP_Controller : MonoBehaviour
         {
             interactingItem = collider.gameObject.GetComponent<GameItem>();
         }
+        else if (collider.gameObject.tag == "ShovelSpot")
+        {
+            activeHotspot = collider.gameObject;
+        }
     }
 
     void OnTriggerExit(Collider collider)
@@ -109,6 +116,10 @@ public class TP_Controller : MonoBehaviour
         if (collider.gameObject.tag == "Item")
         {
             interactingItem = null;
+        }
+        else if (collider.gameObject.tag == "ShovelSpot")
+        {
+            activeHotspot = null;
         }
     }
 }
