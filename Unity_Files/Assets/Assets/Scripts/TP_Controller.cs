@@ -11,6 +11,7 @@ public class TP_Controller : MonoBehaviour
 
     void Awake()
     {
+        //Assign a static reference to the built-in character controller and set up the camera
         characterController = GetComponent("CharacterController") as CharacterController;
         instance = this;
         TP_Camera.EstablishMainCamera();
@@ -18,6 +19,7 @@ public class TP_Controller : MonoBehaviour
 
     void Update()
     {
+        //every frame, get all the input information and update the motion
         if (Camera.main == null)
         {
             return;
@@ -29,6 +31,7 @@ public class TP_Controller : MonoBehaviour
 
     void GetLocomotionInput()
     {
+        //gets WASD or arrow key information
         var deadZone = 0.1f;
         TP_Motor.instance.verticalVelocity = TP_Motor.instance.MoveVector.y;
         TP_Motor.instance.MoveVector = Vector3.zero;

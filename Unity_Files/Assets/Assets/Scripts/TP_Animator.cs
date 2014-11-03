@@ -3,7 +3,7 @@ using System.Collections;
 
 public class TP_Animator : MonoBehaviour
 {
-
+    //Handles all the animation and defines "Action States" for the player character
     #region Variables
     public enum Direction
     {
@@ -51,11 +51,13 @@ public class TP_Animator : MonoBehaviour
     #region Determining Functions
     void Awake()
     {
+        //on activation
         instance = this;
     }
 
     void Update()
     {
+        //every frame, determine which actionState is to be used, and call its function
         DetermineCurrentActionState();
         ProcessCurrentState();
         GUI_Manager.charState.text = "Character State: " + currentState.ToString();
@@ -105,8 +107,10 @@ public class TP_Animator : MonoBehaviour
 
     void DetermineCurrentActionState()
     {
+        //Figure out which ActionState to use in this frame
         if (currentState == ActionState.Dead)
         {
+            //Do nothing if the player is Dead
             return;
         }
         if (!TP_Controller.characterController.isGrounded)
@@ -115,6 +119,7 @@ public class TP_Animator : MonoBehaviour
                 currentState != ActionState.Jump && 
                 currentState != ActionState.Land)
             {
+                //Fall if we are not grounded and not already in a state
                 Fall();
             }
         }
@@ -147,6 +152,7 @@ public class TP_Animator : MonoBehaviour
 
     void ProcessCurrentState()
     {
+        //Call the helper method for each ActionState
         switch (currentState)
         {
             case ActionState.Idle:
@@ -191,9 +197,11 @@ public class TP_Animator : MonoBehaviour
             case ActionState.ActionLocked:
                 break;
         }
+        //this will be finished later
     }
 
     #region Action State Methods
+    //Just skeletons for now - these are responsible for playing the actual animations
     void Idle()
     {
         //crossfade the idle animation
@@ -294,7 +302,7 @@ public class TP_Animator : MonoBehaviour
     #endregion
 
     #region Start Action Methods
-
+    //For ActionStates which need to be "activated" or called from the outside
     public void Interact(bool hasItem)
     {
         if (hasItem)

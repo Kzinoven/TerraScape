@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour 
 {
+    //The Player class handles game logic, such as the handling of health, stamina, items, etc.
     public float maxHealth = 100;
     public float currentHealth = 100;
 
@@ -13,6 +14,7 @@ public class Player : MonoBehaviour
     public List<GameItem> inventory = new List<GameItem>();
     public List<GameItem> journal = new List<GameItem>();
 
+    //The currently selected inventory item; for an empty inventory it is set to -1.
     public int selectedIndex = -1;
 
     public static Player instance;
@@ -24,6 +26,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float dmgAmt)
     {
+        //Reduces our current health and updates game information
         currentHealth -= dmgAmt;
         GUI_Manager.health.text = "Health: " + currentHealth;
 
@@ -40,6 +43,7 @@ public class Player : MonoBehaviour
 
     public void CollectItem(GameItem item)
     {
+        //Picks up the item that TP_Controller is intersecting, and add it to the inventory.
         GUI_Manager.message.text = "Collected a(n): " + item.itemName + "!";
         if (item.itemType == GameItem.ItemType.Document)
             journal.Add(item);
@@ -53,14 +57,18 @@ public class Player : MonoBehaviour
 
     public void UseItem(int itemID)
     {
+        //Use the item at the given index, usually selectedIndex
+
+        //Do nothing if there is no item to use
         if (itemID < 0 || inventory.Count == 0)
             return;
 
+        //Get the GameItem object at this index
         GameItem useItem = inventory[itemID];
 
         if (useItem.itemType == GameItem.ItemType.Consumable)
         {
-            //use the item, heal, whatever
+            //The item is for one-time use: use the item, heal, whatever
             GUI_Manager.message.text = "Used the " + useItem.itemName + "!";
             selectedIndex = itemID - 1;
             if (selectedIndex < 0)
@@ -71,8 +79,10 @@ public class Player : MonoBehaviour
         }
         else if (useItem.itemType == GameItem.ItemType.Tool)
         {
+            //The item can be used more than once
             if (useItem.itemName == "Shovel")
             {
+                //Use the shovel!
                 if (TP_Controller.instance.activeHotspot == null)
                 {
                     GUI_Manager.message.text = "Can't use Shovel here!";
@@ -80,11 +90,13 @@ public class Player : MonoBehaviour
                 else if (TP_Controller.instance.activeHotspot.tag == "ShovelSpot")
                 {
                     GUI_Manager.message.text = "Used Shovel!";
+                    //The shovel was used successfully, add logic here
                     Destroy(TP_Controller.instance.activeHotspot);
                 }
             }
             else if (useItem.itemName == "Snapper")
             {
+                //Use the snapper!
                 if (TP_Controller.instance.activeHotspot == null)
                 {
                     GUI_Manager.message.text = "Can't use Snapper here!";
@@ -92,18 +104,20 @@ public class Player : MonoBehaviour
                 else if (TP_Controller.instance.activeHotspot.tag == "SnapperSpot")
                 {
                     GUI_Manager.message.text = "Used Snapper!";
+                    //The snapper was used successfully, add logic here
                     Destroy(TP_Controller.instance.activeHotspot);
                 }
             }
             else if (useItem.itemName == "Shield")
             {
-
+                //we are using the Shield
             }
         }
     }
 
     public void CycleItems(bool left)
     {
+        //change the currently selected item and update the GUI
         if (inventory.Count == 0)
             return;
 

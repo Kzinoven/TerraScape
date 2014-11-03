@@ -13,6 +13,7 @@ public static class Helper
 
     public static float ClampAngle(float angle, float minAngle, float maxAngle)
     {
+        //specialised clamping function which prevents angles from exceeding 360deg in either direction
         do
         {
             if (angle < -360)
@@ -27,6 +28,7 @@ public static class Helper
 
     public static ClipPlanePoints CalculateNearClipPlane(Vector3 pos)
     {
+        //Returns four values to match the position of the near clipping plane of the assigned camera
         var clipPlanePoints = new ClipPlanePoints();
 
         if (Camera.main == null)

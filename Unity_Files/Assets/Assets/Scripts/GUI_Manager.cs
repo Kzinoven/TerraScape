@@ -10,6 +10,7 @@ public class GUI_Manager : MonoBehaviour
     public static GUIText message;
 
 	void Awake () {
+        //Grab each of the children in the GUI Manager object and assign them a value to be used throughout the rest of the game data
         foreach (Transform child in transform)
         {
             switch (child.name)

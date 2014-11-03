@@ -3,8 +3,12 @@ using System.Collections;
 
 public class TP_Motor : MonoBehaviour 
 {
+    //The TP_Motor class handles all of the actual movement in world-space that the character controller does.
+
+    //static instance of this class, so we won't have extraneous TP_Motors
     public static TP_Motor instance;
 
+    //public vars which determine speed and forces
     public float forwardSpeed = 10f;
     public float backwardSpeed = 8f;
     public float strafingSpeed = 6f;
@@ -23,18 +27,20 @@ public class TP_Motor : MonoBehaviour
 
     void Awake()
     {
+        //On creation, set the instance to THIS instance of TP_Motor
         instance = this;
     }
 
     public void UpdateMotor()
     {
+        //gets called every frame in TP_Controller
         AlignCharacterWithCamera();
         ProcessMotion();
     }
 
     void AlignCharacterWithCamera()
     {
-        //Snaps the character to face away from the main camera
+        //Snaps the character to face away from the main camera, may be changed in future versions.
         if (MoveVector.x != 0 || MoveVector.z != 0)
         {
             transform.rotation = Quaternion.Euler(transform.eulerAngles.x, Camera.main.transform.eulerAngles.y, transform.eulerAngles.z);
@@ -68,8 +74,10 @@ public class TP_Motor : MonoBehaviour
 
     float CalculateMoveSpeed()
     {
+        //Start at zero
         var moveSpeed = 0f;
 
+        //Look at the direction we are moving in TP_Animator and then adjust moveSpeed
         switch (TP_Animator.instance.moveDirection)
         {
             case TP_Animator.Direction.Stationary:
@@ -101,6 +109,7 @@ public class TP_Motor : MonoBehaviour
                 break;
         }
 
+        //Check to see if we are sliding
         if (isSliding)
         {
             moveSpeed = slideSpeed;
@@ -111,11 +120,15 @@ public class TP_Motor : MonoBehaviour
 
     void ApplyGravity()
     {
+        //Sets the force that gravity will have on the character controller
+
+        //Make sure that we are not exceeding terminal velocity
         if (MoveVector.y > -terminalVelocity)
         {
             MoveVector = new Vector3(MoveVector.x, (MoveVector.y - gravity * Time.deltaTime), MoveVector.z);
         }
 
+        //When we are on the ground, make sure that the downward force does not exceed 1
         if (TP_Controller.characterController.isGrounded && MoveVector.y < -1)
         {
             MoveVector = new Vector3(MoveVector.x, -1, MoveVector.z);
@@ -124,21 +137,30 @@ public class TP_Motor : MonoBehaviour
 
     void ApplySlide()
     {
+        //Applies sliding motion to the basic move vector
+
+        //Do nothing if we are in the air
         if (!TP_Controller.characterController.isGrounded)
         {
             return;
         }
 
+        //Zero out our slideDirection vector
         slideDirection = Vector3.zero;
 
+        //Make a raycast straight downward
         RaycastHit hitInfo;
+        //Check that the raycast hits a target
         if (Physics.Raycast(transform.position/*+ Vector3.up (adjust for ground clipping later)*/, Vector3.down, out hitInfo))
         {
+            //If the normal of the polygon found by the raycast exceeds our threshold...
             if (hitInfo.normal.y < slideThreshold)
             {
+                //then set our slide vector to match
                 slideDirection = new Vector3(hitInfo.normal.x, -hitInfo.normal.y, hitInfo.normal.z);
                 if (!isSliding)
                 {
+                    //play the Sliding animation in TP_Animator
                     TP_Animator.instance.Slide();
                 }
                 isSliding = true;
@@ -149,6 +171,7 @@ public class TP_Motor : MonoBehaviour
             }
         }
 
+        //Check to see if we are allowed to control the slide and adjust accordingly
         if (slideDirection.magnitude < maxControllableSlideMagnitude)
         {
             MoveVector += slideDirection;
@@ -160,6 +183,7 @@ public class TP_Motor : MonoBehaviour
     }
     public void Jump()
     {
+        //Jump, as long as we are on the ground
         if (TP_Controller.characterController.isGrounded)
         {
             verticalVelocity = jumpSpeed;

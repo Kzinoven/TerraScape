@@ -18,6 +18,7 @@ public class GameItem : MonoBehaviour
 
     public GameItem(string name, string desc, ItemType type)
     {
+        //initialise with constructor
         itemName = name;
         itemDesc = desc;
         itemType = type;

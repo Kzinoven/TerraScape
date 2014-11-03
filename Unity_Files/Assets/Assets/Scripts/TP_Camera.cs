@@ -50,25 +50,32 @@ public class TP_Camera : MonoBehaviour
 
     void LateUpdate()
     {
-        //move camera AFTER all other calculations
+        //move camera AFTER all other calculations have been made
         if (TargetLookAt == null)
         {
+            //do nothing if there is no characterController to observe
             return;
         }
+
+        //Get camera motion info
         HandlePlayerInput();
+
         //loop, attempt to move camera
         int count = 0;
         do
         {
+            //While the camera is occluded, move the camera
             CalculateDesiredPosition();
             count++;
         } while(CheckIfOccluded(count));
 
+        //force update position
         UpdatePosition();
     }
 
     void HandlePlayerInput()
     {
+        //Gets mouse input and translates into camera motion
         float deadZone = 0.01f;
 
         //on right click and drag, move camera
@@ -126,7 +133,7 @@ public class TP_Camera : MonoBehaviour
         Debug.DrawLine(clipPlanePoints.LowerLeft, clipPlanePoints.UpperLeft, Color.yellow);
         */
 
-        //Detect raycasts from player position and find collisions with near clip plane points
+        //Detect linecasts from player position and find collisions with near clip plane points
         if (Physics.Linecast(from, clipPlanePoints.UpperLeft, out hitInfo) && hitInfo.collider.tag != "Player")
             nearestDistance = hitInfo.distance;
 
@@ -151,6 +158,9 @@ public class TP_Camera : MonoBehaviour
 
     bool CheckIfOccluded(int count)
     {
+        //Determines if we are occluded, returns false if not
+
+        //Assume there is no occlusion
         bool isOccluded = false;
         float nearestDistance = CheckCameraPoints(TargetLookAt.position, desiredPosition);
 
@@ -194,6 +204,7 @@ public class TP_Camera : MonoBehaviour
 
     void UpdatePosition()
     {
+        //Smoothly change position to match desiredPosition
         var positionX = Mathf.SmoothDamp(position.x, desiredPosition.x, ref velocityX, smoothX);
         var positionY = Mathf.SmoothDamp(position.y, desiredPosition.y, ref velocityY, smoothY);
         var positionZ = Mathf.SmoothDamp(position.z, desiredPosition.z, ref velocityZ, smoothX);
@@ -234,6 +245,7 @@ public class TP_Camera : MonoBehaviour
         tempCamera.AddComponent("TP_Camera");
         camera = tempCamera.GetComponent("TP_Camera") as TP_Camera;
 
+        //Use targetLookAt if it exists, otherwise create new and assign
         targetLookAt = GameObject.Find("targetLookAt") as GameObject;
 
         if (targetLookAt == null)
