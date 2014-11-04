@@ -205,11 +205,13 @@ public class TP_Animator : MonoBehaviour
     void Idle()
     {
         //crossfade the idle animation
+        transform.FindChild("SDzenWalk001").animation.Stop();
     }
 
     void Walking()
     {
         //crossfade the walking animation
+        transform.FindChild("SDzenWalk001").animation.CrossFade("Walk");
     }
 
     void Running()

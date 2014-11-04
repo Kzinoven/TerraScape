@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Assets\Scripts\Enemy_Animator.cs" />
      <Compile Include="Assets\Assets\Scripts\GUI_Manager.cs" />
      <Compile Include="Assets\Assets\Scripts\GameItem.cs" />
      <Compile Include="Assets\Assets\Scripts\Helper.cs" />
