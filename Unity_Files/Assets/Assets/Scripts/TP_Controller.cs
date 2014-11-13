@@ -6,6 +6,8 @@ public class TP_Controller : MonoBehaviour
     public static CharacterController characterController;
     public static TP_Controller instance;
 
+    public bool climbEnabled { get; set; }
+
     public GameItem interactingItem = null;
     public GameObject activeHotspot = null;
 
@@ -54,7 +56,10 @@ public class TP_Controller : MonoBehaviour
     {
         if (Input.GetButton("Jump"))
         {
-            Jump();
+            if (climbEnabled)
+                Climb();
+            else
+                Jump();
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
@@ -94,10 +99,15 @@ public class TP_Controller : MonoBehaviour
         //Other actions will go here!
     }
 
-    void Jump()
+    public void Jump()
     {
         TP_Animator.instance.Jump();
         TP_Motor.instance.Jump();
+    }
+
+    void Climb()
+    {
+        TP_Animator.instance.Climb();
     }
 
     void OnTriggerEnter(Collider collider)

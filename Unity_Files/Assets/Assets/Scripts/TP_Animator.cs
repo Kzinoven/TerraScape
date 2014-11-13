@@ -26,13 +26,15 @@ public class TP_Animator : MonoBehaviour
         Jump,
         Fall,
         Land,
-        Climb,
+        ClimbLedge,
+        ClimbVine,
         Slide,
         Interact,
         CollectItem,
         Shovel,
-        SetClaw,
+        Snapper,
         Shield,
+        ShieldSlide,
         TakeDamage,
         Dead,
         ActionLocked,
@@ -41,6 +43,14 @@ public class TP_Animator : MonoBehaviour
     public static TP_Animator instance;
 
     private ActionState lastState;
+    private Transform climbPoint;
+
+    public Vector3 climbOffset = Vector3.zero;
+    public Vector3 postClimbOffset = Vector3.zero;
+    public float climbJumpStartTime = 0f;
+    public float climbAnchorTime = 0.6f;
+
+    private Transform pelvis;
 
     public Direction moveDirection { get; set; }
     public ActionState currentState { get; set; }
@@ -53,6 +63,7 @@ public class TP_Animator : MonoBehaviour
     {
         //on activation
         instance = this;
+        pelvis = transform.FindChild("RootJnt") as Transform;
     }
 
     void Update()
@@ -129,9 +140,10 @@ public class TP_Animator : MonoBehaviour
             currentState != ActionState.Jump && 
             currentState != ActionState.Land &&
             currentState != ActionState.Interact && 
-            currentState != ActionState.Climb &&
+            currentState != ActionState.ClimbLedge &&
+            currentState != ActionState.ClimbVine &&
             currentState != ActionState.CollectItem &&
-            currentState != ActionState.SetClaw && 
+            currentState != ActionState.Snapper && 
             currentState != ActionState.Shield && 
             currentState != ActionState.Shovel &&
             currentState != ActionState.TakeDamage)
@@ -182,7 +194,8 @@ public class TP_Animator : MonoBehaviour
             case ActionState.Slide:
                 Sliding();
                 break;
-            case ActionState.Climb:
+            case ActionState.ClimbLedge:
+                Climbing();
                 break;
             case ActionState.Dead:
                 break;
@@ -190,7 +203,7 @@ public class TP_Animator : MonoBehaviour
                 break;
             case ActionState.Shovel:
                 break;
-            case ActionState.SetClaw:
+            case ActionState.Snapper:
                 break;
             case ActionState.Shield:
                 break;
@@ -301,6 +314,37 @@ public class TP_Animator : MonoBehaviour
         }
     }
 
+    void Climbing()
+    {
+        if (animation.isPlaying)
+        {
+            var time = animation["Climbing"].time;
+            if (time > climbJumpStartTime && time < climbAnchorTime)
+            {
+                transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x,
+                                                      Mathf.Lerp(transform.rotation.eulerAngles.y, 
+                                                      climbPoint.rotation.eulerAngles.y, 
+                                                      (time - climbJumpStartTime) / (climbAnchorTime - climbJumpStartTime)), 
+                                                      transform.rotation.eulerAngles.z);
+
+                var climbOffset = transform.TransformDirection(this.climbOffset);
+
+                transform.position = Vector3.Lerp(transform.position, 
+                                                  new Vector3(climbPoint.position.x, 
+                                                  transform.position.y, 
+                                                  climbPoint.position.z) + climbOffset, 
+                                                  (time - climbJumpStartTime) / (climbAnchorTime - climbJumpStartTime));
+            }
+        }
+        else
+        {
+            currentState = ActionState.Idle;
+            //play the Idle animation
+            var postClimbOffset = transform.TransformDirection(this.postClimbOffset);
+            transform.position = new Vector3(pelvis.position.x, (climbPoint.position.y + climbPoint.localScale.y) / 2, pelvis.position.z) + postClimbOffset;
+        }
+    }
+
     #endregion
 
     #region Start Action Methods
@@ -347,5 +391,35 @@ public class TP_Animator : MonoBehaviour
         //crossfade the Sliding animation depending on whether or not the Shield is equipped
     }
 
+    public void Climb()
+    {
+        if (!TP_Controller.characterController.isGrounded || isDead || climbPoint == null)
+        {
+            return;
+        }
+        if (Mathf.Abs(climbPoint.rotation.eulerAngles.y - transform.rotation.eulerAngles.y) > 60)
+        {
+            TP_Controller.instance.Jump();
+            return;
+        }
+
+        currentState = ActionState.ClimbLedge;
+    }
+
     #endregion
+
+    public void SetClimbPoint(Transform climbPoint)
+    {
+        this.climbPoint = climbPoint;
+        TP_Controller.instance.climbEnabled = true;
+    }
+
+    public void ClearClimbPoint(Transform climbPoint)
+    {
+        if (this.climbPoint == climbPoint)
+        {
+            this.climbPoint = null;
+            TP_Controller.instance.climbEnabled = false;
+        }
+    }
 }
