@@ -79,7 +79,7 @@ public class TP_Camera : MonoBehaviour
         float deadZone = 0.01f;
 
         //on right click and drag, move camera
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButton(0))
         {
             mouseX += Input.GetAxis("Mouse X") * mouseSensitivityX;
             mouseY -= Input.GetAxis("Mouse Y") * mouseSensitivityY;

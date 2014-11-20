@@ -1,0 +1,294 @@
+fileFormatVersion: 2
+guid: 5c9afdc9d5e34df4fad6b513c50087f9
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: aegis
+    100002: aegis1
+    100004: chestJnt
+    100006: footCon
+    100008: headJnt
+    100010: jawJnt
+    100012: lb_ankleJnt
+    100014: lb_footCon
+    100016: lb_footIK
+    100018: lb_footJnt
+    100020: lb_group
+    100022: lb_kneeJnt
+    100024: lb_legJnt
+    100026: lb_toeJnt
+    100028: legJntIK
+    100030: lf_ankleJnt
+    100032: lf_footJnt
+    100034: lf_group
+    100036: lf_kneeJnt
+    100038: lf_legJnt
+    100040: lf_toeJnt
+    100042: neckJnt
+    100044: noseJnt
+    100046: pelvisJnt
+    100048: polySurface1
+    100050: rb_ankleJnt
+    100052: rb_footCon
+    100054: rb_footIK
+    100056: rb_footJnt
+    100058: rb_group
+    100060: rb_kneeJnt
+    100062: rb_legJnt
+    100064: rb_toeJnt
+    100066: rf_ankleJnt
+    100068: rf_footCon
+    100070: rf_footJnt
+    100072: rf_group
+    100074: rf_kneeJnt
+    100076: rf_legJnt
+    100078: rf_legJntIK
+    100080: rf_toeJnt
+    100082: rootJnt
+    100084: //RootNode
+    100086: spineJnt01
+    100088: spineJnt02
+    100090: spineJnt03
+    100092: tailJnt01
+    100094: tailJnt02
+    100096: tailJnt03
+    100098: transform1
+    100100: transform2
+    400000: aegis
+    400002: aegis1
+    400004: chestJnt
+    400006: footCon
+    400008: headJnt
+    400010: jawJnt
+    400012: lb_ankleJnt
+    400014: lb_footCon
+    400016: lb_footIK
+    400018: lb_footJnt
+    400020: lb_group
+    400022: lb_kneeJnt
+    400024: lb_legJnt
+    400026: lb_toeJnt
+    400028: legJntIK
+    400030: lf_ankleJnt
+    400032: lf_footJnt
+    400034: lf_group
+    400036: lf_kneeJnt
+    400038: lf_legJnt
+    400040: lf_toeJnt
+    400042: neckJnt
+    400044: noseJnt
+    400046: pelvisJnt
+    400048: polySurface1
+    400050: rb_ankleJnt
+    400052: rb_footCon
+    400054: rb_footIK
+    400056: rb_footJnt
+    400058: rb_group
+    400060: rb_kneeJnt
+    400062: rb_legJnt
+    400064: rb_toeJnt
+    400066: rf_ankleJnt
+    400068: rf_footCon
+    400070: rf_footJnt
+    400072: rf_group
+    400074: rf_kneeJnt
+    400076: rf_legJnt
+    400078: rf_legJntIK
+    400080: rf_toeJnt
+    400082: rootJnt
+    400084: //RootNode
+    400086: spineJnt01
+    400088: spineJnt02
+    400090: spineJnt03
+    400092: tailJnt01
+    400094: tailJnt02
+    400096: tailJnt03
+    400098: transform1
+    400100: transform2
+    4300000: polySurface1
+    7400000: Walk
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: polySurface1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 64
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: aegis
+        weight: 1
+      - path: aegis/transform1
+        weight: 1
+      - path: aegis1
+        weight: 1
+      - path: aegis1/transform2
+        weight: 1
+      - path: lb_group
+        weight: 1
+      - path: lb_group/lb_footCon
+        weight: 1
+      - path: lb_group/lb_footCon/lb_footIK
+        weight: 1
+      - path: lf_group
+        weight: 1
+      - path: lf_group/footCon
+        weight: 1
+      - path: lf_group/footCon/legJntIK
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      - path: rb_group
+        weight: 1
+      - path: rb_group/rb_footCon
+        weight: 1
+      - path: rb_group/rb_footCon/rb_footIK
+        weight: 1
+      - path: rf_group
+        weight: 1
+      - path: rf_group/rf_footCon
+        weight: 1
+      - path: rf_group/rf_footCon/rf_legJntIK
+        weight: 1
+      - path: rootJnt
+        weight: 1
+      - path: rootJnt/pelvisJnt
+        weight: 1
+      - path: rootJnt/pelvisJnt/lb_legJnt
+        weight: 1
+      - path: rootJnt/pelvisJnt/lb_legJnt/lb_kneeJnt
+        weight: 1
+      - path: rootJnt/pelvisJnt/lb_legJnt/lb_kneeJnt/lb_ankleJnt
+        weight: 1
+      - path: rootJnt/pelvisJnt/lb_legJnt/lb_kneeJnt/lb_ankleJnt/lb_footJnt
+        weight: 1
+      - path: rootJnt/pelvisJnt/lb_legJnt/lb_kneeJnt/lb_ankleJnt/lb_footJnt/lb_toeJnt
+        weight: 1
+      - path: rootJnt/pelvisJnt/rb_legJnt
+        weight: 1
+      - path: rootJnt/pelvisJnt/rb_legJnt/rb_kneeJnt
+        weight: 1
+      - path: rootJnt/pelvisJnt/rb_legJnt/rb_kneeJnt/rb_ankleJnt
+        weight: 1
+      - path: rootJnt/pelvisJnt/rb_legJnt/rb_kneeJnt/rb_ankleJnt/rb_footJnt
+        weight: 1
+      - path: rootJnt/pelvisJnt/rb_legJnt/rb_kneeJnt/rb_ankleJnt/rb_footJnt/rb_toeJnt
+        weight: 1
+      - path: rootJnt/pelvisJnt/tailJnt01
+        weight: 1
+      - path: rootJnt/pelvisJnt/tailJnt01/tailJnt02
+        weight: 1
+      - path: rootJnt/pelvisJnt/tailJnt01/tailJnt02/tailJnt03
+        weight: 1
+      - path: rootJnt/spineJnt01
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/lf_legJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/lf_legJnt/lf_kneeJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/lf_legJnt/lf_kneeJnt/lf_ankleJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/lf_legJnt/lf_kneeJnt/lf_ankleJnt/lf_footJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/lf_legJnt/lf_kneeJnt/lf_ankleJnt/lf_footJnt/lf_toeJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/rf_legJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/rf_legJnt/rf_kneeJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/rf_legJnt/rf_kneeJnt/rf_ankleJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/rf_legJnt/rf_kneeJnt/rf_ankleJnt/rf_footJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/rf_legJnt/rf_kneeJnt/rf_ankleJnt/rf_footJnt/rf_toeJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/spineJnt03
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/spineJnt03/neckJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/spineJnt03/neckJnt/jawJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/spineJnt03/neckJnt/jawJnt/headJnt
+        weight: 1
+      - path: rootJnt/spineJnt01/spineJnt02/chestJnt/spineJnt03/neckJnt/jawJnt/headJnt/noseJnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
