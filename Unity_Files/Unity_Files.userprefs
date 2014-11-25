@@ -1,8 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Assets\Scripts\TP_Controller.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Assets\Scripts\ShieldAnimator.cs">
     <Files>
-      <File FileName="Assets\Assets\Scripts\TP_Controller.cs" Line="1" Column="1" />
+      <File FileName="Assets\Assets\Scripts\ShieldEnemyController.cs" Line="85" Column="80" />
+      <File FileName="Assets\Assets\Scripts\TP_Animator.cs" Line="74" Column="12" />
+      <File FileName="Assets\Assets\Scripts\ShieldAnimator.cs" Line="36" Column="70" />
+      <File FileName="Assets\Assets\Scripts\TP_Controller.cs" Line="66" Column="20" />
+      <File FileName="Assets\Assets\Scripts\Enemy_Animator.cs" Line="8" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

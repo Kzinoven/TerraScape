@@ -11,6 +11,15 @@ public class TP_Controller : MonoBehaviour
     public GameItem interactingItem = null;
     public GameObject activeHotspot = null;
 
+	private enum State
+	{
+		Idle,
+		Rolling,
+		Attacking,
+		Trapped,
+		Stunned
+	}
+
     void Awake()
     {
         //Assign a static reference to the built-in character controller and set up the camera
