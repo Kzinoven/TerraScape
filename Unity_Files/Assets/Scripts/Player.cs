@@ -83,30 +83,10 @@ public class Player : MonoBehaviour
             if (useItem.itemName == "Shovel")
             {
                 //Use the shovel!
-                if (TP_Controller.instance.activeHotspot == null)
-                {
-                    GUI_Manager.message.text = "Can't use Shovel here!";
-                }
-                else if (TP_Controller.instance.activeHotspot.tag == "ShovelSpot")
-                {
-                    GUI_Manager.message.text = "Used Shovel!";
-                    //The shovel was used successfully, add logic here
-                    Destroy(TP_Controller.instance.activeHotspot);
-                }
             }
             else if (useItem.itemName == "Snapper")
             {
-                //Use the snapper!
-                if (TP_Controller.instance.activeHotspot == null)
-                {
-                    GUI_Manager.message.text = "Can't use Snapper here!";
-                }
-                else if (TP_Controller.instance.activeHotspot.tag == "SnapperSpot")
-                {
-                    GUI_Manager.message.text = "Used Snapper!";
-                    //The snapper was used successfully, add logic here
-                    Destroy(TP_Controller.instance.activeHotspot);
-                }
+                //we are using the Snapper
             }
             else if (useItem.itemName == "Shield")
             {

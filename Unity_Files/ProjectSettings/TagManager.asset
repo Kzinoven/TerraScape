@@ -4,8 +4,8 @@
 TagManager:
   tags:
   - Item
-  - ShovelSpot
-  - SnapperSpot
+  - Platform
+  - FaultLine
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

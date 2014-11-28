@@ -9,7 +9,7 @@ public class TP_Controller : MonoBehaviour
     public bool climbEnabled { get; set; }
 
     public GameItem interactingItem = null;
-    public GameObject activeHotspot = null;
+    public FaultLine activeFault = null;
 
 	private enum State
 	{
@@ -86,7 +86,12 @@ public class TP_Controller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             //Use selected item or tool
-            Player.instance.UseItem(Player.instance.selectedIndex);
+            //Player.instance.UseItem(Player.instance.selectedIndex);
+
+            if (activeFault != null)
+            {
+                activeFault.Activate();
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Z))
@@ -126,9 +131,10 @@ public class TP_Controller : MonoBehaviour
         {
             interactingItem = collider.gameObject.GetComponent<GameItem>();
         }
-        else if (collider.gameObject.tag == "ShovelSpot")
+
+        if (collider.gameObject.tag == "FaultLine")
         {
-            activeHotspot = collider.gameObject;
+            activeFault = collider.gameObject.GetComponent<FaultLine>();
         }
     }
 
@@ -139,9 +145,10 @@ public class TP_Controller : MonoBehaviour
         {
             interactingItem = null;
         }
-        else if (collider.gameObject.tag == "ShovelSpot")
+
+        if (collider.gameObject.tag == "FaultLine")
         {
-            activeHotspot = null;
+            activeFault = null;
         }
     }
 }

@@ -6,4 +6,4 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Assets/Scenes/InventoryTestScene.unity
+    path: Assets/Scenes/InventoryTestScene.unity

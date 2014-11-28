@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Animator))]
 public class TP_Animator : MonoBehaviour
 {
     //Handles all the animation and defines "Action States" for the player character
@@ -44,6 +45,9 @@ public class TP_Animator : MonoBehaviour
 
     private ActionState lastState;
     private Transform climbPoint;
+
+    private Animator anim;
+    private AnimatorStateInfo currentBaseState;
 
     public Vector3 climbOffset = Vector3.zero;
     public Vector3 postClimbOffset = Vector3.zero;
