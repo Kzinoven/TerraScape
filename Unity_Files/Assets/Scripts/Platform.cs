@@ -49,17 +49,15 @@ public class Platform : MonoBehaviour
 
             //Linearly interpolate the position of the platform
             gameObject.transform.position = Vector3.Lerp(startPosition, targetPosition, timeRatio);
-
             //Stop the platform if it is within a certain threshold
-            if(Mathf.Abs(targetPosition.x - startPosition.x) < 0.01f
-                && Mathf.Abs(targetPosition.y - startPosition.y) < 0.01f
-                && Mathf.Abs(targetPosition.z - startPosition.z) < 0.01f)
+            if(timeRatio >= 1f)
             {
                 //Stop moving, set the correct Time objects
                 isMoving = false;
-                targetTime = currentTime + activeTime;
-                if (currentTime == targetTime)
+                if (activeTime == 0f)
                     isPermanent = true;
+                else
+                    targetTime = currentTime + activeTime;
             }
         }
         
