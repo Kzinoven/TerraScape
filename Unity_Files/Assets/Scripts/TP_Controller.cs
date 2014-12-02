@@ -10,15 +10,8 @@ public class TP_Controller : MonoBehaviour
 
     public GameItem interactingItem = null;
     public FaultLine activeFault = null;
-
-	private enum State
-	{
-		Idle,
-		Rolling,
-		Attacking,
-		Trapped,
-		Stunned
-	}
+    public TerrainDeformer activeTerrain = null;
+    public float diggingMagnitude = 3.0f;
 
     void Awake()
     {
@@ -92,9 +85,13 @@ public class TP_Controller : MonoBehaviour
             {
                 activeFault.Activate();
             }
+            else if (activeTerrain != null)
+            {
+                activeTerrain.DestroyTerrain(transform.position, diggingMagnitude);
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             //Interact or pick up item
             if (interactingItem == null)
@@ -135,6 +132,18 @@ public class TP_Controller : MonoBehaviour
         if (collider.gameObject.tag == "FaultLine")
         {
             activeFault = collider.gameObject.GetComponent<FaultLine>();
+        }
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.GetComponent<TerrainDeformer>() != null)
+        {
+            activeTerrain = hit.gameObject.GetComponent<TerrainDeformer>();
+        }
+        else
+        {
+            activeTerrain = null;
         }
     }
 

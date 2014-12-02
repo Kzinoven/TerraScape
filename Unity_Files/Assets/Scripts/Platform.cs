@@ -76,5 +76,15 @@ public class Platform : MonoBehaviour
         targetTime = startTime + movementTime;
         startPosition = gameObject.transform.position;
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        other.gameObject.transform.parent = gameObject.transform;
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        other.gameObject.transform.parent = null;
+    }
     #endregion
 }

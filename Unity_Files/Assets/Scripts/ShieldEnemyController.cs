@@ -22,7 +22,7 @@ public class ShieldEnemyController : MonoBehaviour
 	void Awake ()
 	{
 		currentState = ShieldCreatureState.Idle;
-		player = GameObject.Find ("Player");
+		player = GameObject.FindGameObjectWithTag("Player");
 	}
 	
 	// Update is called once per frame
