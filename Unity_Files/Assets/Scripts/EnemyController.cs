@@ -28,7 +28,7 @@ public class EnemyController : MonoBehaviour
 	/// </summary>
 	void updatePlayerLocation()
 	{
-		playerLocation = GetComponent ("Player").transform.position;
+		playerLocation = GetComponent("Player").transform.position;
 	}
 }
 

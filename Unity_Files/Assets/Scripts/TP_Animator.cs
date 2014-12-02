@@ -43,6 +43,8 @@ public class TP_Animator : MonoBehaviour
 
     public static TP_Animator instance;
 
+    private Animation characterAnimations;
+
     private ActionState lastState;
     private Transform climbPoint;
 
@@ -68,6 +70,7 @@ public class TP_Animator : MonoBehaviour
         //on activation
         instance = this;
         pelvis = transform.FindChild("RootJnt") as Transform;
+        characterAnimations = transform.FindChild("a_zenobia_walk").animation;
     }
 
     void Update()
@@ -222,13 +225,13 @@ public class TP_Animator : MonoBehaviour
     void Idle()
     {
         //crossfade the idle animation
-        transform.FindChild("SDzenWalk001").animation.Stop();
+        characterAnimations.Stop();
     }
 
     void Walking()
     {
         //crossfade the walking animation
-        transform.FindChild("SDzenWalk001").animation.CrossFade("Walk");
+        characterAnimations.CrossFade("Walk");
     }
 
     void Running()
@@ -238,7 +241,7 @@ public class TP_Animator : MonoBehaviour
 
     void Interacting()
     {
-        if (/*!animation.isPlaying*/true)
+        if (!characterAnimations.isPlaying)
         {
             currentState = ActionState.Idle;
             Idle();

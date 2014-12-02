@@ -82,11 +82,27 @@ public class Player : MonoBehaviour
             //The item can be used more than once
             if (useItem.itemName == "Shovel")
             {
-                //Use the shovel!
+                if (TP_Controller.instance.activeTerrain != null)
+                {
+                    GUI_Manager.message.text = "Used the Shovel!";
+                    TP_Controller.instance.activeTerrain.DestroyTerrain(transform.position, 3);
+                }
+                else
+                {
+                    GUI_Manager.message.text = "Couldn't use the Shovel!";
+                }
             }
             else if (useItem.itemName == "Snapper")
             {
-                //we are using the Snapper
+                if (TP_Controller.instance.activeFault != null)
+                {
+                    GUI_Manager.message.text = "Used the Snapper!";
+                    TP_Controller.instance.activeFault.Activate();
+                }
+                else
+                {
+                    GUI_Manager.message.text = "Couldn't use the Snapper!";
+                }
             }
             else if (useItem.itemName == "Shield")
             {

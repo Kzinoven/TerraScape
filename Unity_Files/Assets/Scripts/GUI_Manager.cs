@@ -8,6 +8,7 @@ public class GUI_Manager : MonoBehaviour
     public static GUIText charState;
     public static GUIText selectedItem;
     public static GUIText message;
+    public static GUITexture screenFader;
 
 	void Awake () {
         //Grab each of the children in the GUI Manager object and assign them a value to be used throughout the rest of the game data
@@ -29,6 +30,10 @@ public class GUI_Manager : MonoBehaviour
                     break;
                 case "GUI_Message":
                     message = child.guiText;
+                    break;
+                case "GUI_Fader":
+                    screenFader = child.guiTexture;
+                    screenFader.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
                     break;
                 default:
                     break;

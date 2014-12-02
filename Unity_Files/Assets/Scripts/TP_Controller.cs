@@ -79,18 +79,8 @@ public class TP_Controller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             //Use selected item or tool
-            //Player.instance.UseItem(Player.instance.selectedIndex);
-
-            if (activeFault != null)
-            {
-                activeFault.Activate();
-            }
-            else if (activeTerrain != null)
-            {
-                activeTerrain.DestroyTerrain(transform.position, diggingMagnitude);
-            }
+            Player.instance.UseItem(Player.instance.selectedIndex);
         }
-
         if (Input.GetKeyDown(KeyCode.R))
         {
             //Interact or pick up item
@@ -127,6 +117,7 @@ public class TP_Controller : MonoBehaviour
         if (collider.gameObject.tag == "Item")
         {
             interactingItem = collider.gameObject.GetComponent<GameItem>();
+            GUI_Manager.message.text = "Press R to pick up the " + interactingItem.itemName;
         }
 
         if (collider.gameObject.tag == "FaultLine")
@@ -153,6 +144,7 @@ public class TP_Controller : MonoBehaviour
         if (collider.gameObject.tag == "Item")
         {
             interactingItem = null;
+            GUI_Manager.message.text = "";
         }
 
         if (collider.gameObject.tag == "FaultLine")

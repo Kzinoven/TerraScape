@@ -134,26 +134,35 @@ public class TP_Camera : MonoBehaviour
         */
 
         //Detect linecasts from player position and find collisions with near clip plane points
-        if (Physics.Linecast(from, clipPlanePoints.UpperLeft, out hitInfo) && hitInfo.collider.tag != "Player")
+        if (Physics.Linecast(from, clipPlanePoints.UpperLeft, out hitInfo) && IgnoreOcclusion(hitInfo.collider))
             nearestDistance = hitInfo.distance;
 
-        if (Physics.Linecast(from, clipPlanePoints.LowerLeft, out hitInfo) && hitInfo.collider.tag != "Player")
+        if (Physics.Linecast(from, clipPlanePoints.LowerLeft, out hitInfo) && IgnoreOcclusion(hitInfo.collider))
             if (hitInfo.distance < nearestDistance || nearestDistance == -1)
                 nearestDistance = hitInfo.distance;
 
-        if (Physics.Linecast(from, clipPlanePoints.UpperRight, out hitInfo) && hitInfo.collider.tag != "Player")
+        if (Physics.Linecast(from, clipPlanePoints.UpperRight, out hitInfo) && IgnoreOcclusion(hitInfo.collider))
             if (hitInfo.distance < nearestDistance || nearestDistance == -1)
                 nearestDistance = hitInfo.distance;
 
-        if (Physics.Linecast(from, clipPlanePoints.LowerRight, out hitInfo) && hitInfo.collider.tag != "Player")
+        if (Physics.Linecast(from, clipPlanePoints.LowerRight, out hitInfo) && IgnoreOcclusion(hitInfo.collider))
             if (hitInfo.distance < nearestDistance || nearestDistance == -1)
                 nearestDistance = hitInfo.distance;
 
-        if (Physics.Linecast(from, to + transform.forward * -camera.nearClipPlane, out hitInfo) && hitInfo.collider.tag != "Player")
+        if (Physics.Linecast(from, to + transform.forward * -camera.nearClipPlane, out hitInfo) && IgnoreOcclusion(hitInfo.collider))
             if (hitInfo.distance < nearestDistance || nearestDistance == -1)
                 nearestDistance = hitInfo.distance;
 
         return nearestDistance;
+    }
+
+    bool IgnoreOcclusion(Collider collider)
+    {
+        bool ignore = false;
+        if (collider.tag == "Player" || collider.tag == "Item")
+            ignore = true;
+
+        return ignore;
     }
 
     bool CheckIfOccluded(int count)
