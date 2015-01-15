@@ -5093,6 +5093,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 274736331}
   m_RootOrder: 0
+--- !u!1 &1397129416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1397129418}
+  - 131: {fileID: 1397129417}
+  m_Layer: 0
+  m_Name: PlaytestGUITexture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &1397129417
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1397129416}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: c9b444c081f28a04180701ae9b844bb3, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: .384313732}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &1397129418
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1397129416}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
 --- !u!1 &1409526416
 GameObject:
   m_ObjectHideFlags: 0
@@ -7768,6 +7815,7 @@ GameObject:
   - 81: {fileID: 2103803592}
   - 114: {fileID: 2103803591}
   - 45: {fileID: 2103803597}
+  - 114: {fileID: 2103803598}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7874,6 +7922,19 @@ Skybox:
   m_GameObject: {fileID: 2103803590}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: a2126534b3a11b34e977105bd9e3cc03, type: 2}
+--- !u!114 &2103803598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103803590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26d350ab03c788d4b91f2b00cdc664fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureOverlay: {fileID: 1397129417}
+  overlayDepth: 1
 --- !u!1 &2124010111
 GameObject:
   m_ObjectHideFlags: 0
