@@ -1570,11 +1570,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: 5c9afdc9d5e34df4fad6b513c50087f9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -.113591105
+      value: -.105983004
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: 5c9afdc9d5e34df4fad6b513c50087f9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: .468597472
+      value: .468597531
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: 5c9afdc9d5e34df4fad6b513c50087f9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6581,6 +6581,9 @@ GameObject:
   - 4: {fileID: 1730267556}
   - 111: {fileID: 1730267558}
   - 111: {fileID: 1730267557}
+  - 114: {fileID: 1730267559}
+  - 54: {fileID: 1730267560}
+  - 136: {fileID: 1730267561}
   m_Layer: 0
   m_Name: shieldCreature_inProgress_v5_unsmoothed_walk
   m_TagString: Untagged
@@ -6595,7 +6598,7 @@ Transform:
   m_PrefabInternal: {fileID: 424647245}
   m_GameObject: {fileID: 1730267555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .131532982, y: -.113591105, z: .468597472}
+  m_LocalPosition: {x: .131532982, y: -.105983004, z: .468597531}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1332477499}
@@ -6639,6 +6642,54 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &1730267559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1730267555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892c8dbda02e6a04a9f2042dce001ee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 1
+  attackDamage: 5
+  wanderSpeed: 2
+  chaseSpeed: 5
+  chaseWaitTime: 5
+  rotationSpeed: 0
+  fieldOfView: 200
+  viewRange: 20
+  attackRange: 4
+--- !u!54 &1730267560
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1730267555}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!136 &1730267561
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1730267555}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .0340000018
+  m_Height: .150000006
+  m_Direction: 2
+  m_Center: {x: 0, y: .0350000001, z: .00700000022}
 --- !u!1 &1740318941
 GameObject:
   m_ObjectHideFlags: 0
