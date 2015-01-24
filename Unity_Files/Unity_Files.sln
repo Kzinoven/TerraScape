@@ -5,6 +5,8 @@ Project("{46336106-67B0-2B21-B5C9-A9926D09EE7F}") = "Unity_Files", "Assembly-CSh
 EndProject
 Project("{46336106-67B0-2B21-B5C9-A9926D09EE7F}") = "Unity_Files", "Assembly-CSharp.csproj", "{D0E27ED4-9D7E-B7A9-704D-6DBA46B88959}"
 EndProject
+Project("{46336106-67B0-2B21-B5C9-A9926D09EE7F}") = "Unity_Files", "Assembly-CSharp-Editor.csproj", "{FDAA339C-7413-3186-2FF0-35D81D1005C9}"
+EndProject
 Project("{46336106-67B0-2B21-B5C9-A9926D09EE7F}") = "Unity_Files", "Assembly-UnityScript-firstpass.unityproj", "{A70CB33D-8721-92D1-ACA4-14B644441A24}"
 EndProject
 Project("{46336106-67B0-2B21-B5C9-A9926D09EE7F}") = "Unity_Files", "Assembly-UnityScript.unityproj", "{44909B6E-0191-D28C-EFEB-6958D0578B10}"
@@ -23,6 +25,10 @@ Global
 		{D0E27ED4-9D7E-B7A9-704D-6DBA46B88959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0E27ED4-9D7E-B7A9-704D-6DBA46B88959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0E27ED4-9D7E-B7A9-704D-6DBA46B88959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDAA339C-7413-3186-2FF0-35D81D1005C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDAA339C-7413-3186-2FF0-35D81D1005C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDAA339C-7413-3186-2FF0-35D81D1005C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDAA339C-7413-3186-2FF0-35D81D1005C9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A70CB33D-8721-92D1-ACA4-14B644441A24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A70CB33D-8721-92D1-ACA4-14B644441A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A70CB33D-8721-92D1-ACA4-14B644441A24}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,7 +41,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																													GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																				GlobalSection(MonoDevelopProperties) = preSolution
 																																																			GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
