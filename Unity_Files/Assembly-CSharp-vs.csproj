@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Platform.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlaytesterMenu.cs" />
+     <Compile Include="Assets\Scripts\RockBreaker.cs" />
      <Compile Include="Assets\Scripts\ShieldAnimator.cs" />
      <Compile Include="Assets\Scripts\ShieldCreatureState.cs" />
      <Compile Include="Assets\Scripts\ShieldEnemyController.cs" />

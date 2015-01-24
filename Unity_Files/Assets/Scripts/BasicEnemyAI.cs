@@ -25,6 +25,12 @@ public class BasicEnemyAI : MonoBehaviour {
 	Vector3 lastPlayerSighting;
 
 	Rigidbody collider;
+	BoxCollider attackArea;
+
+	public float MaxHealth = 1000f;
+	public float currentHealth = 1000f;
+
+	bool alive = true;
 
 	// Use this for initialization
 	void Start () {
@@ -32,15 +38,20 @@ public class BasicEnemyAI : MonoBehaviour {
 		attackCooldown = 1.0f / attackSpeed;
 		chaseTimer = chaseWaitTime;
 		collider = GetComponent<Rigidbody> ();
+		attackArea = GetComponent<BoxCollider> ();
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
+		if (!alive) {
+			return;
+		}
 		attackTimer += Time.deltaTime;
 		if (playerVisible()) {
 			//if the player is within attack range
-			if (DistanceFromPlayer () <= attackRange) {
+			if (attackArea.bounds.Contains(Player.transform.position)) {
 				Attack ();
 			}
 			lastPlayerSighting = Player.transform.position;
@@ -53,8 +64,27 @@ public class BasicEnemyAI : MonoBehaviour {
 		else {
 			Wander();
 		}
+
 	}
 
+	public void TakeDamage(float dmgAmt)
+	{
+		//Reduces our current health and updates game information
+		currentHealth -= dmgAmt;
+		
+		if (currentHealth <= 0 && alive)
+		{
+			Die();
+		}
+	}
+
+	private void Die()
+	{
+		alive = false;
+		//set color of dune roamer to red
+		Debug.Log ("Creature Dead");
+	}
+	
 	float DistanceFromPlayer(){
 		return Vector3.Distance (Player.transform.position, transform.position);
 	}
@@ -97,5 +127,13 @@ public class BasicEnemyAI : MonoBehaviour {
 			//only move if not near the player/sighting
 			collider.MovePosition (transform.position + _direction * chaseSpeed * Time.deltaTime);
 		}
+	}
+
+	void OnTriggerEnter(Collider other){
+		//if rolling
+		if (other.gameObject.tag.Equals("FaultLine")){
+			other.gameObject.SendMessage ("Break");//send message to break rocks
+		}
+		//attack the player if
 	}
 }

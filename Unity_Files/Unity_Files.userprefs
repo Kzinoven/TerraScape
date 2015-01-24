@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TP_Animator.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\selfDestruct.js">
     <Files>
-      <File FileName="Assets\Scripts\TP_Controller.cs" Line="38" Column="45" />
-      <File FileName="Assets\Scripts\TP_Animator.cs" Line="91" Column="48" />
+      <File FileName="Assets\Scripts\destructionController.js" Line="25" Column="13" />
+      <File FileName="Assets\Scripts\BasicEnemyAI.cs" Line="77" Column="43" />
+      <File FileName="Assets\Scripts\selfDestruct.js" Line="16" Column="1" />
+      <File FileName="Assets\Scripts\Player.cs" Line="17" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

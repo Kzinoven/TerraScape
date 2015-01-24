@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{D0E27ED4-9D7E-B7A9-704D-6DBA46B88959}</ProjectGuid>
+	<ProjectGuid>{44909B6E-0191-D28C-EFEB-6958D0578B10}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,28 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BasicEnemyAI.cs" />
-     <Compile Include="Assets\Scripts\Breakable.cs" />
-     <Compile Include="Assets\Scripts\ClimbingVolume.cs" />
-     <Compile Include="Assets\Scripts\EnemyController.cs" />
-     <Compile Include="Assets\Scripts\FallingRock.cs" />
-     <Compile Include="Assets\Scripts\FaultLine.cs" />
-     <Compile Include="Assets\Scripts\GUI_Manager.cs" />
-     <Compile Include="Assets\Scripts\GameItem.cs" />
-     <Compile Include="Assets\Scripts\Helper.cs" />
-     <Compile Include="Assets\Scripts\Platform.cs" />
-     <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Scripts\PlaytesterMenu.cs" />
-     <Compile Include="Assets\Scripts\RockBreaker.cs" />
-     <Compile Include="Assets\Scripts\ShieldAnimator.cs" />
-     <Compile Include="Assets\Scripts\ShieldCreatureState.cs" />
-     <Compile Include="Assets\Scripts\ShieldEnemyController.cs" />
-     <Compile Include="Assets\Scripts\TP_Animator.cs" />
-     <Compile Include="Assets\Scripts\TP_Camera.cs" />
-     <Compile Include="Assets\Scripts\TP_Controller.cs" />
-     <Compile Include="Assets\Scripts\TP_Motor.cs" />
-     <Compile Include="Assets\Scripts\TerrainDeformer.cs" />
-     <Compile Include="Assets\Scripts\screenFade.cs" />
+     <Compile Include="Assets\Scripts\Rockslide.js" />
+     <Compile Include="Assets\Scripts\cubeController.js" />
+     <Compile Include="Assets\Scripts\destructionController.js" />
+     <Compile Include="Assets\Scripts\selfDestruct.js" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
