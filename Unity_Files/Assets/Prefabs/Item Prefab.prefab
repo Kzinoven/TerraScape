@@ -111,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Name
   itemDesc: Description
-  itemType: 0
+  itemType: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

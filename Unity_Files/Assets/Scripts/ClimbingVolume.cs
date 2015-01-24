@@ -5,10 +5,11 @@ public class ClimbingVolume : MonoBehaviour
 {
     void OnTriggerEnter()
     {
-        TP_Animator.instance.SetClimbPoint(transform);
+		print ("climbing");
+   
     }
-    void OnTriggerExit()
-    {
-        TP_Animator.instance.ClearClimbPoint(transform);
-    }
+    //void OnTriggerExit()
+   // {
+   //     TP_Animator.instance.ClearClimbPoint(transform);
+   // }
 }

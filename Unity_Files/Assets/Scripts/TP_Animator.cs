@@ -78,7 +78,7 @@ public class TP_Animator : MonoBehaviour
         //every frame, determine which actionState is to be used, and call its function
         DetermineCurrentActionState();
         ProcessCurrentState();
-        GUI_Manager.charState.text = "Character State: " + currentState.ToString();
+       // GUI_Manager.charState.text = "Character State: " + currentState.ToString();
     }
 
     public void DetermineCurrentMoveDirection()
