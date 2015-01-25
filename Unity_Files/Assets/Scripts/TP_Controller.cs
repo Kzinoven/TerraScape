@@ -97,6 +97,16 @@ public class TP_Controller : MonoBehaviour
                 Destroy(interactingItem.gameObject);
             }
         }
+		if (Input.GetKeyDown (KeyCode.N)) 
+		{
+			//Start/stop sliding
+			if (TP_Motor.instance.isSliding){
+				TP_Motor.instance.isSliding = false;
+			} else if (!TP_Motor.instance.isSliding){
+				TP_Motor.instance.isSliding = true;
+			}
+			Debug.Log((TP_Motor.instance.isSliding ? "Started" : "Stopped") + " sliding");
+		}
         //Other actions will go here!
     }
 
