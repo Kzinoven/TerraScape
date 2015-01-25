@@ -32,7 +32,9 @@ private CharacterState _characterState;
 	private bool animRun = false;
 	private bool animWalk = false;
 	private bool animJump = false;
-	private bool animGrounded = true;
+	public bool hanging = false;
+	public float ledgeClimbSpeed = 4.0f;
+	public bool climb = false;
 // The speed when walking
 public float walkSpeed= 2.0f;
 // after trotAfterSeconds of walking we trot with trotSpeed
@@ -62,11 +64,11 @@ private float groundedTimeout= 0.25f;
 private float lockCameraTimer= 0.0f;
 
 // The current move direction in x-z
-private Vector3 moveDirection= Vector3.zero;
+public Vector3 moveDirection= Vector3.zero;
 // The current vertical speed
-private float verticalSpeed= 0.0f;
+public float verticalSpeed= 0.0f;
 // The current x-z move speed
-private float moveSpeed= 0.0f;
+public float moveSpeed= 0.0f;
 
 // The last collision flags returned from controller.Move
 private CollisionFlags collisionFlags; 
@@ -91,7 +93,7 @@ private float lastJumpTime= -1.0f;
 private float lastJumpStartHeight= 0.0f;
 
 
-private Vector3 inAirVelocity= Vector3.zero;
+public Vector3 inAirVelocity= Vector3.zero;
 
 private float lastGroundedTime= 0.0f;
 
@@ -134,7 +136,8 @@ void  UpdateSmoothedMovementDirection ()
 		
 	// Target direction relative to the camera
 	Vector3 targetDirection= h * right + v * forward;
-	
+	if (hanging)
+		grounded = true;
 	// Grounded controls
 	if (grounded)
 	{
@@ -199,6 +202,8 @@ void  UpdateSmoothedMovementDirection ()
 		}
 		
 		moveSpeed = Mathf.Lerp(moveSpeed, targetSpeed, curSmooth);
+		if (hanging && moveSpeed > walkSpeed)
+			moveSpeed = walkSpeed;
 		
 		// Reset walk time start when we slow down
 		if (moveSpeed < walkSpeed * 0.3f)
@@ -250,7 +255,7 @@ void  ApplyGravity ()
 		{
 			jumpingReachedApex = true;
 			SendMessage("DidJumpReachApex", SendMessageOptions.DontRequireReceiver);
-			animJump = false;
+			
 		}
 	
 		if (IsGrounded ()){
@@ -293,7 +298,7 @@ void Update ()
 	{
 		lastJumpButtonTime = Time.time;
 	}
-
+	if (hanging == false){
 	UpdateSmoothedMovementDirection();
 	
 	// Apply gravity
@@ -342,7 +347,27 @@ void Update ()
 		{
 			jumping = false;
 			SendMessage("DidLand", SendMessageOptions.DontRequireReceiver);
+			animJump = false;
 		}
+	}
+	}
+	else {
+		UpdateSmoothedMovementDirection();
+		if (Input.GetButtonDown("Jump")){
+			hanging = false;
+		}
+		if (Input.GetKeyDown(KeyCode.W))
+			climb=true;
+		if (climb){
+			verticalSpeed = ledgeClimbSpeed;
+			Vector3 movement= new Vector3 (0, verticalSpeed, 0) + inAirVelocity;
+			movement *= Time.deltaTime;
+				
+			// Move the controller
+			CharacterController controller = GetComponent<CharacterController>();
+			collisionFlags = controller.Move(movement);
+		}
+
 	}
 	// ANIMATION sector
 		anim.SetFloat("moveSpeed", moveSpeed);
@@ -350,7 +375,8 @@ void Update ()
 		anim.SetBool ("walk", animWalk);
 		anim.SetBool ("run", animRun);
 		anim.SetBool ("jump", animJump);
-		anim.SetBool ("grounded", animGrounded);
+		anim.SetBool ("hanging", hanging);
+		anim.SetBool ("climb", climb);
 /*	if(_animation) {
 		if(_characterState == CharacterState.Jumping) 
 		{
