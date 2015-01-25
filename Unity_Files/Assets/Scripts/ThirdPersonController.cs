@@ -34,7 +34,9 @@ private CharacterState _characterState;
 	private bool animJump = false;
 	public bool hanging = false;
 	public float ledgeClimbSpeed = 4.0f;
+	public float shimmySpeed = 1.0f;
 	public bool climb = false;
+
 // The speed when walking
 public float walkSpeed= 2.0f;
 // after trotAfterSeconds of walking we trot with trotSpeed
@@ -299,6 +301,7 @@ void Update ()
 		lastJumpButtonTime = Time.time;
 	}
 	if (hanging == false){
+	anim.SetBool("shimmy", false);
 	UpdateSmoothedMovementDirection();
 	
 	// Apply gravity
@@ -356,9 +359,30 @@ void Update ()
 		if (Input.GetButtonDown("Jump")){
 			hanging = false;
 		}
-		if (Input.GetKeyDown(KeyCode.W))
+		if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
 			climb=true;
+		if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)){
+			Vector3 movement= new Vector3 (0, 0, shimmySpeed);
+			movement *= Time.deltaTime;
+				
+			// Move the controller
+			CharacterController controller = GetComponent<CharacterController>();
+			collisionFlags = controller.Move(movement);
+			anim.SetBool("shimmy", true);
+		}
+		else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)){
+			Vector3 movement= new Vector3 (0, 0, -shimmySpeed);
+			movement *= Time.deltaTime;
+				
+			// Move the controller
+			CharacterController controller = GetComponent<CharacterController>();
+			collisionFlags = controller.Move(movement);
+			anim.SetBool("shimmy", true);
+		}
+		else
+			anim.SetBool("shimmy", false);
 		if (climb){
+			anim.SetBool("shimmy", false);
 			verticalSpeed = ledgeClimbSpeed;
 			Vector3 movement= new Vector3 (0, verticalSpeed, 0) + inAirVelocity;
 			movement *= Time.deltaTime;
