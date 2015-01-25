@@ -5,8 +5,8 @@ using System.Collections.Generic;
 public class Player : MonoBehaviour 
 {
     //The Player class handles game logic, such as the handling of health, stamina, items, etc.
-    public float maxHealth = 100f;
-    public float currentHealth = 100f;
+    public float maxHealth = 100;
+    public float currentHealth = 100;
 
     public float maxStamina = 20;
     public float currentStamina = 20;
