@@ -28,14 +28,17 @@ public class grabbableLedge : MonoBehaviour {
 			player.GetComponent<ThirdPersonController>().verticalSpeed = 0.0f;
 			player.GetComponent<ThirdPersonController>().inAirVelocity = Vector3.zero;
 			Debug.Log("should be hanging");
-			startPos = player.transform.position;
-			endPos.x = this.transform.position.x + clingDistance;
-			endPos.z = player.transform.position.z;
-			endPos.y = this.transform.position.y - charHeight;
 			startRot = player.transform.rotation;
 			endRot = this.transform.rotation;
-			player.transform.position = Vector3.Lerp(startPos,endPos,lerpTime);
 			player.transform.rotation = Quaternion.Lerp(startRot,endRot,lerpTime);
+			startPos = player.transform.position;
+			endPos = player.transform.position;
+			//endPos.x = this.transform.position.x + clingDistance;
+			endPos.y = this.transform.position.y - charHeight;
+			//endPos.z = player.transform.forward.z;
+			player.transform.position = Vector3.Lerp(startPos,endPos,lerpTime);
+			Vector3 shiftPlayer = Vector3.forward * clingDistance;
+			player.transform.Translate(shiftPlayer);
 		}
 	}
 	void OnTriggerExit(Collider other) {

@@ -355,14 +355,14 @@ void Update ()
 	}
 	}
 	else {
-		UpdateSmoothedMovementDirection();
+		//UpdateSmoothedMovementDirection();
 		if (Input.GetButtonDown("Jump")){
 			hanging = false;
 		}
 		if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
 			climb=true;
 		if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)){
-			Vector3 movement= new Vector3 (0, 0, shimmySpeed);
+			Vector3 movement= transform.right * shimmySpeed;
 			movement *= Time.deltaTime;
 				
 			// Move the controller
@@ -371,7 +371,7 @@ void Update ()
 			anim.SetBool("shimmy", true);
 		}
 		else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)){
-			Vector3 movement= new Vector3 (0, 0, -shimmySpeed);
+			Vector3 movement= transform.right * -shimmySpeed;
 			movement *= Time.deltaTime;
 				
 			// Move the controller
