@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TP_Controller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMovement\PlayerSlider.cs">
     <Files>
-      <File FileName="Assets\Scripts\TP_Motor.cs" Line="29" Column="17" />
-      <File FileName="Assets\Scripts\TP_Controller.cs" Line="128" Column="5" />
-      <File FileName="Assets\Scripts\PlayerMovement\PlayerSlider.cs" Line="6" Column="29" />
+      <File FileName="Assets\Scripts\TP_Motor.cs" Line="36" Column="6" />
+      <File FileName="Assets\Scripts\TP_Controller.cs" Line="42" Column="36" />
+      <File FileName="Assets\Scripts\PlayerMovement\PlayerSlider.cs" Line="34" Column="73" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
