@@ -36,8 +36,20 @@ public class TP_Motor : MonoBehaviour
     {
         //gets called every frame in TP_Controller
         AlignCharacterWithCamera();
-        ProcessMotion();
+		if (!isSliding)
+		{
+        	ProcessMotion();
+		}
     }
+
+	public void FixedUpdate()
+	{
+		if (isSliding)
+		{
+			ApplyGravity();
+			TP_Controller.characterController.Move(MoveVector * Time.deltaTime);
+		}
+	}
 
     void AlignCharacterWithCamera()
     {

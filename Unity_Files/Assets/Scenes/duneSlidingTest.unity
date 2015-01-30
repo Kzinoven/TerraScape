@@ -215,8 +215,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 65415272}
-  m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381661, w: .875426114}
-  m_LocalPosition: {x: -6.94777441, y: -26.3007584, z: 46.0802307}
+  m_LocalRotation: {x: .223309815, y: .339220732, z: -.232132703, w: .883841932}
+  m_LocalPosition: {x: 0, y: 1.83997893, z: 1.98160481}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -428,6 +428,7 @@ GameObject:
   - 81: {fileID: 294279142}
   - 114: {fileID: 294279148}
   - 45: {fileID: 294279147}
+  - 114: {fileID: 294279149}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -534,6 +535,18 @@ MonoBehaviour:
   maxLimitY: 80
   occlusionDistanceStep: .5
   maxOcclusionChecks: 10
+--- !u!114 &294279149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294279141}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63151705a712c54f963dcdf85bc4cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 667882111}
 --- !u!1 &398490330
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,7 +643,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c71e7000abae7a94b88759e4ef84d4eb, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.04999995
+      value: 1.11681056
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c71e7000abae7a94b88759e4ef84d4eb, type: 2}
       propertyPath: m_LocalPosition.z
@@ -660,6 +673,38 @@ Prefab:
       propertyPath: m_Center.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: c71e7000abae7a94b88759e4ef84d4eb, type: 2}
+      propertyPath: sliderCenter
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: c71e7000abae7a94b88759e4ef84d4eb, type: 2}
+      propertyPath: sliderFront
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: c71e7000abae7a94b88759e4ef84d4eb, type: 2}
+      propertyPath: sliderBack
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: c71e7000abae7a94b88759e4ef84d4eb, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: c71e7000abae7a94b88759e4ef84d4eb, type: 2}
+      propertyPath: walkerCollider
+      value: 
+      objectReference: {fileID: 667882117}
+    - target: {fileID: 11400002, guid: c71e7000abae7a94b88759e4ef84d4eb, type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: c71e7000abae7a94b88759e4ef84d4eb, type: 2}
+      propertyPath: isSliding
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: c71e7000abae7a94b88759e4ef84d4eb, type: 2}
+      propertyPath: rigidbody
+      value: 
+      objectReference: {fileID: 667882118}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c71e7000abae7a94b88759e4ef84d4eb, type: 2}
   m_RootGameObject: {fileID: 667882110}
@@ -1125,6 +1170,8 @@ GameObject:
   - 114: {fileID: 667882114}
   - 114: {fileID: 667882113}
   - 114: {fileID: 667882112}
+  - 114: {fileID: 667882121}
+  - 54: {fileID: 667882118}
   m_Layer: 2
   m_Name: Basic Third Person Controller
   m_TagString: Player
@@ -1139,7 +1186,7 @@ Transform:
   m_PrefabInternal: {fileID: 440351853}
   m_GameObject: {fileID: 667882110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.04999995, z: 5}
+  m_LocalPosition: {x: 0, y: 1.11681056, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1549317598}
@@ -1194,6 +1241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 8
+  sprintSpeed: 15
   backwardSpeed: 8
   strafingSpeed: 8
   slideSpeed: 10
@@ -1218,6 +1266,8 @@ MonoBehaviour:
   activeFault: {fileID: 0}
   activeTerrain: {fileID: 0}
   diggingMagnitude: 3
+  rigidbody: {fileID: 667882118}
+  isSliding: 0
 --- !u!143 &667882116
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1247,6 +1297,38 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &667882118
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 667882110}
+  serializedVersion: 2
+  m_Mass: 65
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 32
+  m_CollisionDetection: 0
+--- !u!114 &667882121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 667882110}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700f93ec9617fab43ab85d2bd610d7f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jumpSpeed: 8
+  gravity: 10
+  tracker: {fileID: 667882111}
+  rotateSpeed: 3
+  controller: {fileID: 667882116}
 --- !u!1 &675896473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,7 +1449,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 777481399}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 200, y: 10, z: 20}
@@ -1379,7 +1461,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 777481399}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -50, z: 290}
+  m_LocalPosition: {x: 0, y: -42.0995865, z: 290}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
