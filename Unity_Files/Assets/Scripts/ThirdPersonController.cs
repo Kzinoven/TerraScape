@@ -32,11 +32,14 @@ private CharacterState _characterState;
 	private bool animRun = false;
 	private bool animWalk = false;
 	private bool animJump = false;
+	public bool movable = true;
 	public bool hanging = false;
+	private bool switching = false;
+	private bool action = false;
 	public float ledgeClimbSpeed = 4.0f;
 	public float shimmySpeed = 1.0f;
 	public bool climb = false;
-
+	public int cutScene = 0;
 // The speed when walking
 public float walkSpeed= 2.0f;
 // after trotAfterSeconds of walking we trot with trotSpeed
@@ -289,7 +292,9 @@ public void DidJump ()
 
 void Update ()
 {
-	
+	if (Input.GetKeyDown (KeyCode.P) && Input.GetKeyDown (KeyCode.O)){
+		Application.LoadLevel(Application.loadedLevel);
+	}
 	if (!isControllable)
 	{
 		// kill all inputs if not controllable.
@@ -300,7 +305,7 @@ void Update ()
 	{
 		lastJumpButtonTime = Time.time;
 	}
-	if (hanging == false){
+	if (movable){
 	anim.SetBool("shimmy", false);
 	UpdateSmoothedMovementDirection();
 	
@@ -354,10 +359,11 @@ void Update ()
 		}
 	}
 	}
-	else {
+	else if (hanging) {
 		//UpdateSmoothedMovementDirection();
 		if (Input.GetButtonDown("Jump")){
 			hanging = false;
+			movable = true;
 		}
 		if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
 			climb=true;
@@ -393,6 +399,15 @@ void Update ()
 		}
 
 	}
+	else {
+		moveSpeed = 0.0f;
+		verticalSpeed = 0.0f;
+		animWalk = false;
+		animRun = false;
+		animJump = false;
+		hanging = false;
+		climb = false;
+	}
 	// ANIMATION sector
 		anim.SetFloat("moveSpeed", moveSpeed);
 		anim.SetFloat("vertSpeed", verticalSpeed);
@@ -401,6 +416,7 @@ void Update ()
 		anim.SetBool ("jump", animJump);
 		anim.SetBool ("hanging", hanging);
 		anim.SetBool ("climb", climb);
+		anim.SetInteger ("cutScene", cutScene);
 /*	if(_animation) {
 		if(_characterState == CharacterState.Jumping) 
 		{

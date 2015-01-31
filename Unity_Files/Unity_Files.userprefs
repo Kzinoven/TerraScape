@@ -1,10 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMovement\PlayerSlider.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\grabbableLedge.cs">
     <Files>
-      <File FileName="Assets\Scripts\TP_Motor.cs" Line="36" Column="6" />
-      <File FileName="Assets\Scripts\TP_Controller.cs" Line="42" Column="36" />
-      <File FileName="Assets\Scripts\PlayerMovement\PlayerSlider.cs" Line="34" Column="73" />
+      <File FileName="Assets\Scripts\TP_Camera.cs" Line="80" Column="4" />
+      <File FileName="Assets\Scripts\TP_Motor.cs" Line="219" Column="1" />
+      <File FileName="Assets\Scripts\TP_Controller.cs" Line="209" Column="1" />
+      <File FileName="Assets\Scripts\PlayerMovement\PlayerSlider.cs" Line="66" Column="1" />
+      <File FileName="Assets\Scripts\ThirdPersonController.cs" Line="296" Column="3" />
+      <File FileName="Assets\Scripts\grabbableLedge.cs" Line="40" Column="29" />
+      <File FileName="Assets\Scripts\cinematicCamera.cs" Line="32" Column="78" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
