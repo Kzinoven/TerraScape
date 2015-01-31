@@ -477,6 +477,9 @@ GameObject:
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
+  - 114: {fileID: 11400228}
+  - 54: {fileID: 5400228}
+  - 114: {fileID: 11411382}
   m_Layer: 0
   m_Name: zenobia
   m_TagString: Player
@@ -1437,7 +1440,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.31877255, y: .950997591, z: -.862731099}
+  m_LocalPosition: {x: 0, y: .660000026, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400080}
@@ -1909,6 +1912,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400124}
   m_RootOrder: 0
+--- !u!54 &5400228
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100062}
+  serializedVersion: 2
+  m_Mass: 65
+  m_Drag: 1000
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -1952,13 +1970,15 @@ MonoBehaviour:
   animSpeed: 1.5
   lookSmoother: 3
   useCurves: 0
+  movable: 1
   hanging: 0
   ledgeClimbSpeed: 4
   shimmySpeed: 1
   climb: 0
-  walkSpeed: 4.61000013
-  trotSpeed: 10.0299997
-  runSpeed: 14.2700005
+  cutScene: 0
+  walkSpeed: 7
+  trotSpeed: 7
+  runSpeed: 15
   inAirControlAcceleration: 3
   jumpHeight: .5
   gravity: 20
@@ -1976,7 +1996,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100062}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05666dacd1995e94eaf392deb6e0316c, type: 3}
   m_Name: 
@@ -1991,6 +2011,36 @@ MonoBehaviour:
   snapMaxSpeed: 720
   clampHeadPositionScreenSpace: .75
   lockCameraTimeout: .200000003
+--- !u!114 &11400228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100062}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700f93ec9617fab43ab85d2bd610d7f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  jumpSpeed: 8
+  gravity: 1000
+  tracker: {fileID: 400062}
+  rotateSpeed: 3
+  controller: {fileID: 14300000}
+--- !u!114 &11411382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26d350ab03c788d4b91f2b00cdc664fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureOverlay: {fileID: 0}
+  overlayDepth: 1
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
