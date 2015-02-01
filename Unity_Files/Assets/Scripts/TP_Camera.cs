@@ -23,6 +23,8 @@ public class TP_Camera : MonoBehaviour
     public float occlusionDistanceStep = 0.5f;
     public int maxOcclusionChecks = 10;
 
+	public bool movable = true;
+
     private float mouseX = 0f;
     private float mouseY = 0f;
     private float velocityX = 0f;
@@ -50,6 +52,7 @@ public class TP_Camera : MonoBehaviour
 
     void LateUpdate()
     {
+		if (movable){
         //move camera AFTER all other calculations have been made
         if (TargetLookAt == null)
         {
@@ -62,15 +65,19 @@ public class TP_Camera : MonoBehaviour
 
         //loop, attempt to move camera
         int count = 0;
-        do
+        /*do
         {
             //While the camera is occluded, move the camera
             CalculateDesiredPosition();
             count++;
-        } while(CheckIfOccluded(count));
-
+        } while(CheckIfOccluded(count));*/
+		CalculateDesiredPosition();
         //force update position
         UpdatePosition();
+		}
+		else{
+			return;
+		}
     }
 
     void HandlePlayerInput()
@@ -79,11 +86,11 @@ public class TP_Camera : MonoBehaviour
         float deadZone = 0.01f;
 
         //on right click and drag, move camera
-        if (Input.GetMouseButton(0))
-        {
+        //if (Input.GetMouseButton(0))
+        //{
             mouseX += Input.GetAxis("Mouse X") * mouseSensitivityX;
             mouseY -= Input.GetAxis("Mouse Y") * mouseSensitivityY;
-        }
+        //}
 
         mouseY = Helper.ClampAngle(mouseY, minLimitY, maxLimitY);
 
@@ -181,8 +188,8 @@ public class TP_Camera : MonoBehaviour
                 //attempt to step forward in increments
                 isOccluded = true;
                 distance -= occlusionDistanceStep;
-                if (distance < 0.25f)
-                    distance = 0.25f;
+                if (distance < 3.0f)
+                    distance = 3.0f;
             }
             else
             {

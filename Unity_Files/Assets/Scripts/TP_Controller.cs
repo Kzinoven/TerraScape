@@ -4,6 +4,7 @@ using System.Collections;
 public class TP_Controller : MonoBehaviour 
 {
     public static CharacterController characterController;
+	public static CapsuleCollider collider;
     public static TP_Controller instance;
 
     public bool climbEnabled { get; set; }
@@ -12,13 +13,19 @@ public class TP_Controller : MonoBehaviour
     public FaultLine activeFault = null;
     public TerrainDeformer activeTerrain = null;
     public float diggingMagnitude = 3.0f;
+	public Rigidbody rigidbody;
+
+	public bool isSliding;
 
     void Awake()
     {
         //Assign a static reference to the built-in character controller and set up the camera
         characterController = GetComponent("CharacterController") as CharacterController;
+		collider = GetComponent ("CapsuleCollider") as CapsuleCollider;
         instance = this;
         TP_Camera.EstablishMainCamera();
+		//rigidbody disabled unless sliding
+		rigidbody.detectCollisions = false;
     }
 
     void Update()
@@ -30,7 +37,10 @@ public class TP_Controller : MonoBehaviour
         }
         GetLocomotionInput();
         HandleActionInput();
-        TP_Motor.instance.UpdateMotor();
+		if (!isSliding)
+		{
+			TP_Motor.instance.UpdateMotor();
+		}
     }
 
     void GetLocomotionInput()
@@ -40,16 +50,19 @@ public class TP_Controller : MonoBehaviour
         TP_Motor.instance.verticalVelocity = TP_Motor.instance.MoveVector.y;
         TP_Motor.instance.MoveVector = Vector3.zero;
 
-        //ensure that the input exists outside of the dead zone
-        if (Input.GetAxis("Vertical") > deadZone || Input.GetAxis("Vertical") < -deadZone)
-        {
-            TP_Motor.instance.MoveVector += new Vector3(0, 0, Input.GetAxis("Vertical"));
-        }
+		if (!TP_Motor.instance.isSliding)
+		{
+	        //ensure that the input exists outside of the dead zone
+	        if (Input.GetAxis("Vertical") > deadZone || Input.GetAxis("Vertical") < -deadZone)
+	        {
+	            TP_Motor.instance.MoveVector += new Vector3(0, 0, Input.GetAxis("Vertical"));
+	        }
 
-        if (Input.GetAxis("Horizontal") > deadZone || Input.GetAxis("Horizontal") < -deadZone)
-        {
-            TP_Motor.instance.MoveVector += new Vector3(Input.GetAxis("Horizontal"), 0, 0);
-        }
+	        if (Input.GetAxis("Horizontal") > deadZone || Input.GetAxis("Horizontal") < -deadZone)
+	        {
+	            TP_Motor.instance.MoveVector += new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+	        }
+		}
         //Call on TP_Animator to decide what animation to play depending on the input
         TP_Animator.instance.DetermineCurrentMoveDirection();
     }
@@ -97,8 +110,48 @@ public class TP_Controller : MonoBehaviour
                 Destroy(interactingItem.gameObject);
             }
         }
+		if (Input.GetKeyDown (KeyCode.N)) 
+		{
+			//Start/stop sliding
+			if (TP_Motor.instance.isSliding){
+				stopSliding();
+			} else if (!TP_Motor.instance.isSliding){
+				startSliding();
+			}
+			Debug.Log((TP_Motor.instance.isSliding ? "Started" : "Stopped") + " sliding");
+		}
         //Other actions will go here!
     }
+
+	private void startSliding ()
+	{
+		//enable sliding colliders and physics
+		TP_Motor.instance.isSliding = true;
+		isSliding = true;
+		TP_Motor.instance.enabled = false;
+		rigidbody.isKinematic = false;
+		rigidbody.detectCollisions = true;
+		PlayerSlider.instance.enabled = true;
+
+		//switch to slider camera
+		(Camera.main.GetComponent ("TP_Camera") as TP_Camera).enabled = false;
+		(Camera.main.GetComponent ("SliderCamera") as SliderCamera).enabled = true;
+	}
+
+	private void stopSliding ()
+	{
+		//disable rigidbody and physics
+		TP_Motor.instance.isSliding = false;
+		TP_Motor.instance.enabled = true;
+		isSliding = false;
+		rigidbody.isKinematic = true;
+		rigidbody.detectCollisions = false;
+		PlayerSlider.instance.enabled = false;
+
+		//change back to normal camera
+		(Camera.main.GetComponent ("TP_Camera") as TP_Camera).enabled = true;
+		(Camera.main.GetComponent ("SliderCamera") as SliderCamera).enabled = false;
+	}
 
     public void Jump()
     {

@@ -5,7 +5,9 @@ public class FaultLine : MonoBehaviour
 {
     public GameObject triggerObject;
 
-    public void Activate()
+	public void OnTriggerEnter(){Activate ();}
+
+	public void Activate()
     {
         if (triggerObject.GetComponent<Platform>() != null)
         {

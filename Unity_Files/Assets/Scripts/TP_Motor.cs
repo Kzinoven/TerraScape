@@ -10,6 +10,7 @@ public class TP_Motor : MonoBehaviour
 
     //public vars which determine speed and forces
     public float forwardSpeed = 10f;
+	public float sprintSpeed = 15f;
     public float backwardSpeed = 8f;
     public float strafingSpeed = 6f;
     public float slideSpeed = 10f;
@@ -35,8 +36,20 @@ public class TP_Motor : MonoBehaviour
     {
         //gets called every frame in TP_Controller
         AlignCharacterWithCamera();
-        ProcessMotion();
+		if (!isSliding)
+		{
+        	ProcessMotion();
+		}
     }
+
+	public void FixedUpdate()
+	{
+		if (isSliding)
+		{
+			ApplyGravity();
+			TP_Controller.characterController.Move(MoveVector * Time.deltaTime);
+		}
+	}
 
     void AlignCharacterWithCamera()
     {
@@ -185,8 +198,21 @@ public class TP_Motor : MonoBehaviour
     {
         //Jump, as long as we are on the ground
         if (TP_Controller.characterController.isGrounded)
+
         {
             verticalVelocity = jumpSpeed;
         }
     }
+	//THIS IS TEMPORARY TO SIMULATE CLIMBING
+	public void OnTriggerStay()
+	{
+		//if (collider.gameObject.tag == "Climbable"){
+		print ("climbing");
+		MoveVector = new Vector3(0, 2, 0);
+		//}
+		// if (collider.gameObject.tag == "Ledge"){
+		//	MoveVector = new Vector3(0, 0, 0);
+		//}
+
+	}
 }
