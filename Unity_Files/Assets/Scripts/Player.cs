@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml;
 
 public class Player : MonoBehaviour 
 {
@@ -11,6 +12,9 @@ public class Player : MonoBehaviour
     public float maxStamina = 20;
     public float currentStamina = 20;
 
+    public XmlDocument journalXML;
+
+    public List<XmlNode> journalSrc = new List<XmlNode>();
     public List<GameItem> inventory = new List<GameItem>();
     public List<GameItem> journal = new List<GameItem>();
 
@@ -22,6 +26,14 @@ public class Player : MonoBehaviour
     void Awake()
     {
         instance = this;
+        journalXML = new XmlDocument();
+        TextAsset filename = Resources.Load("journalEntries") as TextAsset;
+        journalXML.LoadXml(filename.text);
+
+        foreach (XmlNode node in journalXML.DocumentElement.ChildNodes)
+        {
+            journalSrc.Add(node);
+        }
     }
 
     public void TakeDamage(float dmgAmt)
@@ -46,7 +58,13 @@ public class Player : MonoBehaviour
         //Picks up the item that TP_Controller is intersecting, and add it to the inventory.
         GUI_Manager.message.text = "Collected a(n): " + item.itemName + "!";
         if (item.itemType == GameItem.ItemType.Document)
+        {
+            int journalIndex = int.Parse(item.itemName) - 1;
+            item.itemDesc = journalSrc[journalIndex].InnerText;
+            item.itemName = journalSrc[journalIndex].Attributes.GetNamedItem("name").InnerText;
+            GUI_Manager.message.text = item.itemDesc;
             journal.Add(item);
+        }
         else
         {
             inventory.Add(item);
