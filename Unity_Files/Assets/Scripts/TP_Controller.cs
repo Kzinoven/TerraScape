@@ -41,7 +41,17 @@ public class TP_Controller : MonoBehaviour
 		{
 			TP_Motor.instance.UpdateMotor();
 		}
-    }
+		if (Input.GetKeyDown (KeyCode.N)) 
+		{
+			//Start/stop sliding
+			if (TP_Motor.instance.isSliding){
+				stopSliding();
+			} else if (!TP_Motor.instance.isSliding){
+				startSliding();
+			}
+			Debug.Log((TP_Motor.instance.isSliding ? "Started" : "Stopped") + " sliding");
+		}
+	}
 
     void GetLocomotionInput()
     {
@@ -110,16 +120,7 @@ public class TP_Controller : MonoBehaviour
                 Destroy(interactingItem.gameObject);
             }
         }
-		if (Input.GetKeyDown (KeyCode.N)) 
-		{
-			//Start/stop sliding
-			if (TP_Motor.instance.isSliding){
-				stopSliding();
-			} else if (!TP_Motor.instance.isSliding){
-				startSliding();
-			}
-			Debug.Log((TP_Motor.instance.isSliding ? "Started" : "Stopped") + " sliding");
-		}
+
         //Other actions will go here!
     }
 
@@ -147,6 +148,7 @@ public class TP_Controller : MonoBehaviour
 		rigidbody.isKinematic = true;
 		rigidbody.detectCollisions = false;
 		PlayerSlider.instance.enabled = false;
+		transform.rotation = Quaternion.Euler(new Vector3(0,transform.eulerAngles.y, 0));//return to original rotation
 
 		//change back to normal camera
 		(Camera.main.GetComponent ("TP_Camera") as TP_Camera).enabled = true;

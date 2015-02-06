@@ -7,17 +7,19 @@ using System.Collections;
 //[RequireComponent(typeof (CapsuleCollider))]
 [RequireComponent(typeof (CharacterController))]
 //[RequireComponent(typeof (Rigidbody))]
+[RequireComponent(typeof (PlayerSlider))]
 public class ThirdPersonController : MonoBehaviour 
 {
 	public float animSpeed = 1.5f;				// a public setting for overall animator animation speed
 	public float lookSmoother = 3f;				// a smoothing setting for camera motion
 	public bool useCurves;						// a setting for teaching purposes to show use of curves
 	
-	
+
 	private Animator anim;							// a reference to the animator on the character
 	//private CapsuleCollider col;					// a reference to the capsule collider of the character
 // Require a character controller to be attached to the same game object
 //@script RequireComponent(CharacterController)
+	private PlayerSlider slider;				//slider script
 
 
 enum CharacterState {
@@ -97,6 +99,8 @@ private float lastJumpTime= -1.0f;
 // the height we jumped from (Used to determine for how long to apply extra jump power after jumping.)
 private float lastJumpStartHeight= 0.0f;
 
+//is the player sliding?
+private bool isSliding = false;
 
 public Vector3 inAirVelocity= Vector3.zero;
 
@@ -110,7 +114,7 @@ void  Awake ()
 	moveDirection = transform.TransformDirection(Vector3.forward);
 	anim = GetComponent<Animator>();					  
 	//col = GetComponent<CapsuleCollider>();	
-			
+	slider = GetComponent<PlayerSlider> ();
 }
 
 
@@ -213,6 +217,8 @@ void  UpdateSmoothedMovementDirection ()
 		// Reset walk time start when we slow down
 		if (moveSpeed < walkSpeed * 0.3f)
 			walkTimeStart = Time.time;
+
+
 	}
 	// In air controls
 	else
@@ -223,12 +229,20 @@ void  UpdateSmoothedMovementDirection ()
 		
 		if (isMoving)
 			inAirVelocity += targetDirection.normalized * Time.deltaTime * inAirControlAcceleration;
-	}
-	
-
-		
+	}	
 }
 
+public void stopSliding()
+{
+	isSliding = false;
+
+	//disable ridigdbody
+	rigidbody.isKinematic = true;
+	rigidbody.detectCollisions = false;
+	
+	//return to original rotation - stand up straight
+	transform.rotation = Quaternion.Euler(new Vector3(0,transform.eulerAngles.y, 0));
+}
 
 void  ApplyJumping (){
 	// Prevent jumping too fast after each other
@@ -305,6 +319,28 @@ void Update ()
 	{
 		lastJumpButtonTime = Time.time;
 	}
+		//enable sliding, but not if hanging from a ledge
+		if (Input.GetKeyDown(KeyCode.N) && !hanging)
+		{
+			Debug.Log("Started sliding.");
+			//add some initial speed
+			if (IsGrounded())
+			{
+				
+			}
+			
+			//enable ridigdbody
+			rigidbody.isKinematic = false;
+			rigidbody.detectCollisions = true;
+			
+			//change animation to sliding
+			slider.enabled = true;
+			isSliding = true;
+			
+			//switch to slider camera
+		}
+	if (isSliding)
+						return;
 	if (movable){
 	anim.SetBool("shimmy", false);
 	UpdateSmoothedMovementDirection();
