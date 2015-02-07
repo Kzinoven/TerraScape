@@ -319,28 +319,7 @@ void Update ()
 	{
 		lastJumpButtonTime = Time.time;
 	}
-		//enable sliding, but not if hanging from a ledge
-		if (Input.GetKeyDown(KeyCode.N) && !hanging)
-		{
-			Debug.Log("Started sliding.");
-			//add some initial speed
-			if (IsGrounded())
-			{
-				
-			}
-			
-			//enable ridigdbody
-			rigidbody.isKinematic = false;
-			rigidbody.detectCollisions = true;
-			
-			//change animation to sliding
-			slider.enabled = true;
-			isSliding = true;
-			
-			//switch to slider camera
-		}
-	if (isSliding)
-						return;
+
 	if (movable){
 	anim.SetBool("shimmy", false);
 	UpdateSmoothedMovementDirection();

@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ThirdPersonController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMovement\PlayerSlider.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerMovement\PlayerSlider.cs" Line="86" Column="17" />
-      <File FileName="Assets\Scripts\ThirdPersonController.cs" Line="103" Column="1" />
-      <File FileName="Assets\Scripts\TP_Controller.cs" Line="42" Column="1" />
+      <File FileName="Assets\Scripts\PlayerMovement\PlayerSlider.cs" Line="89" Column="49" />
+      <File FileName="Assets\Scripts\ThirdPersonController.cs" Line="330" Column="5" />
+      <File FileName="Assets\Scripts\TP_Controller.cs" Line="151" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

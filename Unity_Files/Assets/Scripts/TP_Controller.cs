@@ -134,6 +134,19 @@ public class TP_Controller : MonoBehaviour
 		rigidbody.detectCollisions = true;
 		PlayerSlider.instance.enabled = true;
 
+		GetComponent<CharacterController> ().enabled = false;
+		//character jumps forward when it starts sliding, give some initial upward and forward velocity if there is none
+		Vector3 newVelocity = rigidbody.velocity;
+		if (rigidbody.velocity.z < 10)
+		{
+			newVelocity.z = 10;
+		}
+		if (rigidbody.velocity.y < 3)
+		{
+			newVelocity.y = 3;
+		}
+		rigidbody.velocity = transform.TransformDirection(newVelocity);
+
 		//switch to slider camera
 		(Camera.main.GetComponent ("TP_Camera") as TP_Camera).enabled = false;
 		(Camera.main.GetComponent ("SliderCamera") as SliderCamera).enabled = true;
@@ -149,6 +162,7 @@ public class TP_Controller : MonoBehaviour
 		rigidbody.detectCollisions = false;
 		PlayerSlider.instance.enabled = false;
 		transform.rotation = Quaternion.Euler(new Vector3(0,transform.eulerAngles.y, 0));//return to original rotation
+		GetComponent<CharacterController> ().enabled = true;
 
 		//change back to normal camera
 		(Camera.main.GetComponent ("TP_Camera") as TP_Camera).enabled = true;
