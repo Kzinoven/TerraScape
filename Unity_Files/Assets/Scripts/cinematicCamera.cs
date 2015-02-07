@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class cinematicCamera : MonoBehaviour {
-	public Transform player;
+	private GameObject player;
 	private Collider target;
 	private Transform cameraHolder;
 	private Transform playerHolder;
@@ -14,6 +14,7 @@ public class cinematicCamera : MonoBehaviour {
 	public bool animated = false;
 	// Use this for initialization
 	void Start () {
+		player = GameObject.FindGameObjectWithTag ("Player");
 		cameraHolder = transform.GetChild (0);
 		playerHolder = transform.GetChild (1);
 		target = player.GetComponent<CharacterController>();
@@ -65,7 +66,7 @@ public class cinematicCamera : MonoBehaviour {
 			player.GetComponent<ThirdPersonController>().movable = true;
 			Camera.main.transform.GetComponent<TP_Camera>().movable = true;
 			player.GetComponent<ThirdPersonController>().cutScene = 0;
-			Destroy (gameObject, 0);;
+			Destroy (gameObject, 0);
 		}
 	}
 }

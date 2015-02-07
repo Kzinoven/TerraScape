@@ -59,6 +59,8 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement\PlayerSlider.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement\TEMP_Climbing.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement\ThirdPersonCamera.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement\ThirdPersonController.cs" />
      <Compile Include="Assets\Scripts\PlaytesterMenu.cs" />
      <Compile Include="Assets\Scripts\RockBreaker.cs" />
      <Compile Include="Assets\Scripts\ShieldAnimator.cs" />
@@ -71,8 +73,6 @@
      <Compile Include="Assets\Scripts\TP_Controller.cs" />
      <Compile Include="Assets\Scripts\TP_Motor.cs" />
      <Compile Include="Assets\Scripts\TerrainDeformer.cs" />
-     <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
-     <Compile Include="Assets\Scripts\ThirdPersonController.cs" />
      <Compile Include="Assets\Scripts\animationController.cs" />
      <Compile Include="Assets\Scripts\cinematicCamera.cs" />
      <Compile Include="Assets\Scripts\destroyLedge.cs" />

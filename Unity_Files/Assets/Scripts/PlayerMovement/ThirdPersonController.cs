@@ -42,6 +42,8 @@ private CharacterState _characterState;
 	public float shimmySpeed = 1.0f;
 	public bool climb = false;
 	public int cutScene = 0;
+	public static ThirdPersonController instance;
+	private Player management;
 // The speed when walking
 public float walkSpeed= 2.0f;
 // after trotAfterSeconds of walking we trot with trotSpeed
@@ -112,9 +114,11 @@ private bool isControllable= true;
 void  Awake ()
 {
 	moveDirection = transform.TransformDirection(Vector3.forward);
-	anim = GetComponent<Animator>();					  
+	anim = GetComponent<Animator>();		
+	instance = this;
 	//col = GetComponent<CapsuleCollider>();	
 	slider = GetComponent<PlayerSlider> ();
+	management = GetComponent<Player>();
 }
 
 
@@ -158,7 +162,7 @@ void  UpdateSmoothedMovementDirection ()
 		// We store speed and direction seperately,
 		// so that when the character stands still we still have a valid forward direction
 		// moveDirection is always normalized, and we only update it if there is user input.
-		if (targetDirection != Vector3.zero)
+			if (targetDirection != Vector3.zero)
 		{
 			// If we are really slow, just snap to the target direction
 			if (moveSpeed < walkSpeed * 0.9f && grounded)
@@ -319,7 +323,23 @@ void Update ()
 	{
 		lastJumpButtonTime = Time.time;
 	}
+	if (Input.GetKeyDown(KeyCode.Z))
+    	{
+		//cycle items LEFT
+		management.CycleItems(true);
+    	}
 
+    	if (Input.GetKeyDown(KeyCode.C))
+    	{
+		//Cycle items RIGHT
+		management.CycleItems(false);
+    	}
+
+    	if (Input.GetKeyDown(KeyCode.F))
+    	{
+		//Use selected item or tool
+		management.UseItem(management.selectedIndex);
+    	}
 	if (movable){
 	anim.SetBool("shimmy", false);
 	UpdateSmoothedMovementDirection();
