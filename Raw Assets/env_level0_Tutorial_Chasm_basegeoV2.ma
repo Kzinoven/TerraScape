@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
-//Name: env_level0_Tutorial_Chasm_basegeo.ma
-//Last modified: Sat, Feb 07, 2015 10:51:17 AM
+//Name: env_level0_Tutorial_Chasm_basegeoV2.ma
+//Last modified: Sat, Feb 07, 2015 12:12:22 PM
 //Codeset: 1252
 requires maya "2015";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
@@ -14,13 +14,13 @@ fileInfo "osv" "Microsoft Windows 7 Enterprise Edition, 64-bit Windows 7 Service
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1115.118845169507 8827.2770823419014 7128.8524008065779 ;
-	setAttr ".r" -type "double3" -48.338352789547123 8340.2000000107219 0 ;
+	setAttr ".t" -type "double3" -11770.233779907567 11309.163719843709 -6885.1037406855794 ;
+	setAttr ".r" -type "double3" -59.13835278926048 8446.6000000097683 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".fcp" 100000;
-	setAttr ".coi" 9058.1829350418921;
+	setAttr ".coi" 6016.9328236092679;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -18262,4 +18262,4 @@ connectAttr "groupId269.msg" ":initialShadingGroup.gn" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
 applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"file5\" \"fileTextureName\" \"/Users/jeremymousin/Documents/maya/projects/terrascape/sourceimages/RocksArid0003_1_S.jpg\" 2282838307 \"\" \"sourceImages\"\n1\n\"file6\" \"fileTextureName\" \"/Users/jeremymousin/Documents/maya/projects/terrascape/sourceimages/RocksArid0003_1_S_NRM.png\" 3871211367 \"\" \"sourceImages\"\n2\n\"file14\" \"fileTextureName\" \"/Users/jeremymousin/Documents/maya/projects/terrascape/sourceimages/RocksArid0019_22_S.jpg\" 1740478413 \"\" \"sourceImages\"\n3\n\"file15\" \"fileTextureName\" \"/Users/jeremymousin/Documents/maya/projects/terrascape/sourceimages/RocksArid0019_22_S_NRM.png\" 2032893482 \"\" \"sourceImages\"\n4\n\"file16\" \"fileTextureName\" \"/Users/jeremymousin/Documents/maya/projects/terrascape/sourceimages/RocksArid0019_22_S.jpg\" 1740478413 \"\" \"sourceImages\"\n5\n\"file17\" \"fileTextureName\" \"/Users/jeremymousin/Documents/maya/projects/terrascape/sourceimages/RocksArid0019_22_S_NRM.png\" 2032893482 \"\" \"sourceImages\"\n6\n\"file3\" \"fileTextureName\" \"/Users/jeremymousin/Documents/maya/projects/terrascape/sourceimages/RocksArid0019_33_S.jpg\" 224435431 \"\" \"sourceImages\"\n7\n\"file4\" \"fileTextureName\" \"/Users/jeremymousin/Documents/maya/projects/terrascape/sourceimages/RocksArid0019_33_S_NRM.png\" 587263365 \"\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
 		-scn;
-// End of env_level0_Tutorial_Chasm_basegeo.ma
+// End of env_level0_Tutorial_Chasm_basegeoV2.ma
