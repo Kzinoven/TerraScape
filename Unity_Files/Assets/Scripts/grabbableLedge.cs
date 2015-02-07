@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class grabbableLedge : MonoBehaviour {
-	public Transform player;
-	public Collider target;
+	private GameObject player;
+	private Collider target;
 	private float lerpTime = 200.0f;
 	public float charHeight = 0.5f;
 	public float clingDistance = 0.0f;
@@ -13,7 +13,8 @@ public class grabbableLedge : MonoBehaviour {
 	private Quaternion endRot;
 	// Use this for initialization
 	void Start () {
-
+		player = GameObject.FindGameObjectWithTag ("Player");
+		target = player.GetComponent<CharacterController>();
 	}
 
 	void OnTriggerEnter(Collider other) {

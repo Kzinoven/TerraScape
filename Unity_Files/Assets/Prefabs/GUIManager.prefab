@@ -48,22 +48,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &103020
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 403020}
-  - 132: {fileID: 13203018}
-  m_Layer: 0
-  m_Name: GUI_CharState
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &103022
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +107,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 403026}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!4 &403016
 Transform:
   m_ObjectHideFlags: 1
@@ -135,7 +119,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 403026}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!4 &403018
 Transform:
   m_ObjectHideFlags: 1
@@ -148,18 +132,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 403026}
   m_RootOrder: 1
---- !u!4 &403020
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103020}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0199999996, y: .0799999982, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 403026}
-  m_RootOrder: 2
 --- !u!4 &403022
 Transform:
   m_ObjectHideFlags: 1
@@ -183,7 +155,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 403026}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!4 &403026
 Transform:
   m_ObjectHideFlags: 1
@@ -196,7 +168,6 @@ Transform:
   m_Children:
   - {fileID: 403022}
   - {fileID: 403018}
-  - {fileID: 403020}
   - {fileID: 403024}
   - {fileID: 403014}
   - {fileID: 403016}
@@ -252,7 +223,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!132 &13203016
@@ -275,30 +246,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
-  m_PixelCorrect: 1
-  m_RichText: 1
---- !u!132 &13203018
-GUIText:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103020}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Text: 'Character State: Idle'
-  m_Anchor: 0
-  m_Alignment: 0
-  m_PixelOffset: {x: 0, y: 0}
-  m_LineSpacing: 1
-  m_TabSize: 4
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Material: {fileID: 0}
-  m_FontSize: 0
-  m_FontStyle: 0
-  m_Color:
-    serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!132 &13203020
@@ -321,7 +269,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!132 &13203022
@@ -344,7 +292,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!1001 &100100000
