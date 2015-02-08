@@ -74,6 +74,10 @@ public class ThirdPersonController : MonoBehaviour
 
 	// The current move direction in x-z
 	public Vector3 moveDirection= Vector3.zero;
+
+	//movement for this frame
+	private Vector3 movement = Vector3.zero;
+
 	// The current vertical speed
 	public float verticalSpeed= 0.0f;
 	// The current x-z move speed
@@ -103,6 +107,9 @@ public class ThirdPersonController : MonoBehaviour
 
 	//is the player sliding?
 	private bool isSliding = false;
+
+	//is the player blocking with the shield?a
+	private bool blocking = false;
 
 	public Vector3 inAirVelocity= Vector3.zero;
 
@@ -191,7 +198,8 @@ public class ThirdPersonController : MonoBehaviour
 			_characterState = CharacterState.Idle;
 			
 			// Pick speed modifier
-			if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift))
+			//running burns 2 stamina per second 
+			if ((Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift)) && management.useStamina(5f * Time.deltaTime))//running burns 5 stamina per second 
 			{
 				targetSpeed *= runSpeed;
 				_characterState = CharacterState.Running;
@@ -353,6 +361,9 @@ public class ThirdPersonController : MonoBehaviour
 			Input.ResetInputAxes();
 		}
 
+		//not blocking unless key is held down
+		blocking = false;
+
 		if (Input.GetButtonDown ("Jump"))
 		{
 			lastJumpButtonTime = Time.time;
@@ -383,6 +394,13 @@ public class ThirdPersonController : MonoBehaviour
 				stopSliding();
 			}
 		}
+
+		//block while q key is held down, cannot block when hanging or sliding
+		if (Input.GetKey(KeyCode.Q) && !hanging && !isSliding)
+		{
+			blocking = true;
+		}
+
 		if (movable){
 			anim.SetBool("shimmy", false);
 			UpdateSmoothedMovementDirection();
@@ -396,13 +414,12 @@ public class ThirdPersonController : MonoBehaviour
 			ApplyJumping ();
 			
 			// Calculate actual motion
-			Vector3 movement= moveDirection * moveSpeed + new Vector3 (0, verticalSpeed, 0) + inAirVelocity;
-			movement *= Time.deltaTime;
+			movement += (moveDirection * moveSpeed + new Vector3 (0, verticalSpeed, 0) + inAirVelocity) * Time.deltaTime;
 			
 			// Move the controller
 			collisionFlags = controller.Move(movement);
 			
-			
+
 			
 			// Set rotation to the move direction
 			if (IsGrounded())
@@ -445,16 +462,14 @@ public class ThirdPersonController : MonoBehaviour
 			if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
 				climb=true;
 			if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)){
-				Vector3 movement= transform.right * shimmySpeed;
-				movement *= Time.deltaTime;
+				movement += transform.right * shimmySpeed * Time.deltaTime;
 					
 				// Move the controller
 				collisionFlags = controller.Move(movement);
 				anim.SetBool("shimmy", true);
 			}
 			else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)){
-				Vector3 movement= transform.right * -shimmySpeed;
-				movement *= Time.deltaTime;
+				movement += transform.right * -shimmySpeed * Time.deltaTime;
 					
 				// Move the controller
 				collisionFlags = controller.Move(movement);
@@ -465,8 +480,7 @@ public class ThirdPersonController : MonoBehaviour
 			if (climb){
 				anim.SetBool("shimmy", false);
 				verticalSpeed = ledgeClimbSpeed;
-				Vector3 movement= new Vector3 (0, verticalSpeed, 0) + inAirVelocity;
-				movement *= Time.deltaTime;
+				movement += (new Vector3 (0, verticalSpeed, 0) + inAirVelocity) * Time.deltaTime;
 					
 				// Move the controller
 				collisionFlags = controller.Move(movement);
@@ -537,6 +551,28 @@ public class ThirdPersonController : MonoBehaviour
 		}
 		*/
 		// ANIMATION sector
+
+		//reset movement
+		movement = Vector3.zero;
+	}
+
+	//attack the player and account for blocking and attack direction source: point of origin of attack damage:amount of damage to be dealt
+	public void takeAttack (Vector3 source, float damage)
+	{
+		//get point attack is coming from, relative to player
+		Vector3 attackDirection = transform.InverseTransformPoint (source);
+		float attackAngle = Vector3.Angle (transform.TransformDirection(Vector3.forward), attackDirection);
+
+		//if the player is blocking, is coming from in front of the player (within block angle), and has enough stamina to block, send the player back
+		if (blocking && management.useStamina(25f) && attackAngle < 60f)
+		{
+			//play blocking hit animation
+		}
+		else //otherwise the player takes damage and is sent back a smaller distance
+		{
+			//play take damage animation
+			management.TakeDamage(damage);
+		}
 	}
 
 	void OnControllerColliderHit ( ControllerColliderHit hit   )

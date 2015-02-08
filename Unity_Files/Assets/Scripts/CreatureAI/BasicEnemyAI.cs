@@ -2,12 +2,12 @@
 using System.Collections;
 
 public class BasicEnemyAI : MonoBehaviour {
-	static GameObject Player;
+	static ThirdPersonController Player;
 
-	public float attackSpeed = 1.0f;
+	public float attackSpeed = 0.3f;//attacks per second
 	float attackCooldown;
 	float attackTimer = 0;
-	public float attackDamage = 5.0f;
+	public float attackDamage = 20.0f;
 
 	public float wanderSpeed = 2.0f;
 	public float chaseSpeed = 5.0f;
@@ -25,7 +25,7 @@ public class BasicEnemyAI : MonoBehaviour {
 	Vector3 lastPlayerSighting;
 
 	Rigidbody collider;
-	BoxCollider attackArea;
+	public BoxCollider attackArea;
 
 	public float MaxHealth = 1000f;
 	public float currentHealth = 1000f;
@@ -33,13 +33,11 @@ public class BasicEnemyAI : MonoBehaviour {
 	bool alive = true;
 
 	// Use this for initialization
-	void Start () {
-		Player = GameObject.FindWithTag ("Player");
+	void Awake () {
+		Player = GameObject.FindWithTag ("Player").GetComponent<ThirdPersonController>();
 		attackCooldown = 1.0f / attackSpeed;
 		chaseTimer = chaseWaitTime;
 		collider = GetComponent<Rigidbody> ();
-		attackArea = GetComponent<BoxCollider> ();
-
 	}
 	
 	// Update is called once per frame
@@ -52,7 +50,7 @@ public class BasicEnemyAI : MonoBehaviour {
 		if (playerVisible()) {
 			//if the player is within attack range
 			if (attackArea.bounds.Contains(Player.transform.position)) {
-				Attack ();
+				Attack();
 			}
 			lastPlayerSighting = Player.transform.position;
 			chaseTimer = 0;
@@ -75,6 +73,7 @@ public class BasicEnemyAI : MonoBehaviour {
 		if (currentHealth <= 0 && alive)
 		{
 			Die();
+			alive = false;
 		}
 	}
 
@@ -96,8 +95,10 @@ public class BasicEnemyAI : MonoBehaviour {
 
 	//use attackTimer to regulate attack speed
 	void Attack(){
+
 		if (attackTimer >= attackCooldown) {
-			Player.SendMessage("TakeDamage", attackDamage);
+			//play attack animation
+			Player.takeAttack(transform.position, attackDamage);
 			attackTimer = 0f;
 		}
 	}

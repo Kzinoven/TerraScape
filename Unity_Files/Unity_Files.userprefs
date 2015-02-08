@@ -1,17 +1,19 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TP_Controller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlaytesterMenu.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerMovement\PlayerSlider.cs" Line="167" Column="92" />
-      <File FileName="Assets\Scripts\TP_Controller.cs" Line="142" Column="22" />
+      <File FileName="Assets\Scripts\PlayerMovement\ThirdPersonController.cs" Line="202" Column="106" />
+      <File FileName="Assets\Scripts\Player.cs" Line="15" Column="31" />
+      <File FileName="Assets\Scripts\PlaytesterMenu.cs" Line="39" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
+              <Node name="CreatureAI" expanded="True" />
               <Node name="PlayerMovement" expanded="True" />
-              <Node name="TP_Controller.cs" selected="True" />
+              <Node name="PlaytesterMenu.cs" selected="True" />
             </Node>
           </Node>
         </State>

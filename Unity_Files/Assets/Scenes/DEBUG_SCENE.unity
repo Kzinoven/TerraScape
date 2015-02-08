@@ -1667,6 +1667,7 @@ GameObject:
   - 124: {fileID: 199062860}
   - 81: {fileID: 199062859}
   - 114: {fileID: 199062864}
+  - 114: {fileID: 199062865}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1766,6 +1767,22 @@ MonoBehaviour:
   occlusionDistanceStep: .5
   maxOcclusionChecks: 0
   movable: 1
+--- !u!114 &199062865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 199062858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26d350ab03c788d4b91f2b00cdc664fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureOverlay: {fileID: 1469762320}
+  overlayDepth: 1
+  player: {fileID: 0}
+  playerStats: {fileID: 0}
+  enemyTest: {fileID: 0}
 --- !u!1 &205495249
 GameObject:
   m_ObjectHideFlags: 0
@@ -4643,7 +4660,6 @@ GameObject:
   - 114: {fileID: 674494076}
   - 114: {fileID: 674494079}
   - 54: {fileID: 674494080}
-  - 114: {fileID: 674494081}
   - 136: {fileID: 674494082}
   m_Layer: 0
   m_Name: zenobia
@@ -4679,8 +4695,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  maxStamina: 20
-  currentStamina: 20
+  maxStamina: 50
+  currentStamina: 50
+  staminaRegen: 3
   inventory: []
   journal: []
   selectedIndex: -1
@@ -4787,20 +4804,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &674494081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11411382, guid: a302dd0fd7139eb419f8cd68669dc458,
-    type: 2}
-  m_PrefabInternal: {fileID: 1143028167}
-  m_GameObject: {fileID: 674494073}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26d350ab03c788d4b91f2b00cdc664fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textureOverlay: {fileID: 0}
-  overlayDepth: 1
 --- !u!136 &674494082
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5557,6 +5560,7 @@ GameObject:
   - 54: {fileID: 798013450}
   - 114: {fileID: 798013451}
   - 136: {fileID: 798013452}
+  - 65: {fileID: 798013453}
   m_Layer: 0
   m_Name: shieldCreature_inProgress_v5_unsmoothed_walk
   m_TagString: Untagged
@@ -5595,15 +5599,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 892c8dbda02e6a04a9f2042dce001ee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackSpeed: 1
-  attackDamage: 5
+  attackSpeed: .300000012
+  attackDamage: 20
   wanderSpeed: 2
-  chaseSpeed: 12
+  chaseSpeed: 10
   chaseWaitTime: 5
   rotationSpeed: 0
   fieldOfView: 90
   viewRange: 20
   attackRange: 5
+  attackArea: {fileID: 798013453}
   MaxHealth: 1000
   currentHealth: 1000
 --- !u!111 &798013446
@@ -5628,7 +5633,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 798013443}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e6a18b4ef3591142a96d549b5f1e708, type: 3}
   m_Name: 
@@ -5639,7 +5644,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 798013443}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc40b2b1a880b604d9136eded41a3dca, type: 3}
   m_Name: 
@@ -5652,7 +5657,7 @@ BoxCollider:
   m_GameObject: {fileID: 798013443}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.04999995, y: 7.25627232, z: 12.1218529}
   m_Center: {x: -.00128239207, y: 3.626863, z: .228574812}
@@ -5695,6 +5700,18 @@ CapsuleCollider:
   m_Height: 14.8199997
   m_Direction: 2
   m_Center: {x: 0, y: 2.0999999, z: 0}
+--- !u!65 &798013453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 798013443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 6, z: 5}
+  m_Center: {x: 0, y: 3, z: 8}
 --- !u!1 &808062599
 GameObject:
   m_ObjectHideFlags: 0
@@ -8165,7 +8182,20 @@ Prefab:
       propertyPath: m_Drag
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11430592, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
+      propertyPath: maxStamina
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430592, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
+      propertyPath: currentStamina
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430592, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
+      propertyPath: staminaRegen
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11411382, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
   m_RootGameObject: {fileID: 674494073}
   m_IsPrefabParent: 0
@@ -9690,6 +9720,53 @@ Transform:
   - {fileID: 238711443}
   m_Father: {fileID: 2000769640}
   m_RootOrder: 0
+--- !u!1 &1469762319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1469762321}
+  - 131: {fileID: 1469762320}
+  m_Layer: 0
+  m_Name: PlaytestGUITexture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &1469762320
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1469762319}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: c9b444c081f28a04180701ae9b844bb3, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: .384313732}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 128
+    height: 58
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &1469762321
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1469762319}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: -.996663809, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
 --- !u!1 &1496446556
 GameObject:
   m_ObjectHideFlags: 0

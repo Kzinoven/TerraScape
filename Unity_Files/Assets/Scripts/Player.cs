@@ -9,8 +9,11 @@ public class Player : MonoBehaviour
     public float maxHealth = 100;
     public float currentHealth = 100;
 
-    public float maxStamina = 20;
-    public float currentStamina = 20;
+    public float maxStamina = 50;
+    public float currentStamina = 50;
+
+	public float staminaRegen = 3; //stamina regained per second
+	private bool regenStaminaNow = true; //don't regenerate stamina when it's being used
 
     public XmlDocument journalXML;
 
@@ -35,6 +38,36 @@ public class Player : MonoBehaviour
             journalSrc.Add(node);
         }
     }
+
+	void Update()
+	{
+		if (regenStaminaNow)
+		{
+			currentStamina += staminaRegen * Time.deltaTime;
+			if (currentStamina > maxStamina)
+			{
+				currentStamina = maxStamina;
+			}
+		}
+		GUI_Manager.stamina.text = "Stamina: " + Mathf.Floor(currentStamina);
+		GUI_Manager.health.text = "Health: " + currentHealth;
+		regenStaminaNow = true;
+	}
+
+	//try to use staminaBurn amount of stamina, return false if player doesn't have enough
+	public bool useStamina(float staminaBurn)
+	{
+
+		if (staminaBurn > currentStamina)
+			return false;
+		else 
+		{
+			currentStamina -= staminaBurn;
+			regenStaminaNow = false;//using stamina this frame, dont regen
+			return true;
+		}
+		GUI_Manager.stamina.text = "Stamina: " + Mathf.Floor(currentStamina);
+	}
 
     public void TakeDamage(float dmgAmt)
     {
