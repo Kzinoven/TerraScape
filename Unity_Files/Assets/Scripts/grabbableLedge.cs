@@ -29,7 +29,7 @@ public class grabbableLedge : MonoBehaviour {
 			player.GetComponent<ThirdPersonController>().moveSpeed = 0.0f;
 			player.GetComponent<ThirdPersonController>().verticalSpeed = 0.0f;
 			player.GetComponent<ThirdPersonController>().inAirVelocity = Vector3.zero;
-			//Debug.Log("should be hanging");
+			Debug.Log("should be hanging");
 			startRot = player.transform.rotation;
 			endRot = this.transform.rotation;
 			player.transform.rotation = Quaternion.Lerp(startRot,endRot,lerpTime);

@@ -18,18 +18,22 @@ public class PlayerSlider : MonoBehaviour {
 	public float maxTiltAngle = 20f;
 	public float tiltSpeed = 15f; //degrees per second
 
-	public float maxRotationSpeed = 10f;//forward speed at which maximum rotation is reached
+	public float maxRotationSpeed = 5f;//forward speed at which maximum rotation is reached
 
 	private ThirdPersonController walker;	//reference to walker script
+
+	private float distToGround = 0;//distance from player pivot to ground
 
 	// Use this for initialization
 	void Awake () {
 		instance = this;
 		walker = GetComponent<ThirdPersonController> ();
+		distToGround = GetComponent<CapsuleCollider> ().bounds.extents.y - 0.93f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
 		//turn towards the forward direction
 		//transform.Rotate(0, Input.GetAxis ("Horizontal") * rotateSpeed, 0);
 		//Vector3 forward = transform.TransformDirection(Vector3.forward);
@@ -47,7 +51,7 @@ public class PlayerSlider : MonoBehaviour {
 			if (Physics.Raycast(tracker.TransformPoint(Vector3.forward * 0.1f), -Vector3.up, out hit2)) {
 				transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(hit2.point - hit1.point, hit1.normal), Time.deltaTime * 20);
 			}
-			if (controller.isGrounded) 
+			if (IsGrounded()) 
 			{
 				// We are grounded, so recalculate
 				// move direction directly from axes
@@ -119,9 +123,8 @@ public class PlayerSlider : MonoBehaviour {
 				if (Input.GetButton ("Jump")) {
 					moveDirection.y = jumpSpeed;
 				}
-			} else if (!controller.isGrounded)
+			} else if (!IsGrounded())
 			{
-
 				//disable trailrenderer
 				//GetComponent("TrailRenderer").enabled = false;
 			}
@@ -129,28 +132,29 @@ public class PlayerSlider : MonoBehaviour {
 			// Move the controller
 			//controller.Move(moveDirection * Time.deltaTime);	
 		}
-		
+
+
 		//stop sliding
-		if (Input.GetKeyDown(KeyCode.N))
+		/*if (Input.GetKeyDown(KeyCode.N))
 		{
 			Debug.Log("Stopped sliding.");
 			walker.stopSliding();
 			this.enabled = false;
-		}
+		}*/
 
 	}
 
 	void FixedUpdate () {
-
-
-		if (controller.isGrounded)
+		if (IsGrounded())
 		{
-			if (Input.GetKey(KeyCode.W))//hold w to go forward
-			{
-				rigidbody.AddRelativeForce(Vector3.forward * 1000.0f);
-			}
 
-			rigidbody.AddRelativeForce(Vector3.forward * 65 * gravity * Mathf.Sin(elevationAngle)); //forward force = m * g * sin(angle)
+			/*if (Input.GetKey(KeyCode.W))//hold w to go forward
+			{
+				Debug.Log("Key W");
+				rigidbody.AddRelativeForce(Vector3.forward * 1000.0f);
+			}*/
+
+			//rigidbody.AddRelativeForce(Vector3.forward * 65 * gravity * Mathf.Sin(elevationAngle)); //forward force = m * g * sin(angle)
 
 			Vector3 velocityDirection = rigidbody.velocity.normalized;
 			Vector3 facingDirection =  transform.TransformDirection(Vector3.forward);
@@ -166,7 +170,7 @@ public class PlayerSlider : MonoBehaviour {
 				
 				rigidbody.AddRelativeForce(Vector3.left * rigidbody.velocity.magnitude * rigidbody.mass * direction * Mathf.Sin(Vector3.Angle(velocityDirection, facingDirection)));
 			}
-			Debug.Log(Vector3.Angle(velocityDirection, facingDirection));
+
 			//rigidbody.AddRelativeForce(Vector3.right * 65 * gravity * Mathf.Sin(elevationAngle) * Mathf.Cos(turnAngle * Mathf.Deg2Rad));//turning force = m * g * sin(elevation angle) * cos (turn angle)
 
 		} else
@@ -178,5 +182,12 @@ public class PlayerSlider : MonoBehaviour {
 		{
 			rigidbody.velocity = rigidbody.velocity.normalized * maxSpeed;
 		}
+	}
+
+	//check if rigidbody is grounded
+	//http://answers.unity3d.com/questions/196381/how-do-i-check-if-my-rigidbody-player-is-grounded.html
+	private bool IsGrounded()
+	{
+		return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
 	}
 }
