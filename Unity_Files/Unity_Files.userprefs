@@ -1,32 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlaytesterMenu.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FootStepsOn.js">
     <Files>
-      <File FileName="Assets\Scripts\PlayerMovement\ThirdPersonController.cs" Line="202" Column="106" />
-      <File FileName="Assets\Scripts\Player.cs" Line="15" Column="31" />
-      <File FileName="Assets\Scripts\PlaytesterMenu.cs" Line="39" Column="36" />
+      <File FileName="Assets\Scripts\FootStepsOn.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FootStepsMute.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DestructionRockSmash.js" Line="1" Column="15" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
-            <Node name="Scripts" expanded="True">
-              <Node name="CreatureAI" expanded="True" />
-              <Node name="PlayerMovement" expanded="True" />
-              <Node name="PlaytesterMenu.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>this.transform.position</Value>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

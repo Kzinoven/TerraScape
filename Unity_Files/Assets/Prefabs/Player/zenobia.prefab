@@ -479,8 +479,10 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400228}
   - 54: {fileID: 5400228}
-  - 114: {fileID: 11411382}
   - 136: {fileID: 13630592}
+  - 114: {fileID: 11479164}
+  - 114: {fileID: 11479162}
+  - 82: {fileID: 8279162}
   m_Layer: 0
   m_Name: zenobia
   m_TagString: Player
@@ -1921,13 +1923,71 @@ Rigidbody:
   m_GameObject: {fileID: 100062}
   serializedVersion: 2
   m_Mass: 65
-  m_Drag: 1000
+  m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!82 &8279162
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100062}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: d0537dc79732bd440a0cd279ba3b0603, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -2002,25 +2062,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 700f93ec9617fab43ab85d2bd610d7f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
   jumpSpeed: 8
   gravity: 10
   tracker: {fileID: 400062}
   rotateSpeed: 3
   controller: {fileID: 14300000}
---- !u!114 &11411382
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100062}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26d350ab03c788d4b91f2b00cdc664fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textureOverlay: {fileID: 0}
-  overlayDepth: 1
+  maxSpeed: 20
+  maxTiltAngle: 20
+  tiltSpeed: 15
+  maxRotationSpeed: 5
 --- !u!114 &11430592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2034,11 +2084,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  maxStamina: 20
-  currentStamina: 20
+  maxStamina: 50
+  currentStamina: 50
+  staminaRegen: 3
   inventory: []
   journal: []
   selectedIndex: -1
+--- !u!114 &11479162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 838866f23ab157949aac1fc2f23293f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioFile: {fileID: 8300000, guid: d0537dc79732bd440a0cd279ba3b0603, type: 3}
+--- !u!114 &11479164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2a4287d8dbf0d42b9e22ccb18f0c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioFile: {fileID: 8300000, guid: d0537dc79732bd440a0cd279ba3b0603, type: 3}
 --- !u!136 &13630592
 CapsuleCollider:
   m_ObjectHideFlags: 1

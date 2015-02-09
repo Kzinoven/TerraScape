@@ -13,5 +13,13 @@ EditorBuildSettings:
     path: Assets/Scenes/animationTest2.unity
   - enabled: 0
     path: Assets/Scenes/DEBUG_SCENE.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level1Tutorial_002.unity
+  - enabled: 0
+    path: Assets/Scenes/DEBUG_SCENE.unity
+  - enabled: 0
+    path: Assets/Scenes/Level1TutorialV3.unity
+  - enabled: 0
+    path: Assets/Scenes/Level1TutorialV3.unity
+  - enabled: 1
+    path: Assets/Scenes/Level2CanyonV3.unity
