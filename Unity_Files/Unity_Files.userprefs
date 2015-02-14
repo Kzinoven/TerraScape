@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMovement\ThirdPersonController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMovement/Player.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player.cs" Line="119" Column="18" />
-      <File FileName="Assets\Scripts\PlayerMovement\ThirdPersonController.cs" Line="524" Column="4" />
-      <File FileName="Assets\Scripts\grabbableLedge.cs" Line="27" Column="64" />
+      <File FileName="Assets/Scripts/PlayerMovement/Player.cs" Line="68" Column="37" />
+      <File FileName="Assets/Scripts/PlayerMovement/ThirdPersonController.cs" Line="367" Column="5" />
+      <File FileName="Assets/Scripts/cinematicCamera.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

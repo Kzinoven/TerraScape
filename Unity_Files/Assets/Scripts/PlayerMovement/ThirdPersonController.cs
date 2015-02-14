@@ -45,7 +45,7 @@ public class ThirdPersonController : MonoBehaviour
 		public static ThirdPersonController instance;
 		private Player management;
 		private int switchTime;
-		public int toolInUse;
+		public float toolInUse;
 		private int itemUse;
 	// The speed when walking
 	public float walkSpeed= 2.0f;
@@ -364,7 +364,7 @@ public class ThirdPersonController : MonoBehaviour
 
 	void Update ()
 	{
-		Debug.Log (transform.eulerAngles.y);
+		//Debug.Log (transform.eulerAngles.y);
 		if (Input.GetKeyDown (KeyCode.P) && Input.GetKeyDown (KeyCode.O)){
 			Application.LoadLevel(Application.loadedLevel);
 		}
@@ -384,7 +384,7 @@ public class ThirdPersonController : MonoBehaviour
 		{
 			lastJumpButtonTime = Time.time;
 		}
-		if (!hanging && !isSliding && !jumping){
+		if (!hanging && !isSliding && !jumping && cutScene==0){
 			if (Input.GetKey(KeyCode.Z))
 			{
 				switchTime+=1;
@@ -407,7 +407,7 @@ public class ThirdPersonController : MonoBehaviour
 					switchTime=0;
 				}
 			}
-			else {
+			else if (switching == true && Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.Z)){
 				switchTime=0;
 				movable = true;
 				switching = false;
@@ -532,7 +532,7 @@ public class ThirdPersonController : MonoBehaviour
 			anim.SetBool ("climb", climb);
 			anim.SetInteger ("cutScene", cutScene);
 			anim.SetBool ("switching", switching);
-			anim.SetInteger ("tool", toolInUse);
+			anim.SetFloat ("tool", toolInUse);
 			anim.SetInteger ("itemUse", itemUse);
 	/*	if(_animation) {
 			if(_characterState == CharacterState.Jumping) 
