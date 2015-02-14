@@ -12,5 +12,5 @@ PhysicMaterial:
   frictionCombine: 1
   bounceCombine: 1
   frictionDirection2: {x: 1, y: 0, z: 0}
-  dynamicFriction2: .0199999996
-  staticFriction2: .0799999982
+  dynamicFriction2: .400000006
+  staticFriction2: .800000012
