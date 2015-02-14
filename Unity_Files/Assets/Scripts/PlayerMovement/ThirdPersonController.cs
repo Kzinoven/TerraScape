@@ -286,15 +286,17 @@ public class ThirdPersonController : MonoBehaviour
 		isSliding = false;
 		movable = true;
 
+		moveDirection = rigidbody.velocity.normalized;
+
 		//disable ridigdbody
 		rigidbody.isKinematic = true;
 		rigidbody.detectCollisions = false;
 
 		slider.enabled = false;
 		controller.enabled = true;
-		
+
 		//return to original rotation - stand up straight
-		transform.rotation = Quaternion.Euler(new Vector3(0,transform.eulerAngles.y, 0));
+		//transform.rotation = Quaternion.Euler(new Vector3(0,transform.eulerAngles.y, 0));
 	}
 
 	void  ApplyJumping (){
@@ -359,6 +361,7 @@ public class ThirdPersonController : MonoBehaviour
 
 	void Update ()
 	{
+		Debug.Log (transform.eulerAngles.y);
 		if (Input.GetKeyDown (KeyCode.P) && Input.GetKeyDown (KeyCode.O)){
 			Application.LoadLevel(Application.loadedLevel);
 		}

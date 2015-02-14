@@ -18,6 +18,60 @@ public class PlaytesterMenu : MonoBehaviour {
 
 	public GUIStyle headerStyle;
 
+
+	#region Editor Variables
+	string walkSpeed,
+	runSpeed,
+	jumpHeight,
+	
+	startSlideSpeed,
+	startSlideAngle,
+	maxSlideSpeed,
+	turnSpeed,
+	
+	maxHealth,
+	maxStamina,
+	staminaRegen,
+	
+	drHealth,
+	drWalkSpeed,
+	drChargeSpeed ,
+	drRollSpeed,
+	drRollTurnSpeed,
+	
+	drAttackDamage,
+	drRollDamage,
+	drAttackRange,
+	drRollRange,
+	drDetectRange;
+	
+	float newWalkSpeed,
+	newRunSpeed,
+	newJumpHeight,
+	
+	newStartSlideSpeed,
+	newStartSlideAngle,
+	newMaxSlideSpeed,
+	newTurnSpeed,
+	
+	newMaxHealth,
+	newMaxStamina,
+	newStaminaRegen,
+	
+	newDRHealth,
+	newDRWalkSpeed,
+	newDRChargeSpeed,
+	newDRRollSpeed,
+	newDRRollTurnSpeed,
+	
+	newDRAttackDamage,
+	newDRRollDamage,
+	newDRAttackRange,
+	newDRRollRange,
+	newDRDetectRange;
+	#endregion
+
+
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindWithTag ("Player").GetComponent<ThirdPersonController>();
@@ -32,6 +86,29 @@ public class PlaytesterMenu : MonoBehaviour {
 		textureOverlay.transform.position = new Vector3(0, 0, overlayDepth);
 		textureOverlay.pixelInset = new Rect(0, 0, Screen.width, Screen.height);
 		textureOverlay.enabled = false;
+
+		#region initialize editor variables
+		walkSpeed = player.walkSpeed.ToString();
+		runSpeed = player.runSpeed.ToString();
+		jumpHeight = player.jumpHeight.ToString();
+		startSlideSpeed = player.initSlideSpeed.ToString();
+		startSlideAngle = player.initSlideAngle.ToString();
+		maxSlideSpeed = slider.maxSpeed.ToString();
+		turnSpeed = slider.rotateSpeed.ToString();
+		maxHealth = playerStats.maxHealth.ToString();
+		maxStamina = playerStats.maxStamina.ToString();
+		staminaRegen = playerStats.staminaRegen.ToString();
+		drHealth = drEnemy.MaxHealth.ToString();
+		drWalkSpeed = drEnemy.walkSpeed.ToString();
+		drChargeSpeed = drEnemy.chargeSpeed.ToString();
+		drRollSpeed = drEnemy.rollSpeed.ToString();
+		drRollTurnSpeed = drEnemy.rollRotationSpeed.ToString();
+		drAttackDamage = drEnemy.attackDamage.ToString();
+		drRollDamage = drEnemy.rollDamage.ToString();
+		drAttackRange = drEnemy.attackRange.ToString();
+		drRollRange = drEnemy.rollRange.ToString();
+		drDetectRange = drEnemy.viewRange.ToString();
+		#endregion
 	}
 	
 	// Update is called once per frame
@@ -54,58 +131,7 @@ public class PlaytesterMenu : MonoBehaviour {
 			}
 		}
 	}
-
-	#region Editor Variables
-	string walkSpeed = "2",
-	 	runSpeed = "6",
-	 	jumpHeight = "0.5",
-
-	 	startSlideSpeed = "10",
-	 	startSlideAngle = "25",
-	 	maxSlideSpeed = "20",
-	 	turnSpeed = "10",
-
-	 	maxHealth = "100",
-	 	maxStamina = "50",
-	 	staminaRegen = "3",
-
-	 	drHealth = "1000",
-	 	drWalkSpeed = "3.5",
-	 	drChargeSpeed = "10",
-	 	drRollSpeed = "15",
-	 	drRollTurnSpeed = "5",
-
-	 	drAttackDamage = "30",
-	 	drRollDamage = "70",
-	 	drAttackRange = "7",
-	 	drRollRange = "30",
-	 	drDetectRange = "60";
-
-	float newWalkSpeed,
-		newRunSpeed,
-		newJumpHeight,
-
-		newStartSlideSpeed,
-		newStartSlideAngle,
-		newMaxSlideSpeed,
-		newTurnSpeed,
-
-		newMaxHealth,
-		newMaxStamina,
-		newStaminaRegen,
-
-		newDRHealth,
-		newDRWalkSpeed,
-		newDRChargeSpeed,
-		newDRRollSpeed,
-		newDRRollTurnSpeed,
-
-		newDRAttackDamage,
-		newDRRollDamage,
-		newDRAttackRange,
-		newDRRollRange,
-		newDRDetectRange;
-	#endregion
+	
 	//create GUI elements in here
 	void OnGUI (){
 
@@ -130,7 +156,7 @@ public class PlaytesterMenu : MonoBehaviour {
 
 				GUILayout.Label("Sliding", headerStyle);
 				startSlideSpeed = labelTxtField(startSlideSpeed, "Initial Slide Speed");
-				startSlideAngle = labelTxtField(startSlideSpeed, "Initial Slide Angle");
+				startSlideAngle = labelTxtField(startSlideAngle, "Initial Slide Angle");
 				maxSlideSpeed = labelTxtField(maxSlideSpeed, "Maximum Slide Speed");
 				turnSpeed = labelTxtField(turnSpeed, "Sliding Turn Speed");
 

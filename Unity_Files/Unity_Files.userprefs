@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMovement\PlayerSlider.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMovement\ThirdPersonController.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerMovement\PlayerSlider.cs" Line="120" Column="4" />
+      <File FileName="Assets\Scripts\PlaytesterMenu.cs" Line="135" Column="1" />
+      <File FileName="Assets\Scripts\PlayerMovement\ThirdPersonController.cs" Line="299" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
