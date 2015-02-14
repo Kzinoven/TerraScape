@@ -21,14 +21,18 @@ public class Player : MonoBehaviour
     public List<GameItem> inventory = new List<GameItem>();
     public List<GameItem> journal = new List<GameItem>();
 
+
     //The currently selected inventory item; for an empty inventory it is set to -1.
     public int selectedIndex = -1;
 
     public static Player instance;
+	private ThirdPersonController controller;
+
 
     void Awake()
     {
         instance = this;
+		controller = GetComponent<ThirdPersonController> ();
         journalXML = new XmlDocument();
         TextAsset filename = Resources.Load("journalEntries") as TextAsset;
         journalXML.LoadXml(filename.text);
@@ -84,6 +88,7 @@ public class Player : MonoBehaviour
     void Die()
     {
         //restart the level
+		Application.LoadLevel(Application.loadedLevel);
     }
 
     public void CollectItem(GameItem item)
@@ -103,6 +108,21 @@ public class Player : MonoBehaviour
             inventory.Add(item);
             selectedIndex = inventory.Count - 1;
             GUI_Manager.selectedItem.text = "Current item: " + inventory[selectedIndex].itemName;
+			if (item.itemName == "Laser")
+			{
+				controller.toolInUse = 1;
+			}
+			else if (item.itemName == "Laser")
+			{
+				controller.toolInUse = 2;
+			}
+			else if (item.itemName == "Laser")
+			{
+				controller.toolInUse = 3;
+			}
+			else {
+				controller.toolInUse = 0;
+			}
         }
     }
 
@@ -131,33 +151,44 @@ public class Player : MonoBehaviour
         else if (useItem.itemType == GameItem.ItemType.Tool)
         {
             //The item can be used more than once
-            if (useItem.itemName == "Shovel")
+            if (useItem.itemName == "Laser")
             {
-                if (TP_Controller.instance.activeTerrain != null)
+                if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
                 {
-                    GUI_Manager.message.text = "Used the Shovel!";
-                    TP_Controller.instance.activeTerrain.DestroyTerrain(transform.position, 3);
+                    GUI_Manager.message.text = "Laser can create pitfalls.";
+                    controller.trap();
                 }
                 else
                 {
-                    GUI_Manager.message.text = "Couldn't use the Shovel!";
+                    GUI_Manager.message.text = "Laser can destroy blocks.";
+					controller.laser();
                 }
             }
             else if (useItem.itemName == "Snapper")
             {
-                if (TP_Controller.instance.activeFault != null)
-                {
-                    GUI_Manager.message.text = "Used the Snapper!";
-                    TP_Controller.instance.activeFault.Activate();
-                }
-                else
-                {
-                    GUI_Manager.message.text = "Couldn't use the Snapper!";
-                }
+				if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+				{
+					GUI_Manager.message.text = "Snapper can snap.";
+					controller.snap();
+				}
+				else
+				{
+					GUI_Manager.message.text = "Snapper can snap.";
+					controller.snap();
+				}
             }
             else if (useItem.itemName == "Shield")
             {
-                //we are using the Shield
+				if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+				{
+					GUI_Manager.message.text = "Shield can be used to slide.";
+					controller.slide();
+				}
+				else
+				{
+					GUI_Manager.message.text = "Shield can block.";
+					controller.block();
+				}
             }
         }
     }
@@ -167,18 +198,48 @@ public class Player : MonoBehaviour
         //change the currently selected item and update the GUI
         if (inventory.Count == 0)
             return;
-
+		GameItem useItem = inventory[selectedIndex];
         if (left)
         {
             selectedIndex--;
             if (selectedIndex < 0)
                 selectedIndex = inventory.Count - 1;
+			if (useItem.itemName == "Laser")
+			{
+				controller.toolInUse = 1;
+			}
+			else if (useItem.itemName == "Laser")
+			{
+				controller.toolInUse = 2;
+			}
+			else if (useItem.itemName == "Laser")
+			{
+				controller.toolInUse = 3;
+			}
+			else {
+				controller.toolInUse = 0;
+			}
         }
         else
         {
             selectedIndex++;
             if (selectedIndex >= inventory.Count)
                 selectedIndex = 0;
+			if (useItem.itemName == "Laser")
+			{
+				controller.toolInUse = 1;
+			}
+			else if (useItem.itemName == "Laser")
+			{
+				controller.toolInUse = 2;
+			}
+			else if (useItem.itemName == "Laser")
+			{
+				controller.toolInUse = 3;
+			}
+			else {
+				controller.toolInUse = 0;
+			}
         }
         GUI_Manager.selectedItem.text = "Current item: " + inventory[selectedIndex].itemName;
     }

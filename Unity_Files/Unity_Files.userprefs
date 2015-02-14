@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FootStepsOn.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMovement\ThirdPersonController.cs">
     <Files>
-      <File FileName="Assets\Scripts\FootStepsOn.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FootStepsMute.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\DestructionRockSmash.js" Line="1" Column="15" />
+      <File FileName="Assets\Scripts\Player.cs" Line="119" Column="18" />
+      <File FileName="Assets\Scripts\PlayerMovement\ThirdPersonController.cs" Line="524" Column="4" />
+      <File FileName="Assets\Scripts\grabbableLedge.cs" Line="27" Column="64" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

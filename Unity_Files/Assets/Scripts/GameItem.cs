@@ -35,7 +35,7 @@ public class GameItem : MonoBehaviour
 		GUI_Manager.message.text = "Press Q to pick up the " + itemName;
 		if (other != target) //The colliding object isn't our object
 		{
-			//Debug.Log("something's wrong");
+			Debug.Log("something's wrong");
 			return; //don't do anything if it's not our target
 		}
 		else {

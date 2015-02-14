@@ -44,6 +44,9 @@ public class ThirdPersonController : MonoBehaviour
 		public int cutScene = 0;
 		public static ThirdPersonController instance;
 		private Player management;
+		private int switchTime;
+		public int toolInUse;
+		private int itemUse;
 	// The speed when walking
 	public float walkSpeed= 2.0f;
 	// after trotAfterSeconds of walking we trot with trotSpeed
@@ -362,46 +365,51 @@ public class ThirdPersonController : MonoBehaviour
 		}
 
 		//not blocking unless key is held down
-		blocking = false;
-
+		if (Input.GetKeyUp(KeyCode.E)){
+			blocking = false;
+			Debug.Log("Guard is Down");
+		}
+		itemUse = 0;
 		if (Input.GetButtonDown ("Jump"))
 		{
 			lastJumpButtonTime = Time.time;
 		}
-		if (Input.GetKeyDown(KeyCode.Z))
-		{
-			//cycle items LEFT
-			management.CycleItems(true);
-		}
-
-		if (Input.GetKeyDown(KeyCode.C))
-		{
-			//Cycle items RIGHT
-			management.CycleItems(false);
-		}
-
-		if (Input.GetKeyDown(KeyCode.F))
-		{
-			//Use selected item or tool
-			management.UseItem(management.selectedIndex);
-		}
-		if (Input.GetKeyDown(KeyCode.N))
-		{
-			//start or stop sliding
-			if (!isSliding){
-				startSliding();
-			}else{
-				stopSliding();
+		if (!hanging && !isSliding && !jumping){
+			if (Input.GetKey(KeyCode.Z))
+			{
+				switchTime+=1;
+				movable = false;
+				switching = true;
+				//cycle items LEFT
+				if (switchTime>=100){
+					management.CycleItems(true);
+					switchTime=0;
+				}
+			}
+			else if (Input.GetKey(KeyCode.C))
+			{
+				switchTime+=1;
+				movable = false;
+				switching = true;
+				//Cycle items RIGHT
+				if (switchTime>=100){
+					management.CycleItems(false);
+					switchTime=0;
+				}
+			}
+			else {
+				switchTime=0;
+				movable = true;
+				switching = false;
+			}
+			if (Input.GetKeyDown(KeyCode.E) && IsGrounded())
+			{
+				//Use selected item or tool
+				management.UseItem(management.selectedIndex);
 			}
 		}
-
-		//block while q key is held down, cannot block when hanging or sliding
-		if (Input.GetKey(KeyCode.Q) && !hanging && !isSliding)
-		{
-			blocking = true;
-		}
-
 		if (movable){
+
 			anim.SetBool("shimmy", false);
 			UpdateSmoothedMovementDirection();
 			
@@ -513,6 +521,9 @@ public class ThirdPersonController : MonoBehaviour
 			anim.SetBool ("hanging", hanging);
 			anim.SetBool ("climb", climb);
 			anim.SetInteger ("cutScene", cutScene);
+			anim.SetBool ("switching", switching);
+			anim.SetInteger ("tool", toolInUse);
+			anim.SetInteger ("itemUse", itemUse);
 	/*	if(_animation) {
 			if(_characterState == CharacterState.Jumping) 
 			{
@@ -567,12 +578,45 @@ public class ThirdPersonController : MonoBehaviour
 		if (blocking && management.useStamina(25f) && attackAngle < 60f)
 		{
 			//play blocking hit animation
+			anim.SetTrigger("block");
 		}
 		else //otherwise the player takes damage and is sent back a smaller distance
 		{
 			//play take damage animation
+			anim.SetTrigger("hit");
 			management.TakeDamage(damage);
 		}
+	}
+	public void slide(){
+			//start or stop sliding
+			if (!isSliding){
+				startSliding();
+				itemUse = 2;
+			}else{
+				stopSliding();
+				itemUse = 0;
+			}
+	}
+	public void block(){
+		blocking = true;
+		Debug.Log ("Guard is up");
+		itemUse = 1;
+	}
+	public void snap(){
+		//stop player movement
+		//wait X seconds
+		itemUse = 1;
+		//instantiate shot
+		//return player movement
+	}
+	public void laser() {
+		itemUse = 1;
+	}
+	public void trap() {
+		//stop player movement
+		//instantiate trap
+		itemUse = 2;
+		//return player movement when button is released
 	}
 
 	void OnControllerColliderHit ( ControllerColliderHit hit   )

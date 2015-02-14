@@ -485,7 +485,7 @@ GameObject:
   - 82: {fileID: 8279162}
   m_Layer: 0
   m_Name: zenobia
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2037,6 +2037,7 @@ MonoBehaviour:
   shimmySpeed: 1
   climb: 0
   cutScene: 0
+  toolInUse: 0
   walkSpeed: 7
   trotSpeed: 7
   runSpeed: 15
