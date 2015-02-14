@@ -1778,11 +1778,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d350ab03c788d4b91f2b00cdc664fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuOpen: 0
   textureOverlay: {fileID: 1469762320}
   overlayDepth: 1
-  player: {fileID: 0}
-  playerStats: {fileID: 0}
-  enemyTest: {fileID: 0}
+  player: {fileID: 674494076}
+  slider: {fileID: 674494079}
+  playerStats: {fileID: 674494075}
+  drEnemy: {fileID: 798013445}
+  headerStyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 15
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_Alignment: 6
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
 --- !u!1 &205495249
 GameObject:
   m_ObjectHideFlags: 0
@@ -4822,6 +4883,8 @@ MonoBehaviour:
   rotateSpeed: 500
   trotAfterSeconds: 3
   canJump: 1
+  initSlideSpeed: 10
+  initSlideAngle: 25
   moveDirection: {x: 0, y: 0, z: 0}
   verticalSpeed: 0
   moveSpeed: 0
@@ -4872,12 +4935,11 @@ MonoBehaviour:
   jumpSpeed: 8
   gravity: 10
   tracker: {fileID: 674494074}
-  rotateSpeed: 3
+  rotateSpeed: 30
   controller: {fileID: 674494078}
   maxSpeed: 20
   maxTiltAngle: 20
   tiltSpeed: 15
-  maxRotationSpeed: 5
 --- !u!54 &674494080
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5751,7 +5813,7 @@ Transform:
   m_PrefabInternal: {fileID: 2069403497}
   m_GameObject: {fileID: 798013443}
   m_LocalRotation: {x: 0, y: .678039551, z: 0, w: .735025525}
-  m_LocalPosition: {x: 3.29999995, y: .400000006, z: 58.2000008}
+  m_LocalPosition: {x: 3.29999995, y: .347916961, z: 97.916748}
   m_LocalScale: {x: .458432972, y: .458433062, z: .458433062}
   m_Children:
   - {fileID: 394517610}
@@ -5778,16 +5840,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSpeed: .300000012
   attackDamage: 20
-  wanderSpeed: 2
-  chaseSpeed: 10
+  walkSpeed: 3.5
+  chargeSpeed: 10
   chaseWaitTime: 5
   rotationSpeed: 0
   fieldOfView: 90
   viewRange: 20
   attackRange: 5
+  rollRange: 30
   attackArea: {fileID: 798013453}
   MaxHealth: 1000
   currentHealth: 1000
+  rollSpeed: 15
+  rollRotationSpeed: 5
+  rollDamage: 70
 --- !u!111 &798013446
 Animation:
   m_ObjectHideFlags: 0
@@ -12151,6 +12217,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11400228, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
+      propertyPath: rotateSpeed
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
   m_RootGameObject: {fileID: 674494073}
@@ -12751,11 +12821,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 468074, guid: b3220545614321e43a6d0f4937edb4bc, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .400000006
+      value: .347916961
       objectReference: {fileID: 0}
     - target: {fileID: 468074, guid: b3220545614321e43a6d0f4937edb4bc, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 58.2000008
+      value: 97.916748
       objectReference: {fileID: 0}
     - target: {fileID: 468074, guid: b3220545614321e43a6d0f4937edb4bc, type: 2}
       propertyPath: m_LocalRotation.x

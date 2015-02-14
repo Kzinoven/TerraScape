@@ -38,9 +38,12 @@ public class TP_Camera : MonoBehaviour
     private float distanceSmoothToggle = 0f;
     private float preOccludedDistance = 0f;
 
+	private PlaytesterMenu menu;
+
     void Awake()
     {
         instance = this;
+		menu = GetComponent<PlaytesterMenu> ();
     }
 
     void Start()
@@ -52,8 +55,9 @@ public class TP_Camera : MonoBehaviour
 
     void LateUpdate()
     {
-		if (movable){
+		if (movable && !menu.menuOpen){
         //move camera AFTER all other calculations have been made
+		//don't move camera while testing menu is open
         if (TargetLookAt == null)
         {
             //do nothing if there is no characterController to observe

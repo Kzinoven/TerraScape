@@ -7,10 +7,10 @@ public class BasicEnemyAI : MonoBehaviour {
 	public float attackSpeed = 0.3f;//attacks per second
 	float attackCooldown;
 	float attackTimer = 0;
-	public float attackDamage = 20.0f;
+	public float attackDamage = 30.0f;
 
-	public float wanderSpeed = 2.0f;
-	public float chaseSpeed = 5.0f;
+	public float walkSpeed = 3.5f;
+	public float chargeSpeed = 10f;
 	public float chaseWaitTime = 5.0f; //amount of time to wait when last known position is reached.
 	float chaseTimer;
 
@@ -19,8 +19,9 @@ public class BasicEnemyAI : MonoBehaviour {
 	private Vector3 _direction;
 
 	public float fieldOfView = 200f;
-	public float viewRange = 20f;
-	public float attackRange = 4f;
+	public float viewRange = 60f;
+	public float attackRange = 7f;
+	public float rollRange = 30f;
 	
 	Vector3 lastPlayerSighting;
 
@@ -31,6 +32,10 @@ public class BasicEnemyAI : MonoBehaviour {
 	public float currentHealth = 1000f;
 
 	bool alive = true;
+
+	public float rollSpeed = 15f;
+	public float rollRotationSpeed = 5f;
+	public float rollDamage = 70f;
 
 	// Use this for initialization
 	void Awake () {
@@ -126,7 +131,7 @@ public class BasicEnemyAI : MonoBehaviour {
 		}
 		else {
 			//only move if not near the player/sighting
-			collider.MovePosition (transform.position + _direction * chaseSpeed * Time.deltaTime);
+			collider.MovePosition (transform.position + _direction * chargeSpeed * Time.deltaTime);
 		}
 	}
 

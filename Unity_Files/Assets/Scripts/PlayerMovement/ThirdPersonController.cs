@@ -65,6 +65,10 @@ public class ThirdPersonController : MonoBehaviour
 
 	public bool canJump= true;
 
+	//minimum initial slide speed and angle of elevation
+	public float initSlideSpeed = 10;
+	public float initSlideAngle = 25;
+
 	private float jumpRepeatTime= 0.05f;
 	private float jumpTimeout= 0.15f;
 	private float groundedTimeout= 0.25f;
@@ -261,15 +265,18 @@ public class ThirdPersonController : MonoBehaviour
 		
 		controller.enabled = false;
 
+		float minZ = initSlideSpeed * Mathf.Cos(initSlideAngle * Mathf.Deg2Rad);
+		float minY = initSlideSpeed * Mathf.Sin(initSlideAngle * Mathf.Deg2Rad);
+
 		//character jumps forward when it starts sliding, give some initial upward and forward velocity if there is none
 		Vector3 newVelocity = rigidbody.velocity;
-		if (rigidbody.velocity.z < 10)
+		if (rigidbody.velocity.z < minZ)
 		{
-			newVelocity.z = 10;
+			newVelocity.z = minZ;
 		}
-		if (rigidbody.velocity.y < 3)
+		if (rigidbody.velocity.y < minY)
 		{
-			newVelocity.y = 3;
+			newVelocity.y = minY;
 		}
 		rigidbody.velocity = transform.TransformDirection(newVelocity);
 	}
