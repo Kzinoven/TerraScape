@@ -1,0 +1,3799 @@
+fileFormatVersion: 2
+guid: 42e6cfb0110ba45539daa9fbe995b592
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Jamila
+    100002: Jamila:ARIEL
+    100004: Jamila:C7
+    100006: Jamila:CLAV
+    100008: Jamila:LANK
+    100010: Jamila:LBHD
+    100012: Jamila:LBSH
+    100014: Jamila:LBWT
+    100016: Jamila:LELB
+    100018: Jamila:LFHD
+    100020: Jamila:LFSH
+    100022: Jamila:LFWT
+    100024: Jamila:LHEL
+    100026: Jamila:LHIP
+    100028: Jamila:LIEL
+    100030: Jamila:LIHAND
+    100032: Jamila:LIWR
+    100034: Jamila:LKNE
+    100036: Jamila:LKNI
+    100038: Jamila:LMT1
+    100040: Jamila:LMT5
+    100042: Jamila:LMWT
+    100044: Jamila:LOHAND
+    100046: Jamila:LOWR
+    100048: Jamila:LSHN
+    100050: Jamila:LTOE
+    100052: Jamila:LUPA
+    100054: Jamila:LWRE
+    100056: Jamila:RANK
+    100058: Jamila:RBHD
+    100060: Jamila:RBSH
+    100062: Jamila:RBWT
+    100064: Jamila:RELB
+    100066: Jamila:RFHD
+    100068: Jamila:RFSH
+    100070: Jamila:RFWT
+    100072: Jamila:RHEL
+    100074: Jamila:RHIP
+    100076: Jamila:RIEL
+    100078: Jamila:RIHAND
+    100080: Jamila:RIWR
+    100082: Jamila:RKNE
+    100084: Jamila:RKNI
+    100086: Jamila:RMT1
+    100088: Jamila:RMT5
+    100090: Jamila:RMWT
+    100092: Jamila:ROHAND
+    100094: Jamila:ROWR
+    100096: Jamila:RSHN
+    100098: Jamila:RTOE
+    100100: Jamila:RUPA
+    100102: Jamila:RWRE
+    100104: Jamila:Solving
+    100106: Jamila:Solving:Head
+    100108: Jamila:Solving:Head_End
+    100110: Jamila:Solving:Hips
+    100112: Jamila:Solving:LeftArm
+    100114: Jamila:Solving:LeftFoot
+    100116: Jamila:Solving:LeftForeArm
+    100118: Jamila:Solving:LeftHand
+    100120: Jamila:Solving:LeftHandEnd
+    100122: Jamila:Solving:LeftHandThumb1
+    100124: Jamila:Solving:LeftHandThumb2
+    100126: Jamila:Solving:LeftLeg
+    100128: Jamila:Solving:LeftShoulder
+    100130: Jamila:Solving:LeftToeBase
+    100132: Jamila:Solving:LeftToeEnd
+    100134: Jamila:Solving:LeftUpLeg
+    100136: Jamila:Solving:RightArm
+    100138: Jamila:Solving:RightFoot
+    100140: Jamila:Solving:RightForeArm
+    100142: Jamila:Solving:RightHand
+    100144: Jamila:Solving:RightHandEnd
+    100146: Jamila:Solving:RightHandThumb1
+    100148: Jamila:Solving:RightHandThumb2
+    100150: Jamila:Solving:RightLeg
+    100152: Jamila:Solving:RightShoulder
+    100154: Jamila:Solving:RightToeBase
+    100156: Jamila:Solving:RightToeEnd
+    100158: Jamila:Solving:RightUpLeg
+    100160: Jamila:Solving:Spine
+    100162: Jamila:STRN
+    100164: Jamila:T10
+    100166: System
+    100168: System:MX_3p_10179
+    100170: System:MX_3p_10183
+    100172: System:MX_3p_10184
+    100174: System:MX_3p_10493
+    100176: System:MX_3p_10494
+    100178: System:MX_3p_10495
+    100180: System:MX_3p_10496
+    100182: System:MX_3p_10497
+    100184: System:MX_3p_10498
+    100186: System:MX_3p_10499
+    100188: System:MX_3p_10502
+    100190: System:MX_3p_10503
+    100192: System:MX_3p_12309
+    100194: System:T20_15966
+    100196: System:T20_15998
+    100198: Unlabeled_Markers
+    100200: Unlabeled_Markers:_1071
+    100202: Unlabeled_Markers:_1099
+    100204: Unlabeled_Markers:_1128
+    100206: Unlabeled_Markers:_1208
+    100208: Unlabeled_Markers:_1211
+    100210: Unlabeled_Markers:_1275
+    100212: Unlabeled_Markers:_1303
+    100214: Unlabeled_Markers:_1328
+    100216: Unlabeled_Markers:_1332
+    100218: Unlabeled_Markers:_1340
+    100220: Unlabeled_Markers:_1346
+    100222: Unlabeled_Markers:_1370
+    100224: Unlabeled_Markers:_1401
+    100226: Unlabeled_Markers:_1426
+    100228: Unlabeled_Markers:_1477
+    100230: Unlabeled_Markers:_1577
+    100232: Unlabeled_Markers:_1620
+    100234: Unlabeled_Markers:_1622
+    100236: Unlabeled_Markers:_1643
+    100238: Unlabeled_Markers:_1667
+    100240: Unlabeled_Markers:_1669
+    100242: Unlabeled_Markers:_171
+    100244: Unlabeled_Markers:_1721
+    100246: Unlabeled_Markers:_174
+    100248: Unlabeled_Markers:_1770
+    100250: Unlabeled_Markers:_1798
+    100252: Unlabeled_Markers:_1809
+    100254: Unlabeled_Markers:_1812
+    100256: Unlabeled_Markers:_1824
+    100258: Unlabeled_Markers:_1902
+    100260: Unlabeled_Markers:_1916
+    100262: Unlabeled_Markers:_1924
+    100264: Unlabeled_Markers:_1925
+    100266: Unlabeled_Markers:_1929
+    100268: Unlabeled_Markers:_1943
+    100270: Unlabeled_Markers:_1965
+    100272: Unlabeled_Markers:_1966
+    100274: Unlabeled_Markers:_1968
+    100276: Unlabeled_Markers:_1969
+    100278: Unlabeled_Markers:_1971
+    100280: Unlabeled_Markers:_1972
+    100282: Unlabeled_Markers:_1974
+    100284: Unlabeled_Markers:_1975
+    100286: Unlabeled_Markers:_1976
+    100288: Unlabeled_Markers:_1977
+    100290: Unlabeled_Markers:_1980
+    100292: Unlabeled_Markers:_1981
+    100294: Unlabeled_Markers:_1983
+    100296: Unlabeled_Markers:_1984
+    100298: Unlabeled_Markers:_1985
+    100300: Unlabeled_Markers:_1994
+    100302: Unlabeled_Markers:_1997
+    100304: Unlabeled_Markers:_1998
+    100306: Unlabeled_Markers:_2000
+    100308: Unlabeled_Markers:_2001
+    100310: Unlabeled_Markers:_2003
+    100312: Unlabeled_Markers:_2004
+    100314: Unlabeled_Markers:_2005
+    100316: Unlabeled_Markers:_2006
+    100318: Unlabeled_Markers:_2007
+    100320: Unlabeled_Markers:_2008
+    100322: Unlabeled_Markers:_2009
+    100324: Unlabeled_Markers:_2010
+    100326: Unlabeled_Markers:_2011
+    100328: Unlabeled_Markers:_2012
+    100330: Unlabeled_Markers:_2014
+    100332: Unlabeled_Markers:_2015
+    100334: Unlabeled_Markers:_2018
+    100336: Unlabeled_Markers:_2019
+    100338: Unlabeled_Markers:_2020
+    100340: Unlabeled_Markers:_2023
+    100342: Unlabeled_Markers:_2024
+    100344: Unlabeled_Markers:_2025
+    100346: Unlabeled_Markers:_2026
+    100348: Unlabeled_Markers:_2029
+    100350: Unlabeled_Markers:_2030
+    100352: Unlabeled_Markers:_2031
+    100354: Unlabeled_Markers:_2032
+    100356: Unlabeled_Markers:_2033
+    100358: Unlabeled_Markers:_2034
+    100360: Unlabeled_Markers:_2035
+    100362: Unlabeled_Markers:_2036
+    100364: Unlabeled_Markers:_2037
+    100366: Unlabeled_Markers:_2039
+    100368: Unlabeled_Markers:_2040
+    100370: Unlabeled_Markers:_2041
+    100372: Unlabeled_Markers:_2042
+    100374: Unlabeled_Markers:_2043
+    100376: Unlabeled_Markers:_2044
+    100378: Unlabeled_Markers:_2047
+    100380: Unlabeled_Markers:_2051
+    100382: Unlabeled_Markers:_2052
+    100384: Unlabeled_Markers:_2053
+    100386: Unlabeled_Markers:_2056
+    100388: Unlabeled_Markers:_2059
+    100390: Unlabeled_Markers:_2062
+    100392: Unlabeled_Markers:_2063
+    100394: Unlabeled_Markers:_2064
+    100396: Unlabeled_Markers:_2067
+    100398: Unlabeled_Markers:_2072
+    100400: Unlabeled_Markers:_2073
+    100402: Unlabeled_Markers:_2075
+    100404: Unlabeled_Markers:_2076
+    100406: Unlabeled_Markers:_2078
+    100408: Unlabeled_Markers:_2082
+    100410: Unlabeled_Markers:_2083
+    100412: Unlabeled_Markers:_2084
+    100414: Unlabeled_Markers:_2086
+    100416: Unlabeled_Markers:_2091
+    100418: Unlabeled_Markers:_2093
+    100420: Unlabeled_Markers:_2094
+    100422: Unlabeled_Markers:_2096
+    100424: Unlabeled_Markers:_2098
+    100426: Unlabeled_Markers:_2100
+    100428: Unlabeled_Markers:_2101
+    100430: Unlabeled_Markers:_2103
+    100432: Unlabeled_Markers:_2104
+    100434: Unlabeled_Markers:_2106
+    100436: Unlabeled_Markers:_2110
+    100438: Unlabeled_Markers:_2112
+    100440: Unlabeled_Markers:_2117
+    100442: Unlabeled_Markers:_2118
+    100444: Unlabeled_Markers:_2119
+    100446: Unlabeled_Markers:_2121
+    100448: Unlabeled_Markers:_2123
+    100450: Unlabeled_Markers:_2124
+    100452: Unlabeled_Markers:_2125
+    100454: Unlabeled_Markers:_2127
+    100456: Unlabeled_Markers:_2131
+    100458: Unlabeled_Markers:_2132
+    100460: Unlabeled_Markers:_2133
+    100462: Unlabeled_Markers:_2137
+    100464: Unlabeled_Markers:_2139
+    100466: Unlabeled_Markers:_2140
+    100468: Unlabeled_Markers:_2141
+    100470: Unlabeled_Markers:_2144
+    100472: Unlabeled_Markers:_2147
+    100474: Unlabeled_Markers:_2151
+    100476: Unlabeled_Markers:_2153
+    100478: Unlabeled_Markers:_2157
+    100480: Unlabeled_Markers:_2158
+    100482: Unlabeled_Markers:_2160
+    100484: Unlabeled_Markers:_2161
+    100486: Unlabeled_Markers:_2164
+    100488: Unlabeled_Markers:_2165
+    100490: Unlabeled_Markers:_2166
+    100492: Unlabeled_Markers:_2168
+    100494: Unlabeled_Markers:_2170
+    100496: Unlabeled_Markers:_2171
+    100498: Unlabeled_Markers:_2172
+    100500: Unlabeled_Markers:_2173
+    100502: Unlabeled_Markers:_2174
+    100504: Unlabeled_Markers:_2175
+    100506: Unlabeled_Markers:_2176
+    100508: Unlabeled_Markers:_2178
+    100510: Unlabeled_Markers:_2181
+    100512: Unlabeled_Markers:_2182
+    100514: Unlabeled_Markers:_2183
+    100516: Unlabeled_Markers:_2185
+    100518: Unlabeled_Markers:_2186
+    100520: Unlabeled_Markers:_2187
+    100522: Unlabeled_Markers:_2188
+    100524: Unlabeled_Markers:_2189
+    100526: Unlabeled_Markers:_2191
+    100528: Unlabeled_Markers:_2193
+    100530: Unlabeled_Markers:_2195
+    100532: Unlabeled_Markers:_2196
+    100534: Unlabeled_Markers:_2197
+    100536: Unlabeled_Markers:_2198
+    100538: Unlabeled_Markers:_2199
+    100540: Unlabeled_Markers:_2201
+    100542: Unlabeled_Markers:_2202
+    100544: Unlabeled_Markers:_2203
+    100546: Unlabeled_Markers:_2204
+    100548: Unlabeled_Markers:_2205
+    100550: Unlabeled_Markers:_2207
+    100552: Unlabeled_Markers:_2208
+    100554: Unlabeled_Markers:_2210
+    100556: Unlabeled_Markers:_2211
+    100558: Unlabeled_Markers:_2213
+    100560: Unlabeled_Markers:_2214
+    100562: Unlabeled_Markers:_2215
+    100564: Unlabeled_Markers:_2217
+    100566: Unlabeled_Markers:_2218
+    100568: Unlabeled_Markers:_2219
+    100570: Unlabeled_Markers:_2220
+    100572: Unlabeled_Markers:_2221
+    100574: Unlabeled_Markers:_2222
+    100576: Unlabeled_Markers:_2223
+    100578: Unlabeled_Markers:_2227
+    100580: Unlabeled_Markers:_2228
+    100582: Unlabeled_Markers:_2229
+    100584: Unlabeled_Markers:_2231
+    100586: Unlabeled_Markers:_2233
+    100588: Unlabeled_Markers:_2234
+    100590: Unlabeled_Markers:_2235
+    100592: Unlabeled_Markers:_2239
+    100594: Unlabeled_Markers:_2241
+    100596: Unlabeled_Markers:_2244
+    100598: Unlabeled_Markers:_2245
+    100600: Unlabeled_Markers:_2247
+    100602: Unlabeled_Markers:_2248
+    100604: Unlabeled_Markers:_2250
+    100606: Unlabeled_Markers:_2251
+    100608: Unlabeled_Markers:_2252
+    100610: Unlabeled_Markers:_2255
+    100612: Unlabeled_Markers:_2256
+    100614: Unlabeled_Markers:_2257
+    100616: Unlabeled_Markers:_2258
+    100618: Unlabeled_Markers:_2259
+    100620: Unlabeled_Markers:_2261
+    100622: Unlabeled_Markers:_2263
+    100624: Unlabeled_Markers:_2265
+    100626: Unlabeled_Markers:_2267
+    100628: Unlabeled_Markers:_2269
+    100630: Unlabeled_Markers:_2270
+    100632: Unlabeled_Markers:_2271
+    100634: Unlabeled_Markers:_2272
+    100636: Unlabeled_Markers:_2273
+    100638: Unlabeled_Markers:_2276
+    100640: Unlabeled_Markers:_2277
+    100642: Unlabeled_Markers:_2278
+    100644: Unlabeled_Markers:_2281
+    100646: Unlabeled_Markers:_2282
+    100648: Unlabeled_Markers:_2284
+    100650: Unlabeled_Markers:_2285
+    100652: Unlabeled_Markers:_2286
+    100654: Unlabeled_Markers:_2288
+    100656: Unlabeled_Markers:_2290
+    100658: Unlabeled_Markers:_2294
+    100660: Unlabeled_Markers:_2295
+    100662: Unlabeled_Markers:_2296
+    100664: Unlabeled_Markers:_2297
+    100666: Unlabeled_Markers:_2300
+    100668: Unlabeled_Markers:_2302
+    100670: Unlabeled_Markers:_2303
+    100672: Unlabeled_Markers:_2304
+    100674: Unlabeled_Markers:_2306
+    100676: Unlabeled_Markers:_2308
+    100678: Unlabeled_Markers:_2309
+    100680: Unlabeled_Markers:_2310
+    100682: Unlabeled_Markers:_2311
+    100684: Unlabeled_Markers:_2312
+    100686: Unlabeled_Markers:_2313
+    100688: Unlabeled_Markers:_2314
+    100690: Unlabeled_Markers:_2315
+    100692: Unlabeled_Markers:_2317
+    100694: Unlabeled_Markers:_2319
+    100696: Unlabeled_Markers:_2320
+    100698: Unlabeled_Markers:_2321
+    100700: Unlabeled_Markers:_2322
+    100702: Unlabeled_Markers:_2324
+    100704: Unlabeled_Markers:_2328
+    100706: Unlabeled_Markers:_2330
+    100708: Unlabeled_Markers:_2332
+    100710: Unlabeled_Markers:_2337
+    100712: Unlabeled_Markers:_2339
+    100714: Unlabeled_Markers:_2340
+    100716: Unlabeled_Markers:_2341
+    100718: Unlabeled_Markers:_2342
+    100720: Unlabeled_Markers:_2343
+    100722: Unlabeled_Markers:_2344
+    100724: Unlabeled_Markers:_2346
+    100726: Unlabeled_Markers:_2347
+    100728: Unlabeled_Markers:_2348
+    100730: Unlabeled_Markers:_2349
+    100732: Unlabeled_Markers:_2351
+    100734: Unlabeled_Markers:_2352
+    100736: Unlabeled_Markers:_2353
+    100738: Unlabeled_Markers:_2354
+    100740: Unlabeled_Markers:_2355
+    100742: Unlabeled_Markers:_2356
+    100744: Unlabeled_Markers:_2357
+    100746: Unlabeled_Markers:_2358
+    100748: Unlabeled_Markers:_2359
+    100750: Unlabeled_Markers:_2360
+    100752: Unlabeled_Markers:_2363
+    100754: Unlabeled_Markers:_2364
+    100756: Unlabeled_Markers:_2367
+    100758: Unlabeled_Markers:_2370
+    100760: Unlabeled_Markers:_2371
+    100762: Unlabeled_Markers:_2372
+    100764: Unlabeled_Markers:_2373
+    100766: Unlabeled_Markers:_2374
+    100768: Unlabeled_Markers:_2375
+    100770: Unlabeled_Markers:_2378
+    100772: Unlabeled_Markers:_2381
+    100774: Unlabeled_Markers:_2383
+    100776: Unlabeled_Markers:_2384
+    100778: Unlabeled_Markers:_2385
+    100780: Unlabeled_Markers:_2387
+    100782: Unlabeled_Markers:_2388
+    100784: Unlabeled_Markers:_2391
+    100786: Unlabeled_Markers:_2393
+    100788: Unlabeled_Markers:_2395
+    100790: Unlabeled_Markers:_2396
+    100792: Unlabeled_Markers:_2397
+    100794: Unlabeled_Markers:_2399
+    100796: Unlabeled_Markers:_2401
+    100798: Unlabeled_Markers:_2402
+    100800: Unlabeled_Markers:_2403
+    100802: Unlabeled_Markers:_2404
+    100804: Unlabeled_Markers:_2407
+    100806: Unlabeled_Markers:_2408
+    100808: Unlabeled_Markers:_2409
+    100810: Unlabeled_Markers:_2410
+    100812: Unlabeled_Markers:_2411
+    100814: Unlabeled_Markers:_2412
+    100816: Unlabeled_Markers:_2413
+    100818: Unlabeled_Markers:_2419
+    100820: Unlabeled_Markers:_2421
+    100822: Unlabeled_Markers:_2423
+    100824: Unlabeled_Markers:_2424
+    100826: Unlabeled_Markers:_2427
+    100828: Unlabeled_Markers:_2429
+    100830: Unlabeled_Markers:_2431
+    100832: Unlabeled_Markers:_2433
+    100834: Unlabeled_Markers:_2434
+    100836: Unlabeled_Markers:_2436
+    100838: Unlabeled_Markers:_2441
+    100840: Unlabeled_Markers:_2442
+    100842: Unlabeled_Markers:_2443
+    100844: Unlabeled_Markers:_2444
+    100846: Unlabeled_Markers:_2445
+    100848: Unlabeled_Markers:_2446
+    100850: Unlabeled_Markers:_2450
+    100852: Unlabeled_Markers:_2451
+    100854: Unlabeled_Markers:_2452
+    100856: Unlabeled_Markers:_2454
+    100858: Unlabeled_Markers:_2455
+    100860: Unlabeled_Markers:_2456
+    100862: Unlabeled_Markers:_2457
+    100864: Unlabeled_Markers:_2459
+    100866: Unlabeled_Markers:_2460
+    100868: Unlabeled_Markers:_2461
+    100870: Unlabeled_Markers:_2462
+    100872: Unlabeled_Markers:_2463
+    100874: Unlabeled_Markers:_2464
+    100876: Unlabeled_Markers:_2468
+    100878: Unlabeled_Markers:_2469
+    100880: Unlabeled_Markers:_2470
+    100882: Unlabeled_Markers:_2471
+    100884: Unlabeled_Markers:_2472
+    100886: Unlabeled_Markers:_2473
+    100888: Unlabeled_Markers:_2476
+    100890: Unlabeled_Markers:_2481
+    100892: Unlabeled_Markers:_2483
+    100894: Unlabeled_Markers:_2484
+    100896: Unlabeled_Markers:_2485
+    100898: Unlabeled_Markers:_2489
+    100900: Unlabeled_Markers:_2491
+    100902: Unlabeled_Markers:_2492
+    100904: Unlabeled_Markers:_2493
+    100906: Unlabeled_Markers:_2496
+    100908: Unlabeled_Markers:_2497
+    100910: Unlabeled_Markers:_2498
+    100912: Unlabeled_Markers:_2499
+    100914: Unlabeled_Markers:_2501
+    100916: Unlabeled_Markers:_2502
+    100918: Unlabeled_Markers:_2505
+    100920: Unlabeled_Markers:_2507
+    100922: Unlabeled_Markers:_2509
+    100924: Unlabeled_Markers:_2510
+    100926: Unlabeled_Markers:_2513
+    100928: Unlabeled_Markers:_2514
+    100930: Unlabeled_Markers:_2515
+    100932: Unlabeled_Markers:_2516
+    100934: Unlabeled_Markers:_2518
+    100936: Unlabeled_Markers:_2520
+    100938: Unlabeled_Markers:_2521
+    100940: Unlabeled_Markers:_2522
+    100942: Unlabeled_Markers:_2525
+    100944: Unlabeled_Markers:_2527
+    100946: Unlabeled_Markers:_2528
+    100948: Unlabeled_Markers:_2529
+    100950: Unlabeled_Markers:_2531
+    100952: Unlabeled_Markers:_2532
+    100954: Unlabeled_Markers:_2533
+    100956: Unlabeled_Markers:_2535
+    100958: Unlabeled_Markers:_2540
+    100960: Unlabeled_Markers:_2541
+    100962: Unlabeled_Markers:_2542
+    100964: Unlabeled_Markers:_2543
+    100966: Unlabeled_Markers:_2544
+    100968: Unlabeled_Markers:_2545
+    100970: Unlabeled_Markers:_2547
+    100972: Unlabeled_Markers:_2548
+    100974: Unlabeled_Markers:_2550
+    100976: Unlabeled_Markers:_2551
+    100978: Unlabeled_Markers:_2552
+    100980: Unlabeled_Markers:_2553
+    100982: Unlabeled_Markers:_2555
+    100984: Unlabeled_Markers:_2556
+    100986: Unlabeled_Markers:_2557
+    100988: Unlabeled_Markers:_2559
+    100990: Unlabeled_Markers:_2560
+    100992: Unlabeled_Markers:_2561
+    100994: Unlabeled_Markers:_2563
+    100996: Unlabeled_Markers:_2564
+    100998: Unlabeled_Markers:_2565
+    101000: Unlabeled_Markers:_2570
+    101002: Unlabeled_Markers:_2571
+    101004: Unlabeled_Markers:_2572
+    101006: Unlabeled_Markers:_2574
+    101008: Unlabeled_Markers:_2575
+    101010: Unlabeled_Markers:_2576
+    101012: Unlabeled_Markers:_2577
+    101014: Unlabeled_Markers:_2579
+    101016: Unlabeled_Markers:_2581
+    101018: Unlabeled_Markers:_2583
+    101020: Unlabeled_Markers:_2586
+    101022: Unlabeled_Markers:_2588
+    101024: Unlabeled_Markers:_2589
+    101026: Unlabeled_Markers:_2592
+    101028: Unlabeled_Markers:_2595
+    101030: Unlabeled_Markers:_2596
+    101032: Unlabeled_Markers:_2597
+    101034: Unlabeled_Markers:_2598
+    101036: Unlabeled_Markers:_2599
+    101038: Unlabeled_Markers:_2601
+    101040: Unlabeled_Markers:_2605
+    101042: Unlabeled_Markers:_2606
+    101044: Unlabeled_Markers:_2608
+    101046: Unlabeled_Markers:_2610
+    101048: Unlabeled_Markers:_2611
+    101050: Unlabeled_Markers:_2614
+    101052: Unlabeled_Markers:_2617
+    101054: Unlabeled_Markers:_2618
+    101056: Unlabeled_Markers:_2621
+    101058: Unlabeled_Markers:_2623
+    101060: Unlabeled_Markers:_2625
+    101062: Unlabeled_Markers:_2628
+    101064: Unlabeled_Markers:_2629
+    101066: Unlabeled_Markers:_2631
+    101068: Unlabeled_Markers:_2635
+    101070: Unlabeled_Markers:_2636
+    101072: Unlabeled_Markers:_2638
+    101074: Unlabeled_Markers:_2640
+    101076: Unlabeled_Markers:_2642
+    101078: Unlabeled_Markers:_2643
+    101080: Unlabeled_Markers:_2646
+    101082: Unlabeled_Markers:_2647
+    101084: Unlabeled_Markers:_2648
+    101086: Unlabeled_Markers:_2650
+    101088: Unlabeled_Markers:_2651
+    101090: Unlabeled_Markers:_2652
+    101092: Unlabeled_Markers:_2653
+    101094: Unlabeled_Markers:_2654
+    101096: Unlabeled_Markers:_2655
+    101098: Unlabeled_Markers:_2656
+    101100: Unlabeled_Markers:_2658
+    101102: Unlabeled_Markers:_2660
+    101104: Unlabeled_Markers:_2662
+    101106: Unlabeled_Markers:_2663
+    101108: Unlabeled_Markers:_2665
+    101110: Unlabeled_Markers:_2666
+    101112: Unlabeled_Markers:_2667
+    101114: Unlabeled_Markers:_2670
+    101116: Unlabeled_Markers:_2672
+    101118: Unlabeled_Markers:_2678
+    101120: Unlabeled_Markers:_2682
+    101122: Unlabeled_Markers:_2684
+    101124: Unlabeled_Markers:_2687
+    101126: Unlabeled_Markers:_2688
+    101128: Unlabeled_Markers:_2690
+    101130: Unlabeled_Markers:_2691
+    101132: Unlabeled_Markers:_2692
+    101134: Unlabeled_Markers:_2693
+    101136: Unlabeled_Markers:_2694
+    101138: Unlabeled_Markers:_2696
+    101140: Unlabeled_Markers:_2700
+    101142: Unlabeled_Markers:_2701
+    101144: Unlabeled_Markers:_2702
+    101146: Unlabeled_Markers:_2704
+    101148: Unlabeled_Markers:_2707
+    101150: Unlabeled_Markers:_2708
+    101152: Unlabeled_Markers:_2710
+    101154: Unlabeled_Markers:_2711
+    101156: Unlabeled_Markers:_2712
+    101158: Unlabeled_Markers:_2713
+    101160: Unlabeled_Markers:_2715
+    101162: Unlabeled_Markers:_2716
+    101164: Unlabeled_Markers:_2717
+    101166: Unlabeled_Markers:_2718
+    101168: Unlabeled_Markers:_2719
+    101170: Unlabeled_Markers:_2720
+    101172: Unlabeled_Markers:_2722
+    101174: Unlabeled_Markers:_2723
+    101176: Unlabeled_Markers:_2724
+    101178: Unlabeled_Markers:_2725
+    101180: Unlabeled_Markers:_2726
+    101182: Unlabeled_Markers:_2729
+    101184: Unlabeled_Markers:_2730
+    101186: Unlabeled_Markers:_2732
+    101188: Unlabeled_Markers:_2733
+    101190: Unlabeled_Markers:_2735
+    101192: Unlabeled_Markers:_2738
+    101194: Unlabeled_Markers:_2742
+    101196: Unlabeled_Markers:_2746
+    101198: Unlabeled_Markers:_2750
+    101200: Unlabeled_Markers:_2754
+    101202: Unlabeled_Markers:_2755
+    101204: Unlabeled_Markers:_2765
+    101206: Unlabeled_Markers:_2766
+    101208: Unlabeled_Markers:_2769
+    101210: Unlabeled_Markers:_2771
+    101212: Unlabeled_Markers:_2772
+    101214: Unlabeled_Markers:_2773
+    101216: Unlabeled_Markers:_2777
+    101218: Unlabeled_Markers:_2780
+    101220: Unlabeled_Markers:_2786
+    101222: Unlabeled_Markers:_2788
+    101224: Unlabeled_Markers:_2798
+    101226: Unlabeled_Markers:_2800
+    101228: Unlabeled_Markers:_2801
+    101230: Unlabeled_Markers:_2802
+    101232: Unlabeled_Markers:_2804
+    101234: Unlabeled_Markers:_2805
+    101236: Unlabeled_Markers:_2806
+    101238: Unlabeled_Markers:_2812
+    101240: Unlabeled_Markers:_2818
+    101242: Unlabeled_Markers:_2828
+    101244: Unlabeled_Markers:_297
+    101246: Unlabeled_Markers:_2988
+    101248: Unlabeled_Markers:_3117
+    101250: Unlabeled_Markers:_3120
+    101252: Unlabeled_Markers:_3138
+    101254: Unlabeled_Markers:_3358
+    101256: Unlabeled_Markers:_3366
+    101258: Unlabeled_Markers:_3370
+    101260: Unlabeled_Markers:_3379
+    101262: Unlabeled_Markers:_3387
+    101264: Unlabeled_Markers:_3408
+    101266: Unlabeled_Markers:_345
+    101268: Unlabeled_Markers:_349
+    101270: Unlabeled_Markers:_3627
+    101272: Unlabeled_Markers:_365
+    101274: Unlabeled_Markers:_3679
+    101276: Unlabeled_Markers:_3691
+    101278: Unlabeled_Markers:_370
+    101280: Unlabeled_Markers:_3777
+    101282: Unlabeled_Markers:_3796
+    101284: Unlabeled_Markers:_3798
+    101286: Unlabeled_Markers:_3804
+    101288: Unlabeled_Markers:_3810
+    101290: Unlabeled_Markers:_3812
+    101292: Unlabeled_Markers:_3815
+    101294: Unlabeled_Markers:_3828
+    101296: Unlabeled_Markers:_3895
+    101298: Unlabeled_Markers:_3902
+    101300: Unlabeled_Markers:_3923
+    101302: Unlabeled_Markers:_3950
+    101304: Unlabeled_Markers:_3965
+    101306: Unlabeled_Markers:_3969
+    101308: Unlabeled_Markers:_3979
+    101310: Unlabeled_Markers:_3990
+    101312: Unlabeled_Markers:_4006
+    101314: Unlabeled_Markers:_4007
+    101316: Unlabeled_Markers:_405
+    101318: Unlabeled_Markers:_4085
+    101320: Unlabeled_Markers:_410
+    101322: Unlabeled_Markers:_4109
+    101324: Unlabeled_Markers:_4112
+    101326: Unlabeled_Markers:_4118
+    101328: Unlabeled_Markers:_4120
+    101330: Unlabeled_Markers:_4121
+    101332: Unlabeled_Markers:_4122
+    101334: Unlabeled_Markers:_416
+    101336: Unlabeled_Markers:_4165
+    101338: Unlabeled_Markers:_4170
+    101340: Unlabeled_Markers:_422
+    101342: Unlabeled_Markers:_425
+    101344: Unlabeled_Markers:_431
+    101346: Unlabeled_Markers:_4513
+    101348: Unlabeled_Markers:_4541
+    101350: Unlabeled_Markers:_4573
+    101352: Unlabeled_Markers:_4637
+    101354: Unlabeled_Markers:_4856
+    101356: Unlabeled_Markers:_4890
+    101358: Unlabeled_Markers:_4923
+    101360: Unlabeled_Markers:_4924
+    101362: Unlabeled_Markers:_4925
+    101364: Unlabeled_Markers:_4927
+    101366: Unlabeled_Markers:_4928
+    101368: Unlabeled_Markers:_4929
+    101370: Unlabeled_Markers:_4930
+    101372: Unlabeled_Markers:_4931
+    101374: Unlabeled_Markers:_4932
+    101376: Unlabeled_Markers:_4933
+    101378: Unlabeled_Markers:_4934
+    101380: Unlabeled_Markers:_4935
+    101382: Unlabeled_Markers:_4941
+    101384: Unlabeled_Markers:_4942
+    101386: Unlabeled_Markers:_4943
+    101388: Unlabeled_Markers:_4944
+    101390: Unlabeled_Markers:_4946
+    101392: Unlabeled_Markers:_4948
+    101394: Unlabeled_Markers:_4949
+    101396: Unlabeled_Markers:_4950
+    101398: Unlabeled_Markers:_4951
+    101400: Unlabeled_Markers:_4952
+    101402: Unlabeled_Markers:_4953
+    101404: Unlabeled_Markers:_4957
+    101406: Unlabeled_Markers:_4958
+    101408: Unlabeled_Markers:_4959
+    101410: Unlabeled_Markers:_4960
+    101412: Unlabeled_Markers:_4961
+    101414: Unlabeled_Markers:_4964
+    101416: Unlabeled_Markers:_4971
+    101418: Unlabeled_Markers:_4972
+    101420: Unlabeled_Markers:_4977
+    101422: Unlabeled_Markers:_4980
+    101424: Unlabeled_Markers:_4981
+    101426: Unlabeled_Markers:_4982
+    101428: Unlabeled_Markers:_4984
+    101430: Unlabeled_Markers:_4987
+    101432: Unlabeled_Markers:_4990
+    101434: Unlabeled_Markers:_4995
+    101436: Unlabeled_Markers:_4996
+    101438: Unlabeled_Markers:_4998
+    101440: Unlabeled_Markers:_4999
+    101442: Unlabeled_Markers:_5003
+    101444: Unlabeled_Markers:_5005
+    101446: Unlabeled_Markers:_5012
+    101448: Unlabeled_Markers:_5013
+    101450: Unlabeled_Markers:_5014
+    101452: Unlabeled_Markers:_5015
+    101454: Unlabeled_Markers:_5016
+    101456: Unlabeled_Markers:_5021
+    101458: Unlabeled_Markers:_5023
+    101460: Unlabeled_Markers:_5024
+    101462: Unlabeled_Markers:_5028
+    101464: Unlabeled_Markers:_5034
+    101466: Unlabeled_Markers:_5036
+    101468: Unlabeled_Markers:_5039
+    101470: Unlabeled_Markers:_5046
+    101472: Unlabeled_Markers:_5056
+    101474: Unlabeled_Markers:_5059
+    101476: Unlabeled_Markers:_5067
+    101478: Unlabeled_Markers:_5071
+    101480: Unlabeled_Markers:_5121
+    101482: Unlabeled_Markers:_5235
+    101484: Unlabeled_Markers:_5236
+    101486: Unlabeled_Markers:_5238
+    101488: Unlabeled_Markers:_5300
+    101490: Unlabeled_Markers:_5308
+    101492: Unlabeled_Markers:_5325
+    101494: Unlabeled_Markers:_5338
+    101496: Unlabeled_Markers:_5343
+    101498: Unlabeled_Markers:_5349
+    101500: Unlabeled_Markers:_5357
+    101502: Unlabeled_Markers:_5359
+    101504: Unlabeled_Markers:_5360
+    101506: Unlabeled_Markers:_5363
+    101508: Unlabeled_Markers:_54
+    101510: Unlabeled_Markers:_55
+    101512: Unlabeled_Markers:_57
+    101514: Unlabeled_Markers:_58
+    101516: Unlabeled_Markers:_60
+    101518: Unlabeled_Markers:_61
+    101520: Unlabeled_Markers:_65
+    101522: Unlabeled_Markers:_68
+    101524: Unlabeled_Markers:_775
+    101526: Unlabeled_Markers:_776
+    101528: Unlabeled_Markers:_788
+    101530: Unlabeled_Markers:_87
+    101532: Unlabeled_Markers:_925
+    101534: Zen_Ctrl:ChestEndEffector
+    101536: Zen_Ctrl:ChestOriginEffector
+    101538: Zen_Ctrl:Head
+    101540: Zen_Ctrl:HeadEffector
+    101542: Zen_Ctrl:Hips
+    101544: Zen_Ctrl:HipsEffector
+    101546: Zen_Ctrl:LeftAnkleEffector
+    101548: Zen_Ctrl:LeftArm
+    101550: Zen_Ctrl:LeftElbowEffector
+    101552: Zen_Ctrl:LeftFoot
+    101554: Zen_Ctrl:LeftFootEffector
+    101556: Zen_Ctrl:LeftForeArm
+    101558: Zen_Ctrl:LeftHand
+    101560: Zen_Ctrl:LeftHandIndex1
+    101562: Zen_Ctrl:LeftHandIndex2
+    101564: Zen_Ctrl:LeftHandIndex3
+    101566: Zen_Ctrl:LeftHandIndex4
+    101568: Zen_Ctrl:LeftHandIndexEffector
+    101570: Zen_Ctrl:LeftHandMiddle1
+    101572: Zen_Ctrl:LeftHandMiddle2
+    101574: Zen_Ctrl:LeftHandMiddle3
+    101576: Zen_Ctrl:LeftHandMiddle4
+    101578: Zen_Ctrl:LeftHandMiddleEffector
+    101580: Zen_Ctrl:LeftHandPinky1
+    101582: Zen_Ctrl:LeftHandPinky2
+    101584: Zen_Ctrl:LeftHandPinky3
+    101586: Zen_Ctrl:LeftHandPinky4
+    101588: Zen_Ctrl:LeftHandPinkyEffector
+    101590: Zen_Ctrl:LeftHandRing1
+    101592: Zen_Ctrl:LeftHandRing2
+    101594: Zen_Ctrl:LeftHandRing3
+    101596: Zen_Ctrl:LeftHandRing4
+    101598: Zen_Ctrl:LeftHandRingEffector
+    101600: Zen_Ctrl:LeftHandThumb1
+    101602: Zen_Ctrl:LeftHandThumb2
+    101604: Zen_Ctrl:LeftHandThumb3
+    101606: Zen_Ctrl:LeftHandThumb4
+    101608: Zen_Ctrl:LeftHandThumbEffector
+    101610: Zen_Ctrl:LeftHipEffector
+    101612: Zen_Ctrl:LeftKneeEffector
+    101614: Zen_Ctrl:LeftLeg
+    101616: Zen_Ctrl:LeftShoulder
+    101618: Zen_Ctrl:LeftShoulderEffector
+    101620: Zen_Ctrl:LeftToeBase
+    101622: Zen_Ctrl:LeftUpLeg
+    101624: Zen_Ctrl:LeftWristEffector
+    101626: Zen_Ctrl:Neck
+    101628: Zen_Ctrl:Reference
+    101630: Zen_Ctrl:RightAnkleEffector
+    101632: Zen_Ctrl:RightArm
+    101634: Zen_Ctrl:RightElbowEffector
+    101636: Zen_Ctrl:RightFoot
+    101638: Zen_Ctrl:RightFootEffector
+    101640: Zen_Ctrl:RightForeArm
+    101642: Zen_Ctrl:RightHand
+    101644: Zen_Ctrl:RightHandIndex1
+    101646: Zen_Ctrl:RightHandIndex2
+    101648: Zen_Ctrl:RightHandIndex3
+    101650: Zen_Ctrl:RightHandIndex4
+    101652: Zen_Ctrl:RightHandIndexEffector
+    101654: Zen_Ctrl:RightHandMiddle1
+    101656: Zen_Ctrl:RightHandMiddle2
+    101658: Zen_Ctrl:RightHandMiddle3
+    101660: Zen_Ctrl:RightHandMiddle4
+    101662: Zen_Ctrl:RightHandMiddleEffector
+    101664: Zen_Ctrl:RightHandPinky1
+    101666: Zen_Ctrl:RightHandPinky2
+    101668: Zen_Ctrl:RightHandPinky3
+    101670: Zen_Ctrl:RightHandPinky4
+    101672: Zen_Ctrl:RightHandPinkyEffector
+    101674: Zen_Ctrl:RightHandRing1
+    101676: Zen_Ctrl:RightHandRing2
+    101678: Zen_Ctrl:RightHandRing3
+    101680: Zen_Ctrl:RightHandRing4
+    101682: Zen_Ctrl:RightHandRingEffector
+    101684: Zen_Ctrl:RightHandThumb1
+    101686: Zen_Ctrl:RightHandThumb2
+    101688: Zen_Ctrl:RightHandThumb3
+    101690: Zen_Ctrl:RightHandThumb4
+    101692: Zen_Ctrl:RightHandThumbEffector
+    101694: Zen_Ctrl:RightHipEffector
+    101696: Zen_Ctrl:RightKneeEffector
+    101698: Zen_Ctrl:RightLeg
+    101700: Zen_Ctrl:RightShoulder
+    101702: Zen_Ctrl:RightShoulderEffector
+    101704: Zen_Ctrl:RightToeBase
+    101706: Zen_Ctrl:RightUpLeg
+    101708: Zen_Ctrl:RightWristEffector
+    101710: Zen_Ctrl:Spine
+    101712: Zen_Ctrl:Spine1
+    101714: Zen_Ctrl:Spine2
+    101716: zen_hair
+    101718: zen_leftEye
+    101720: zen_Legs
+    101722: zen_rightEye
+    101724: zen_skirt
+    101726: zen_torso
+    101728: //RootNode
+    101730: Zenobia_Head
+    101732: Zenobia_Hips
+    101734: Zenobia_LeftArm
+    101736: Zenobia_LeftFoot
+    101738: Zenobia_LeftForeArm
+    101740: Zenobia_LeftHand
+    101742: Zenobia_LeftHandIndex1
+    101744: Zenobia_LeftHandIndex2
+    101746: Zenobia_LeftHandIndex3
+    101748: Zenobia_LeftHandIndex4
+    101750: Zenobia_LeftHandMiddle1
+    101752: Zenobia_LeftHandMiddle2
+    101754: Zenobia_LeftHandMiddle3
+    101756: Zenobia_LeftHandMiddle4
+    101758: Zenobia_LeftHandPinky1
+    101760: Zenobia_LeftHandPinky2
+    101762: Zenobia_LeftHandPinky3
+    101764: Zenobia_LeftHandPinky4
+    101766: Zenobia_LeftHandRing1
+    101768: Zenobia_LeftHandRing2
+    101770: Zenobia_LeftHandRing3
+    101772: Zenobia_LeftHandRing4
+    101774: Zenobia_LeftHandThumb1
+    101776: Zenobia_LeftHandThumb2
+    101778: Zenobia_LeftHandThumb3
+    101780: Zenobia_LeftHandThumb4
+    101782: Zenobia_LeftLeg
+    101784: Zenobia_LeftShoulder
+    101786: Zenobia_LeftToeBase
+    101788: Zenobia_LeftUpLeg
+    101790: Zenobia_Neck
+    101792: Zenobia_Reference1
+    101794: Zenobia_RightArm
+    101796: Zenobia_RightFoot
+    101798: Zenobia_RightForeArm
+    101800: Zenobia_RightHand
+    101802: Zenobia_RightHandIndex1
+    101804: Zenobia_RightHandIndex2
+    101806: Zenobia_RightHandIndex3
+    101808: Zenobia_RightHandIndex4
+    101810: Zenobia_RightHandMiddle1
+    101812: Zenobia_RightHandMiddle2
+    101814: Zenobia_RightHandMiddle3
+    101816: Zenobia_RightHandMiddle4
+    101818: Zenobia_RightHandPinky1
+    101820: Zenobia_RightHandPinky2
+    101822: Zenobia_RightHandPinky3
+    101824: Zenobia_RightHandPinky4
+    101826: Zenobia_RightHandRing1
+    101828: Zenobia_RightHandRing2
+    101830: Zenobia_RightHandRing3
+    101832: Zenobia_RightHandRing4
+    101834: Zenobia_RightHandThumb1
+    101836: Zenobia_RightHandThumb2
+    101838: Zenobia_RightHandThumb3
+    101840: Zenobia_RightHandThumb4
+    101842: Zenobia_RightLeg
+    101844: Zenobia_RightShoulder
+    101846: Zenobia_RightToeBase
+    101848: Zenobia_RightUpLeg
+    101850: Zenobia_Spine
+    101852: Zenobia_Spine1
+    101854: Zenobia_Spine2
+    400000: Jamila
+    400002: Jamila:ARIEL
+    400004: Jamila:C7
+    400006: Jamila:CLAV
+    400008: Jamila:LANK
+    400010: Jamila:LBHD
+    400012: Jamila:LBSH
+    400014: Jamila:LBWT
+    400016: Jamila:LELB
+    400018: Jamila:LFHD
+    400020: Jamila:LFSH
+    400022: Jamila:LFWT
+    400024: Jamila:LHEL
+    400026: Jamila:LHIP
+    400028: Jamila:LIEL
+    400030: Jamila:LIHAND
+    400032: Jamila:LIWR
+    400034: Jamila:LKNE
+    400036: Jamila:LKNI
+    400038: Jamila:LMT1
+    400040: Jamila:LMT5
+    400042: Jamila:LMWT
+    400044: Jamila:LOHAND
+    400046: Jamila:LOWR
+    400048: Jamila:LSHN
+    400050: Jamila:LTOE
+    400052: Jamila:LUPA
+    400054: Jamila:LWRE
+    400056: Jamila:RANK
+    400058: Jamila:RBHD
+    400060: Jamila:RBSH
+    400062: Jamila:RBWT
+    400064: Jamila:RELB
+    400066: Jamila:RFHD
+    400068: Jamila:RFSH
+    400070: Jamila:RFWT
+    400072: Jamila:RHEL
+    400074: Jamila:RHIP
+    400076: Jamila:RIEL
+    400078: Jamila:RIHAND
+    400080: Jamila:RIWR
+    400082: Jamila:RKNE
+    400084: Jamila:RKNI
+    400086: Jamila:RMT1
+    400088: Jamila:RMT5
+    400090: Jamila:RMWT
+    400092: Jamila:ROHAND
+    400094: Jamila:ROWR
+    400096: Jamila:RSHN
+    400098: Jamila:RTOE
+    400100: Jamila:RUPA
+    400102: Jamila:RWRE
+    400104: Jamila:Solving
+    400106: Jamila:Solving:Head
+    400108: Jamila:Solving:Head_End
+    400110: Jamila:Solving:Hips
+    400112: Jamila:Solving:LeftArm
+    400114: Jamila:Solving:LeftFoot
+    400116: Jamila:Solving:LeftForeArm
+    400118: Jamila:Solving:LeftHand
+    400120: Jamila:Solving:LeftHandEnd
+    400122: Jamila:Solving:LeftHandThumb1
+    400124: Jamila:Solving:LeftHandThumb2
+    400126: Jamila:Solving:LeftLeg
+    400128: Jamila:Solving:LeftShoulder
+    400130: Jamila:Solving:LeftToeBase
+    400132: Jamila:Solving:LeftToeEnd
+    400134: Jamila:Solving:LeftUpLeg
+    400136: Jamila:Solving:RightArm
+    400138: Jamila:Solving:RightFoot
+    400140: Jamila:Solving:RightForeArm
+    400142: Jamila:Solving:RightHand
+    400144: Jamila:Solving:RightHandEnd
+    400146: Jamila:Solving:RightHandThumb1
+    400148: Jamila:Solving:RightHandThumb2
+    400150: Jamila:Solving:RightLeg
+    400152: Jamila:Solving:RightShoulder
+    400154: Jamila:Solving:RightToeBase
+    400156: Jamila:Solving:RightToeEnd
+    400158: Jamila:Solving:RightUpLeg
+    400160: Jamila:Solving:Spine
+    400162: Jamila:STRN
+    400164: Jamila:T10
+    400166: System
+    400168: System:MX_3p_10179
+    400170: System:MX_3p_10183
+    400172: System:MX_3p_10184
+    400174: System:MX_3p_10493
+    400176: System:MX_3p_10494
+    400178: System:MX_3p_10495
+    400180: System:MX_3p_10496
+    400182: System:MX_3p_10497
+    400184: System:MX_3p_10498
+    400186: System:MX_3p_10499
+    400188: System:MX_3p_10502
+    400190: System:MX_3p_10503
+    400192: System:MX_3p_12309
+    400194: System:T20_15966
+    400196: System:T20_15998
+    400198: Unlabeled_Markers
+    400200: Unlabeled_Markers:_1071
+    400202: Unlabeled_Markers:_1099
+    400204: Unlabeled_Markers:_1128
+    400206: Unlabeled_Markers:_1208
+    400208: Unlabeled_Markers:_1211
+    400210: Unlabeled_Markers:_1275
+    400212: Unlabeled_Markers:_1303
+    400214: Unlabeled_Markers:_1328
+    400216: Unlabeled_Markers:_1332
+    400218: Unlabeled_Markers:_1340
+    400220: Unlabeled_Markers:_1346
+    400222: Unlabeled_Markers:_1370
+    400224: Unlabeled_Markers:_1401
+    400226: Unlabeled_Markers:_1426
+    400228: Unlabeled_Markers:_1477
+    400230: Unlabeled_Markers:_1577
+    400232: Unlabeled_Markers:_1620
+    400234: Unlabeled_Markers:_1622
+    400236: Unlabeled_Markers:_1643
+    400238: Unlabeled_Markers:_1667
+    400240: Unlabeled_Markers:_1669
+    400242: Unlabeled_Markers:_171
+    400244: Unlabeled_Markers:_1721
+    400246: Unlabeled_Markers:_174
+    400248: Unlabeled_Markers:_1770
+    400250: Unlabeled_Markers:_1798
+    400252: Unlabeled_Markers:_1809
+    400254: Unlabeled_Markers:_1812
+    400256: Unlabeled_Markers:_1824
+    400258: Unlabeled_Markers:_1902
+    400260: Unlabeled_Markers:_1916
+    400262: Unlabeled_Markers:_1924
+    400264: Unlabeled_Markers:_1925
+    400266: Unlabeled_Markers:_1929
+    400268: Unlabeled_Markers:_1943
+    400270: Unlabeled_Markers:_1965
+    400272: Unlabeled_Markers:_1966
+    400274: Unlabeled_Markers:_1968
+    400276: Unlabeled_Markers:_1969
+    400278: Unlabeled_Markers:_1971
+    400280: Unlabeled_Markers:_1972
+    400282: Unlabeled_Markers:_1974
+    400284: Unlabeled_Markers:_1975
+    400286: Unlabeled_Markers:_1976
+    400288: Unlabeled_Markers:_1977
+    400290: Unlabeled_Markers:_1980
+    400292: Unlabeled_Markers:_1981
+    400294: Unlabeled_Markers:_1983
+    400296: Unlabeled_Markers:_1984
+    400298: Unlabeled_Markers:_1985
+    400300: Unlabeled_Markers:_1994
+    400302: Unlabeled_Markers:_1997
+    400304: Unlabeled_Markers:_1998
+    400306: Unlabeled_Markers:_2000
+    400308: Unlabeled_Markers:_2001
+    400310: Unlabeled_Markers:_2003
+    400312: Unlabeled_Markers:_2004
+    400314: Unlabeled_Markers:_2005
+    400316: Unlabeled_Markers:_2006
+    400318: Unlabeled_Markers:_2007
+    400320: Unlabeled_Markers:_2008
+    400322: Unlabeled_Markers:_2009
+    400324: Unlabeled_Markers:_2010
+    400326: Unlabeled_Markers:_2011
+    400328: Unlabeled_Markers:_2012
+    400330: Unlabeled_Markers:_2014
+    400332: Unlabeled_Markers:_2015
+    400334: Unlabeled_Markers:_2018
+    400336: Unlabeled_Markers:_2019
+    400338: Unlabeled_Markers:_2020
+    400340: Unlabeled_Markers:_2023
+    400342: Unlabeled_Markers:_2024
+    400344: Unlabeled_Markers:_2025
+    400346: Unlabeled_Markers:_2026
+    400348: Unlabeled_Markers:_2029
+    400350: Unlabeled_Markers:_2030
+    400352: Unlabeled_Markers:_2031
+    400354: Unlabeled_Markers:_2032
+    400356: Unlabeled_Markers:_2033
+    400358: Unlabeled_Markers:_2034
+    400360: Unlabeled_Markers:_2035
+    400362: Unlabeled_Markers:_2036
+    400364: Unlabeled_Markers:_2037
+    400366: Unlabeled_Markers:_2039
+    400368: Unlabeled_Markers:_2040
+    400370: Unlabeled_Markers:_2041
+    400372: Unlabeled_Markers:_2042
+    400374: Unlabeled_Markers:_2043
+    400376: Unlabeled_Markers:_2044
+    400378: Unlabeled_Markers:_2047
+    400380: Unlabeled_Markers:_2051
+    400382: Unlabeled_Markers:_2052
+    400384: Unlabeled_Markers:_2053
+    400386: Unlabeled_Markers:_2056
+    400388: Unlabeled_Markers:_2059
+    400390: Unlabeled_Markers:_2062
+    400392: Unlabeled_Markers:_2063
+    400394: Unlabeled_Markers:_2064
+    400396: Unlabeled_Markers:_2067
+    400398: Unlabeled_Markers:_2072
+    400400: Unlabeled_Markers:_2073
+    400402: Unlabeled_Markers:_2075
+    400404: Unlabeled_Markers:_2076
+    400406: Unlabeled_Markers:_2078
+    400408: Unlabeled_Markers:_2082
+    400410: Unlabeled_Markers:_2083
+    400412: Unlabeled_Markers:_2084
+    400414: Unlabeled_Markers:_2086
+    400416: Unlabeled_Markers:_2091
+    400418: Unlabeled_Markers:_2093
+    400420: Unlabeled_Markers:_2094
+    400422: Unlabeled_Markers:_2096
+    400424: Unlabeled_Markers:_2098
+    400426: Unlabeled_Markers:_2100
+    400428: Unlabeled_Markers:_2101
+    400430: Unlabeled_Markers:_2103
+    400432: Unlabeled_Markers:_2104
+    400434: Unlabeled_Markers:_2106
+    400436: Unlabeled_Markers:_2110
+    400438: Unlabeled_Markers:_2112
+    400440: Unlabeled_Markers:_2117
+    400442: Unlabeled_Markers:_2118
+    400444: Unlabeled_Markers:_2119
+    400446: Unlabeled_Markers:_2121
+    400448: Unlabeled_Markers:_2123
+    400450: Unlabeled_Markers:_2124
+    400452: Unlabeled_Markers:_2125
+    400454: Unlabeled_Markers:_2127
+    400456: Unlabeled_Markers:_2131
+    400458: Unlabeled_Markers:_2132
+    400460: Unlabeled_Markers:_2133
+    400462: Unlabeled_Markers:_2137
+    400464: Unlabeled_Markers:_2139
+    400466: Unlabeled_Markers:_2140
+    400468: Unlabeled_Markers:_2141
+    400470: Unlabeled_Markers:_2144
+    400472: Unlabeled_Markers:_2147
+    400474: Unlabeled_Markers:_2151
+    400476: Unlabeled_Markers:_2153
+    400478: Unlabeled_Markers:_2157
+    400480: Unlabeled_Markers:_2158
+    400482: Unlabeled_Markers:_2160
+    400484: Unlabeled_Markers:_2161
+    400486: Unlabeled_Markers:_2164
+    400488: Unlabeled_Markers:_2165
+    400490: Unlabeled_Markers:_2166
+    400492: Unlabeled_Markers:_2168
+    400494: Unlabeled_Markers:_2170
+    400496: Unlabeled_Markers:_2171
+    400498: Unlabeled_Markers:_2172
+    400500: Unlabeled_Markers:_2173
+    400502: Unlabeled_Markers:_2174
+    400504: Unlabeled_Markers:_2175
+    400506: Unlabeled_Markers:_2176
+    400508: Unlabeled_Markers:_2178
+    400510: Unlabeled_Markers:_2181
+    400512: Unlabeled_Markers:_2182
+    400514: Unlabeled_Markers:_2183
+    400516: Unlabeled_Markers:_2185
+    400518: Unlabeled_Markers:_2186
+    400520: Unlabeled_Markers:_2187
+    400522: Unlabeled_Markers:_2188
+    400524: Unlabeled_Markers:_2189
+    400526: Unlabeled_Markers:_2191
+    400528: Unlabeled_Markers:_2193
+    400530: Unlabeled_Markers:_2195
+    400532: Unlabeled_Markers:_2196
+    400534: Unlabeled_Markers:_2197
+    400536: Unlabeled_Markers:_2198
+    400538: Unlabeled_Markers:_2199
+    400540: Unlabeled_Markers:_2201
+    400542: Unlabeled_Markers:_2202
+    400544: Unlabeled_Markers:_2203
+    400546: Unlabeled_Markers:_2204
+    400548: Unlabeled_Markers:_2205
+    400550: Unlabeled_Markers:_2207
+    400552: Unlabeled_Markers:_2208
+    400554: Unlabeled_Markers:_2210
+    400556: Unlabeled_Markers:_2211
+    400558: Unlabeled_Markers:_2213
+    400560: Unlabeled_Markers:_2214
+    400562: Unlabeled_Markers:_2215
+    400564: Unlabeled_Markers:_2217
+    400566: Unlabeled_Markers:_2218
+    400568: Unlabeled_Markers:_2219
+    400570: Unlabeled_Markers:_2220
+    400572: Unlabeled_Markers:_2221
+    400574: Unlabeled_Markers:_2222
+    400576: Unlabeled_Markers:_2223
+    400578: Unlabeled_Markers:_2227
+    400580: Unlabeled_Markers:_2228
+    400582: Unlabeled_Markers:_2229
+    400584: Unlabeled_Markers:_2231
+    400586: Unlabeled_Markers:_2233
+    400588: Unlabeled_Markers:_2234
+    400590: Unlabeled_Markers:_2235
+    400592: Unlabeled_Markers:_2239
+    400594: Unlabeled_Markers:_2241
+    400596: Unlabeled_Markers:_2244
+    400598: Unlabeled_Markers:_2245
+    400600: Unlabeled_Markers:_2247
+    400602: Unlabeled_Markers:_2248
+    400604: Unlabeled_Markers:_2250
+    400606: Unlabeled_Markers:_2251
+    400608: Unlabeled_Markers:_2252
+    400610: Unlabeled_Markers:_2255
+    400612: Unlabeled_Markers:_2256
+    400614: Unlabeled_Markers:_2257
+    400616: Unlabeled_Markers:_2258
+    400618: Unlabeled_Markers:_2259
+    400620: Unlabeled_Markers:_2261
+    400622: Unlabeled_Markers:_2263
+    400624: Unlabeled_Markers:_2265
+    400626: Unlabeled_Markers:_2267
+    400628: Unlabeled_Markers:_2269
+    400630: Unlabeled_Markers:_2270
+    400632: Unlabeled_Markers:_2271
+    400634: Unlabeled_Markers:_2272
+    400636: Unlabeled_Markers:_2273
+    400638: Unlabeled_Markers:_2276
+    400640: Unlabeled_Markers:_2277
+    400642: Unlabeled_Markers:_2278
+    400644: Unlabeled_Markers:_2281
+    400646: Unlabeled_Markers:_2282
+    400648: Unlabeled_Markers:_2284
+    400650: Unlabeled_Markers:_2285
+    400652: Unlabeled_Markers:_2286
+    400654: Unlabeled_Markers:_2288
+    400656: Unlabeled_Markers:_2290
+    400658: Unlabeled_Markers:_2294
+    400660: Unlabeled_Markers:_2295
+    400662: Unlabeled_Markers:_2296
+    400664: Unlabeled_Markers:_2297
+    400666: Unlabeled_Markers:_2300
+    400668: Unlabeled_Markers:_2302
+    400670: Unlabeled_Markers:_2303
+    400672: Unlabeled_Markers:_2304
+    400674: Unlabeled_Markers:_2306
+    400676: Unlabeled_Markers:_2308
+    400678: Unlabeled_Markers:_2309
+    400680: Unlabeled_Markers:_2310
+    400682: Unlabeled_Markers:_2311
+    400684: Unlabeled_Markers:_2312
+    400686: Unlabeled_Markers:_2313
+    400688: Unlabeled_Markers:_2314
+    400690: Unlabeled_Markers:_2315
+    400692: Unlabeled_Markers:_2317
+    400694: Unlabeled_Markers:_2319
+    400696: Unlabeled_Markers:_2320
+    400698: Unlabeled_Markers:_2321
+    400700: Unlabeled_Markers:_2322
+    400702: Unlabeled_Markers:_2324
+    400704: Unlabeled_Markers:_2328
+    400706: Unlabeled_Markers:_2330
+    400708: Unlabeled_Markers:_2332
+    400710: Unlabeled_Markers:_2337
+    400712: Unlabeled_Markers:_2339
+    400714: Unlabeled_Markers:_2340
+    400716: Unlabeled_Markers:_2341
+    400718: Unlabeled_Markers:_2342
+    400720: Unlabeled_Markers:_2343
+    400722: Unlabeled_Markers:_2344
+    400724: Unlabeled_Markers:_2346
+    400726: Unlabeled_Markers:_2347
+    400728: Unlabeled_Markers:_2348
+    400730: Unlabeled_Markers:_2349
+    400732: Unlabeled_Markers:_2351
+    400734: Unlabeled_Markers:_2352
+    400736: Unlabeled_Markers:_2353
+    400738: Unlabeled_Markers:_2354
+    400740: Unlabeled_Markers:_2355
+    400742: Unlabeled_Markers:_2356
+    400744: Unlabeled_Markers:_2357
+    400746: Unlabeled_Markers:_2358
+    400748: Unlabeled_Markers:_2359
+    400750: Unlabeled_Markers:_2360
+    400752: Unlabeled_Markers:_2363
+    400754: Unlabeled_Markers:_2364
+    400756: Unlabeled_Markers:_2367
+    400758: Unlabeled_Markers:_2370
+    400760: Unlabeled_Markers:_2371
+    400762: Unlabeled_Markers:_2372
+    400764: Unlabeled_Markers:_2373
+    400766: Unlabeled_Markers:_2374
+    400768: Unlabeled_Markers:_2375
+    400770: Unlabeled_Markers:_2378
+    400772: Unlabeled_Markers:_2381
+    400774: Unlabeled_Markers:_2383
+    400776: Unlabeled_Markers:_2384
+    400778: Unlabeled_Markers:_2385
+    400780: Unlabeled_Markers:_2387
+    400782: Unlabeled_Markers:_2388
+    400784: Unlabeled_Markers:_2391
+    400786: Unlabeled_Markers:_2393
+    400788: Unlabeled_Markers:_2395
+    400790: Unlabeled_Markers:_2396
+    400792: Unlabeled_Markers:_2397
+    400794: Unlabeled_Markers:_2399
+    400796: Unlabeled_Markers:_2401
+    400798: Unlabeled_Markers:_2402
+    400800: Unlabeled_Markers:_2403
+    400802: Unlabeled_Markers:_2404
+    400804: Unlabeled_Markers:_2407
+    400806: Unlabeled_Markers:_2408
+    400808: Unlabeled_Markers:_2409
+    400810: Unlabeled_Markers:_2410
+    400812: Unlabeled_Markers:_2411
+    400814: Unlabeled_Markers:_2412
+    400816: Unlabeled_Markers:_2413
+    400818: Unlabeled_Markers:_2419
+    400820: Unlabeled_Markers:_2421
+    400822: Unlabeled_Markers:_2423
+    400824: Unlabeled_Markers:_2424
+    400826: Unlabeled_Markers:_2427
+    400828: Unlabeled_Markers:_2429
+    400830: Unlabeled_Markers:_2431
+    400832: Unlabeled_Markers:_2433
+    400834: Unlabeled_Markers:_2434
+    400836: Unlabeled_Markers:_2436
+    400838: Unlabeled_Markers:_2441
+    400840: Unlabeled_Markers:_2442
+    400842: Unlabeled_Markers:_2443
+    400844: Unlabeled_Markers:_2444
+    400846: Unlabeled_Markers:_2445
+    400848: Unlabeled_Markers:_2446
+    400850: Unlabeled_Markers:_2450
+    400852: Unlabeled_Markers:_2451
+    400854: Unlabeled_Markers:_2452
+    400856: Unlabeled_Markers:_2454
+    400858: Unlabeled_Markers:_2455
+    400860: Unlabeled_Markers:_2456
+    400862: Unlabeled_Markers:_2457
+    400864: Unlabeled_Markers:_2459
+    400866: Unlabeled_Markers:_2460
+    400868: Unlabeled_Markers:_2461
+    400870: Unlabeled_Markers:_2462
+    400872: Unlabeled_Markers:_2463
+    400874: Unlabeled_Markers:_2464
+    400876: Unlabeled_Markers:_2468
+    400878: Unlabeled_Markers:_2469
+    400880: Unlabeled_Markers:_2470
+    400882: Unlabeled_Markers:_2471
+    400884: Unlabeled_Markers:_2472
+    400886: Unlabeled_Markers:_2473
+    400888: Unlabeled_Markers:_2476
+    400890: Unlabeled_Markers:_2481
+    400892: Unlabeled_Markers:_2483
+    400894: Unlabeled_Markers:_2484
+    400896: Unlabeled_Markers:_2485
+    400898: Unlabeled_Markers:_2489
+    400900: Unlabeled_Markers:_2491
+    400902: Unlabeled_Markers:_2492
+    400904: Unlabeled_Markers:_2493
+    400906: Unlabeled_Markers:_2496
+    400908: Unlabeled_Markers:_2497
+    400910: Unlabeled_Markers:_2498
+    400912: Unlabeled_Markers:_2499
+    400914: Unlabeled_Markers:_2501
+    400916: Unlabeled_Markers:_2502
+    400918: Unlabeled_Markers:_2505
+    400920: Unlabeled_Markers:_2507
+    400922: Unlabeled_Markers:_2509
+    400924: Unlabeled_Markers:_2510
+    400926: Unlabeled_Markers:_2513
+    400928: Unlabeled_Markers:_2514
+    400930: Unlabeled_Markers:_2515
+    400932: Unlabeled_Markers:_2516
+    400934: Unlabeled_Markers:_2518
+    400936: Unlabeled_Markers:_2520
+    400938: Unlabeled_Markers:_2521
+    400940: Unlabeled_Markers:_2522
+    400942: Unlabeled_Markers:_2525
+    400944: Unlabeled_Markers:_2527
+    400946: Unlabeled_Markers:_2528
+    400948: Unlabeled_Markers:_2529
+    400950: Unlabeled_Markers:_2531
+    400952: Unlabeled_Markers:_2532
+    400954: Unlabeled_Markers:_2533
+    400956: Unlabeled_Markers:_2535
+    400958: Unlabeled_Markers:_2540
+    400960: Unlabeled_Markers:_2541
+    400962: Unlabeled_Markers:_2542
+    400964: Unlabeled_Markers:_2543
+    400966: Unlabeled_Markers:_2544
+    400968: Unlabeled_Markers:_2545
+    400970: Unlabeled_Markers:_2547
+    400972: Unlabeled_Markers:_2548
+    400974: Unlabeled_Markers:_2550
+    400976: Unlabeled_Markers:_2551
+    400978: Unlabeled_Markers:_2552
+    400980: Unlabeled_Markers:_2553
+    400982: Unlabeled_Markers:_2555
+    400984: Unlabeled_Markers:_2556
+    400986: Unlabeled_Markers:_2557
+    400988: Unlabeled_Markers:_2559
+    400990: Unlabeled_Markers:_2560
+    400992: Unlabeled_Markers:_2561
+    400994: Unlabeled_Markers:_2563
+    400996: Unlabeled_Markers:_2564
+    400998: Unlabeled_Markers:_2565
+    401000: Unlabeled_Markers:_2570
+    401002: Unlabeled_Markers:_2571
+    401004: Unlabeled_Markers:_2572
+    401006: Unlabeled_Markers:_2574
+    401008: Unlabeled_Markers:_2575
+    401010: Unlabeled_Markers:_2576
+    401012: Unlabeled_Markers:_2577
+    401014: Unlabeled_Markers:_2579
+    401016: Unlabeled_Markers:_2581
+    401018: Unlabeled_Markers:_2583
+    401020: Unlabeled_Markers:_2586
+    401022: Unlabeled_Markers:_2588
+    401024: Unlabeled_Markers:_2589
+    401026: Unlabeled_Markers:_2592
+    401028: Unlabeled_Markers:_2595
+    401030: Unlabeled_Markers:_2596
+    401032: Unlabeled_Markers:_2597
+    401034: Unlabeled_Markers:_2598
+    401036: Unlabeled_Markers:_2599
+    401038: Unlabeled_Markers:_2601
+    401040: Unlabeled_Markers:_2605
+    401042: Unlabeled_Markers:_2606
+    401044: Unlabeled_Markers:_2608
+    401046: Unlabeled_Markers:_2610
+    401048: Unlabeled_Markers:_2611
+    401050: Unlabeled_Markers:_2614
+    401052: Unlabeled_Markers:_2617
+    401054: Unlabeled_Markers:_2618
+    401056: Unlabeled_Markers:_2621
+    401058: Unlabeled_Markers:_2623
+    401060: Unlabeled_Markers:_2625
+    401062: Unlabeled_Markers:_2628
+    401064: Unlabeled_Markers:_2629
+    401066: Unlabeled_Markers:_2631
+    401068: Unlabeled_Markers:_2635
+    401070: Unlabeled_Markers:_2636
+    401072: Unlabeled_Markers:_2638
+    401074: Unlabeled_Markers:_2640
+    401076: Unlabeled_Markers:_2642
+    401078: Unlabeled_Markers:_2643
+    401080: Unlabeled_Markers:_2646
+    401082: Unlabeled_Markers:_2647
+    401084: Unlabeled_Markers:_2648
+    401086: Unlabeled_Markers:_2650
+    401088: Unlabeled_Markers:_2651
+    401090: Unlabeled_Markers:_2652
+    401092: Unlabeled_Markers:_2653
+    401094: Unlabeled_Markers:_2654
+    401096: Unlabeled_Markers:_2655
+    401098: Unlabeled_Markers:_2656
+    401100: Unlabeled_Markers:_2658
+    401102: Unlabeled_Markers:_2660
+    401104: Unlabeled_Markers:_2662
+    401106: Unlabeled_Markers:_2663
+    401108: Unlabeled_Markers:_2665
+    401110: Unlabeled_Markers:_2666
+    401112: Unlabeled_Markers:_2667
+    401114: Unlabeled_Markers:_2670
+    401116: Unlabeled_Markers:_2672
+    401118: Unlabeled_Markers:_2678
+    401120: Unlabeled_Markers:_2682
+    401122: Unlabeled_Markers:_2684
+    401124: Unlabeled_Markers:_2687
+    401126: Unlabeled_Markers:_2688
+    401128: Unlabeled_Markers:_2690
+    401130: Unlabeled_Markers:_2691
+    401132: Unlabeled_Markers:_2692
+    401134: Unlabeled_Markers:_2693
+    401136: Unlabeled_Markers:_2694
+    401138: Unlabeled_Markers:_2696
+    401140: Unlabeled_Markers:_2700
+    401142: Unlabeled_Markers:_2701
+    401144: Unlabeled_Markers:_2702
+    401146: Unlabeled_Markers:_2704
+    401148: Unlabeled_Markers:_2707
+    401150: Unlabeled_Markers:_2708
+    401152: Unlabeled_Markers:_2710
+    401154: Unlabeled_Markers:_2711
+    401156: Unlabeled_Markers:_2712
+    401158: Unlabeled_Markers:_2713
+    401160: Unlabeled_Markers:_2715
+    401162: Unlabeled_Markers:_2716
+    401164: Unlabeled_Markers:_2717
+    401166: Unlabeled_Markers:_2718
+    401168: Unlabeled_Markers:_2719
+    401170: Unlabeled_Markers:_2720
+    401172: Unlabeled_Markers:_2722
+    401174: Unlabeled_Markers:_2723
+    401176: Unlabeled_Markers:_2724
+    401178: Unlabeled_Markers:_2725
+    401180: Unlabeled_Markers:_2726
+    401182: Unlabeled_Markers:_2729
+    401184: Unlabeled_Markers:_2730
+    401186: Unlabeled_Markers:_2732
+    401188: Unlabeled_Markers:_2733
+    401190: Unlabeled_Markers:_2735
+    401192: Unlabeled_Markers:_2738
+    401194: Unlabeled_Markers:_2742
+    401196: Unlabeled_Markers:_2746
+    401198: Unlabeled_Markers:_2750
+    401200: Unlabeled_Markers:_2754
+    401202: Unlabeled_Markers:_2755
+    401204: Unlabeled_Markers:_2765
+    401206: Unlabeled_Markers:_2766
+    401208: Unlabeled_Markers:_2769
+    401210: Unlabeled_Markers:_2771
+    401212: Unlabeled_Markers:_2772
+    401214: Unlabeled_Markers:_2773
+    401216: Unlabeled_Markers:_2777
+    401218: Unlabeled_Markers:_2780
+    401220: Unlabeled_Markers:_2786
+    401222: Unlabeled_Markers:_2788
+    401224: Unlabeled_Markers:_2798
+    401226: Unlabeled_Markers:_2800
+    401228: Unlabeled_Markers:_2801
+    401230: Unlabeled_Markers:_2802
+    401232: Unlabeled_Markers:_2804
+    401234: Unlabeled_Markers:_2805
+    401236: Unlabeled_Markers:_2806
+    401238: Unlabeled_Markers:_2812
+    401240: Unlabeled_Markers:_2818
+    401242: Unlabeled_Markers:_2828
+    401244: Unlabeled_Markers:_297
+    401246: Unlabeled_Markers:_2988
+    401248: Unlabeled_Markers:_3117
+    401250: Unlabeled_Markers:_3120
+    401252: Unlabeled_Markers:_3138
+    401254: Unlabeled_Markers:_3358
+    401256: Unlabeled_Markers:_3366
+    401258: Unlabeled_Markers:_3370
+    401260: Unlabeled_Markers:_3379
+    401262: Unlabeled_Markers:_3387
+    401264: Unlabeled_Markers:_3408
+    401266: Unlabeled_Markers:_345
+    401268: Unlabeled_Markers:_349
+    401270: Unlabeled_Markers:_3627
+    401272: Unlabeled_Markers:_365
+    401274: Unlabeled_Markers:_3679
+    401276: Unlabeled_Markers:_3691
+    401278: Unlabeled_Markers:_370
+    401280: Unlabeled_Markers:_3777
+    401282: Unlabeled_Markers:_3796
+    401284: Unlabeled_Markers:_3798
+    401286: Unlabeled_Markers:_3804
+    401288: Unlabeled_Markers:_3810
+    401290: Unlabeled_Markers:_3812
+    401292: Unlabeled_Markers:_3815
+    401294: Unlabeled_Markers:_3828
+    401296: Unlabeled_Markers:_3895
+    401298: Unlabeled_Markers:_3902
+    401300: Unlabeled_Markers:_3923
+    401302: Unlabeled_Markers:_3950
+    401304: Unlabeled_Markers:_3965
+    401306: Unlabeled_Markers:_3969
+    401308: Unlabeled_Markers:_3979
+    401310: Unlabeled_Markers:_3990
+    401312: Unlabeled_Markers:_4006
+    401314: Unlabeled_Markers:_4007
+    401316: Unlabeled_Markers:_405
+    401318: Unlabeled_Markers:_4085
+    401320: Unlabeled_Markers:_410
+    401322: Unlabeled_Markers:_4109
+    401324: Unlabeled_Markers:_4112
+    401326: Unlabeled_Markers:_4118
+    401328: Unlabeled_Markers:_4120
+    401330: Unlabeled_Markers:_4121
+    401332: Unlabeled_Markers:_4122
+    401334: Unlabeled_Markers:_416
+    401336: Unlabeled_Markers:_4165
+    401338: Unlabeled_Markers:_4170
+    401340: Unlabeled_Markers:_422
+    401342: Unlabeled_Markers:_425
+    401344: Unlabeled_Markers:_431
+    401346: Unlabeled_Markers:_4513
+    401348: Unlabeled_Markers:_4541
+    401350: Unlabeled_Markers:_4573
+    401352: Unlabeled_Markers:_4637
+    401354: Unlabeled_Markers:_4856
+    401356: Unlabeled_Markers:_4890
+    401358: Unlabeled_Markers:_4923
+    401360: Unlabeled_Markers:_4924
+    401362: Unlabeled_Markers:_4925
+    401364: Unlabeled_Markers:_4927
+    401366: Unlabeled_Markers:_4928
+    401368: Unlabeled_Markers:_4929
+    401370: Unlabeled_Markers:_4930
+    401372: Unlabeled_Markers:_4931
+    401374: Unlabeled_Markers:_4932
+    401376: Unlabeled_Markers:_4933
+    401378: Unlabeled_Markers:_4934
+    401380: Unlabeled_Markers:_4935
+    401382: Unlabeled_Markers:_4941
+    401384: Unlabeled_Markers:_4942
+    401386: Unlabeled_Markers:_4943
+    401388: Unlabeled_Markers:_4944
+    401390: Unlabeled_Markers:_4946
+    401392: Unlabeled_Markers:_4948
+    401394: Unlabeled_Markers:_4949
+    401396: Unlabeled_Markers:_4950
+    401398: Unlabeled_Markers:_4951
+    401400: Unlabeled_Markers:_4952
+    401402: Unlabeled_Markers:_4953
+    401404: Unlabeled_Markers:_4957
+    401406: Unlabeled_Markers:_4958
+    401408: Unlabeled_Markers:_4959
+    401410: Unlabeled_Markers:_4960
+    401412: Unlabeled_Markers:_4961
+    401414: Unlabeled_Markers:_4964
+    401416: Unlabeled_Markers:_4971
+    401418: Unlabeled_Markers:_4972
+    401420: Unlabeled_Markers:_4977
+    401422: Unlabeled_Markers:_4980
+    401424: Unlabeled_Markers:_4981
+    401426: Unlabeled_Markers:_4982
+    401428: Unlabeled_Markers:_4984
+    401430: Unlabeled_Markers:_4987
+    401432: Unlabeled_Markers:_4990
+    401434: Unlabeled_Markers:_4995
+    401436: Unlabeled_Markers:_4996
+    401438: Unlabeled_Markers:_4998
+    401440: Unlabeled_Markers:_4999
+    401442: Unlabeled_Markers:_5003
+    401444: Unlabeled_Markers:_5005
+    401446: Unlabeled_Markers:_5012
+    401448: Unlabeled_Markers:_5013
+    401450: Unlabeled_Markers:_5014
+    401452: Unlabeled_Markers:_5015
+    401454: Unlabeled_Markers:_5016
+    401456: Unlabeled_Markers:_5021
+    401458: Unlabeled_Markers:_5023
+    401460: Unlabeled_Markers:_5024
+    401462: Unlabeled_Markers:_5028
+    401464: Unlabeled_Markers:_5034
+    401466: Unlabeled_Markers:_5036
+    401468: Unlabeled_Markers:_5039
+    401470: Unlabeled_Markers:_5046
+    401472: Unlabeled_Markers:_5056
+    401474: Unlabeled_Markers:_5059
+    401476: Unlabeled_Markers:_5067
+    401478: Unlabeled_Markers:_5071
+    401480: Unlabeled_Markers:_5121
+    401482: Unlabeled_Markers:_5235
+    401484: Unlabeled_Markers:_5236
+    401486: Unlabeled_Markers:_5238
+    401488: Unlabeled_Markers:_5300
+    401490: Unlabeled_Markers:_5308
+    401492: Unlabeled_Markers:_5325
+    401494: Unlabeled_Markers:_5338
+    401496: Unlabeled_Markers:_5343
+    401498: Unlabeled_Markers:_5349
+    401500: Unlabeled_Markers:_5357
+    401502: Unlabeled_Markers:_5359
+    401504: Unlabeled_Markers:_5360
+    401506: Unlabeled_Markers:_5363
+    401508: Unlabeled_Markers:_54
+    401510: Unlabeled_Markers:_55
+    401512: Unlabeled_Markers:_57
+    401514: Unlabeled_Markers:_58
+    401516: Unlabeled_Markers:_60
+    401518: Unlabeled_Markers:_61
+    401520: Unlabeled_Markers:_65
+    401522: Unlabeled_Markers:_68
+    401524: Unlabeled_Markers:_775
+    401526: Unlabeled_Markers:_776
+    401528: Unlabeled_Markers:_788
+    401530: Unlabeled_Markers:_87
+    401532: Unlabeled_Markers:_925
+    401534: Zen_Ctrl:ChestEndEffector
+    401536: Zen_Ctrl:ChestOriginEffector
+    401538: Zen_Ctrl:Head
+    401540: Zen_Ctrl:HeadEffector
+    401542: Zen_Ctrl:Hips
+    401544: Zen_Ctrl:HipsEffector
+    401546: Zen_Ctrl:LeftAnkleEffector
+    401548: Zen_Ctrl:LeftArm
+    401550: Zen_Ctrl:LeftElbowEffector
+    401552: Zen_Ctrl:LeftFoot
+    401554: Zen_Ctrl:LeftFootEffector
+    401556: Zen_Ctrl:LeftForeArm
+    401558: Zen_Ctrl:LeftHand
+    401560: Zen_Ctrl:LeftHandIndex1
+    401562: Zen_Ctrl:LeftHandIndex2
+    401564: Zen_Ctrl:LeftHandIndex3
+    401566: Zen_Ctrl:LeftHandIndex4
+    401568: Zen_Ctrl:LeftHandIndexEffector
+    401570: Zen_Ctrl:LeftHandMiddle1
+    401572: Zen_Ctrl:LeftHandMiddle2
+    401574: Zen_Ctrl:LeftHandMiddle3
+    401576: Zen_Ctrl:LeftHandMiddle4
+    401578: Zen_Ctrl:LeftHandMiddleEffector
+    401580: Zen_Ctrl:LeftHandPinky1
+    401582: Zen_Ctrl:LeftHandPinky2
+    401584: Zen_Ctrl:LeftHandPinky3
+    401586: Zen_Ctrl:LeftHandPinky4
+    401588: Zen_Ctrl:LeftHandPinkyEffector
+    401590: Zen_Ctrl:LeftHandRing1
+    401592: Zen_Ctrl:LeftHandRing2
+    401594: Zen_Ctrl:LeftHandRing3
+    401596: Zen_Ctrl:LeftHandRing4
+    401598: Zen_Ctrl:LeftHandRingEffector
+    401600: Zen_Ctrl:LeftHandThumb1
+    401602: Zen_Ctrl:LeftHandThumb2
+    401604: Zen_Ctrl:LeftHandThumb3
+    401606: Zen_Ctrl:LeftHandThumb4
+    401608: Zen_Ctrl:LeftHandThumbEffector
+    401610: Zen_Ctrl:LeftHipEffector
+    401612: Zen_Ctrl:LeftKneeEffector
+    401614: Zen_Ctrl:LeftLeg
+    401616: Zen_Ctrl:LeftShoulder
+    401618: Zen_Ctrl:LeftShoulderEffector
+    401620: Zen_Ctrl:LeftToeBase
+    401622: Zen_Ctrl:LeftUpLeg
+    401624: Zen_Ctrl:LeftWristEffector
+    401626: Zen_Ctrl:Neck
+    401628: Zen_Ctrl:Reference
+    401630: Zen_Ctrl:RightAnkleEffector
+    401632: Zen_Ctrl:RightArm
+    401634: Zen_Ctrl:RightElbowEffector
+    401636: Zen_Ctrl:RightFoot
+    401638: Zen_Ctrl:RightFootEffector
+    401640: Zen_Ctrl:RightForeArm
+    401642: Zen_Ctrl:RightHand
+    401644: Zen_Ctrl:RightHandIndex1
+    401646: Zen_Ctrl:RightHandIndex2
+    401648: Zen_Ctrl:RightHandIndex3
+    401650: Zen_Ctrl:RightHandIndex4
+    401652: Zen_Ctrl:RightHandIndexEffector
+    401654: Zen_Ctrl:RightHandMiddle1
+    401656: Zen_Ctrl:RightHandMiddle2
+    401658: Zen_Ctrl:RightHandMiddle3
+    401660: Zen_Ctrl:RightHandMiddle4
+    401662: Zen_Ctrl:RightHandMiddleEffector
+    401664: Zen_Ctrl:RightHandPinky1
+    401666: Zen_Ctrl:RightHandPinky2
+    401668: Zen_Ctrl:RightHandPinky3
+    401670: Zen_Ctrl:RightHandPinky4
+    401672: Zen_Ctrl:RightHandPinkyEffector
+    401674: Zen_Ctrl:RightHandRing1
+    401676: Zen_Ctrl:RightHandRing2
+    401678: Zen_Ctrl:RightHandRing3
+    401680: Zen_Ctrl:RightHandRing4
+    401682: Zen_Ctrl:RightHandRingEffector
+    401684: Zen_Ctrl:RightHandThumb1
+    401686: Zen_Ctrl:RightHandThumb2
+    401688: Zen_Ctrl:RightHandThumb3
+    401690: Zen_Ctrl:RightHandThumb4
+    401692: Zen_Ctrl:RightHandThumbEffector
+    401694: Zen_Ctrl:RightHipEffector
+    401696: Zen_Ctrl:RightKneeEffector
+    401698: Zen_Ctrl:RightLeg
+    401700: Zen_Ctrl:RightShoulder
+    401702: Zen_Ctrl:RightShoulderEffector
+    401704: Zen_Ctrl:RightToeBase
+    401706: Zen_Ctrl:RightUpLeg
+    401708: Zen_Ctrl:RightWristEffector
+    401710: Zen_Ctrl:Spine
+    401712: Zen_Ctrl:Spine1
+    401714: Zen_Ctrl:Spine2
+    401716: zen_hair
+    401718: zen_leftEye
+    401720: zen_Legs
+    401722: zen_rightEye
+    401724: zen_skirt
+    401726: zen_torso
+    401728: //RootNode
+    401730: Zenobia_Head
+    401732: Zenobia_Hips
+    401734: Zenobia_LeftArm
+    401736: Zenobia_LeftFoot
+    401738: Zenobia_LeftForeArm
+    401740: Zenobia_LeftHand
+    401742: Zenobia_LeftHandIndex1
+    401744: Zenobia_LeftHandIndex2
+    401746: Zenobia_LeftHandIndex3
+    401748: Zenobia_LeftHandIndex4
+    401750: Zenobia_LeftHandMiddle1
+    401752: Zenobia_LeftHandMiddle2
+    401754: Zenobia_LeftHandMiddle3
+    401756: Zenobia_LeftHandMiddle4
+    401758: Zenobia_LeftHandPinky1
+    401760: Zenobia_LeftHandPinky2
+    401762: Zenobia_LeftHandPinky3
+    401764: Zenobia_LeftHandPinky4
+    401766: Zenobia_LeftHandRing1
+    401768: Zenobia_LeftHandRing2
+    401770: Zenobia_LeftHandRing3
+    401772: Zenobia_LeftHandRing4
+    401774: Zenobia_LeftHandThumb1
+    401776: Zenobia_LeftHandThumb2
+    401778: Zenobia_LeftHandThumb3
+    401780: Zenobia_LeftHandThumb4
+    401782: Zenobia_LeftLeg
+    401784: Zenobia_LeftShoulder
+    401786: Zenobia_LeftToeBase
+    401788: Zenobia_LeftUpLeg
+    401790: Zenobia_Neck
+    401792: Zenobia_Reference1
+    401794: Zenobia_RightArm
+    401796: Zenobia_RightFoot
+    401798: Zenobia_RightForeArm
+    401800: Zenobia_RightHand
+    401802: Zenobia_RightHandIndex1
+    401804: Zenobia_RightHandIndex2
+    401806: Zenobia_RightHandIndex3
+    401808: Zenobia_RightHandIndex4
+    401810: Zenobia_RightHandMiddle1
+    401812: Zenobia_RightHandMiddle2
+    401814: Zenobia_RightHandMiddle3
+    401816: Zenobia_RightHandMiddle4
+    401818: Zenobia_RightHandPinky1
+    401820: Zenobia_RightHandPinky2
+    401822: Zenobia_RightHandPinky3
+    401824: Zenobia_RightHandPinky4
+    401826: Zenobia_RightHandRing1
+    401828: Zenobia_RightHandRing2
+    401830: Zenobia_RightHandRing3
+    401832: Zenobia_RightHandRing4
+    401834: Zenobia_RightHandThumb1
+    401836: Zenobia_RightHandThumb2
+    401838: Zenobia_RightHandThumb3
+    401840: Zenobia_RightHandThumb4
+    401842: Zenobia_RightLeg
+    401844: Zenobia_RightShoulder
+    401846: Zenobia_RightToeBase
+    401848: Zenobia_RightUpLeg
+    401850: Zenobia_Spine
+    401852: Zenobia_Spine1
+    401854: Zenobia_Spine2
+    7400000: Zen_leap_002_x2d
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Zen_leap_002_x2d
+      takeName: Zen_leap_002_x2d
+      firstFrame: 3246
+      lastFrame: 3276
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Jamila
+        weight: 1
+      - path: Jamila/Jamila:ARIEL
+        weight: 1
+      - path: Jamila/Jamila:C7
+        weight: 1
+      - path: Jamila/Jamila:CLAV
+        weight: 1
+      - path: Jamila/Jamila:LANK
+        weight: 1
+      - path: Jamila/Jamila:LBHD
+        weight: 1
+      - path: Jamila/Jamila:LBSH
+        weight: 1
+      - path: Jamila/Jamila:LBWT
+        weight: 1
+      - path: Jamila/Jamila:LELB
+        weight: 1
+      - path: Jamila/Jamila:LFHD
+        weight: 1
+      - path: Jamila/Jamila:LFSH
+        weight: 1
+      - path: Jamila/Jamila:LFWT
+        weight: 1
+      - path: Jamila/Jamila:LHEL
+        weight: 1
+      - path: Jamila/Jamila:LHIP
+        weight: 1
+      - path: Jamila/Jamila:LIEL
+        weight: 1
+      - path: Jamila/Jamila:LIHAND
+        weight: 1
+      - path: Jamila/Jamila:LIWR
+        weight: 1
+      - path: Jamila/Jamila:LKNE
+        weight: 1
+      - path: Jamila/Jamila:LKNI
+        weight: 1
+      - path: Jamila/Jamila:LMT1
+        weight: 1
+      - path: Jamila/Jamila:LMT5
+        weight: 1
+      - path: Jamila/Jamila:LMWT
+        weight: 1
+      - path: Jamila/Jamila:LOHAND
+        weight: 1
+      - path: Jamila/Jamila:LOWR
+        weight: 1
+      - path: Jamila/Jamila:LSHN
+        weight: 1
+      - path: Jamila/Jamila:LTOE
+        weight: 1
+      - path: Jamila/Jamila:LUPA
+        weight: 1
+      - path: Jamila/Jamila:LWRE
+        weight: 1
+      - path: Jamila/Jamila:RANK
+        weight: 1
+      - path: Jamila/Jamila:RBHD
+        weight: 1
+      - path: Jamila/Jamila:RBSH
+        weight: 1
+      - path: Jamila/Jamila:RBWT
+        weight: 1
+      - path: Jamila/Jamila:RELB
+        weight: 1
+      - path: Jamila/Jamila:RFHD
+        weight: 1
+      - path: Jamila/Jamila:RFSH
+        weight: 1
+      - path: Jamila/Jamila:RFWT
+        weight: 1
+      - path: Jamila/Jamila:RHEL
+        weight: 1
+      - path: Jamila/Jamila:RHIP
+        weight: 1
+      - path: Jamila/Jamila:RIEL
+        weight: 1
+      - path: Jamila/Jamila:RIHAND
+        weight: 1
+      - path: Jamila/Jamila:RIWR
+        weight: 1
+      - path: Jamila/Jamila:RKNE
+        weight: 1
+      - path: Jamila/Jamila:RKNI
+        weight: 1
+      - path: Jamila/Jamila:RMT1
+        weight: 1
+      - path: Jamila/Jamila:RMT5
+        weight: 1
+      - path: Jamila/Jamila:RMWT
+        weight: 1
+      - path: Jamila/Jamila:ROHAND
+        weight: 1
+      - path: Jamila/Jamila:ROWR
+        weight: 1
+      - path: Jamila/Jamila:RSHN
+        weight: 1
+      - path: Jamila/Jamila:RTOE
+        weight: 1
+      - path: Jamila/Jamila:RUPA
+        weight: 1
+      - path: Jamila/Jamila:RWRE
+        weight: 1
+      - path: Jamila/Jamila:Solving
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:LeftUpLeg
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:LeftUpLeg/Jamila:Solving:LeftLeg
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:LeftUpLeg/Jamila:Solving:LeftLeg/Jamila:Solving:LeftFoot
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:LeftUpLeg/Jamila:Solving:LeftLeg/Jamila:Solving:LeftFoot/Jamila:Solving:LeftToeBase
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:LeftUpLeg/Jamila:Solving:LeftLeg/Jamila:Solving:LeftFoot/Jamila:Solving:LeftToeBase/Jamila:Solving:LeftToeEnd
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:RightUpLeg
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:RightUpLeg/Jamila:Solving:RightLeg
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:RightUpLeg/Jamila:Solving:RightLeg/Jamila:Solving:RightFoot
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:RightUpLeg/Jamila:Solving:RightLeg/Jamila:Solving:RightFoot/Jamila:Solving:RightToeBase
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:RightUpLeg/Jamila:Solving:RightLeg/Jamila:Solving:RightFoot/Jamila:Solving:RightToeBase/Jamila:Solving:RightToeEnd
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:Head
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:Head/Jamila:Solving:Head_End
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder/Jamila:Solving:LeftArm
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder/Jamila:Solving:LeftArm/Jamila:Solving:LeftForeArm
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder/Jamila:Solving:LeftArm/Jamila:Solving:LeftForeArm/Jamila:Solving:LeftHand
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder/Jamila:Solving:LeftArm/Jamila:Solving:LeftForeArm/Jamila:Solving:LeftHand/Jamila:Solving:LeftHandEnd
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder/Jamila:Solving:LeftArm/Jamila:Solving:LeftForeArm/Jamila:Solving:LeftHand/Jamila:Solving:LeftHandThumb1
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder/Jamila:Solving:LeftArm/Jamila:Solving:LeftForeArm/Jamila:Solving:LeftHand/Jamila:Solving:LeftHandThumb1/Jamila:Solving:LeftHandThumb2
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder/Jamila:Solving:RightArm
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder/Jamila:Solving:RightArm/Jamila:Solving:RightForeArm
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder/Jamila:Solving:RightArm/Jamila:Solving:RightForeArm/Jamila:Solving:RightHand
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder/Jamila:Solving:RightArm/Jamila:Solving:RightForeArm/Jamila:Solving:RightHand/Jamila:Solving:RightHandEnd
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder/Jamila:Solving:RightArm/Jamila:Solving:RightForeArm/Jamila:Solving:RightHand/Jamila:Solving:RightHandThumb1
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder/Jamila:Solving:RightArm/Jamila:Solving:RightForeArm/Jamila:Solving:RightHand/Jamila:Solving:RightHandThumb1/Jamila:Solving:RightHandThumb2
+        weight: 1
+      - path: Jamila/Jamila:STRN
+        weight: 1
+      - path: Jamila/Jamila:T10
+        weight: 1
+      - path: System
+        weight: 1
+      - path: System/System:MX_3p_10179
+        weight: 1
+      - path: System/System:MX_3p_10183
+        weight: 1
+      - path: System/System:MX_3p_10184
+        weight: 1
+      - path: System/System:MX_3p_10493
+        weight: 1
+      - path: System/System:MX_3p_10494
+        weight: 1
+      - path: System/System:MX_3p_10495
+        weight: 1
+      - path: System/System:MX_3p_10496
+        weight: 1
+      - path: System/System:MX_3p_10497
+        weight: 1
+      - path: System/System:MX_3p_10498
+        weight: 1
+      - path: System/System:MX_3p_10499
+        weight: 1
+      - path: System/System:MX_3p_10502
+        weight: 1
+      - path: System/System:MX_3p_10503
+        weight: 1
+      - path: System/System:MX_3p_12309
+        weight: 1
+      - path: System/System:T20_15966
+        weight: 1
+      - path: System/System:T20_15998
+        weight: 1
+      - path: Unlabeled_Markers
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_54
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_55
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_57
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_58
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_60
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_61
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_65
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_68
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_87
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_171
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_174
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_297
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_345
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_349
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_365
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_370
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_405
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_410
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_416
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_422
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_425
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_431
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_775
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_776
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_788
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_925
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1071
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1099
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1128
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1208
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1211
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1275
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1303
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1328
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1332
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1340
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1346
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1370
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1401
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1426
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1477
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1577
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1620
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1622
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1643
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1667
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1669
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1721
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1770
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1798
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1809
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1812
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1824
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1902
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1916
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1924
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1925
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1929
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1943
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1965
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1966
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1968
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1969
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1971
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1972
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1974
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1975
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1976
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1977
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1980
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1981
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1983
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1984
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1985
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1994
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1997
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_1998
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2000
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2001
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2003
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2004
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2005
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2006
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2007
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2008
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2009
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2010
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2011
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2012
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2014
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2015
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2018
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2019
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2020
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2023
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2024
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2025
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2026
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2029
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2030
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2031
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2032
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2033
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2034
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2035
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2036
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2037
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2039
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2040
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2041
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2042
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2043
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2044
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2047
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2051
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2052
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2053
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2056
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2059
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2062
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2063
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2064
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2067
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2072
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2073
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2075
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2076
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2078
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2082
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2083
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2084
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2086
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2091
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2093
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2094
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2096
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2098
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2100
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2101
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2103
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2104
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2106
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2110
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2112
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2117
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2118
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2119
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2121
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2123
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2124
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2125
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2127
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2131
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2132
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2133
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2137
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2139
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2140
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2141
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2144
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2147
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2151
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2153
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2157
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2158
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2160
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2161
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2164
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2165
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2166
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2168
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2170
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2171
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2172
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2173
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2174
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2175
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2176
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2178
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2181
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2182
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2183
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2185
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2186
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2187
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2188
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2189
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2191
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2193
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2195
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2196
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2197
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2198
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2199
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2201
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2202
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2203
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2204
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2205
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2207
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2208
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2210
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2211
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2213
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2214
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2215
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2217
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2218
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2219
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2220
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2221
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2222
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2223
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2227
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2228
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2229
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2231
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2233
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2234
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2235
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2239
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2241
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2244
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2245
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2247
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2248
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2250
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2251
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2252
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2255
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2256
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2257
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2258
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2259
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2261
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2263
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2265
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2267
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2269
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2270
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2271
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2272
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2273
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2276
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2277
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2278
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2281
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2282
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2284
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2285
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2286
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2288
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2290
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2294
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2295
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2296
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2297
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2300
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2302
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2303
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2304
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2306
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2308
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2309
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2310
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2311
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2312
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2313
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2314
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2315
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2317
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2319
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2320
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2321
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2322
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2324
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2328
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2330
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2332
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2337
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2339
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2340
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2341
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2342
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2343
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2344
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2346
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2347
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2348
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2349
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2351
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2352
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2353
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2354
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2355
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2356
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2357
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2358
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2359
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2360
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2363
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2364
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2367
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2370
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2371
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2372
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2373
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2374
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2375
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2378
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2381
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2383
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2384
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2385
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2387
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2388
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2391
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2393
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2395
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2396
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2397
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2399
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2401
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2402
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2403
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2404
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2407
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2408
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2409
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2410
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2411
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2412
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2413
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2419
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2421
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2423
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2424
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2427
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2429
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2431
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2433
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2434
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2436
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2441
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2442
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2443
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2444
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2445
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2446
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2450
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2451
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2452
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2454
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2455
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2456
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2457
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2459
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2460
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2461
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2462
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2463
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2464
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2468
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2469
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2470
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2471
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2472
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2473
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2476
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2481
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2483
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2484
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2485
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2489
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2491
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2492
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2493
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2496
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2497
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2498
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2499
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2501
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2502
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2505
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2507
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2509
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2510
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2513
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2514
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2515
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2516
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2518
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2520
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2521
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2522
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2525
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2527
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2528
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2529
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2531
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2532
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2533
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2535
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2540
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2541
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2542
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2543
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2544
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2545
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2547
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2548
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2550
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2551
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2552
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2553
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2555
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2556
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2557
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2559
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2560
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2561
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2563
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2564
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2565
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2570
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2571
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2572
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2574
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2575
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2576
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2577
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2579
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2581
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2583
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2586
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2588
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2589
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2592
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2595
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2596
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2597
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2598
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2599
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2601
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2605
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2606
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2608
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2610
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2611
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2614
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2617
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2618
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2621
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2623
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2625
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2628
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2629
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2631
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2635
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2636
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2638
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2640
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2642
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2643
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2646
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2647
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2648
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2650
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2651
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2652
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2653
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2654
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2655
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2656
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2658
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2660
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2662
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2663
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2665
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2666
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2667
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2670
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2672
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2678
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2682
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2684
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2687
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2688
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2690
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2691
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2692
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2693
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2694
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2696
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2700
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2701
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2702
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2704
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2707
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2708
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2710
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2711
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2712
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2713
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2715
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2716
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2717
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2718
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2719
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2720
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2722
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2723
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2724
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2725
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2726
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2729
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2730
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2732
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2733
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2735
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2738
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2742
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2746
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2750
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2754
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2755
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2765
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2766
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2769
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2771
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2772
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2773
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2777
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2780
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2786
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2788
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2798
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2800
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2801
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2802
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2804
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2805
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2806
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2812
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2818
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2828
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_2988
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3117
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3120
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3138
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3358
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3366
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3370
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3379
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3387
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3408
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3627
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3679
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3691
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3777
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3796
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3798
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3804
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3810
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3812
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3815
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3828
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3895
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3902
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3923
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3950
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3965
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3969
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3979
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_3990
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4006
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4007
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4085
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4109
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4112
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4118
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4120
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4121
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4122
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4165
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4170
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4513
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4541
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4573
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4637
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4856
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4890
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4923
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4924
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4925
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4927
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4928
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4929
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4930
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4931
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4932
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4933
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4934
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4935
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4941
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4942
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4943
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4944
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4946
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4948
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4949
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4950
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4951
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4952
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4953
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4957
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4958
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4959
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4960
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4961
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4964
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4971
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4972
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4977
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4980
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4981
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4982
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4984
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4987
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4990
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4995
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4996
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4998
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_4999
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5003
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5005
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5012
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5013
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5014
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5015
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5016
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5021
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5023
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5024
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5028
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5034
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5036
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5039
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5046
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5056
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5059
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5067
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5071
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5121
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5235
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5236
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5238
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5300
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5308
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5325
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5338
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5343
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5349
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5357
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5359
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5360
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_5363
+        weight: 1
+      - path: Zen_Ctrl:Reference
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:ChestEndEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:ChestOriginEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:HeadEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:LeftUpLeg
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:LeftUpLeg/Zen_Ctrl:LeftLeg
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:LeftUpLeg/Zen_Ctrl:LeftLeg/Zen_Ctrl:LeftFoot
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:LeftUpLeg/Zen_Ctrl:LeftLeg/Zen_Ctrl:LeftFoot/Zen_Ctrl:LeftToeBase
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:RightUpLeg
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:RightUpLeg/Zen_Ctrl:RightLeg
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:RightUpLeg/Zen_Ctrl:RightLeg/Zen_Ctrl:RightFoot
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:RightUpLeg/Zen_Ctrl:RightLeg/Zen_Ctrl:RightFoot/Zen_Ctrl:RightToeBase
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandIndex1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandIndex1/Zen_Ctrl:LeftHandIndex2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandIndex1/Zen_Ctrl:LeftHandIndex2/Zen_Ctrl:LeftHandIndex3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandIndex1/Zen_Ctrl:LeftHandIndex2/Zen_Ctrl:LeftHandIndex3/Zen_Ctrl:LeftHandIndex4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandMiddle1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandMiddle1/Zen_Ctrl:LeftHandMiddle2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandMiddle1/Zen_Ctrl:LeftHandMiddle2/Zen_Ctrl:LeftHandMiddle3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandMiddle1/Zen_Ctrl:LeftHandMiddle2/Zen_Ctrl:LeftHandMiddle3/Zen_Ctrl:LeftHandMiddle4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandPinky1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandPinky1/Zen_Ctrl:LeftHandPinky2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandPinky1/Zen_Ctrl:LeftHandPinky2/Zen_Ctrl:LeftHandPinky3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandPinky1/Zen_Ctrl:LeftHandPinky2/Zen_Ctrl:LeftHandPinky3/Zen_Ctrl:LeftHandPinky4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandRing1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandRing1/Zen_Ctrl:LeftHandRing2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandRing1/Zen_Ctrl:LeftHandRing2/Zen_Ctrl:LeftHandRing3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandRing1/Zen_Ctrl:LeftHandRing2/Zen_Ctrl:LeftHandRing3/Zen_Ctrl:LeftHandRing4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandThumb1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandThumb1/Zen_Ctrl:LeftHandThumb2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandThumb1/Zen_Ctrl:LeftHandThumb2/Zen_Ctrl:LeftHandThumb3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandThumb1/Zen_Ctrl:LeftHandThumb2/Zen_Ctrl:LeftHandThumb3/Zen_Ctrl:LeftHandThumb4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:Neck
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:Neck/Zen_Ctrl:Head
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandIndex1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandIndex1/Zen_Ctrl:RightHandIndex2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandIndex1/Zen_Ctrl:RightHandIndex2/Zen_Ctrl:RightHandIndex3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandIndex1/Zen_Ctrl:RightHandIndex2/Zen_Ctrl:RightHandIndex3/Zen_Ctrl:RightHandIndex4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandMiddle1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandMiddle1/Zen_Ctrl:RightHandMiddle2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandMiddle1/Zen_Ctrl:RightHandMiddle2/Zen_Ctrl:RightHandMiddle3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandMiddle1/Zen_Ctrl:RightHandMiddle2/Zen_Ctrl:RightHandMiddle3/Zen_Ctrl:RightHandMiddle4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandPinky1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandPinky1/Zen_Ctrl:RightHandPinky2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandPinky1/Zen_Ctrl:RightHandPinky2/Zen_Ctrl:RightHandPinky3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandPinky1/Zen_Ctrl:RightHandPinky2/Zen_Ctrl:RightHandPinky3/Zen_Ctrl:RightHandPinky4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandRing1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandRing1/Zen_Ctrl:RightHandRing2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandRing1/Zen_Ctrl:RightHandRing2/Zen_Ctrl:RightHandRing3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandRing1/Zen_Ctrl:RightHandRing2/Zen_Ctrl:RightHandRing3/Zen_Ctrl:RightHandRing4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandThumb1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandThumb1/Zen_Ctrl:RightHandThumb2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandThumb1/Zen_Ctrl:RightHandThumb2/Zen_Ctrl:RightHandThumb3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandThumb1/Zen_Ctrl:RightHandThumb2/Zen_Ctrl:RightHandThumb3/Zen_Ctrl:RightHandThumb4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:HipsEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftAnkleEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftElbowEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftFootEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftHandIndexEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftHandMiddleEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftHandPinkyEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftHandRingEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftHandThumbEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftHipEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftKneeEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftShoulderEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftWristEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightAnkleEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightElbowEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightFootEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightHandIndexEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightHandMiddleEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightHandPinkyEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightHandRingEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightHandThumbEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightHipEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightKneeEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightShoulderEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightWristEffector
+        weight: 1
+      - path: zen_hair
+        weight: 1
+      - path: zen_leftEye
+        weight: 1
+      - path: zen_Legs
+        weight: 1
+      - path: zen_rightEye
+        weight: 1
+      - path: zen_skirt
+        weight: 1
+      - path: zen_torso
+        weight: 1
+      - path: Zenobia_Reference1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_LeftUpLeg
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_LeftUpLeg/Zenobia_LeftLeg
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_LeftUpLeg/Zenobia_LeftLeg/Zenobia_LeftFoot
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_LeftUpLeg/Zenobia_LeftLeg/Zenobia_LeftFoot/Zenobia_LeftToeBase
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_RightUpLeg
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_RightUpLeg/Zenobia_RightLeg
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_RightUpLeg/Zenobia_RightLeg/Zenobia_RightFoot
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_RightUpLeg/Zenobia_RightLeg/Zenobia_RightFoot/Zenobia_RightToeBase
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandIndex1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandIndex1/Zenobia_LeftHandIndex2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandIndex1/Zenobia_LeftHandIndex2/Zenobia_LeftHandIndex3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandIndex1/Zenobia_LeftHandIndex2/Zenobia_LeftHandIndex3/Zenobia_LeftHandIndex4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandMiddle1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandMiddle1/Zenobia_LeftHandMiddle2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandMiddle1/Zenobia_LeftHandMiddle2/Zenobia_LeftHandMiddle3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandMiddle1/Zenobia_LeftHandMiddle2/Zenobia_LeftHandMiddle3/Zenobia_LeftHandMiddle4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandPinky1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandPinky1/Zenobia_LeftHandPinky2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandPinky1/Zenobia_LeftHandPinky2/Zenobia_LeftHandPinky3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandPinky1/Zenobia_LeftHandPinky2/Zenobia_LeftHandPinky3/Zenobia_LeftHandPinky4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandRing1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandRing1/Zenobia_LeftHandRing2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandRing1/Zenobia_LeftHandRing2/Zenobia_LeftHandRing3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandRing1/Zenobia_LeftHandRing2/Zenobia_LeftHandRing3/Zenobia_LeftHandRing4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandThumb1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandThumb1/Zenobia_LeftHandThumb2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandThumb1/Zenobia_LeftHandThumb2/Zenobia_LeftHandThumb3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandThumb1/Zenobia_LeftHandThumb2/Zenobia_LeftHandThumb3/Zenobia_LeftHandThumb4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_Neck
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_Neck/Zenobia_Head
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandIndex1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandIndex1/Zenobia_RightHandIndex2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandIndex1/Zenobia_RightHandIndex2/Zenobia_RightHandIndex3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandIndex1/Zenobia_RightHandIndex2/Zenobia_RightHandIndex3/Zenobia_RightHandIndex4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandMiddle1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandMiddle1/Zenobia_RightHandMiddle2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandMiddle1/Zenobia_RightHandMiddle2/Zenobia_RightHandMiddle3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandMiddle1/Zenobia_RightHandMiddle2/Zenobia_RightHandMiddle3/Zenobia_RightHandMiddle4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandPinky1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandPinky1/Zenobia_RightHandPinky2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandPinky1/Zenobia_RightHandPinky2/Zenobia_RightHandPinky3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandPinky1/Zenobia_RightHandPinky2/Zenobia_RightHandPinky3/Zenobia_RightHandPinky4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandRing1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandRing1/Zenobia_RightHandRing2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandRing1/Zenobia_RightHandRing2/Zenobia_RightHandRing3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandRing1/Zenobia_RightHandRing2/Zenobia_RightHandRing3/Zenobia_RightHandRing4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandThumb1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandThumb1/Zenobia_RightHandThumb2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandThumb1/Zenobia_RightHandThumb2/Zenobia_RightHandThumb3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandThumb1/Zenobia_RightHandThumb2/Zenobia_RightHandThumb3/Zenobia_RightHandThumb4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

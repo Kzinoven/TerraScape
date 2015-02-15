@@ -1,0 +1,1555 @@
+fileFormatVersion: 2
+guid: adf4e30fb70ce4ee6b6cefbadb794d1f
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Jamila
+    100002: Jamila:ARIEL
+    100004: Jamila:C7
+    100006: Jamila:CLAV
+    100008: Jamila:LANK
+    100010: Jamila:LBHD
+    100012: Jamila:LBSH
+    100014: Jamila:LBWT
+    100016: Jamila:LELB
+    100018: Jamila:LFHD
+    100020: Jamila:LFSH
+    100022: Jamila:LFWT
+    100024: Jamila:LHEL
+    100026: Jamila:LHIP
+    100028: Jamila:LIEL
+    100030: Jamila:LIHAND
+    100032: Jamila:LIWR
+    100034: Jamila:LKNE
+    100036: Jamila:LKNI
+    100038: Jamila:LMT1
+    100040: Jamila:LMT5
+    100042: Jamila:LMWT
+    100044: Jamila:LOHAND
+    100046: Jamila:LOWR
+    100048: Jamila:LSHN
+    100050: Jamila:LTOE
+    100052: Jamila:LUPA
+    100054: Jamila:LWRE
+    100056: Jamila:RANK
+    100058: Jamila:RBHD
+    100060: Jamila:RBSH
+    100062: Jamila:RBWT
+    100064: Jamila:RELB
+    100066: Jamila:RFHD
+    100068: Jamila:RFSH
+    100070: Jamila:RFWT
+    100072: Jamila:RHEL
+    100074: Jamila:RHIP
+    100076: Jamila:RIEL
+    100078: Jamila:RIHAND
+    100080: Jamila:RIWR
+    100082: Jamila:RKNE
+    100084: Jamila:RKNI
+    100086: Jamila:RMT1
+    100088: Jamila:RMT5
+    100090: Jamila:RMWT
+    100092: Jamila:ROHAND
+    100094: Jamila:ROWR
+    100096: Jamila:RSHN
+    100098: Jamila:RTOE
+    100100: Jamila:RUPA
+    100102: Jamila:RWRE
+    100104: Jamila:Solving
+    100106: Jamila:Solving:Head
+    100108: Jamila:Solving:Head_End
+    100110: Jamila:Solving:Hips
+    100112: Jamila:Solving:LeftArm
+    100114: Jamila:Solving:LeftFoot
+    100116: Jamila:Solving:LeftForeArm
+    100118: Jamila:Solving:LeftHand
+    100120: Jamila:Solving:LeftHandEnd
+    100122: Jamila:Solving:LeftHandThumb1
+    100124: Jamila:Solving:LeftHandThumb2
+    100126: Jamila:Solving:LeftLeg
+    100128: Jamila:Solving:LeftShoulder
+    100130: Jamila:Solving:LeftToeBase
+    100132: Jamila:Solving:LeftToeEnd
+    100134: Jamila:Solving:LeftUpLeg
+    100136: Jamila:Solving:RightArm
+    100138: Jamila:Solving:RightFoot
+    100140: Jamila:Solving:RightForeArm
+    100142: Jamila:Solving:RightHand
+    100144: Jamila:Solving:RightHandEnd
+    100146: Jamila:Solving:RightHandThumb1
+    100148: Jamila:Solving:RightHandThumb2
+    100150: Jamila:Solving:RightLeg
+    100152: Jamila:Solving:RightShoulder
+    100154: Jamila:Solving:RightToeBase
+    100156: Jamila:Solving:RightToeEnd
+    100158: Jamila:Solving:RightUpLeg
+    100160: Jamila:Solving:Spine
+    100162: Jamila:STRN
+    100164: Jamila:T10
+    100166: System
+    100168: System:MX_3p_10179
+    100170: System:MX_3p_10183
+    100172: System:MX_3p_10184
+    100174: System:MX_3p_10493
+    100176: System:MX_3p_10494
+    100178: System:MX_3p_10495
+    100180: System:MX_3p_10496
+    100182: System:MX_3p_10497
+    100184: System:MX_3p_10498
+    100186: System:MX_3p_10499
+    100188: System:MX_3p_10502
+    100190: System:MX_3p_10503
+    100192: System:MX_3p_12309
+    100194: System:T20_15966
+    100196: System:T20_15998
+    100198: Unlabeled_Markers
+    100200: Unlabeled_Markers:_101
+    100202: Unlabeled_Markers:_102
+    100204: Unlabeled_Markers:_106
+    100206: Unlabeled_Markers:_110
+    100208: Unlabeled_Markers:_111
+    100210: Unlabeled_Markers:_113
+    100212: Unlabeled_Markers:_125
+    100214: Unlabeled_Markers:_127
+    100216: Unlabeled_Markers:_134
+    100218: Unlabeled_Markers:_136
+    100220: Unlabeled_Markers:_137
+    100222: Unlabeled_Markers:_139
+    100224: Unlabeled_Markers:_147
+    100226: Unlabeled_Markers:_148
+    100228: Unlabeled_Markers:_151
+    100230: Unlabeled_Markers:_152
+    100232: Unlabeled_Markers:_155
+    100234: Unlabeled_Markers:_156
+    100236: Unlabeled_Markers:_157
+    100238: Unlabeled_Markers:_159
+    100240: Unlabeled_Markers:_162
+    100242: Unlabeled_Markers:_164
+    100244: Unlabeled_Markers:_171
+    100246: Unlabeled_Markers:_173
+    100248: Unlabeled_Markers:_174
+    100250: Unlabeled_Markers:_175
+    100252: Unlabeled_Markers:_179
+    100254: Unlabeled_Markers:_180
+    100256: Unlabeled_Markers:_181
+    100258: Unlabeled_Markers:_182
+    100260: Unlabeled_Markers:_186
+    100262: Unlabeled_Markers:_189
+    100264: Unlabeled_Markers:_195
+    100266: Unlabeled_Markers:_227
+    100268: Unlabeled_Markers:_231
+    100270: Unlabeled_Markers:_232
+    100272: Unlabeled_Markers:_241
+    100274: Unlabeled_Markers:_305
+    100276: Unlabeled_Markers:_336
+    100278: Unlabeled_Markers:_341
+    100280: Unlabeled_Markers:_357
+    100282: Unlabeled_Markers:_362
+    100284: Unlabeled_Markers:_428
+    100286: Unlabeled_Markers:_467
+    100288: Unlabeled_Markers:_468
+    100290: Unlabeled_Markers:_469
+    100292: Unlabeled_Markers:_470
+    100294: Unlabeled_Markers:_476
+    100296: Unlabeled_Markers:_483
+    100298: Unlabeled_Markers:_500
+    100300: Unlabeled_Markers:_509
+    100302: Unlabeled_Markers:_517
+    100304: Unlabeled_Markers:_564
+    100306: Unlabeled_Markers:_565
+    100308: Unlabeled_Markers:_569
+    100310: Unlabeled_Markers:_571
+    100312: Unlabeled_Markers:_573
+    100314: Unlabeled_Markers:_586
+    100316: Unlabeled_Markers:_589
+    100318: Unlabeled_Markers:_592
+    100320: Unlabeled_Markers:_594
+    100322: Unlabeled_Markers:_597
+    100324: Unlabeled_Markers:_598
+    100326: Unlabeled_Markers:_599
+    100328: Unlabeled_Markers:_602
+    100330: Unlabeled_Markers:_604
+    100332: Unlabeled_Markers:_609
+    100334: Unlabeled_Markers:_610
+    100336: Unlabeled_Markers:_611
+    100338: Unlabeled_Markers:_612
+    100340: Unlabeled_Markers:_613
+    100342: Unlabeled_Markers:_614
+    100344: Unlabeled_Markers:_615
+    100346: Unlabeled_Markers:_619
+    100348: Unlabeled_Markers:_62
+    100350: Unlabeled_Markers:_622
+    100352: Unlabeled_Markers:_625
+    100354: Unlabeled_Markers:_628
+    100356: Unlabeled_Markers:_629
+    100358: Unlabeled_Markers:_633
+    100360: Unlabeled_Markers:_637
+    100362: Unlabeled_Markers:_639
+    100364: Unlabeled_Markers:_644
+    100366: Unlabeled_Markers:_645
+    100368: Unlabeled_Markers:_665
+    100370: Unlabeled_Markers:_666
+    100372: Unlabeled_Markers:_675
+    100374: Unlabeled_Markers:_678
+    100376: Unlabeled_Markers:_683
+    100378: Unlabeled_Markers:_685
+    100380: Unlabeled_Markers:_686
+    100382: Unlabeled_Markers:_687
+    100384: Unlabeled_Markers:_689
+    100386: Unlabeled_Markers:_693
+    100388: Unlabeled_Markers:_694
+    100390: Unlabeled_Markers:_695
+    100392: Unlabeled_Markers:_70
+    100394: Unlabeled_Markers:_73
+    100396: Unlabeled_Markers:_77
+    100398: Unlabeled_Markers:_78
+    100400: Unlabeled_Markers:_81
+    100402: Unlabeled_Markers:_85
+    100404: Unlabeled_Markers:_88
+    100406: Unlabeled_Markers:_89
+    100408: Unlabeled_Markers:_97
+    100410: Unlabeled_Markers:_98
+    100412: Zen_Ctrl:ChestEndEffector
+    100414: Zen_Ctrl:ChestOriginEffector
+    100416: Zen_Ctrl:Head
+    100418: Zen_Ctrl:HeadEffector
+    100420: Zen_Ctrl:Hips
+    100422: Zen_Ctrl:HipsEffector
+    100424: Zen_Ctrl:LeftAnkleEffector
+    100426: Zen_Ctrl:LeftArm
+    100428: Zen_Ctrl:LeftElbowEffector
+    100430: Zen_Ctrl:LeftFoot
+    100432: Zen_Ctrl:LeftFootEffector
+    100434: Zen_Ctrl:LeftForeArm
+    100436: Zen_Ctrl:LeftHand
+    100438: Zen_Ctrl:LeftHandIndex1
+    100440: Zen_Ctrl:LeftHandIndex2
+    100442: Zen_Ctrl:LeftHandIndex3
+    100444: Zen_Ctrl:LeftHandIndex4
+    100446: Zen_Ctrl:LeftHandIndexEffector
+    100448: Zen_Ctrl:LeftHandMiddle1
+    100450: Zen_Ctrl:LeftHandMiddle2
+    100452: Zen_Ctrl:LeftHandMiddle3
+    100454: Zen_Ctrl:LeftHandMiddle4
+    100456: Zen_Ctrl:LeftHandMiddleEffector
+    100458: Zen_Ctrl:LeftHandPinky1
+    100460: Zen_Ctrl:LeftHandPinky2
+    100462: Zen_Ctrl:LeftHandPinky3
+    100464: Zen_Ctrl:LeftHandPinky4
+    100466: Zen_Ctrl:LeftHandPinkyEffector
+    100468: Zen_Ctrl:LeftHandRing1
+    100470: Zen_Ctrl:LeftHandRing2
+    100472: Zen_Ctrl:LeftHandRing3
+    100474: Zen_Ctrl:LeftHandRing4
+    100476: Zen_Ctrl:LeftHandRingEffector
+    100478: Zen_Ctrl:LeftHandThumb1
+    100480: Zen_Ctrl:LeftHandThumb2
+    100482: Zen_Ctrl:LeftHandThumb3
+    100484: Zen_Ctrl:LeftHandThumb4
+    100486: Zen_Ctrl:LeftHandThumbEffector
+    100488: Zen_Ctrl:LeftHipEffector
+    100490: Zen_Ctrl:LeftKneeEffector
+    100492: Zen_Ctrl:LeftLeg
+    100494: Zen_Ctrl:LeftShoulder
+    100496: Zen_Ctrl:LeftShoulderEffector
+    100498: Zen_Ctrl:LeftToeBase
+    100500: Zen_Ctrl:LeftUpLeg
+    100502: Zen_Ctrl:LeftWristEffector
+    100504: Zen_Ctrl:Neck
+    100506: Zen_Ctrl:Reference
+    100508: Zen_Ctrl:RightAnkleEffector
+    100510: Zen_Ctrl:RightArm
+    100512: Zen_Ctrl:RightElbowEffector
+    100514: Zen_Ctrl:RightFoot
+    100516: Zen_Ctrl:RightFootEffector
+    100518: Zen_Ctrl:RightForeArm
+    100520: Zen_Ctrl:RightHand
+    100522: Zen_Ctrl:RightHandIndex1
+    100524: Zen_Ctrl:RightHandIndex2
+    100526: Zen_Ctrl:RightHandIndex3
+    100528: Zen_Ctrl:RightHandIndex4
+    100530: Zen_Ctrl:RightHandIndexEffector
+    100532: Zen_Ctrl:RightHandMiddle1
+    100534: Zen_Ctrl:RightHandMiddle2
+    100536: Zen_Ctrl:RightHandMiddle3
+    100538: Zen_Ctrl:RightHandMiddle4
+    100540: Zen_Ctrl:RightHandMiddleEffector
+    100542: Zen_Ctrl:RightHandPinky1
+    100544: Zen_Ctrl:RightHandPinky2
+    100546: Zen_Ctrl:RightHandPinky3
+    100548: Zen_Ctrl:RightHandPinky4
+    100550: Zen_Ctrl:RightHandPinkyEffector
+    100552: Zen_Ctrl:RightHandRing1
+    100554: Zen_Ctrl:RightHandRing2
+    100556: Zen_Ctrl:RightHandRing3
+    100558: Zen_Ctrl:RightHandRing4
+    100560: Zen_Ctrl:RightHandRingEffector
+    100562: Zen_Ctrl:RightHandThumb1
+    100564: Zen_Ctrl:RightHandThumb2
+    100566: Zen_Ctrl:RightHandThumb3
+    100568: Zen_Ctrl:RightHandThumb4
+    100570: Zen_Ctrl:RightHandThumbEffector
+    100572: Zen_Ctrl:RightHipEffector
+    100574: Zen_Ctrl:RightKneeEffector
+    100576: Zen_Ctrl:RightLeg
+    100578: Zen_Ctrl:RightShoulder
+    100580: Zen_Ctrl:RightShoulderEffector
+    100582: Zen_Ctrl:RightToeBase
+    100584: Zen_Ctrl:RightUpLeg
+    100586: Zen_Ctrl:RightWristEffector
+    100588: Zen_Ctrl:Spine
+    100590: Zen_Ctrl:Spine1
+    100592: Zen_Ctrl:Spine2
+    100594: zen_hair
+    100596: zen_leftEye
+    100598: zen_Legs
+    100600: zen_rightEye
+    100602: zen_skirt
+    100604: zen_torso
+    100606: //RootNode
+    100608: Zenobia_Head
+    100610: Zenobia_Hips
+    100612: Zenobia_LeftArm
+    100614: Zenobia_LeftFoot
+    100616: Zenobia_LeftForeArm
+    100618: Zenobia_LeftHand
+    100620: Zenobia_LeftHandIndex1
+    100622: Zenobia_LeftHandIndex2
+    100624: Zenobia_LeftHandIndex3
+    100626: Zenobia_LeftHandIndex4
+    100628: Zenobia_LeftHandMiddle1
+    100630: Zenobia_LeftHandMiddle2
+    100632: Zenobia_LeftHandMiddle3
+    100634: Zenobia_LeftHandMiddle4
+    100636: Zenobia_LeftHandPinky1
+    100638: Zenobia_LeftHandPinky2
+    100640: Zenobia_LeftHandPinky3
+    100642: Zenobia_LeftHandPinky4
+    100644: Zenobia_LeftHandRing1
+    100646: Zenobia_LeftHandRing2
+    100648: Zenobia_LeftHandRing3
+    100650: Zenobia_LeftHandRing4
+    100652: Zenobia_LeftHandThumb1
+    100654: Zenobia_LeftHandThumb2
+    100656: Zenobia_LeftHandThumb3
+    100658: Zenobia_LeftHandThumb4
+    100660: Zenobia_LeftLeg
+    100662: Zenobia_LeftShoulder
+    100664: Zenobia_LeftToeBase
+    100666: Zenobia_LeftUpLeg
+    100668: Zenobia_Neck
+    100670: Zenobia_Reference1
+    100672: Zenobia_RightArm
+    100674: Zenobia_RightFoot
+    100676: Zenobia_RightForeArm
+    100678: Zenobia_RightHand
+    100680: Zenobia_RightHandIndex1
+    100682: Zenobia_RightHandIndex2
+    100684: Zenobia_RightHandIndex3
+    100686: Zenobia_RightHandIndex4
+    100688: Zenobia_RightHandMiddle1
+    100690: Zenobia_RightHandMiddle2
+    100692: Zenobia_RightHandMiddle3
+    100694: Zenobia_RightHandMiddle4
+    100696: Zenobia_RightHandPinky1
+    100698: Zenobia_RightHandPinky2
+    100700: Zenobia_RightHandPinky3
+    100702: Zenobia_RightHandPinky4
+    100704: Zenobia_RightHandRing1
+    100706: Zenobia_RightHandRing2
+    100708: Zenobia_RightHandRing3
+    100710: Zenobia_RightHandRing4
+    100712: Zenobia_RightHandThumb1
+    100714: Zenobia_RightHandThumb2
+    100716: Zenobia_RightHandThumb3
+    100718: Zenobia_RightHandThumb4
+    100720: Zenobia_RightLeg
+    100722: Zenobia_RightShoulder
+    100724: Zenobia_RightToeBase
+    100726: Zenobia_RightUpLeg
+    100728: Zenobia_Spine
+    100730: Zenobia_Spine1
+    100732: Zenobia_Spine2
+    400000: Jamila
+    400002: Jamila:ARIEL
+    400004: Jamila:C7
+    400006: Jamila:CLAV
+    400008: Jamila:LANK
+    400010: Jamila:LBHD
+    400012: Jamila:LBSH
+    400014: Jamila:LBWT
+    400016: Jamila:LELB
+    400018: Jamila:LFHD
+    400020: Jamila:LFSH
+    400022: Jamila:LFWT
+    400024: Jamila:LHEL
+    400026: Jamila:LHIP
+    400028: Jamila:LIEL
+    400030: Jamila:LIHAND
+    400032: Jamila:LIWR
+    400034: Jamila:LKNE
+    400036: Jamila:LKNI
+    400038: Jamila:LMT1
+    400040: Jamila:LMT5
+    400042: Jamila:LMWT
+    400044: Jamila:LOHAND
+    400046: Jamila:LOWR
+    400048: Jamila:LSHN
+    400050: Jamila:LTOE
+    400052: Jamila:LUPA
+    400054: Jamila:LWRE
+    400056: Jamila:RANK
+    400058: Jamila:RBHD
+    400060: Jamila:RBSH
+    400062: Jamila:RBWT
+    400064: Jamila:RELB
+    400066: Jamila:RFHD
+    400068: Jamila:RFSH
+    400070: Jamila:RFWT
+    400072: Jamila:RHEL
+    400074: Jamila:RHIP
+    400076: Jamila:RIEL
+    400078: Jamila:RIHAND
+    400080: Jamila:RIWR
+    400082: Jamila:RKNE
+    400084: Jamila:RKNI
+    400086: Jamila:RMT1
+    400088: Jamila:RMT5
+    400090: Jamila:RMWT
+    400092: Jamila:ROHAND
+    400094: Jamila:ROWR
+    400096: Jamila:RSHN
+    400098: Jamila:RTOE
+    400100: Jamila:RUPA
+    400102: Jamila:RWRE
+    400104: Jamila:Solving
+    400106: Jamila:Solving:Head
+    400108: Jamila:Solving:Head_End
+    400110: Jamila:Solving:Hips
+    400112: Jamila:Solving:LeftArm
+    400114: Jamila:Solving:LeftFoot
+    400116: Jamila:Solving:LeftForeArm
+    400118: Jamila:Solving:LeftHand
+    400120: Jamila:Solving:LeftHandEnd
+    400122: Jamila:Solving:LeftHandThumb1
+    400124: Jamila:Solving:LeftHandThumb2
+    400126: Jamila:Solving:LeftLeg
+    400128: Jamila:Solving:LeftShoulder
+    400130: Jamila:Solving:LeftToeBase
+    400132: Jamila:Solving:LeftToeEnd
+    400134: Jamila:Solving:LeftUpLeg
+    400136: Jamila:Solving:RightArm
+    400138: Jamila:Solving:RightFoot
+    400140: Jamila:Solving:RightForeArm
+    400142: Jamila:Solving:RightHand
+    400144: Jamila:Solving:RightHandEnd
+    400146: Jamila:Solving:RightHandThumb1
+    400148: Jamila:Solving:RightHandThumb2
+    400150: Jamila:Solving:RightLeg
+    400152: Jamila:Solving:RightShoulder
+    400154: Jamila:Solving:RightToeBase
+    400156: Jamila:Solving:RightToeEnd
+    400158: Jamila:Solving:RightUpLeg
+    400160: Jamila:Solving:Spine
+    400162: Jamila:STRN
+    400164: Jamila:T10
+    400166: System
+    400168: System:MX_3p_10179
+    400170: System:MX_3p_10183
+    400172: System:MX_3p_10184
+    400174: System:MX_3p_10493
+    400176: System:MX_3p_10494
+    400178: System:MX_3p_10495
+    400180: System:MX_3p_10496
+    400182: System:MX_3p_10497
+    400184: System:MX_3p_10498
+    400186: System:MX_3p_10499
+    400188: System:MX_3p_10502
+    400190: System:MX_3p_10503
+    400192: System:MX_3p_12309
+    400194: System:T20_15966
+    400196: System:T20_15998
+    400198: Unlabeled_Markers
+    400200: Unlabeled_Markers:_101
+    400202: Unlabeled_Markers:_102
+    400204: Unlabeled_Markers:_106
+    400206: Unlabeled_Markers:_110
+    400208: Unlabeled_Markers:_111
+    400210: Unlabeled_Markers:_113
+    400212: Unlabeled_Markers:_125
+    400214: Unlabeled_Markers:_127
+    400216: Unlabeled_Markers:_134
+    400218: Unlabeled_Markers:_136
+    400220: Unlabeled_Markers:_137
+    400222: Unlabeled_Markers:_139
+    400224: Unlabeled_Markers:_147
+    400226: Unlabeled_Markers:_148
+    400228: Unlabeled_Markers:_151
+    400230: Unlabeled_Markers:_152
+    400232: Unlabeled_Markers:_155
+    400234: Unlabeled_Markers:_156
+    400236: Unlabeled_Markers:_157
+    400238: Unlabeled_Markers:_159
+    400240: Unlabeled_Markers:_162
+    400242: Unlabeled_Markers:_164
+    400244: Unlabeled_Markers:_171
+    400246: Unlabeled_Markers:_173
+    400248: Unlabeled_Markers:_174
+    400250: Unlabeled_Markers:_175
+    400252: Unlabeled_Markers:_179
+    400254: Unlabeled_Markers:_180
+    400256: Unlabeled_Markers:_181
+    400258: Unlabeled_Markers:_182
+    400260: Unlabeled_Markers:_186
+    400262: Unlabeled_Markers:_189
+    400264: Unlabeled_Markers:_195
+    400266: Unlabeled_Markers:_227
+    400268: Unlabeled_Markers:_231
+    400270: Unlabeled_Markers:_232
+    400272: Unlabeled_Markers:_241
+    400274: Unlabeled_Markers:_305
+    400276: Unlabeled_Markers:_336
+    400278: Unlabeled_Markers:_341
+    400280: Unlabeled_Markers:_357
+    400282: Unlabeled_Markers:_362
+    400284: Unlabeled_Markers:_428
+    400286: Unlabeled_Markers:_467
+    400288: Unlabeled_Markers:_468
+    400290: Unlabeled_Markers:_469
+    400292: Unlabeled_Markers:_470
+    400294: Unlabeled_Markers:_476
+    400296: Unlabeled_Markers:_483
+    400298: Unlabeled_Markers:_500
+    400300: Unlabeled_Markers:_509
+    400302: Unlabeled_Markers:_517
+    400304: Unlabeled_Markers:_564
+    400306: Unlabeled_Markers:_565
+    400308: Unlabeled_Markers:_569
+    400310: Unlabeled_Markers:_571
+    400312: Unlabeled_Markers:_573
+    400314: Unlabeled_Markers:_586
+    400316: Unlabeled_Markers:_589
+    400318: Unlabeled_Markers:_592
+    400320: Unlabeled_Markers:_594
+    400322: Unlabeled_Markers:_597
+    400324: Unlabeled_Markers:_598
+    400326: Unlabeled_Markers:_599
+    400328: Unlabeled_Markers:_602
+    400330: Unlabeled_Markers:_604
+    400332: Unlabeled_Markers:_609
+    400334: Unlabeled_Markers:_610
+    400336: Unlabeled_Markers:_611
+    400338: Unlabeled_Markers:_612
+    400340: Unlabeled_Markers:_613
+    400342: Unlabeled_Markers:_614
+    400344: Unlabeled_Markers:_615
+    400346: Unlabeled_Markers:_619
+    400348: Unlabeled_Markers:_62
+    400350: Unlabeled_Markers:_622
+    400352: Unlabeled_Markers:_625
+    400354: Unlabeled_Markers:_628
+    400356: Unlabeled_Markers:_629
+    400358: Unlabeled_Markers:_633
+    400360: Unlabeled_Markers:_637
+    400362: Unlabeled_Markers:_639
+    400364: Unlabeled_Markers:_644
+    400366: Unlabeled_Markers:_645
+    400368: Unlabeled_Markers:_665
+    400370: Unlabeled_Markers:_666
+    400372: Unlabeled_Markers:_675
+    400374: Unlabeled_Markers:_678
+    400376: Unlabeled_Markers:_683
+    400378: Unlabeled_Markers:_685
+    400380: Unlabeled_Markers:_686
+    400382: Unlabeled_Markers:_687
+    400384: Unlabeled_Markers:_689
+    400386: Unlabeled_Markers:_693
+    400388: Unlabeled_Markers:_694
+    400390: Unlabeled_Markers:_695
+    400392: Unlabeled_Markers:_70
+    400394: Unlabeled_Markers:_73
+    400396: Unlabeled_Markers:_77
+    400398: Unlabeled_Markers:_78
+    400400: Unlabeled_Markers:_81
+    400402: Unlabeled_Markers:_85
+    400404: Unlabeled_Markers:_88
+    400406: Unlabeled_Markers:_89
+    400408: Unlabeled_Markers:_97
+    400410: Unlabeled_Markers:_98
+    400412: Zen_Ctrl:ChestEndEffector
+    400414: Zen_Ctrl:ChestOriginEffector
+    400416: Zen_Ctrl:Head
+    400418: Zen_Ctrl:HeadEffector
+    400420: Zen_Ctrl:Hips
+    400422: Zen_Ctrl:HipsEffector
+    400424: Zen_Ctrl:LeftAnkleEffector
+    400426: Zen_Ctrl:LeftArm
+    400428: Zen_Ctrl:LeftElbowEffector
+    400430: Zen_Ctrl:LeftFoot
+    400432: Zen_Ctrl:LeftFootEffector
+    400434: Zen_Ctrl:LeftForeArm
+    400436: Zen_Ctrl:LeftHand
+    400438: Zen_Ctrl:LeftHandIndex1
+    400440: Zen_Ctrl:LeftHandIndex2
+    400442: Zen_Ctrl:LeftHandIndex3
+    400444: Zen_Ctrl:LeftHandIndex4
+    400446: Zen_Ctrl:LeftHandIndexEffector
+    400448: Zen_Ctrl:LeftHandMiddle1
+    400450: Zen_Ctrl:LeftHandMiddle2
+    400452: Zen_Ctrl:LeftHandMiddle3
+    400454: Zen_Ctrl:LeftHandMiddle4
+    400456: Zen_Ctrl:LeftHandMiddleEffector
+    400458: Zen_Ctrl:LeftHandPinky1
+    400460: Zen_Ctrl:LeftHandPinky2
+    400462: Zen_Ctrl:LeftHandPinky3
+    400464: Zen_Ctrl:LeftHandPinky4
+    400466: Zen_Ctrl:LeftHandPinkyEffector
+    400468: Zen_Ctrl:LeftHandRing1
+    400470: Zen_Ctrl:LeftHandRing2
+    400472: Zen_Ctrl:LeftHandRing3
+    400474: Zen_Ctrl:LeftHandRing4
+    400476: Zen_Ctrl:LeftHandRingEffector
+    400478: Zen_Ctrl:LeftHandThumb1
+    400480: Zen_Ctrl:LeftHandThumb2
+    400482: Zen_Ctrl:LeftHandThumb3
+    400484: Zen_Ctrl:LeftHandThumb4
+    400486: Zen_Ctrl:LeftHandThumbEffector
+    400488: Zen_Ctrl:LeftHipEffector
+    400490: Zen_Ctrl:LeftKneeEffector
+    400492: Zen_Ctrl:LeftLeg
+    400494: Zen_Ctrl:LeftShoulder
+    400496: Zen_Ctrl:LeftShoulderEffector
+    400498: Zen_Ctrl:LeftToeBase
+    400500: Zen_Ctrl:LeftUpLeg
+    400502: Zen_Ctrl:LeftWristEffector
+    400504: Zen_Ctrl:Neck
+    400506: Zen_Ctrl:Reference
+    400508: Zen_Ctrl:RightAnkleEffector
+    400510: Zen_Ctrl:RightArm
+    400512: Zen_Ctrl:RightElbowEffector
+    400514: Zen_Ctrl:RightFoot
+    400516: Zen_Ctrl:RightFootEffector
+    400518: Zen_Ctrl:RightForeArm
+    400520: Zen_Ctrl:RightHand
+    400522: Zen_Ctrl:RightHandIndex1
+    400524: Zen_Ctrl:RightHandIndex2
+    400526: Zen_Ctrl:RightHandIndex3
+    400528: Zen_Ctrl:RightHandIndex4
+    400530: Zen_Ctrl:RightHandIndexEffector
+    400532: Zen_Ctrl:RightHandMiddle1
+    400534: Zen_Ctrl:RightHandMiddle2
+    400536: Zen_Ctrl:RightHandMiddle3
+    400538: Zen_Ctrl:RightHandMiddle4
+    400540: Zen_Ctrl:RightHandMiddleEffector
+    400542: Zen_Ctrl:RightHandPinky1
+    400544: Zen_Ctrl:RightHandPinky2
+    400546: Zen_Ctrl:RightHandPinky3
+    400548: Zen_Ctrl:RightHandPinky4
+    400550: Zen_Ctrl:RightHandPinkyEffector
+    400552: Zen_Ctrl:RightHandRing1
+    400554: Zen_Ctrl:RightHandRing2
+    400556: Zen_Ctrl:RightHandRing3
+    400558: Zen_Ctrl:RightHandRing4
+    400560: Zen_Ctrl:RightHandRingEffector
+    400562: Zen_Ctrl:RightHandThumb1
+    400564: Zen_Ctrl:RightHandThumb2
+    400566: Zen_Ctrl:RightHandThumb3
+    400568: Zen_Ctrl:RightHandThumb4
+    400570: Zen_Ctrl:RightHandThumbEffector
+    400572: Zen_Ctrl:RightHipEffector
+    400574: Zen_Ctrl:RightKneeEffector
+    400576: Zen_Ctrl:RightLeg
+    400578: Zen_Ctrl:RightShoulder
+    400580: Zen_Ctrl:RightShoulderEffector
+    400582: Zen_Ctrl:RightToeBase
+    400584: Zen_Ctrl:RightUpLeg
+    400586: Zen_Ctrl:RightWristEffector
+    400588: Zen_Ctrl:Spine
+    400590: Zen_Ctrl:Spine1
+    400592: Zen_Ctrl:Spine2
+    400594: zen_hair
+    400596: zen_leftEye
+    400598: zen_Legs
+    400600: zen_rightEye
+    400602: zen_skirt
+    400604: zen_torso
+    400606: //RootNode
+    400608: Zenobia_Head
+    400610: Zenobia_Hips
+    400612: Zenobia_LeftArm
+    400614: Zenobia_LeftFoot
+    400616: Zenobia_LeftForeArm
+    400618: Zenobia_LeftHand
+    400620: Zenobia_LeftHandIndex1
+    400622: Zenobia_LeftHandIndex2
+    400624: Zenobia_LeftHandIndex3
+    400626: Zenobia_LeftHandIndex4
+    400628: Zenobia_LeftHandMiddle1
+    400630: Zenobia_LeftHandMiddle2
+    400632: Zenobia_LeftHandMiddle3
+    400634: Zenobia_LeftHandMiddle4
+    400636: Zenobia_LeftHandPinky1
+    400638: Zenobia_LeftHandPinky2
+    400640: Zenobia_LeftHandPinky3
+    400642: Zenobia_LeftHandPinky4
+    400644: Zenobia_LeftHandRing1
+    400646: Zenobia_LeftHandRing2
+    400648: Zenobia_LeftHandRing3
+    400650: Zenobia_LeftHandRing4
+    400652: Zenobia_LeftHandThumb1
+    400654: Zenobia_LeftHandThumb2
+    400656: Zenobia_LeftHandThumb3
+    400658: Zenobia_LeftHandThumb4
+    400660: Zenobia_LeftLeg
+    400662: Zenobia_LeftShoulder
+    400664: Zenobia_LeftToeBase
+    400666: Zenobia_LeftUpLeg
+    400668: Zenobia_Neck
+    400670: Zenobia_Reference1
+    400672: Zenobia_RightArm
+    400674: Zenobia_RightFoot
+    400676: Zenobia_RightForeArm
+    400678: Zenobia_RightHand
+    400680: Zenobia_RightHandIndex1
+    400682: Zenobia_RightHandIndex2
+    400684: Zenobia_RightHandIndex3
+    400686: Zenobia_RightHandIndex4
+    400688: Zenobia_RightHandMiddle1
+    400690: Zenobia_RightHandMiddle2
+    400692: Zenobia_RightHandMiddle3
+    400694: Zenobia_RightHandMiddle4
+    400696: Zenobia_RightHandPinky1
+    400698: Zenobia_RightHandPinky2
+    400700: Zenobia_RightHandPinky3
+    400702: Zenobia_RightHandPinky4
+    400704: Zenobia_RightHandRing1
+    400706: Zenobia_RightHandRing2
+    400708: Zenobia_RightHandRing3
+    400710: Zenobia_RightHandRing4
+    400712: Zenobia_RightHandThumb1
+    400714: Zenobia_RightHandThumb2
+    400716: Zenobia_RightHandThumb3
+    400718: Zenobia_RightHandThumb4
+    400720: Zenobia_RightLeg
+    400722: Zenobia_RightShoulder
+    400724: Zenobia_RightToeBase
+    400726: Zenobia_RightUpLeg
+    400728: Zenobia_Spine
+    400730: Zenobia_Spine1
+    400732: Zenobia_Spine2
+    7400000: Zen_Idle_001_x2d
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Zen_Idle_001_x2d
+      takeName: Zen_Idle_001_x2d
+      firstFrame: 98
+      lastFrame: 3286
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Jamila
+        weight: 1
+      - path: Jamila/Jamila:ARIEL
+        weight: 1
+      - path: Jamila/Jamila:C7
+        weight: 1
+      - path: Jamila/Jamila:CLAV
+        weight: 1
+      - path: Jamila/Jamila:LANK
+        weight: 1
+      - path: Jamila/Jamila:LBHD
+        weight: 1
+      - path: Jamila/Jamila:LBSH
+        weight: 1
+      - path: Jamila/Jamila:LBWT
+        weight: 1
+      - path: Jamila/Jamila:LELB
+        weight: 1
+      - path: Jamila/Jamila:LFHD
+        weight: 1
+      - path: Jamila/Jamila:LFSH
+        weight: 1
+      - path: Jamila/Jamila:LFWT
+        weight: 1
+      - path: Jamila/Jamila:LHEL
+        weight: 1
+      - path: Jamila/Jamila:LHIP
+        weight: 1
+      - path: Jamila/Jamila:LIEL
+        weight: 1
+      - path: Jamila/Jamila:LIHAND
+        weight: 1
+      - path: Jamila/Jamila:LIWR
+        weight: 1
+      - path: Jamila/Jamila:LKNE
+        weight: 1
+      - path: Jamila/Jamila:LKNI
+        weight: 1
+      - path: Jamila/Jamila:LMT1
+        weight: 1
+      - path: Jamila/Jamila:LMT5
+        weight: 1
+      - path: Jamila/Jamila:LMWT
+        weight: 1
+      - path: Jamila/Jamila:LOHAND
+        weight: 1
+      - path: Jamila/Jamila:LOWR
+        weight: 1
+      - path: Jamila/Jamila:LSHN
+        weight: 1
+      - path: Jamila/Jamila:LTOE
+        weight: 1
+      - path: Jamila/Jamila:LUPA
+        weight: 1
+      - path: Jamila/Jamila:LWRE
+        weight: 1
+      - path: Jamila/Jamila:RANK
+        weight: 1
+      - path: Jamila/Jamila:RBHD
+        weight: 1
+      - path: Jamila/Jamila:RBSH
+        weight: 1
+      - path: Jamila/Jamila:RBWT
+        weight: 1
+      - path: Jamila/Jamila:RELB
+        weight: 1
+      - path: Jamila/Jamila:RFHD
+        weight: 1
+      - path: Jamila/Jamila:RFSH
+        weight: 1
+      - path: Jamila/Jamila:RFWT
+        weight: 1
+      - path: Jamila/Jamila:RHEL
+        weight: 1
+      - path: Jamila/Jamila:RHIP
+        weight: 1
+      - path: Jamila/Jamila:RIEL
+        weight: 1
+      - path: Jamila/Jamila:RIHAND
+        weight: 1
+      - path: Jamila/Jamila:RIWR
+        weight: 1
+      - path: Jamila/Jamila:RKNE
+        weight: 1
+      - path: Jamila/Jamila:RKNI
+        weight: 1
+      - path: Jamila/Jamila:RMT1
+        weight: 1
+      - path: Jamila/Jamila:RMT5
+        weight: 1
+      - path: Jamila/Jamila:RMWT
+        weight: 1
+      - path: Jamila/Jamila:ROHAND
+        weight: 1
+      - path: Jamila/Jamila:ROWR
+        weight: 1
+      - path: Jamila/Jamila:RSHN
+        weight: 1
+      - path: Jamila/Jamila:RTOE
+        weight: 1
+      - path: Jamila/Jamila:RUPA
+        weight: 1
+      - path: Jamila/Jamila:RWRE
+        weight: 1
+      - path: Jamila/Jamila:Solving
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:LeftUpLeg
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:LeftUpLeg/Jamila:Solving:LeftLeg
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:LeftUpLeg/Jamila:Solving:LeftLeg/Jamila:Solving:LeftFoot
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:LeftUpLeg/Jamila:Solving:LeftLeg/Jamila:Solving:LeftFoot/Jamila:Solving:LeftToeBase
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:LeftUpLeg/Jamila:Solving:LeftLeg/Jamila:Solving:LeftFoot/Jamila:Solving:LeftToeBase/Jamila:Solving:LeftToeEnd
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:RightUpLeg
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:RightUpLeg/Jamila:Solving:RightLeg
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:RightUpLeg/Jamila:Solving:RightLeg/Jamila:Solving:RightFoot
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:RightUpLeg/Jamila:Solving:RightLeg/Jamila:Solving:RightFoot/Jamila:Solving:RightToeBase
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:RightUpLeg/Jamila:Solving:RightLeg/Jamila:Solving:RightFoot/Jamila:Solving:RightToeBase/Jamila:Solving:RightToeEnd
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:Head
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:Head/Jamila:Solving:Head_End
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder/Jamila:Solving:LeftArm
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder/Jamila:Solving:LeftArm/Jamila:Solving:LeftForeArm
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder/Jamila:Solving:LeftArm/Jamila:Solving:LeftForeArm/Jamila:Solving:LeftHand
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder/Jamila:Solving:LeftArm/Jamila:Solving:LeftForeArm/Jamila:Solving:LeftHand/Jamila:Solving:LeftHandEnd
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder/Jamila:Solving:LeftArm/Jamila:Solving:LeftForeArm/Jamila:Solving:LeftHand/Jamila:Solving:LeftHandThumb1
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:LeftShoulder/Jamila:Solving:LeftArm/Jamila:Solving:LeftForeArm/Jamila:Solving:LeftHand/Jamila:Solving:LeftHandThumb1/Jamila:Solving:LeftHandThumb2
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder/Jamila:Solving:RightArm
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder/Jamila:Solving:RightArm/Jamila:Solving:RightForeArm
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder/Jamila:Solving:RightArm/Jamila:Solving:RightForeArm/Jamila:Solving:RightHand
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder/Jamila:Solving:RightArm/Jamila:Solving:RightForeArm/Jamila:Solving:RightHand/Jamila:Solving:RightHandEnd
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder/Jamila:Solving:RightArm/Jamila:Solving:RightForeArm/Jamila:Solving:RightHand/Jamila:Solving:RightHandThumb1
+        weight: 1
+      - path: Jamila/Jamila:Solving/Jamila:Solving:Hips/Jamila:Solving:Spine/Jamila:Solving:RightShoulder/Jamila:Solving:RightArm/Jamila:Solving:RightForeArm/Jamila:Solving:RightHand/Jamila:Solving:RightHandThumb1/Jamila:Solving:RightHandThumb2
+        weight: 1
+      - path: Jamila/Jamila:STRN
+        weight: 1
+      - path: Jamila/Jamila:T10
+        weight: 1
+      - path: System
+        weight: 1
+      - path: System/System:MX_3p_10179
+        weight: 1
+      - path: System/System:MX_3p_10183
+        weight: 1
+      - path: System/System:MX_3p_10184
+        weight: 1
+      - path: System/System:MX_3p_10493
+        weight: 1
+      - path: System/System:MX_3p_10494
+        weight: 1
+      - path: System/System:MX_3p_10495
+        weight: 1
+      - path: System/System:MX_3p_10496
+        weight: 1
+      - path: System/System:MX_3p_10497
+        weight: 1
+      - path: System/System:MX_3p_10498
+        weight: 1
+      - path: System/System:MX_3p_10499
+        weight: 1
+      - path: System/System:MX_3p_10502
+        weight: 1
+      - path: System/System:MX_3p_10503
+        weight: 1
+      - path: System/System:MX_3p_12309
+        weight: 1
+      - path: System/System:T20_15966
+        weight: 1
+      - path: System/System:T20_15998
+        weight: 1
+      - path: Unlabeled_Markers
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_62
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_70
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_73
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_77
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_78
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_81
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_85
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_88
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_89
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_97
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_98
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_101
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_102
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_106
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_110
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_111
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_113
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_125
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_127
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_134
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_136
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_137
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_139
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_147
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_148
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_151
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_152
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_155
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_156
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_157
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_159
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_162
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_164
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_171
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_173
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_174
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_175
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_179
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_180
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_181
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_182
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_186
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_189
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_195
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_227
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_231
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_232
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_241
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_305
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_336
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_341
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_357
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_362
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_428
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_467
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_468
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_469
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_470
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_476
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_483
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_500
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_509
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_517
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_564
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_565
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_569
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_571
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_573
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_586
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_589
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_592
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_594
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_597
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_598
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_599
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_602
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_604
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_609
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_610
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_611
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_612
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_613
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_614
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_615
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_619
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_622
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_625
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_628
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_629
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_633
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_637
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_639
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_644
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_645
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_665
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_666
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_675
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_678
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_683
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_685
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_686
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_687
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_689
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_693
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_694
+        weight: 1
+      - path: Unlabeled_Markers/Unlabeled_Markers:_695
+        weight: 1
+      - path: Zen_Ctrl:Reference
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:ChestEndEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:ChestOriginEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:HeadEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:LeftUpLeg
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:LeftUpLeg/Zen_Ctrl:LeftLeg
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:LeftUpLeg/Zen_Ctrl:LeftLeg/Zen_Ctrl:LeftFoot
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:LeftUpLeg/Zen_Ctrl:LeftLeg/Zen_Ctrl:LeftFoot/Zen_Ctrl:LeftToeBase
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:RightUpLeg
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:RightUpLeg/Zen_Ctrl:RightLeg
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:RightUpLeg/Zen_Ctrl:RightLeg/Zen_Ctrl:RightFoot
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:RightUpLeg/Zen_Ctrl:RightLeg/Zen_Ctrl:RightFoot/Zen_Ctrl:RightToeBase
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandIndex1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandIndex1/Zen_Ctrl:LeftHandIndex2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandIndex1/Zen_Ctrl:LeftHandIndex2/Zen_Ctrl:LeftHandIndex3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandIndex1/Zen_Ctrl:LeftHandIndex2/Zen_Ctrl:LeftHandIndex3/Zen_Ctrl:LeftHandIndex4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandMiddle1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandMiddle1/Zen_Ctrl:LeftHandMiddle2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandMiddle1/Zen_Ctrl:LeftHandMiddle2/Zen_Ctrl:LeftHandMiddle3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandMiddle1/Zen_Ctrl:LeftHandMiddle2/Zen_Ctrl:LeftHandMiddle3/Zen_Ctrl:LeftHandMiddle4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandPinky1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandPinky1/Zen_Ctrl:LeftHandPinky2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandPinky1/Zen_Ctrl:LeftHandPinky2/Zen_Ctrl:LeftHandPinky3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandPinky1/Zen_Ctrl:LeftHandPinky2/Zen_Ctrl:LeftHandPinky3/Zen_Ctrl:LeftHandPinky4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandRing1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandRing1/Zen_Ctrl:LeftHandRing2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandRing1/Zen_Ctrl:LeftHandRing2/Zen_Ctrl:LeftHandRing3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandRing1/Zen_Ctrl:LeftHandRing2/Zen_Ctrl:LeftHandRing3/Zen_Ctrl:LeftHandRing4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandThumb1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandThumb1/Zen_Ctrl:LeftHandThumb2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandThumb1/Zen_Ctrl:LeftHandThumb2/Zen_Ctrl:LeftHandThumb3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:LeftShoulder/Zen_Ctrl:LeftArm/Zen_Ctrl:LeftForeArm/Zen_Ctrl:LeftHand/Zen_Ctrl:LeftHandThumb1/Zen_Ctrl:LeftHandThumb2/Zen_Ctrl:LeftHandThumb3/Zen_Ctrl:LeftHandThumb4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:Neck
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:Neck/Zen_Ctrl:Head
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandIndex1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandIndex1/Zen_Ctrl:RightHandIndex2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandIndex1/Zen_Ctrl:RightHandIndex2/Zen_Ctrl:RightHandIndex3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandIndex1/Zen_Ctrl:RightHandIndex2/Zen_Ctrl:RightHandIndex3/Zen_Ctrl:RightHandIndex4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandMiddle1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandMiddle1/Zen_Ctrl:RightHandMiddle2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandMiddle1/Zen_Ctrl:RightHandMiddle2/Zen_Ctrl:RightHandMiddle3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandMiddle1/Zen_Ctrl:RightHandMiddle2/Zen_Ctrl:RightHandMiddle3/Zen_Ctrl:RightHandMiddle4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandPinky1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandPinky1/Zen_Ctrl:RightHandPinky2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandPinky1/Zen_Ctrl:RightHandPinky2/Zen_Ctrl:RightHandPinky3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandPinky1/Zen_Ctrl:RightHandPinky2/Zen_Ctrl:RightHandPinky3/Zen_Ctrl:RightHandPinky4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandRing1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandRing1/Zen_Ctrl:RightHandRing2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandRing1/Zen_Ctrl:RightHandRing2/Zen_Ctrl:RightHandRing3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandRing1/Zen_Ctrl:RightHandRing2/Zen_Ctrl:RightHandRing3/Zen_Ctrl:RightHandRing4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandThumb1
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandThumb1/Zen_Ctrl:RightHandThumb2
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandThumb1/Zen_Ctrl:RightHandThumb2/Zen_Ctrl:RightHandThumb3
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:Hips/Zen_Ctrl:Spine/Zen_Ctrl:Spine1/Zen_Ctrl:Spine2/Zen_Ctrl:RightShoulder/Zen_Ctrl:RightArm/Zen_Ctrl:RightForeArm/Zen_Ctrl:RightHand/Zen_Ctrl:RightHandThumb1/Zen_Ctrl:RightHandThumb2/Zen_Ctrl:RightHandThumb3/Zen_Ctrl:RightHandThumb4
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:HipsEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftAnkleEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftElbowEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftFootEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftHandIndexEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftHandMiddleEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftHandPinkyEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftHandRingEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftHandThumbEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftHipEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftKneeEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftShoulderEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:LeftWristEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightAnkleEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightElbowEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightFootEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightHandIndexEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightHandMiddleEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightHandPinkyEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightHandRingEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightHandThumbEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightHipEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightKneeEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightShoulderEffector
+        weight: 1
+      - path: Zen_Ctrl:Reference/Zen_Ctrl:RightWristEffector
+        weight: 1
+      - path: zen_hair
+        weight: 1
+      - path: zen_leftEye
+        weight: 1
+      - path: zen_Legs
+        weight: 1
+      - path: zen_rightEye
+        weight: 1
+      - path: zen_skirt
+        weight: 1
+      - path: zen_torso
+        weight: 1
+      - path: Zenobia_Reference1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_LeftUpLeg
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_LeftUpLeg/Zenobia_LeftLeg
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_LeftUpLeg/Zenobia_LeftLeg/Zenobia_LeftFoot
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_LeftUpLeg/Zenobia_LeftLeg/Zenobia_LeftFoot/Zenobia_LeftToeBase
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_RightUpLeg
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_RightUpLeg/Zenobia_RightLeg
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_RightUpLeg/Zenobia_RightLeg/Zenobia_RightFoot
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_RightUpLeg/Zenobia_RightLeg/Zenobia_RightFoot/Zenobia_RightToeBase
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandIndex1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandIndex1/Zenobia_LeftHandIndex2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandIndex1/Zenobia_LeftHandIndex2/Zenobia_LeftHandIndex3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandIndex1/Zenobia_LeftHandIndex2/Zenobia_LeftHandIndex3/Zenobia_LeftHandIndex4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandMiddle1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandMiddle1/Zenobia_LeftHandMiddle2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandMiddle1/Zenobia_LeftHandMiddle2/Zenobia_LeftHandMiddle3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandMiddle1/Zenobia_LeftHandMiddle2/Zenobia_LeftHandMiddle3/Zenobia_LeftHandMiddle4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandPinky1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandPinky1/Zenobia_LeftHandPinky2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandPinky1/Zenobia_LeftHandPinky2/Zenobia_LeftHandPinky3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandPinky1/Zenobia_LeftHandPinky2/Zenobia_LeftHandPinky3/Zenobia_LeftHandPinky4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandRing1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandRing1/Zenobia_LeftHandRing2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandRing1/Zenobia_LeftHandRing2/Zenobia_LeftHandRing3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandRing1/Zenobia_LeftHandRing2/Zenobia_LeftHandRing3/Zenobia_LeftHandRing4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandThumb1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandThumb1/Zenobia_LeftHandThumb2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandThumb1/Zenobia_LeftHandThumb2/Zenobia_LeftHandThumb3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_LeftShoulder/Zenobia_LeftArm/Zenobia_LeftForeArm/Zenobia_LeftHand/Zenobia_LeftHandThumb1/Zenobia_LeftHandThumb2/Zenobia_LeftHandThumb3/Zenobia_LeftHandThumb4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_Neck
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_Neck/Zenobia_Head
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandIndex1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandIndex1/Zenobia_RightHandIndex2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandIndex1/Zenobia_RightHandIndex2/Zenobia_RightHandIndex3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandIndex1/Zenobia_RightHandIndex2/Zenobia_RightHandIndex3/Zenobia_RightHandIndex4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandMiddle1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandMiddle1/Zenobia_RightHandMiddle2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandMiddle1/Zenobia_RightHandMiddle2/Zenobia_RightHandMiddle3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandMiddle1/Zenobia_RightHandMiddle2/Zenobia_RightHandMiddle3/Zenobia_RightHandMiddle4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandPinky1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandPinky1/Zenobia_RightHandPinky2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandPinky1/Zenobia_RightHandPinky2/Zenobia_RightHandPinky3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandPinky1/Zenobia_RightHandPinky2/Zenobia_RightHandPinky3/Zenobia_RightHandPinky4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandRing1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandRing1/Zenobia_RightHandRing2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandRing1/Zenobia_RightHandRing2/Zenobia_RightHandRing3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandRing1/Zenobia_RightHandRing2/Zenobia_RightHandRing3/Zenobia_RightHandRing4
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandThumb1
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandThumb1/Zenobia_RightHandThumb2
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandThumb1/Zenobia_RightHandThumb2/Zenobia_RightHandThumb3
+        weight: 1
+      - path: Zenobia_Reference1/Zenobia_Hips/Zenobia_Spine/Zenobia_Spine1/Zenobia_Spine2/Zenobia_RightShoulder/Zenobia_RightArm/Zenobia_RightForeArm/Zenobia_RightHand/Zenobia_RightHandThumb1/Zenobia_RightHandThumb2/Zenobia_RightHandThumb3/Zenobia_RightHandThumb4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
