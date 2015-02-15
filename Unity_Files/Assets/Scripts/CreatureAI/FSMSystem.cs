@@ -64,6 +64,7 @@ public enum Transition
 	BreakFree = 7,		//break free of trap/stun
 	InAir = 8,			//flying through air
 	Crash = 9,			//hits the ground after flying
+	OutOfRange = 10		//player moves outside view range
 }
 
 /// <summary>
