@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CreatureAI\Dune Roamer\DuneRoamerController.cs">
     <Files>
-      <File FileName="Assets\Scripts\CreatureAI\FSMSystem.cs" Line="84" Column="20" />
-      <File FileName="Assets\Scripts\CreatureAI\Dune Roamer\DuneRoamerController.cs" Line="58" Column="26" />
+      <File FileName="Assets\Scripts\CreatureAI\FSMSystem.cs" Line="67" Column="52" />
+      <File FileName="Assets\Scripts\CreatureAI\Dune Roamer\DuneRoamerController.cs" Line="278" Column="3" />
+      <File FileName="Assets\Scripts\CreatureAI\BasicEnemyAI.cs" Line="92" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
