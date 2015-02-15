@@ -1,10 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMovement\ThirdPersonController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CreatureAI\Dune Roamer\DuneRoamerController.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player.cs" Line="119" Column="18" />
-      <File FileName="Assets\Scripts\PlayerMovement\ThirdPersonController.cs" Line="524" Column="4" />
-      <File FileName="Assets\Scripts\grabbableLedge.cs" Line="27" Column="64" />
+      <File FileName="Assets\Scripts\CreatureAI\FSMSystem.cs" Line="84" Column="20" />
+      <File FileName="Assets\Scripts\CreatureAI\Dune Roamer\DuneRoamerController.cs" Line="58" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -65,15 +65,15 @@ NavMeshSettings:
   m_BuildSettings:
     agentRadius: .5
     agentHeight: 2
-    agentSlope: 45
-    agentClimb: .400000006
+    agentSlope: 25
+    agentClimb: .600000024
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     accuratePlacement: 0
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
-  m_NavMesh: {fileID: 0}
+  m_NavMesh: {fileID: 19400000, guid: d188279a7093e0b44bbb82463c331977, type: 2}
 --- !u!1 &1438888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1917,11 +1917,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d350ab03c788d4b91f2b00cdc664fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuOpen: 0
   textureOverlay: {fileID: 1469762320}
   overlayDepth: 1
   player: {fileID: 0}
+  slider: {fileID: 0}
   playerStats: {fileID: 0}
-  enemyTest: {fileID: 0}
+  drEnemy: {fileID: 0}
+  headerStyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
 --- !u!1 &205495249
 GameObject:
   m_ObjectHideFlags: 0
@@ -3312,7 +3373,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &423778783
 Renderer:
@@ -5082,6 +5143,8 @@ MonoBehaviour:
   rotateSpeed: 500
   trotAfterSeconds: 3
   canJump: 1
+  initSlideSpeed: 10
+  initSlideAngle: 25
   moveDirection: {x: 0, y: 0, z: 0}
   verticalSpeed: 0
   moveSpeed: 0
@@ -5137,7 +5200,6 @@ MonoBehaviour:
   maxSpeed: 20
   maxTiltAngle: 20
   tiltSpeed: 15
-  maxRotationSpeed: 5
 --- !u!54 &674494080
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6066,16 +6128,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSpeed: .300000012
   attackDamage: 20
-  wanderSpeed: 2
-  chaseSpeed: 10
+  walkSpeed: 3.5
+  chargeSpeed: 10
   chaseWaitTime: 5
   rotationSpeed: 0
   fieldOfView: 90
   viewRange: 20
   attackRange: 5
+  rollRange: 30
   attackArea: {fileID: 798013453}
   MaxHealth: 1000
   currentHealth: 1000
+  rollSpeed: 15
+  rollRotationSpeed: 5
+  rollDamage: 70
 --- !u!111 &798013446
 Animation:
   m_ObjectHideFlags: 0
@@ -11769,7 +11835,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967263
   m_IsActive: 1
 --- !u!154 &1673830686
 TerrainCollider:
@@ -13525,6 +13591,10 @@ Prefab:
     - target: {fileID: 168074, guid: b3220545614321e43a6d0f4937edb4bc, type: 2}
       propertyPath: m_Name
       value: shieldCreature_inProgress_v5_unsmoothed_walk
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568030, guid: b3220545614321e43a6d0f4937edb4bc, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3220545614321e43a6d0f4937edb4bc, type: 2}
