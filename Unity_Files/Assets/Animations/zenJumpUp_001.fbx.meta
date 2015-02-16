@@ -598,8 +598,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Zen_climb_001_x2d
       takeName: Zen_climb_001_x2d
-      firstFrame: 80
-      lastFrame: 133
+      firstFrame: 103
+      lastFrame: 103.099998
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

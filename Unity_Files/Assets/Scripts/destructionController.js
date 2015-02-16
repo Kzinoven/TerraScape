@@ -6,7 +6,7 @@ var insideZone: boolean = false;
 function OnTriggerEnter (other:Collider)
 {
 	if (other.tag == 'Player'){
-		Debug.Log ('inside the collider');
+		//Debug.Log ('inside the collider');
 		insideZone = true;
 		}
 }
@@ -14,7 +14,7 @@ function OnTriggerEnter (other:Collider)
 function OnTriggerExit (other:Collider)
 {
 	if (other.tag == 'Player'){
-		Debug.Log ('outside the collider');
+		//Debug.Log ('outside the collider');
 		insideZone = false;
 		}
 }
