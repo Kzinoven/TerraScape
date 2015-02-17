@@ -379,7 +379,8 @@ public class ThirdPersonController : MonoBehaviour
 			blocking = false;
 			Debug.Log("Guard is Down");
 		}
-		itemUse = 0;
+		if(Input.GetKeyUp(KeyCode.E) && isSliding==false)
+			itemUse = 0;
 		if (Input.GetButtonDown ("Jump"))
 		{
 			lastJumpButtonTime = Time.time;
