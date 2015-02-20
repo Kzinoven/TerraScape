@@ -40,6 +40,7 @@ public class Platform : MonoBehaviour
         {
             //if the platform is moving, figure out where it is going to
             Vector3 targetPosition;
+			Vector3 targetRotation;
             if (isActive)
                 targetPosition = activePosition;
             else

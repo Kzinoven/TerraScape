@@ -17,6 +17,10 @@ public class FaultLine : MonoBehaviour
         {
             triggerObject.GetComponent<FallingRock>().Fall();
         }
+		else if (triggerObject.GetComponent<faultRotateObject>() != null)
+		{
+			triggerObject.GetComponent<faultRotateObject>().Activate();
+		}
         else if (triggerObject.GetComponent<Breakable>() != null)
         {
             triggerObject.GetComponent<Breakable>().BreakApart();
