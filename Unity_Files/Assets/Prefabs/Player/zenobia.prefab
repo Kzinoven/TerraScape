@@ -1089,7 +1089,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .660000026, z: 0}
+  m_LocalPosition: {x: 24.3999996, y: -2.13899994, z: 7.88000011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 465716}
@@ -2124,7 +2124,7 @@ MonoBehaviour:
   movable: 1
   hanging: 0
   ledgeClimbSpeed: 4
-  shimmySpeed: 1
+  shimmySpeed: 2
   climb: 0
   cutScene: 0
   toolInUse: 0

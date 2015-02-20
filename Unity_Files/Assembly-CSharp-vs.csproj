@@ -77,8 +77,10 @@
      <Compile Include="Assets\Scripts\TerrainDeformer.cs" />
      <Compile Include="Assets\Scripts\animationController.cs" />
      <Compile Include="Assets\Scripts\cinematicCamera.cs" />
+     <Compile Include="Assets\Scripts\deathBox.cs" />
      <Compile Include="Assets\Scripts\destroyLedge.cs" />
      <Compile Include="Assets\Scripts\grabbableLedge.cs" />
+     <Compile Include="Assets\Scripts\levelTransition.cs" />
      <Compile Include="Assets\Scripts\screenFade.cs" />
      <None Include="Assets\Resources\journalEntries.xml" />
      <None Include="Assets\Prefabs\Skyboxes\dunes\Note.txt" />
