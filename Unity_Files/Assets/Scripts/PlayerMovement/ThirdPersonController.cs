@@ -258,7 +258,7 @@ public class ThirdPersonController : MonoBehaviour
 	{
 		isSliding = true;
 		movable = false;
-
+		hanging = false;
 		
 		//enable ridigdbody
 		rigidbody.isKinematic = false;
@@ -273,6 +273,7 @@ public class ThirdPersonController : MonoBehaviour
 
 		//character jumps forward when it starts sliding, give some initial upward and forward velocity if there is none
 		Vector3 newVelocity = rigidbody.velocity;
+		newVelocity.x = 0;
 		if (rigidbody.velocity.z < minZ)
 		{
 			newVelocity.z = minZ;
@@ -384,6 +385,10 @@ public class ThirdPersonController : MonoBehaviour
 		if (Input.GetButtonDown ("Jump"))
 		{
 			lastJumpButtonTime = Time.time;
+		}
+		if (Input.GetKeyDown(KeyCode.N) && !hanging && !jumping && cutScene == 0)
+		{
+			slide();
 		}
 		if (!hanging && !isSliding && !jumping && cutScene==0){
 			if (Input.GetKey(KeyCode.Z))

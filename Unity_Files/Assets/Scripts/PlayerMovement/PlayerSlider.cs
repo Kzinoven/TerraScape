@@ -1,22 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//[RequireComponent (typeof (TrailRenderer))]
+
 public class PlayerSlider : MonoBehaviour {
 
 	public float jumpSpeed  = 8.0f;
 	public float gravity = 10.0f;
 	private Vector3 moveDirection = Vector3.zero;
 	public Transform tracker;
-	public float rotateSpeed = 1f;
+	public float rotateSpeed = 30f;
 	public CharacterController controller;
 	public float maxSpeed = 20f;
 	public static PlayerSlider instance;
+	public float turnForce = 50f;
 
 	private float elevationAngle = 0;
 	private float turnAngle = 0;//negative is right, positive is left (from behind)
 
 	public float maxTiltAngle = 20f;
 	public float tiltSpeed = 15f; //degrees per second
+	//public TrailRenderer trailRenderer;
 
 	//public float maxRotationSpeed = 5f;//forward speed at which maximum rotation is reached
 
@@ -70,8 +74,7 @@ public class PlayerSlider : MonoBehaviour {
 					turnAngle *= sign;
 				}*/
 
-				//trail renderer not ready yet
-				// GetComponent("TrailRenderer").enabled = true;
+				//trailRenderer.enabled = true;
 
 				if (Input.GetButton ("Jump")) {
 					moveDirection.y = jumpSpeed;
@@ -79,7 +82,7 @@ public class PlayerSlider : MonoBehaviour {
 			} else if (!IsGrounded())
 			{
 				//disable trailrenderer
-				//GetComponent("TrailRenderer").enabled = false;
+				//trailRenderer.enabled = false;
 			}
 		}
 
@@ -109,7 +112,8 @@ public class PlayerSlider : MonoBehaviour {
 				Vector3 perpendicular = Vector3.Cross(facingDirection, velocityDirection);
 				direction = Mathf.Sign(Vector3.Dot(perpendicular, transform.TransformDirection(Vector3.up)));//-1 if left, 1 if right
 
-				rigidbody.AddRelativeForce(Vector3.left * rigidbody.velocity.magnitude * rigidbody.mass * direction * Mathf.Sin(Vector3.Angle(velocityDirection, facingDirection)));
+				rigidbody.AddRelativeForce(Vector3.left * rigidbody.velocity.magnitude * rigidbody.mass * direction * turnForce *
+				                            Mathf.Sin(Vector3.Angle(velocityDirection, facingDirection) * Mathf.Deg2Rad));
 			}
 		} else
 		{

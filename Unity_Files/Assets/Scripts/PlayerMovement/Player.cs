@@ -56,21 +56,24 @@ public class Player : MonoBehaviour
 		GUI_Manager.stamina.text = "Stamina: " + Mathf.Floor(currentStamina);
 		GUI_Manager.health.text = "Health: " + currentHealth;
 		regenStaminaNow = true;
-		GameItem item = inventory[selectedIndex];
-		if (item.itemName == "Laser")
+		if (selectedIndex > -1)
 		{
-			controller.toolInUse = 1;
-		}
-		else if (item.itemName == "Shield")
-		{
-			controller.toolInUse = 2;
-		}
-		else if (item.itemName == "Snapper")
-		{
-			controller.toolInUse = 3;
-		}
-		else {
-			controller.toolInUse = 0;
+			GameItem item = inventory[selectedIndex];
+			if (item.itemName == "Laser")
+			{
+				controller.toolInUse = 1;
+			}
+			else if (item.itemName == "Shield")
+			{
+				controller.toolInUse = 2;
+			}
+			else if (item.itemName == "Snapper")
+			{
+				controller.toolInUse = 3;
+			}
+			else {
+				controller.toolInUse = 0;
+			}
 		}
 	}
 

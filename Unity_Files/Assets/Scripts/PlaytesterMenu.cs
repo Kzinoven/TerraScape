@@ -28,6 +28,7 @@ public class PlaytesterMenu : MonoBehaviour {
 	startSlideAngle,
 	maxSlideSpeed,
 	turnSpeed,
+	turnForce,
 	
 	maxHealth,
 	maxStamina,
@@ -35,7 +36,7 @@ public class PlaytesterMenu : MonoBehaviour {
 	
 	drHealth,
 	drWalkSpeed,
-	drChargeSpeed ,
+	drChargeSpeed,
 	drRollSpeed,
 	drRollTurnSpeed,
 	
@@ -53,6 +54,7 @@ public class PlaytesterMenu : MonoBehaviour {
 	newStartSlideAngle,
 	newMaxSlideSpeed,
 	newTurnSpeed,
+	newTurnForce,
 	
 	newMaxHealth,
 	newMaxStamina,
@@ -95,6 +97,7 @@ public class PlaytesterMenu : MonoBehaviour {
 		startSlideAngle = player.initSlideAngle.ToString();
 		maxSlideSpeed = slider.maxSpeed.ToString();
 		turnSpeed = slider.rotateSpeed.ToString();
+		turnForce = slider.turnForce.ToString();
 		maxHealth = playerStats.maxHealth.ToString();
 		maxStamina = playerStats.maxStamina.ToString();
 		staminaRegen = playerStats.staminaRegen.ToString();
@@ -159,6 +162,7 @@ public class PlaytesterMenu : MonoBehaviour {
 				startSlideAngle = labelTxtField(startSlideAngle, "Initial Slide Angle");
 				maxSlideSpeed = labelTxtField(maxSlideSpeed, "Maximum Slide Speed");
 				turnSpeed = labelTxtField(turnSpeed, "Sliding Turn Speed");
+				turnForce = labelTxtField(turnForce, "Turning Force");
 
 				GUILayout.Label("Stats", headerStyle);
 				maxHealth = labelTxtField(maxHealth, "Maximum Health");
@@ -233,6 +237,11 @@ public class PlaytesterMenu : MonoBehaviour {
 			slider.rotateSpeed = newTurnSpeed;
 		} else {
 			turnSpeed = slider.rotateSpeed.ToString();
+		}
+		if (float.TryParse(turnForce, out newTurnForce)){
+			slider.turnForce = newTurnForce;
+		} else {
+			turnForce = slider.turnForce.ToString();
 		}
 
 
