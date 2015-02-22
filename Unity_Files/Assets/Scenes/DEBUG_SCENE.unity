@@ -4507,7 +4507,6 @@ GameObject:
   - 114: {fileID: 674494083}
   - 114: {fileID: 674494081}
   - 82: {fileID: 674494084}
-  - 96: {fileID: 674494085}
   m_Layer: 0
   m_Name: zenobia
   m_TagString: Player
@@ -4638,7 +4637,6 @@ MonoBehaviour:
   turnForce: 50
   maxTiltAngle: 20
   tiltSpeed: 15
-  trailRenderer: {fileID: 674494085}
 --- !u!54 &674494080
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4754,47 +4752,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!96 &674494085
-TrailRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 674494073}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 5254854c985bb4a06aa230bd8aa7fb10, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Time: 5
-  m_StartWidth: 1
-  m_EndWidth: 1
-  m_Colors:
-    m_Color[0]:
-      serializedVersion: 2
-      rgba: 4294967295
-    m_Color[1]:
-      serializedVersion: 2
-      rgba: 4294967295
-    m_Color[2]:
-      serializedVersion: 2
-      rgba: 4294967295
-    m_Color[3]:
-      serializedVersion: 2
-      rgba: 4294967295
-    m_Color[4]:
-      serializedVersion: 2
-      rgba: 16777215
-  m_MinVertexDistance: .100000001
-  m_Autodestruct: 0
 --- !u!1 &676550563
 GameObject:
   m_ObjectHideFlags: 0
@@ -8421,7 +8378,7 @@ Prefab:
     - target: {fileID: 11400228, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
       propertyPath: trailRenderer
       value: 
-      objectReference: {fileID: 674494085}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
   m_RootGameObject: {fileID: 674494073}
