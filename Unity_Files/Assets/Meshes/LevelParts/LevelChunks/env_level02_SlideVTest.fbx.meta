@@ -85,6 +85,59 @@ ModelImporter:
     100158: transform7
     100160: transform8
     100162: transform9
+    100164: Character1_Reference
+    100166: env_decor_rocksV1:pCube1
+    100168: env_decor_rocksV1:pCube2
+    100170: env_decor_rocksV1:pCube3
+    100172: env_decor_rocksV1:pCube4
+    100174: hair
+    100176: leftEye
+    100178: lowerBody
+    100180: mouth
+    100182: pCube115
+    100184: pCube116
+    100186: pCube117
+    100188: pCube121
+    100190: pCube31
+    100192: pCube65
+    100194: pCube66
+    100196: rightEye
+    100198: rockwall_b03a
+    100200: rockwall_b03a1
+    100202: rockwall_c010
+    100204: skirt
+    100206: upperBody
+    100208: Zenobia_v10:polySurface1
+    100210: group1
+    100212: pCube118
+    100214: pCube122
+    100216: pCube123
+    100218: pCube124
+    100220: pCube125
+    100222: pCube15
+    100224: pCube40
+    100226: pCube47
+    100228: pCube51
+    100230: pCube57
+    100232: pCube59
+    100234: pCube60
+    100236: pCube61
+    100238: pCube62
+    100240: pCube67
+    100242: pCube68
+    100244: rockwall_a010
+    100246: rockwall_a011
+    100248: rockwall_a09c
+    100250: rockwall_c08
+    100252: rockwall_c09
+    100254: pCube25
+    100256: pCube46
+    100258: rockwall_b09a1
+    100260: pCube50
+    100262: env_decor_rocksV2:pCube4
+    100264: env_decor_rocksV2:pCube5
+    100266: env_decor_rocksV2:pCube6
+    100268: pCube3
     400000: //RootNode
     400002: group2
     400004: pCube100
@@ -167,6 +220,59 @@ ModelImporter:
     400158: transform7
     400160: transform8
     400162: transform9
+    400164: Character1_Reference
+    400166: env_decor_rocksV1:pCube1
+    400168: env_decor_rocksV1:pCube2
+    400170: env_decor_rocksV1:pCube3
+    400172: env_decor_rocksV1:pCube4
+    400174: hair
+    400176: leftEye
+    400178: lowerBody
+    400180: mouth
+    400182: pCube115
+    400184: pCube116
+    400186: pCube117
+    400188: pCube121
+    400190: pCube31
+    400192: pCube65
+    400194: pCube66
+    400196: rightEye
+    400198: rockwall_b03a
+    400200: rockwall_b03a1
+    400202: rockwall_c010
+    400204: skirt
+    400206: upperBody
+    400208: Zenobia_v10:polySurface1
+    400210: group1
+    400212: pCube118
+    400214: pCube122
+    400216: pCube123
+    400218: pCube124
+    400220: pCube125
+    400222: pCube15
+    400224: pCube40
+    400226: pCube47
+    400228: pCube51
+    400230: pCube57
+    400232: pCube59
+    400234: pCube60
+    400236: pCube61
+    400238: pCube62
+    400240: pCube67
+    400242: pCube68
+    400244: rockwall_a010
+    400246: rockwall_a011
+    400248: rockwall_a09c
+    400250: rockwall_c08
+    400252: rockwall_c09
+    400254: pCube25
+    400256: pCube46
+    400258: rockwall_b09a1
+    400260: pCube50
+    400262: env_decor_rocksV2:pCube4
+    400264: env_decor_rocksV2:pCube5
+    400266: env_decor_rocksV2:pCube6
+    400268: pCube3
     2300000: pCube102
     2300002: pCube104
     2300004: pCube105
@@ -188,6 +294,55 @@ ModelImporter:
     2300036: pCube94
     2300038: pCube96
     2300040: //RootNode
+    2300042: env_decor_rocksV1:pCube1
+    2300044: env_decor_rocksV1:pCube2
+    2300046: env_decor_rocksV1:pCube3
+    2300048: env_decor_rocksV1:pCube4
+    2300050: hair
+    2300052: leftEye
+    2300054: lowerBody
+    2300056: mouth
+    2300058: pCube115
+    2300060: pCube116
+    2300062: pCube117
+    2300064: pCube121
+    2300066: pCube31
+    2300068: pCube65
+    2300070: pCube66
+    2300072: rightEye
+    2300074: rockwall_b03a
+    2300076: rockwall_b03a1
+    2300078: rockwall_c010
+    2300080: skirt
+    2300082: upperBody
+    2300084: pCube118
+    2300086: pCube122
+    2300088: pCube123
+    2300090: pCube124
+    2300092: pCube125
+    2300094: pCube15
+    2300096: pCube40
+    2300098: pCube47
+    2300100: pCube51
+    2300102: pCube59
+    2300104: pCube60
+    2300106: pCube61
+    2300108: pCube62
+    2300110: pCube67
+    2300112: pCube68
+    2300114: rockwall_a010
+    2300116: rockwall_a011
+    2300118: rockwall_a09c
+    2300120: rockwall_c08
+    2300122: rockwall_c09
+    2300124: pCube25
+    2300126: pCube46
+    2300128: rockwall_b09a1
+    2300130: pCube50
+    2300132: env_decor_rocksV2:pCube4
+    2300134: env_decor_rocksV2:pCube5
+    2300136: env_decor_rocksV2:pCube6
+    2300138: pCube3
     3300000: pCube102
     3300002: pCube104
     3300004: pCube105
@@ -209,6 +364,55 @@ ModelImporter:
     3300036: pCube94
     3300038: pCube96
     3300040: //RootNode
+    3300042: env_decor_rocksV1:pCube1
+    3300044: env_decor_rocksV1:pCube2
+    3300046: env_decor_rocksV1:pCube3
+    3300048: env_decor_rocksV1:pCube4
+    3300050: hair
+    3300052: leftEye
+    3300054: lowerBody
+    3300056: mouth
+    3300058: pCube115
+    3300060: pCube116
+    3300062: pCube117
+    3300064: pCube121
+    3300066: pCube31
+    3300068: pCube65
+    3300070: pCube66
+    3300072: rightEye
+    3300074: rockwall_b03a
+    3300076: rockwall_b03a1
+    3300078: rockwall_c010
+    3300080: skirt
+    3300082: upperBody
+    3300084: pCube118
+    3300086: pCube122
+    3300088: pCube123
+    3300090: pCube124
+    3300092: pCube125
+    3300094: pCube15
+    3300096: pCube40
+    3300098: pCube47
+    3300100: pCube51
+    3300102: pCube59
+    3300104: pCube60
+    3300106: pCube61
+    3300108: pCube62
+    3300110: pCube67
+    3300112: pCube68
+    3300114: rockwall_a010
+    3300116: rockwall_a011
+    3300118: rockwall_a09c
+    3300120: rockwall_c08
+    3300122: rockwall_c09
+    3300124: pCube25
+    3300126: pCube46
+    3300128: rockwall_b09a1
+    3300130: pCube50
+    3300132: env_decor_rocksV2:pCube4
+    3300134: env_decor_rocksV2:pCube5
+    3300136: env_decor_rocksV2:pCube6
+    3300138: pCube3
     4300000: pCube32
     4300002: pCube41
     4300004: pCube64
@@ -229,6 +433,55 @@ ModelImporter:
     4300034: pCube94
     4300036: pCube96
     4300038: pCube111
+    4300040: rockwall_b03a
+    4300042: pCube31
+    4300044: hair
+    4300046: mouth
+    4300048: skirt
+    4300050: upperBody
+    4300052: lowerBody
+    4300054: rightEye
+    4300056: leftEye
+    4300058: pCube65
+    4300060: pCube66
+    4300062: env_decor_rocksV1:pCube1
+    4300064: env_decor_rocksV1:pCube2
+    4300066: env_decor_rocksV1:pCube3
+    4300068: env_decor_rocksV1:pCube4
+    4300070: pCube115
+    4300072: pCube116
+    4300074: pCube117
+    4300076: rockwall_c010
+    4300078: rockwall_b03a1
+    4300080: pCube121
+    4300082: rockwall_a09c
+    4300084: rockwall_a010
+    4300086: rockwall_a011
+    4300088: pCube40
+    4300090: pCube47
+    4300092: pCube51
+    4300094: pCube59
+    4300096: pCube60
+    4300098: pCube61
+    4300100: pCube62
+    4300102: pCube15
+    4300104: rockwall_c08
+    4300106: rockwall_c09
+    4300108: pCube67
+    4300110: pCube68
+    4300112: pCube118
+    4300114: pCube122
+    4300116: pCube123
+    4300118: pCube124
+    4300120: pCube125
+    4300122: pCube25
+    4300124: pCube46
+    4300126: rockwall_b09a1
+    4300128: pCube50
+    4300130: pCube3
+    4300132: env_decor_rocksV2:pCube4
+    4300134: env_decor_rocksV2:pCube5
+    4300136: env_decor_rocksV2:pCube6
     9500000: //RootNode
   materials:
     importMaterials: 1

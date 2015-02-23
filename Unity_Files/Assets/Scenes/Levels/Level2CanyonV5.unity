@@ -184,15 +184,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: d34c6c9db7528d94ead4fdd735c1ea11, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -30.7185669
+      value: -7.17999983
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d34c6c9db7528d94ead4fdd735c1ea11, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.35914516
+      value: 1.36000001
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d34c6c9db7528d94ead4fdd735c1ea11, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -27.9270401
+      value: 11.3100004
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d34c6c9db7528d94ead4fdd735c1ea11, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3072,26 +3072,6 @@ Prefab:
     - target: {fileID: 5400228, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
       propertyPath: m_Drag
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400228, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
-      propertyPath: jumpSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400228, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
-      propertyPath: maxSpeed
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400228, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
-      propertyPath: maxTiltAngle
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400228, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
-      propertyPath: rotateSpeed
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400228, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
-      propertyPath: gravity
-      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 11400228, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
       propertyPath: maxRotationSpeed
@@ -7226,7 +7206,7 @@ Transform:
   m_PrefabInternal: {fileID: 7563461}
   m_GameObject: {fileID: 448856766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.7185669, y: 1.35914516, z: -27.9270401}
+  m_LocalPosition: {x: -7.17999983, y: 1.36000001, z: 11.3100004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 14118368}
@@ -10393,13 +10373,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 700f93ec9617fab43ab85d2bd610d7f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSpeed: 2
-  gravity: 15
+  jumpSpeed: 8
+  gravity: 10
   tracker: {fileID: 657348620}
-  rotateSpeed: 6
+  rotateSpeed: 30
   controller: {fileID: 657348627}
-  maxSpeed: 35
-  maxTiltAngle: 30
+  maxSpeed: 20
+  turnForce: 50
+  maxTiltAngle: 20
   tiltSpeed: 15
 --- !u!136 &657348624
 CapsuleCollider:
