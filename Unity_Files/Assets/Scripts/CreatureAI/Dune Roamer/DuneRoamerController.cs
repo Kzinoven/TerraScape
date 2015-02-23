@@ -35,11 +35,14 @@ public class DuneRoamerController : MonoBehaviour {
 	public float rollRotationSpeed = 5f;
 	public float rollDamage = 70f;
 
+	public DuneRoamerHit hitObject;
+
 	// Use this for initialization
 	void Start () {
 		navAgent = GetComponent<NavMeshAgent> ();
 		player = GameObject.FindWithTag ("Player");
 		MakeFSM ();
+		hitObject = DuneRoamerHit.None;
 	}
 	
 	// Update is called once per frame
@@ -88,6 +91,36 @@ public class DuneRoamerController : MonoBehaviour {
 		fsm.AddState (stunned);
 		fsm.AddState (falling);
 	}
+
+	void OnCollisionEnter (Collision other)
+	{
+		if (other.gameObject.tag.Equals("Player"))
+		{
+			hitObject = DuneRoamerHit.Player;
+		} else if (other.gameObject.tag.Equals("Trap"))
+		{
+			hitObject = DuneRoamerHit.Trap;
+		}
+	}
+
+	public void takeDamage (float dmg)
+	{
+		if (dmg > currentHealth)
+		{
+			currentHealth = 0;
+			//die
+		} else
+		{
+			currentHealth -= dmg;
+		}
+	}
+}
+
+public enum DuneRoamerHit
+{
+	None = 0,
+	Player = 1,
+	Trap = 2
 }
 
 public class IdleDRState : FSMState
@@ -164,55 +197,47 @@ public class RollDRState : FSMState
 {
 	public DuneRoamerController controller;
 	public WheelCollider collider;
-
-	private enum collisionTarget
-	{
-		None = 0,
-		Player = 1,
-		Trap = 2,
-		Other = 3
-	}
-
-	private collisionTarget hitObject = collisionTarget.None;
-
-	void OnCollisionEnter (Collision other)
-	{
-		if (other.gameObject.tag.Equals("Player"))
-		{
-			hitObject = collisionTarget.Player; 
-		} else if (other.gameObject.tag.Equals("Trap"))
-		{
-			hitObject = collisionTarget.Trap;
-		} else if (Vector3.Angle(controller.rigidbody.velocity, other.transform.position) < 30)
-	  	{
-			//get angle of velocity vector to position or collision - too large an angle means
-			//the collision is with the ground, so don't do anything
-			hitObject = collisionTarget.Other;
-		}
-
-	}
+	private float lastFrameSpeed;
 
 	public override void Reason (GameObject player, GameObject npc)
 	{
-		switch (hitObject)
+
+		switch (controller.hitObject)
 		{
-		case collisionTarget.Player:
+		case DuneRoamerHit.Player:
 			controller.SetTransition(Transition.PlayerImpact);
-			break;
+			return;
 
-		case collisionTarget.Trap:
+		case DuneRoamerHit.Trap:
 			controller.SetTransition(Transition.TrapImpact);
-			break;
+			return;
+		}
 
-		case collisionTarget.Other:
+		//if the dune roamer has slowed down a lot last frame, then it's hit something
+		if (lastFrameSpeed - controller.rigidbody.velocity.magnitude > controller.rollSpeed * 0.75)
+		{
 			controller.SetTransition(Transition.OtherImpact);
-			break;
+			return;
+		}
+
+		//if vertical velocity is above a certain threshold, start falling
+		if (controller.rigidbody.velocity.y < -10f)
+		{
+			controller.SetTransition(Transition.InAir);
+			return;
 		}
 	}
 
 	public override void Act (GameObject player, GameObject npc)
 	{
-		throw new System.NotImplementedException ();
+		//play rolling animation
+
+		controller.rigidbody.AddRelativeForce (Vector3.forward * 1000);
+		if (controller.rigidbody.velocity.sqrMagnitude > controller.rollSpeed * controller.rollSpeed)
+		{
+			controller.rigidbody.velocity = controller.rigidbody.velocity.normalized * controller.rollSpeed;
+		}
+		lastFrameSpeed = controller.rigidbody.velocity.magnitude;
 	}
 
 
@@ -236,44 +261,66 @@ public class AttackDRState : FSMState
 public class TrappedDRState : FSMState
 {
 	public DuneRoamerController controller;
-
+	private float trapDuration = 10f;
+	private float trapTimer = 0f;
+	
 	public override void Reason (GameObject player, GameObject npc)
 	{
-		throw new System.NotImplementedException ();
+		if (trapTimer >= trapDuration) 
+		{
+			controller.SetTransition(Transition.BreakFree);
+			trapTimer = 0;
+		}
 	}
 	
 	public override void Act (GameObject player, GameObject npc)
 	{
-		throw new System.NotImplementedException ();
+		//play stunned animation
+		trapTimer += Time.deltaTime;
 	}
 }
 
 public class StunnedDRState : FSMState
 {
 	public DuneRoamerController controller;
+	private float stunDuration = 5f;
+	private float stunTimer = 0f;
 
 	public override void Reason (GameObject player, GameObject npc)
 	{
-		throw new System.NotImplementedException ();
+		if (stunTimer >= stunDuration) 
+		{
+			controller.SetTransition(Transition.BreakFree);
+			stunTimer = 0;
+		}
 	}
 	
 	public override void Act (GameObject player, GameObject npc)
 	{
-		throw new System.NotImplementedException ();
+		//play stunned animation
+		stunTimer += Time.deltaTime;
 	}
 }
 
 public class FallingDRState : FSMState
 {
 	public DuneRoamerController controller;
+	private float fallingSpeed;
 
 	public override void Reason (GameObject player, GameObject npc)
 	{
-		throw new System.NotImplementedException ();
+		//if the dune roamer has stopped falling, it's hit the ground
+		if (controller.rigidbody.velocity.y == 0)
+		{
+			//take damage only if falling speed over threshold
+			controller.takeDamage(Mathf.Clamp(fallingSpeed - 5f, 0, float.PositiveInfinity) * 20);
+			controller.SetTransition(Transition.Crash);
+		}
 	}
 	
 	public override void Act (GameObject player, GameObject npc)
 	{
-		throw new System.NotImplementedException ();
+		//play falling animation
+		fallingSpeed = controller.rigidbody.velocity.y;
 	}
 }
