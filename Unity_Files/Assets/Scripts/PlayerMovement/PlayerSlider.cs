@@ -47,7 +47,7 @@ public class PlayerSlider : MonoBehaviour {
 		//check that there is terrain directly below and in front
 		if (Physics.Raycast(tracker.position, -Vector3.up, out hit1)) {
 			if (Physics.Raycast(tracker.TransformPoint(Vector3.forward * 0.1f), -Vector3.up, out hit2)) {
-				transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(hit2.point - hit1.point, hit1.normal), Time.deltaTime * 20);
+				//transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(hit2.point - hit1.point, hit1.normal), Time.deltaTime * 20);
 			}
 			if (IsGrounded()) 
 			{
