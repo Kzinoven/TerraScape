@@ -4,6 +4,7 @@ using System.Collections;
 public class cinematicCamera : MonoBehaviour {
 	private GameObject player;
 	private Collider target;
+	private Collider target2;
 	private Transform cameraHolder;
 	private Transform playerHolder;
 	public int cutSceneNumber;
@@ -18,16 +19,18 @@ public class cinematicCamera : MonoBehaviour {
 		cameraHolder = transform.GetChild (0);
 		playerHolder = transform.GetChild (1);
 		target = player.GetComponent<CharacterController>();
+		target2 = player.GetComponent<CapsuleCollider> ();
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other != target) //The colliding object isn't our object
+		if (other != target && other != target2) //The colliding object isn't our object
 		{
 			Debug.Log("Wat is dis?");
 			return; //don't do anything if it's not our target
 		}
 		else {
 			Debug.Log("It should work");
+			player.GetComponent<ThirdPersonController>().stopSliding();
 			player.GetComponent<ThirdPersonController>().moveSpeed = 0.0f;
 			player.GetComponent<ThirdPersonController>().verticalSpeed = 0.0f;
 			player.GetComponent<ThirdPersonController>().inAirVelocity = Vector3.zero;

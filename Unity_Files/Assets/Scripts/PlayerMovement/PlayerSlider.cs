@@ -38,6 +38,11 @@ public class PlayerSlider : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (Input.GetKeyDown(KeyCode.E) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
+		    {
+			//Use selected item or tool
+			walker.slide();
+		}
 		//angle of elevation
 		elevationAngle = transform.eulerAngles.x;
 		elevationAngle *= Mathf.Deg2Rad; // trig functions use radians
