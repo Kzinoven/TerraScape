@@ -138,6 +138,43 @@ ModelImporter:
     100264: env_decor_rocksV2:pCube5
     100266: env_decor_rocksV2:pCube6
     100268: pCube3
+    100270: back1
+    100272: pCube126
+    100274: pCube127
+    100276: polySurface1
+    100278: polySurface2
+    100280: rockbridge_ab
+    100282: rockbridge_bc
+    100284: rockledge_01
+    100286: rockledge_02
+    100288: rockledge_03
+    100290: rockledge_04
+    100292: rockplatform_a
+    100294: rockplatform_c
+    100296: rockwall_a00
+    100298: rockwall_a01
+    100300: rockwall_a02
+    100302: rockwall_a03
+    100304: rockwall_a04
+    100306: rockwall_a05
+    100308: rockwall_a09b
+    100310: rockwall_b01
+    100312: rockwall_b02
+    100314: rockwall_b03
+    100316: rockwall_b04
+    100318: rockwall_b05
+    100320: rockwall_b06
+    100322: rockwall_b07
+    100324: rockwall_b08
+    100326: rockwall_b09
+    100328: rockwall_b09a
+    100330: rockwall_c01
+    100332: rockwall_c02
+    100334: rockwall_c03
+    100336: rockwall_c04
+    100338: rockwall_c05
+    100340: rockwall_c06
+    100342: rockwall_c07
     400000: //RootNode
     400002: group2
     400004: pCube100
@@ -273,6 +310,43 @@ ModelImporter:
     400264: env_decor_rocksV2:pCube5
     400266: env_decor_rocksV2:pCube6
     400268: pCube3
+    400270: back1
+    400272: pCube126
+    400274: pCube127
+    400276: polySurface1
+    400278: polySurface2
+    400280: rockbridge_ab
+    400282: rockbridge_bc
+    400284: rockledge_01
+    400286: rockledge_02
+    400288: rockledge_03
+    400290: rockledge_04
+    400292: rockplatform_a
+    400294: rockplatform_c
+    400296: rockwall_a00
+    400298: rockwall_a01
+    400300: rockwall_a02
+    400302: rockwall_a03
+    400304: rockwall_a04
+    400306: rockwall_a05
+    400308: rockwall_a09b
+    400310: rockwall_b01
+    400312: rockwall_b02
+    400314: rockwall_b03
+    400316: rockwall_b04
+    400318: rockwall_b05
+    400320: rockwall_b06
+    400322: rockwall_b07
+    400324: rockwall_b08
+    400326: rockwall_b09
+    400328: rockwall_b09a
+    400330: rockwall_c01
+    400332: rockwall_c02
+    400334: rockwall_c03
+    400336: rockwall_c04
+    400338: rockwall_c05
+    400340: rockwall_c06
+    400342: rockwall_c07
     2300000: pCube102
     2300002: pCube104
     2300004: pCube105
@@ -343,6 +417,41 @@ ModelImporter:
     2300134: env_decor_rocksV2:pCube5
     2300136: env_decor_rocksV2:pCube6
     2300138: pCube3
+    2300140: pCube126
+    2300142: polySurface1
+    2300144: polySurface2
+    2300146: rockbridge_ab
+    2300148: rockbridge_bc
+    2300150: rockledge_01
+    2300152: rockledge_02
+    2300154: rockledge_03
+    2300156: rockledge_04
+    2300158: rockplatform_a
+    2300160: rockplatform_c
+    2300162: rockwall_a00
+    2300164: rockwall_a01
+    2300166: rockwall_a02
+    2300168: rockwall_a03
+    2300170: rockwall_a04
+    2300172: rockwall_a05
+    2300174: rockwall_a09b
+    2300176: rockwall_b01
+    2300178: rockwall_b02
+    2300180: rockwall_b03
+    2300182: rockwall_b04
+    2300184: rockwall_b05
+    2300186: rockwall_b06
+    2300188: rockwall_b07
+    2300190: rockwall_b08
+    2300192: rockwall_b09
+    2300194: rockwall_b09a
+    2300196: rockwall_c01
+    2300198: rockwall_c02
+    2300200: rockwall_c03
+    2300202: rockwall_c04
+    2300204: rockwall_c05
+    2300206: rockwall_c06
+    2300208: rockwall_c07
     3300000: pCube102
     3300002: pCube104
     3300004: pCube105
@@ -413,6 +522,41 @@ ModelImporter:
     3300134: env_decor_rocksV2:pCube5
     3300136: env_decor_rocksV2:pCube6
     3300138: pCube3
+    3300140: pCube126
+    3300142: polySurface1
+    3300144: polySurface2
+    3300146: rockbridge_ab
+    3300148: rockbridge_bc
+    3300150: rockledge_01
+    3300152: rockledge_02
+    3300154: rockledge_03
+    3300156: rockledge_04
+    3300158: rockplatform_a
+    3300160: rockplatform_c
+    3300162: rockwall_a00
+    3300164: rockwall_a01
+    3300166: rockwall_a02
+    3300168: rockwall_a03
+    3300170: rockwall_a04
+    3300172: rockwall_a05
+    3300174: rockwall_a09b
+    3300176: rockwall_b01
+    3300178: rockwall_b02
+    3300180: rockwall_b03
+    3300182: rockwall_b04
+    3300184: rockwall_b05
+    3300186: rockwall_b06
+    3300188: rockwall_b07
+    3300190: rockwall_b08
+    3300192: rockwall_b09
+    3300194: rockwall_b09a
+    3300196: rockwall_c01
+    3300198: rockwall_c02
+    3300200: rockwall_c03
+    3300202: rockwall_c04
+    3300204: rockwall_c05
+    3300206: rockwall_c06
+    3300208: rockwall_c07
     4300000: pCube32
     4300002: pCube41
     4300004: pCube64
@@ -482,6 +626,41 @@ ModelImporter:
     4300132: env_decor_rocksV2:pCube4
     4300134: env_decor_rocksV2:pCube5
     4300136: env_decor_rocksV2:pCube6
+    4300138: rockplatform_a
+    4300140: rockwall_a03
+    4300142: rockbridge_ab
+    4300144: rockwall_c02
+    4300146: rockwall_c03
+    4300148: rockledge_01
+    4300150: rockledge_02
+    4300152: rockledge_03
+    4300154: rockwall_b07
+    4300156: rockledge_04
+    4300158: rockwall_b08
+    4300160: rockwall_b06
+    4300162: rockbridge_bc
+    4300164: rockwall_c01
+    4300166: rockplatform_c
+    4300168: rockwall_c04
+    4300170: rockwall_c05
+    4300172: rockwall_c06
+    4300174: rockwall_c07
+    4300176: rockwall_a01
+    4300178: rockwall_a02
+    4300180: rockwall_a04
+    4300182: rockwall_a05
+    4300184: rockwall_b01
+    4300186: rockwall_b02
+    4300188: rockwall_b03
+    4300190: rockwall_b09
+    4300192: rockwall_b09a
+    4300194: rockwall_a09b
+    4300196: rockwall_b04
+    4300198: rockwall_b05
+    4300200: rockwall_a00
+    4300202: pCube126
+    4300204: polySurface1
+    4300206: polySurface2
     9500000: //RootNode
   materials:
     importMaterials: 1

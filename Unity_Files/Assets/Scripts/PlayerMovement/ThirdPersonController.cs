@@ -47,6 +47,7 @@ public class ThirdPersonController : MonoBehaviour
 		private int switchTime;
 		public float toolInUse;
 		private int itemUse;
+		public Transform checkPoint;
 	// The speed when walking
 	public float walkSpeed= 2.0f;
 	// after trotAfterSeconds of walking we trot with trotSpeed
@@ -124,6 +125,8 @@ public class ThirdPersonController : MonoBehaviour
 
 	private CharacterController controller;
 
+	private CapsuleCollider slidingCollider;
+
 	private bool isControllable= true;
 
 	void  Awake ()
@@ -136,6 +139,7 @@ public class ThirdPersonController : MonoBehaviour
 		slider.enabled = false;
 		management = GetComponent<Player>();
 		controller = GetComponent<CharacterController>();
+		slidingCollider = GetComponent<CapsuleCollider> ();
 	}
 
 
@@ -259,6 +263,7 @@ public class ThirdPersonController : MonoBehaviour
 		isSliding = true;
 		movable = false;
 		hanging = false;
+		Debug.Log ("Sliding");
 		
 		//enable ridigdbody
 		rigidbody.isKinematic = false;
@@ -267,6 +272,8 @@ public class ThirdPersonController : MonoBehaviour
 		slider.enabled = true;
 		
 		controller.enabled = false;
+
+		slidingCollider.enabled = true;
 
 		float minZ = initSlideSpeed * Mathf.Cos(initSlideAngle * Mathf.Deg2Rad);
 		float minY = initSlideSpeed * Mathf.Sin(initSlideAngle * Mathf.Deg2Rad);
@@ -289,15 +296,16 @@ public class ThirdPersonController : MonoBehaviour
 	{
 		isSliding = false;
 		movable = true;
-
+		Debug.Log ("Stop Sliding Please");
 		moveDirection = rigidbody.velocity.normalized;
-
+		movement += transform.up * 1.0f;
 		//disable ridigdbody
 		rigidbody.isKinematic = true;
 		rigidbody.detectCollisions = false;
 
 		slider.enabled = false;
 		controller.enabled = true;
+		slidingCollider.enabled = false;
 
 		//return to original rotation - stand up straight
 		//transform.rotation = Quaternion.Euler(new Vector3(0,transform.eulerAngles.y, 0));
@@ -366,6 +374,7 @@ public class ThirdPersonController : MonoBehaviour
 	void Update ()
 	{
 		//Debug.Log (transform.eulerAngles.y);
+		//Debug.Log (IsGrounded ());
 		if (Input.GetKeyDown (KeyCode.P) && Input.GetKeyDown (KeyCode.O)){
 			Application.LoadLevel(Application.loadedLevel);
 		}
@@ -418,7 +427,7 @@ public class ThirdPersonController : MonoBehaviour
 				movable = true;
 				switching = false;
 			}
-			if (Input.GetKeyDown(KeyCode.E) && IsGrounded())
+			if (Input.GetKeyDown(KeyCode.E) && !hanging && !jumping && cutScene==0)
 			{
 				//Use selected item or tool
 				management.UseItem(management.selectedIndex);
@@ -633,6 +642,16 @@ public class ThirdPersonController : MonoBehaviour
 		//instantiate trap
 		itemUse = 2;
 		//return player movement when button is released
+	}
+	public void respawn(){
+		this.transform.position = checkPoint.transform.position;
+		this.transform.rotation = checkPoint.transform.rotation;
+		verticalSpeed = 0.0f;
+		moveSpeed = 0.0f;
+		canJump = true;
+		jumping = false;
+		hanging = false;
+		movable = true;
 	}
 
 	void OnControllerColliderHit ( ControllerColliderHit hit   )

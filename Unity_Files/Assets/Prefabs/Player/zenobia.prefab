@@ -2128,6 +2128,7 @@ MonoBehaviour:
   climb: 0
   cutScene: 0
   toolInUse: 0
+  checkPoint: {fileID: 0}
   walkSpeed: 7
   trotSpeed: 7
   runSpeed: 15
@@ -2215,11 +2216,11 @@ CapsuleCollider:
   m_GameObject: {fileID: 100062}
   m_Material: {fileID: 13400000, guid: a0274846a15739a43848f7419d270505, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: .319999993
-  m_Height: 1.89999998
+  m_Height: 1.02999997
   m_Direction: 1
-  m_Center: {x: 0, y: .930000007, z: 0}
+  m_Center: {x: .0299999993, y: 1.13999999, z: -.0700000003}
 --- !u!137 &13765844
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

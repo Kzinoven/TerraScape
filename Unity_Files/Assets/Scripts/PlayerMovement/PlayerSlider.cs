@@ -37,7 +37,6 @@ public class PlayerSlider : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
 		//angle of elevation
 		elevationAngle = transform.eulerAngles.x;
 		elevationAngle *= Mathf.Deg2Rad; // trig functions use radians

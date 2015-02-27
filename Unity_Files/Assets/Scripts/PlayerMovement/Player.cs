@@ -107,7 +107,9 @@ public class Player : MonoBehaviour
     void Die()
     {
         //restart the level
-		Application.LoadLevel(Application.loadedLevel);
+		controller.respawn ();
+		currentHealth = maxHealth;
+		currentStamina = maxStamina;
     }
 
     public void CollectItem(GameItem item)
@@ -187,6 +189,7 @@ public class Player : MonoBehaviour
 				{
 					GUI_Manager.message.text = "Shield can be used to slide.";
 					controller.slide();
+					Debug.Log ("Player is saying slide");
 				}
 				else
 				{

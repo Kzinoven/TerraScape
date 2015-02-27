@@ -19,7 +19,8 @@ public class deathBox : MonoBehaviour {
 			return; //don't do anything if it's not our target
 		}
 		else {
-			Application.LoadLevel(Application.loadedLevel);
+			//Application.LoadLevel(Application.loadedLevel);
+			player.GetComponent<ThirdPersonController>().respawn();
 		}
 	}
 }
