@@ -4164,7 +4164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32fe367ac1b5974a83e349b087b0215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 1
+  level: 3
 --- !u!65 &618095026
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9948,7 +9948,6 @@ MonoBehaviour:
   m_LightmapIndex: -1
   m_LightmapSize: 1024
   m_DrawTreesAndFoliage: 1
-  m_CollectDetailPatches: 1
   m_MaterialTemplate: {fileID: 0}
 --- !u!4 &1673830688
 Transform:
@@ -10302,7 +10301,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 0d4bbc4fdf26d36409518158e3903a3f, type: 2}
       propertyPath: level
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d4bbc4fdf26d36409518158e3903a3f, type: 2}
