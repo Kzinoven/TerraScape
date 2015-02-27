@@ -64,7 +64,7 @@ public class DuneRoamerController : MonoBehaviour {
 		approach.AddTransition (Transition.OutOfRange, StateID.IdleStateID);
 
 		RollDRState roll = new RollDRState ();
-		roll.AddTransition (Transition.PlayerImpact, StateID.AttackStateID);
+		roll.AddTransition (Transition.PlayerImpact, StateID.ApproachStateID);
 		roll.AddTransition (Transition.TrapImpact, StateID.TrappedStateID);
 		roll.AddTransition (Transition.OtherImpact, StateID.StunnedStateID);
 		roll.AddTransition (Transition.InAir, StateID.FallingStateID);
@@ -184,6 +184,14 @@ public class ApproachDRState : FSMState
 		if (Vector3.Distance(npc.transform.position, player.transform.position) > controller.viewRange)
 		{
 			controller.SetTransition(Transition.OutOfRange);
+		} else if (Vector3.Distance(npc.transform.position, player.transform.position) < controller.rollRange - 5f &&
+		           Vector3.Angle(npc.transform.TransformDirection(Vector3.forward),player.transform.position) < 5f)
+		{
+			controller.SetTransition(Transition.RollRange);
+		} else if (Vector3.Distance(npc.transform.position, player.transform.position) < controller.attackRange - 3f &&
+		           Vector3.Angle(npc.transform.TransformDirection(Vector3.forward),player.transform.position) < 5f)
+		{
+			controller.SetTransition(Transition.AttackRange);
 		}
 	}
 
@@ -201,7 +209,6 @@ public class RollDRState : FSMState
 
 	public override void Reason (GameObject player, GameObject npc)
 	{
-
 		switch (controller.hitObject)
 		{
 		case DuneRoamerHit.Player:
@@ -246,15 +253,23 @@ public class RollDRState : FSMState
 public class AttackDRState : FSMState
 {
 	public DuneRoamerController controller;
+	private Vector3 target;
 
+	public override void DoBeforeEntering ()
+	{
+		Ray chargePath = new Ray (controller.transform.position, controller.player.transform.position);
+		target = chargePath.GetPoint (Vector3.Distance (controller.transform.position, controller.player.transform.position)
+						+ 10f);
+	}
 	public override void Reason (GameObject player, GameObject npc)
 	{
-		throw new System.NotImplementedException ();
+
 	}
 
 	public override void Act (GameObject player, GameObject npc)
 	{
-		throw new System.NotImplementedException ();
+		//[ANIMATE] play charging animation
+		controller.navAgent.SetDestination(target);
 	}
 }
 

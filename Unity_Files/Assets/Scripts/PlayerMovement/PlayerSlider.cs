@@ -37,12 +37,6 @@ public class PlayerSlider : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		if (Input.GetKeyDown(KeyCode.E) && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
-		    {
-			//Use selected item or tool
-			walker.slide();
-		}
 		//angle of elevation
 		elevationAngle = transform.eulerAngles.x;
 		elevationAngle *= Mathf.Deg2Rad; // trig functions use radians
@@ -52,7 +46,8 @@ public class PlayerSlider : MonoBehaviour {
 		//check that there is terrain directly below and in front
 		if (Physics.Raycast(tracker.position, -Vector3.up, out hit1)) {
 			if (Physics.Raycast(tracker.TransformPoint(Vector3.forward * 0.1f), -Vector3.up, out hit2)) {
-				//transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(hit2.point - hit1.point, hit1.normal), Time.deltaTime * 20);
+				//transform.rotation = Quaternion.LookRotation(hit2.point - hit1.point, hit1.normal);
+				//Debug.Log(hit1.point + " : " + hit2.point + " : " + hit1.normal);
 			}
 			if (IsGrounded()) 
 			{
