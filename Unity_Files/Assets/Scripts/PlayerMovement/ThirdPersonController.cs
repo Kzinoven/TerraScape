@@ -125,7 +125,7 @@ public class ThirdPersonController : MonoBehaviour
 
 	private CharacterController controller;
 
-	private CapsuleCollider slidingCollider;
+	public CapsuleCollider[] slidingColliders;
 
 	private bool isControllable= true;
 
@@ -139,7 +139,6 @@ public class ThirdPersonController : MonoBehaviour
 		slider.enabled = false;
 		management = GetComponent<Player>();
 		controller = GetComponent<CharacterController>();
-		slidingCollider = GetComponent<CapsuleCollider> ();
 	}
 
 
@@ -273,7 +272,10 @@ public class ThirdPersonController : MonoBehaviour
 		
 		controller.enabled = false;
 
-		slidingCollider.enabled = true;
+		foreach (CapsuleCollider c in slidingColliders)
+		{
+			c.enabled = true;
+		}
 
 		float minZ = initSlideSpeed * Mathf.Cos(initSlideAngle * Mathf.Deg2Rad);
 		float minY = initSlideSpeed * Mathf.Sin(initSlideAngle * Mathf.Deg2Rad);
@@ -305,10 +307,14 @@ public class ThirdPersonController : MonoBehaviour
 
 		slider.enabled = false;
 		controller.enabled = true;
-		slidingCollider.enabled = false;
+
+		foreach (CapsuleCollider c in slidingColliders)
+		{
+			c.enabled = false;
+		}
 
 		//return to original rotation - stand up straight
-		//transform.rotation = Quaternion.Euler(new Vector3(0,transform.eulerAngles.y, 0));
+		transform.rotation = Quaternion.Euler(new Vector3(0,transform.eulerAngles.y, 0));
 	}
 
 	void  ApplyJumping (){

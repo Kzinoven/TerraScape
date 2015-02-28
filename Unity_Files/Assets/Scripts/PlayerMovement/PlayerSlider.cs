@@ -18,8 +18,6 @@ public class PlayerSlider : MonoBehaviour {
 	private float elevationAngle = 0;
 	private float turnAngle = 0;//negative is right, positive is left (from behind)
 
-	public float maxTiltAngle = 20f;
-	public float tiltSpeed = 15f; //degrees per second
 	//public TrailRenderer trailRenderer;
 
 	//public float maxRotationSpeed = 5f;//forward speed at which maximum rotation is reached
@@ -41,6 +39,7 @@ public class PlayerSlider : MonoBehaviour {
 		elevationAngle = transform.eulerAngles.x;
 		elevationAngle *= Mathf.Deg2Rad; // trig functions use radians
 
+		/*
 		RaycastHit hit1, hit2 ;
 
 		//check that there is terrain directly below and in front
@@ -51,31 +50,6 @@ public class PlayerSlider : MonoBehaviour {
 			}
 			if (IsGrounded()) 
 			{
-
-				/*
-				 * Code for leaning side to side
-				 *
-				//adjust turn angle by 10 degrees per second, max 20 degrees angle
-				float angleChange = 10 * Time.deltaTime;
-				float horizontal = Input.GetAxis("Horizontal");
-				if (horizontal > 0) // positive, turn to right (from behind is negative angle)
-				{
-					if ((turnAngle -= angleChange) < -20)
-						turnAngle = -20;
-				} else if (horizontal < 0) //negative, turn to left (from behind is positive angle)
-				{
-					if ((turnAngle += angleChange) > 20)
-						turnAngle = 20;
-				} else if (horizontal == 0) // no input, turn to 0 rotation
-				{
-					float sign = Mathf.Sign(turnAngle);
-					if ((turnAngle = Mathf.Abs(turnAngle) - angleChange) < 0)
-						turnAngle = 0;
-					turnAngle *= sign;
-				}*/
-
-				//trailRenderer.enabled = true;
-
 				if (Input.GetButton ("Jump")) {
 					moveDirection.y = jumpSpeed;
 				}
@@ -84,7 +58,7 @@ public class PlayerSlider : MonoBehaviour {
 				//disable trailrenderer
 				//trailRenderer.enabled = false;
 			}
-		}
+		}*/
 
 		//rotate left/right
 		transform.Rotate(0, Input.GetAxis ("Horizontal") * rotateSpeed * Time.deltaTime, 0);
@@ -100,9 +74,9 @@ public class PlayerSlider : MonoBehaviour {
 				rigidbody.AddRelativeForce(Vector3.forward * 1000.0f);
 			}*/
 
-			Vector3 velocityDirection = rigidbody.velocity.normalized;
-			Vector3 facingDirection =  transform.TransformDirection(Vector3.forward);
 
+			Vector3 velocityDirection = rigidbody.velocity.normalized;
+			Vector3 facingDirection = transform.TransformDirection(Vector3.forward);
 			//if velocity is not in the same direction as the transform, add a force to 
 			if (velocityDirection != facingDirection)
 			{
@@ -112,8 +86,9 @@ public class PlayerSlider : MonoBehaviour {
 				Vector3 perpendicular = Vector3.Cross(facingDirection, velocityDirection);
 				direction = Mathf.Sign(Vector3.Dot(perpendicular, transform.TransformDirection(Vector3.up)));//-1 if left, 1 if right
 
-				rigidbody.AddRelativeForce(Vector3.left * rigidbody.velocity.magnitude * rigidbody.mass * direction * turnForce *
-				                            Mathf.Sin(Vector3.Angle(velocityDirection, facingDirection) * Mathf.Deg2Rad));
+				Vector3 rotateForce = Vector3.left * rigidbody.velocity.magnitude * rigidbody.mass * direction * turnForce *
+					Mathf.Sin(Vector3.Angle(velocityDirection, facingDirection) * Mathf.Deg2Rad);
+				rigidbody.AddRelativeForce(rotateForce);
 			}
 		} else
 		{

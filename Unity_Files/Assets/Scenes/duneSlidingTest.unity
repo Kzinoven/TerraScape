@@ -452,8 +452,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 294279141}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -1.68985081}
+  m_LocalRotation: {x: 0, y: -.992024839, z: 0, w: -.126042455}
+  m_LocalPosition: {x: 0, y: 1, z: 48.1700058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1404,7 +1404,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400062, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.30723619
+      value: 1.30527532
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1412,7 +1412,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 45.0555954
+      value: 45.0555344
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1420,7 +1420,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -.999510169
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
       propertyPath: m_LocalRotation.z
@@ -1428,7 +1428,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -.0312955528
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
       propertyPath: m_RootOrder
@@ -2916,10 +2916,12 @@ GameObject:
   - 114: {fileID: 1925242622}
   - 114: {fileID: 1925242621}
   - 54: {fileID: 1925242620}
-  - 136: {fileID: 1925242619}
   - 114: {fileID: 1925242618}
   - 114: {fileID: 1925242617}
   - 82: {fileID: 1925242616}
+  - 136: {fileID: 1925242627}
+  - 136: {fileID: 1925242626}
+  - 136: {fileID: 1925242619}
   m_Layer: 0
   m_Name: zenobia
   m_TagString: Player
@@ -2933,8 +2935,8 @@ Transform:
   m_PrefabParentObject: {fileID: 400062, guid: a302dd0fd7139eb419f8cd68669dc458, type: 2}
   m_PrefabInternal: {fileID: 902984187}
   m_GameObject: {fileID: 1925242614}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.30723619, y: 0, z: 45.0555954}
+  m_LocalRotation: {x: 0, y: -.999510169, z: 0, w: -.0312955528}
+  m_LocalPosition: {x: 1.30527532, y: 0, z: 45.0555344}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1574612641}
@@ -3028,17 +3030,17 @@ MonoBehaviour:
 --- !u!136 &1925242619
 CapsuleCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13630592, guid: a302dd0fd7139eb419f8cd68669dc458,
+  m_PrefabParentObject: {fileID: 13600004, guid: a302dd0fd7139eb419f8cd68669dc458,
     type: 2}
   m_PrefabInternal: {fileID: 902984187}
   m_GameObject: {fileID: 1925242614}
   m_Material: {fileID: 13400000, guid: a0274846a15739a43848f7419d270505, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .319999993
-  m_Height: 1.89999998
-  m_Direction: 1
-  m_Center: {x: 0, y: .930000007, z: 0}
+  m_Enabled: 0
+  m_Radius: .200000003
+  m_Height: 1.5
+  m_Direction: 2
+  m_Center: {x: .200000003, y: .100000001, z: .5}
 --- !u!54 &1925242620
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3053,7 +3055,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &1925242621
 MonoBehaviour:
@@ -3098,6 +3100,7 @@ MonoBehaviour:
   climb: 0
   cutScene: 0
   toolInUse: 0
+  checkPoint: {fileID: 0}
   walkSpeed: 7
   trotSpeed: 7
   runSpeed: 15
@@ -3108,12 +3111,16 @@ MonoBehaviour:
   rotateSpeed: 500
   trotAfterSeconds: 3
   canJump: 1
-  initSlideSpeed: 10
+  initSlideSpeed: 7
   initSlideAngle: 25
   moveDirection: {x: 0, y: 0, z: 0}
   verticalSpeed: 0
   moveSpeed: 0
   inAirVelocity: {x: 0, y: 0, z: 0}
+  slidingColliders:
+  - {fileID: 1925242627}
+  - {fileID: 1925242626}
+  - {fileID: 1925242619}
 --- !u!114 &1925242623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3165,6 +3172,34 @@ CharacterController:
   m_SkinWidth: .0799999982
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: .930000007, z: 0}
+--- !u!136 &1925242626
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13600002, guid: a302dd0fd7139eb419f8cd68669dc458,
+    type: 2}
+  m_PrefabInternal: {fileID: 902984187}
+  m_GameObject: {fileID: 1925242614}
+  m_Material: {fileID: 13400000, guid: a0274846a15739a43848f7419d270505, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: .200000003
+  m_Height: 1.5
+  m_Direction: 2
+  m_Center: {x: -.200000003, y: .100000001, z: .5}
+--- !u!136 &1925242627
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13600000, guid: a302dd0fd7139eb419f8cd68669dc458,
+    type: 2}
+  m_PrefabInternal: {fileID: 902984187}
+  m_GameObject: {fileID: 1925242614}
+  m_Material: {fileID: 13400000, guid: a0274846a15739a43848f7419d270505, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: .319999993
+  m_Height: 1.29999995
+  m_Direction: 1
+  m_Center: {x: 0, y: .699999988, z: 0}
 --- !u!1 &1994083345
 GameObject:
   m_ObjectHideFlags: 0
