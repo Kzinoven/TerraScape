@@ -207,7 +207,7 @@ public class TP_Motor : MonoBehaviour
 	public void OnTriggerStay()
 	{
 		//if (collider.gameObject.tag == "Climbable"){
-		print ("climbing");
+		//print ("climbing");
 		MoveVector = new Vector3(0, 2, 0);
 		//}
 		// if (collider.gameObject.tag == "Ledge"){

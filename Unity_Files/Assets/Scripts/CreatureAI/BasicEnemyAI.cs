@@ -85,6 +85,7 @@ public class BasicEnemyAI : MonoBehaviour {
 	private void Die()
 	{
 		alive = false;
+		//rigidbody.AddForce (Vector3.left * 10000);
 		//set color of dune roamer to red
 		Debug.Log ("Creature Dead");
 	}
