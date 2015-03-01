@@ -36,6 +36,7 @@ public class DuneRoamerController : MonoBehaviour {
 	public float rollDamage = 70f;
 
 	public DuneRoamerHit hitObject;
+	public WheelCollider rollingCollider;
 
 	// Use this for initialization
 	void Start () {
@@ -181,17 +182,30 @@ public class ApproachDRState : FSMState
 
 	public override void Reason (GameObject player, GameObject npc)
 	{
-		if (Vector3.Distance(npc.transform.position, player.transform.position) > controller.viewRange)
+		RaycastHit hitInfo;
+		if (Vector3.Distance(controller.transform.position, player.transform.position) > controller.viewRange)
 		{
 			controller.SetTransition(Transition.OutOfRange);
-		} else if (Vector3.Distance(npc.transform.position, player.transform.position) < controller.rollRange - 5f &&
-		           Vector3.Angle(npc.transform.TransformDirection(Vector3.forward),player.transform.position) < 5f)
+		}
+		//if dune roamer is in attack range and facing player and has line of sight to player, start attacking
+		else if (Vector3.Distance(controller.transform.position, player.transform.position) < controller.attackRange - 3f &&
+		         Vector3.Angle(controller.transform.TransformDirection(Vector3.forward),player.transform.position) < 5f &&
+		         Physics.Raycast(controller.transform.position, (player.transform.position - controller.transform.position), out hitInfo, controller.attackRange))
 		{
-			controller.SetTransition(Transition.RollRange);
-		} else if (Vector3.Distance(npc.transform.position, player.transform.position) < controller.attackRange - 3f &&
-		           Vector3.Angle(npc.transform.TransformDirection(Vector3.forward),player.transform.position) < 5f)
+			if (hitInfo.transform == player.transform)
+			{
+				controller.SetTransition(Transition.AttackRange);
+			}
+		}
+		//if dune roamer is in roll range and facing player and has line of sight to player, start rolling
+		else if (Vector3.Distance(controller.transform.position, player.transform.position) < controller.rollRange - 5f &&
+		         Vector3.Angle(controller.transform.TransformDirection(Vector3.forward), player.transform.position) < 5f &&
+		         Physics.Raycast(controller.transform.position, (player.transform.position - controller.transform.position), out hitInfo, controller.rollRange))
 		{
-			controller.SetTransition(Transition.AttackRange);
+			if (hitInfo.transform == player.transform)
+			{
+				controller.SetTransition(Transition.RollRange);
+			}
 		}
 	}
 
