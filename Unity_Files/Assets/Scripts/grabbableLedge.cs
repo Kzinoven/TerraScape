@@ -13,7 +13,7 @@ public class grabbableLedge : MonoBehaviour {
 	private Quaternion endRot;
 	// Use this for initialization
 	void Start () {
-		player = GameObject.FindGameObjectWithTag ("Player");
+		player = GameObject.Find("zenobia");
 		target = player.GetComponent<CharacterController>();
 	}
 

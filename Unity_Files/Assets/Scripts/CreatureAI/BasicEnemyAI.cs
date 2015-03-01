@@ -39,7 +39,7 @@ public class BasicEnemyAI : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-		Player = GameObject.FindWithTag ("Player").GetComponent<ThirdPersonController>();
+		Player = GameObject.Find("zenobia").GetComponent<ThirdPersonController>();
 		attackCooldown = 1.0f / attackSpeed;
 		chaseTimer = chaseWaitTime;
 		collider = GetComponent<Rigidbody> ();

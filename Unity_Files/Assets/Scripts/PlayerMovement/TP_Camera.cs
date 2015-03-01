@@ -42,6 +42,7 @@ public class TP_Camera : MonoBehaviour
 
     void Awake()
     {
+		TargetLookAt = GameObject.Find("cameraTarget").transform;
         instance = this;
 		menu = GetComponent<PlaytesterMenu> ();
     }

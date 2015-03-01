@@ -28,7 +28,6 @@ public class Player : MonoBehaviour
     public static Player instance;
 	private ThirdPersonController controller;
 
-
     void Awake()
     {
         instance = this;

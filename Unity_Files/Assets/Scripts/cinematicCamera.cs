@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class cinematicCamera : MonoBehaviour {
-	private GameObject player;
+	public GameObject player;
 	private Collider target;
 	private Collider target2;
 	private Transform cameraHolder;
@@ -13,9 +13,10 @@ public class cinematicCamera : MonoBehaviour {
 	private bool timeStarted = false;
 	public bool playerLock = true;
 	public bool animated = false;
+
 	// Use this for initialization
 	void Start () {
-		player = GameObject.FindGameObjectWithTag ("Player");
+		player = GameObject.Find("zenobia");
 		cameraHolder = transform.GetChild (0);
 		playerHolder = transform.GetChild (1);
 		target = player.GetComponent<CharacterController>();
