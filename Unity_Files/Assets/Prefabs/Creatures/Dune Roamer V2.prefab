@@ -352,18 +352,8 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 468074}
-  - 111: {fileID: 11168028}
-  - 114: {fileID: 11468028}
-  - 114: {fileID: 11468032}
-  - 114: {fileID: 11468030}
-  - 65: {fileID: 6568028}
-  - 54: {fileID: 5468028}
-  - 114: {fileID: 11468034}
-  - 136: {fileID: 13668028}
-  - 65: {fileID: 6568030}
-  - 82: {fileID: 8268028}
-  - 146: {fileID: 14600000}
+  - 4: {fileID: 400124}
+  - 4: {fileID: 400040}
   m_Layer: 0
   m_Name: joint16 1
   m_TagString: Untagged
@@ -961,6 +951,7 @@ GameObject:
   - 136: {fileID: 13668028}
   - 65: {fileID: 6568030}
   - 82: {fileID: 8268028}
+  - 146: {fileID: 14600000}
   m_Layer: 0
   m_Name: Dune Roamer V2
   m_TagString: Untagged
@@ -1661,7 +1652,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100106}
-  m_LocalRotation: {x: .0212014187, y: .988460839, z: -.136136621, w: -.0629482642}
+  m_LocalRotation: {x: .0212014206, y: .988460898, z: -.136136636, w: -.0629482716}
   m_LocalPosition: {x: 2.06167936, y: 5.24303055, z: 4.56883669}
   m_LocalScale: {x: .99999994, y: 1, z: 1}
   m_Children: []
@@ -1773,9 +1764,21 @@ Transform:
   - {fileID: 400102}
   m_Father: {fileID: 468074}
   m_RootOrder: 0
---- !u!4 &468074
+--- !u!4 &400124
 Transform:
   m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &468074
+Transform:
+  m_ObjectHideFlags: 13
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168074}
@@ -1788,7 +1791,7 @@ Transform:
   m_RootOrder: 0
 --- !u!54 &5468028
 Rigidbody:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 13
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168074}
@@ -1803,7 +1806,7 @@ Rigidbody:
   m_CollisionDetection: 0
 --- !u!65 &6568028
 BoxCollider:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 13
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168074}
@@ -1815,7 +1818,7 @@ BoxCollider:
   m_Center: {x: 0, y: 3.626863, z: .228574812}
 --- !u!65 &6568030
 BoxCollider:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 13
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168074}
@@ -1827,7 +1830,7 @@ BoxCollider:
   m_Center: {x: 0, y: 3, z: 8}
 --- !u!82 &8268028
 AudioSource:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 13
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168074}
@@ -1915,7 +1918,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11468028
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 13
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168074}
@@ -1942,7 +1945,7 @@ MonoBehaviour:
   rollDamage: 70
 --- !u!114 &11468030
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 13
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168074}
@@ -1953,7 +1956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &11468032
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 13
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168074}
@@ -1964,7 +1967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &11468034
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 13
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168074}
@@ -1975,7 +1978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!136 &13668028
 CapsuleCollider:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 13
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168074}
@@ -2071,7 +2074,7 @@ SkinnedMeshRenderer:
   m_DirtyAABB: 0
 --- !u!146 &14600000
 WheelCollider:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 13
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168074}

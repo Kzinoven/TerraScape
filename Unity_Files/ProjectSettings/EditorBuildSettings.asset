@@ -31,6 +31,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level1TutorialV5.unity
   - enabled: 0
     path: Assets/Scenes/Levels/Level2CanyonV8.unity
+  - enabled: 0
+    path: Assets/Scenes/Levels/Level2CanyonV9.unity
   - enabled: 1
     path: Assets/Scenes/Levels/Level1TutorialV8.unity
   - enabled: 1
