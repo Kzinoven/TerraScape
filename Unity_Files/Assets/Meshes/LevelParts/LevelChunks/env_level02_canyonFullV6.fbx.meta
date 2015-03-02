@@ -87,6 +87,7 @@ ModelImporter:
     100162: pCube135
     100164: pCube2
     100166: rockwall_b010
+    100168: pCube136
     400000: env_decor_rocksV1:pCube1
     400002: env_decor_rocksV1:pCube2
     400004: env_decor_rocksV1:pCube3
@@ -171,6 +172,7 @@ ModelImporter:
     400162: pCube135
     400164: pCube2
     400166: rockwall_b010
+    400168: pCube136
     2300000: env_decor_rocksV1:pCube1
     2300002: env_decor_rocksV1:pCube2
     2300004: env_decor_rocksV1:pCube3
@@ -254,6 +256,7 @@ ModelImporter:
     2300160: pCube135
     2300162: pCube2
     2300164: rockwall_b010
+    2300166: pCube136
     3300000: env_decor_rocksV1:pCube1
     3300002: env_decor_rocksV1:pCube2
     3300004: env_decor_rocksV1:pCube3
@@ -337,6 +340,7 @@ ModelImporter:
     3300160: pCube135
     3300162: pCube2
     3300164: rockwall_b010
+    3300166: pCube136
     4300000: rockplatform_a
     4300002: rockwall_a03
     4300004: rockwall_c02
@@ -420,6 +424,7 @@ ModelImporter:
     4300160: pCube135
     4300162: rockwall_b010
     4300164: pCube2
+    4300166: pCube136
     9500000: //RootNode
   materials:
     importMaterials: 1
