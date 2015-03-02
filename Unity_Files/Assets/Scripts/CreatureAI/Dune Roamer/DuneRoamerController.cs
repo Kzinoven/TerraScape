@@ -152,24 +152,33 @@ public class IdleDRState : FSMState
 		}
 	}
 
+	//if the dune roamer has reached its target and it is time to do another action
 	public override void Act (GameObject player, GameObject npc)
 	{
-		if ((timer += Time.deltaTime) >= updatePeriod)
+		if (!controller.navAgent.pathPending &&
+			controller.navAgent.remainingDistance <= controller.navAgent.stoppingDistance &&
+			(!controller.navAgent.hasPath || controller.navAgent.velocity.sqrMagnitude == 0f))
 		{
-			timer = 0;
-			if (state == IdleState.Idle)
+			//wander point reached or as close as it can get
+			if ((timer += Time.deltaTime) >= updatePeriod)
 			{
-				float rand = Random.value;
-				
-				if (rand < 0.5)
+				timer = 0;
+				if (state == IdleState.Idle)
 				{
-					state = IdleState.Idle;
-				} else {
-					state = IdleState.Wander;
-					wanderPoint = controller.transform.position + new Vector3(Random.Range(-wanderRange, wanderRange),
-					                                                          0,
-					                                                          Random.Range(-wanderRange, wanderRange));
-					controller.navAgent.SetDestination(wanderPoint);
+					//choose an action at random each second
+					float rand = Random.value;
+					
+					if (rand < 0.5)
+					{
+						state = IdleState.Idle;
+					} else {
+						//choose a new wander point and go there
+						state = IdleState.Wander;
+						wanderPoint = controller.transform.position + new Vector3(Random.Range(-wanderRange, wanderRange),
+						                                                          0,
+						                                                          Random.Range(-wanderRange, wanderRange));
+						controller.navAgent.SetDestination(wanderPoint);
+					}
 				}
 			}
 		}
@@ -241,7 +250,7 @@ public class RollDRState : FSMState
 			return;
 		}
 
-		//if vertical velocity is above a certain threshold, start falling
+		//if vertical velocity is above a certain threshold and has been in air for some time, start falling
 		if (controller.rigidbody.velocity.y < -10f)
 		{
 			controller.SetTransition(Transition.InAir);
@@ -259,6 +268,12 @@ public class RollDRState : FSMState
 			controller.rigidbody.velocity = controller.rigidbody.velocity.normalized * controller.rollSpeed;
 		}
 		lastFrameSpeed = controller.rigidbody.velocity.magnitude;
+	}
+
+	public override void DoBeforeLeaving ()
+	{
+		controller.rollingCollider.enabled = false;
+
 	}
 
 

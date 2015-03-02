@@ -363,6 +363,7 @@ GameObject:
   - 136: {fileID: 13668028}
   - 65: {fileID: 6568030}
   - 82: {fileID: 8268028}
+  - 146: {fileID: 14600000}
   m_Layer: 0
   m_Name: Dune Roamer V2
   m_TagString: Untagged
@@ -1563,16 +1564,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSpeed: .300000012
   attackDamage: 20
-  wanderSpeed: 2
-  chaseSpeed: 10
+  walkSpeed: 3.5
+  chargeSpeed: 10
   chaseWaitTime: 5
   rotationSpeed: 0
   fieldOfView: 90
   viewRange: 20
   attackRange: 5
+  rollRange: 30
   attackArea: {fileID: 6568030}
   MaxHealth: 1000
   currentHealth: 1000
+  rollSpeed: 15
+  rollRotationSpeed: 5
+  rollDamage: 70
 --- !u!114 &11468030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1683,6 +1688,33 @@ SkinnedMeshRenderer:
     m_Center: {x: -1.21292019, y: -1.4678669, z: -.0179367065}
     m_Extent: {x: 8.22086716, y: 4.5767765, z: 2.35511446}
   m_DirtyAABB: 0
+--- !u!146 &14600000
+WheelCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168074}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 1
+  m_SuspensionDistance: .100000001
+  m_SuspensionSpring:
+    spring: 1
+    damper: 0
+    targetPosition: 0
+  m_Mass: 1
+  m_ForwardFriction:
+    extremumSlip: 1
+    extremumValue: 20000
+    asymptoteSlip: 2
+    asymptoteValue: 10000
+    stiffnessFactor: 1
+  m_SidewaysFriction:
+    extremumSlip: 1
+    extremumValue: 20000
+    asymptoteSlip: 2
+    asymptoteValue: 10000
+    stiffnessFactor: 1
+  m_Enabled: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
