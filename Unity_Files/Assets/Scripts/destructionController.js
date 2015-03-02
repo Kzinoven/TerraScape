@@ -1,14 +1,18 @@
 ﻿#pragma strict
 
 var remains: GameObject;
-var insideZone: boolean = false;
+//var insideZone: boolean = false;
 
-function OnTriggerEnter (other:Collider)
+/*function OnTriggerEnter (other:Collider)
 {
-	if (other.tag == 'Player'){
-		//Debug.Log ('inside the collider');
-		insideZone = true;
+	if (other.tag == 'Smash'){
+		Debug.Log ('inside the collider');
+		//insideZone = true;
+		//Break();
 		}
+	else {
+		Debug.Log ("what is this");
+	}
 }
 
 function OnTriggerExit (other:Collider)
@@ -22,9 +26,10 @@ function OnTriggerExit (other:Collider)
 function Update ()
 {
 	if (insideZone && Input.GetKey(KeyCode.E)){		
-				Break();
-			}
+			Break();
+		}
 }
+*/
 
 function Break(){
 	Instantiate(remains, transform.position, transform.rotation);

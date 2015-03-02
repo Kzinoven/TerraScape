@@ -76,7 +76,7 @@ public class PlaytesterMenu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		player = GameObject.FindWithTag ("Player").GetComponent<ThirdPersonController>();
+		player = GameObject.Find("zenobia").GetComponent<ThirdPersonController>();
 		playerStats = GameObject.FindWithTag ("Player").GetComponent<Player> ();
 		if (player == null) {
 			throw new UnityException("No player object in this scene.");

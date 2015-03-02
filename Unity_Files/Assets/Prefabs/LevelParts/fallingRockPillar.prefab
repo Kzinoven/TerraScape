@@ -49,7 +49,7 @@ GameObject:
   - 54: {fileID: 5400000}
   m_Layer: 0
   m_Name: breakableRock
-  m_TagString: Untagged
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ GameObject:
   - 54: {fileID: 5400002}
   m_Layer: 0
   m_Name: breakableRock
-  m_TagString: Untagged
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ GameObject:
   - 54: {fileID: 5400004}
   m_Layer: 0
   m_Name: breakableRock
-  m_TagString: Untagged
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,7 +132,7 @@ GameObject:
   - 54: {fileID: 5400006}
   m_Layer: 0
   m_Name: breakableRock
-  m_TagString: Untagged
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,7 +173,7 @@ GameObject:
   - 54: {fileID: 5400008}
   m_Layer: 0
   m_Name: breakableRock
-  m_TagString: Untagged
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -776,11 +776,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 100004}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7758447151cdf604599fbd95080971ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 23c77002772562148bbae7232b30ea83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   remains: {fileID: 165778, guid: a8389722c20162f44b2cb34810682429, type: 2}
-  insideZone: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -789,11 +788,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 100006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7758447151cdf604599fbd95080971ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 23c77002772562148bbae7232b30ea83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   remains: {fileID: 165778, guid: a8389722c20162f44b2cb34810682429, type: 2}
-  insideZone: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -802,11 +800,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 100008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7758447151cdf604599fbd95080971ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 23c77002772562148bbae7232b30ea83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   remains: {fileID: 165778, guid: a8389722c20162f44b2cb34810682429, type: 2}
-  insideZone: 0
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -827,11 +824,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 100012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7758447151cdf604599fbd95080971ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 23c77002772562148bbae7232b30ea83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   remains: {fileID: 165778, guid: a8389722c20162f44b2cb34810682429, type: 2}
-  insideZone: 0
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -854,11 +850,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 100016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7758447151cdf604599fbd95080971ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 23c77002772562148bbae7232b30ea83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   remains: {fileID: 165778, guid: a8389722c20162f44b2cb34810682429, type: 2}
-  insideZone: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -7,7 +7,7 @@ public class checkPoint : MonoBehaviour {
 	private Transform placeHolder;
 	// Use this for initialization
 	void Start () {
-		player = GameObject.FindGameObjectWithTag ("Player");
+		player = GameObject.Find("zenobia");
 		placeHolder = transform.GetChild (0);
 		target = player.GetComponent<CharacterController>();
 	}

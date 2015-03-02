@@ -1,0 +1,312 @@
+fileFormatVersion: 2
+guid: 233612248b8e18348868b5c172f9a993
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: joint1
+    100004: joint10
+    100006: joint11
+    100008: joint11 1
+    100010: joint12
+    100012: joint12 1
+    100014: joint13
+    100016: joint13 1
+    100018: joint14
+    100020: joint14 1
+    100022: joint15
+    100024: joint15 1
+    100026: joint16
+    100028: joint16 1
+    100030: joint17
+    100032: joint18
+    100034: joint19
+    100036: joint2
+    100038: joint20
+    100040: joint21
+    100042: joint22
+    100044: joint23
+    100046: joint24
+    100048: joint25
+    100050: joint25 1
+    100052: joint26
+    100054: joint26 1
+    100056: joint27
+    100058: joint27 1
+    100060: joint28
+    100062: joint28 1
+    100064: joint29
+    100066: joint29 1
+    100068: joint3
+    100070: joint30
+    100072: joint30 1
+    100074: joint33
+    100076: joint34
+    100078: joint35
+    100080: joint36
+    100082: joint37
+    100084: joint38
+    100086: joint38 1
+    100088: joint39
+    100090: joint39 1
+    100092: joint4
+    100094: joint40
+    100096: joint5
+    100098: joint6
+    100100: joint7
+    100102: joint8
+    100104: joint9
+    100106: shieldCreature_v7:Mesh
+    400000: //RootNode
+    400002: joint1
+    400004: joint10
+    400006: joint11
+    400008: joint11 1
+    400010: joint12
+    400012: joint12 1
+    400014: joint13
+    400016: joint13 1
+    400018: joint14
+    400020: joint14 1
+    400022: joint15
+    400024: joint15 1
+    400026: joint16
+    400028: joint16 1
+    400030: joint17
+    400032: joint18
+    400034: joint19
+    400036: joint2
+    400038: joint20
+    400040: joint21
+    400042: joint22
+    400044: joint23
+    400046: joint24
+    400048: joint25
+    400050: joint25 1
+    400052: joint26
+    400054: joint26 1
+    400056: joint27
+    400058: joint27 1
+    400060: joint28
+    400062: joint28 1
+    400064: joint29
+    400066: joint29 1
+    400068: joint3
+    400070: joint30
+    400072: joint30 1
+    400074: joint33
+    400076: joint34
+    400078: joint35
+    400080: joint36
+    400082: joint37
+    400084: joint38
+    400086: joint38 1
+    400088: joint39
+    400090: joint39 1
+    400092: joint4
+    400094: joint40
+    400096: joint5
+    400098: joint6
+    400100: joint7
+    400102: joint8
+    400104: joint9
+    400106: shieldCreature_v7:Mesh
+    4300000: shieldCreature_v7:Mesh
+    7400000: DR_roll
+    9500000: //RootNode
+    13700000: shieldCreature_v7:Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: DR_roll
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint7/joint8/joint9
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint37
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint37/joint38
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint37/joint38/joint39
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint40
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint40/joint38 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/joint40/joint38 1/joint39
+          1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint10
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint10/joint11
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint10/joint11/joint12
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/joint14/joint15
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint10/joint11/joint12/joint13/joint14/joint15/joint16
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint35
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint35/joint11 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint35/joint11 1/joint12 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint35/joint11 1/joint12 1/joint13 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint35/joint11 1/joint12 1/joint13 1/joint14
+          1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint35/joint11 1/joint12 1/joint13 1/joint14
+          1/joint15 1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint35/joint11 1/joint12 1/joint13 1/joint14
+          1/joint15 1/joint16 1
+        weight: 1
+      - path: joint1/joint17
+        weight: 1
+      - path: joint1/joint17/joint18
+        weight: 1
+      - path: joint1/joint17/joint18/joint19
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint20
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint20/joint21
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint20/joint21/joint22
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint20/joint21/joint22/joint23
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint24
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint24/joint25
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint24/joint25/joint26
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint24/joint25/joint26/joint27
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint24/joint25/joint26/joint27/joint28
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint24/joint25/joint26/joint27/joint28/joint29
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint24/joint25/joint26/joint27/joint28/joint29/joint30
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint36
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint36/joint25 1
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint36/joint25 1/joint26 1
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint36/joint25 1/joint26 1/joint27 1
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint36/joint25 1/joint26 1/joint27 1/joint28
+          1
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint36/joint25 1/joint26 1/joint27 1/joint28
+          1/joint29 1
+        weight: 1
+      - path: joint1/joint17/joint18/joint19/joint36/joint25 1/joint26 1/joint27 1/joint28
+          1/joint29 1/joint30 1
+        weight: 1
+      - path: joint1/joint33
+        weight: 1
+      - path: joint1/joint34
+        weight: 1
+      - path: shieldCreature_v7:Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

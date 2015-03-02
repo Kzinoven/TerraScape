@@ -6,11 +6,11 @@ PhysicMaterial:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: sliderPhysicMaterial
-  dynamicFriction: .0299999993
-  staticFriction: .100000001
+  dynamicFriction: .00100000005
+  staticFriction: .00999999978
   bounciness: 0
   frictionCombine: 1
   bounceCombine: 1
   frictionDirection2: {x: 1, y: .200000003, z: .200000003}
-  dynamicFriction2: .0500000007
-  staticFriction2: .200000003
+  dynamicFriction2: .00999999978
+  staticFriction2: .0500000007
