@@ -48,6 +48,8 @@ public class ThirdPersonController : MonoBehaviour
 		public float toolInUse;
 		private int itemUse;
 		public Transform checkPoint;
+		public GameObject laserPrefab;
+		public GameObject blastPrefab;
 	// The speed when walking
 	public float walkSpeed= 2.0f;
 	// after trotAfterSeconds of walking we trot with trotSpeed
@@ -300,7 +302,7 @@ public class ThirdPersonController : MonoBehaviour
 		movable = true;
 		Debug.Log ("Stop Sliding Please");
 		moveDirection = rigidbody.velocity.normalized;
-		movement += transform.up * 1.0f;
+		//movement += transform.up * 1.0f;
 		//disable ridigdbody
 		rigidbody.isKinematic = true;
 		rigidbody.detectCollisions = false;
@@ -391,8 +393,9 @@ public class ThirdPersonController : MonoBehaviour
 		}
 
 		//not blocking unless key is held down
-		if (Input.GetKeyUp(KeyCode.E)){
+		if (Input.GetKeyUp(KeyCode.E) && !hanging && !jumping && cutScene == 0 && !isSliding){
 			blocking = false;
+			movable = true;
 			Debug.Log("Guard is Down");
 		}
 		if(Input.GetKeyUp(KeyCode.E) && isSliding==false)
@@ -642,6 +645,10 @@ public class ThirdPersonController : MonoBehaviour
 	}
 	public void laser() {
 		itemUse = 1;
+		movable = false;
+		Vector3 laserTrans = transform.position;
+		Quaternion laserRot = transform.rotation;
+		Instantiate (laserPrefab, laserTrans, laserRot);
 	}
 	public void trap() {
 		//stop player movement

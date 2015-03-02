@@ -27,7 +27,7 @@ public class GameItem : MonoBehaviour
     }
 
 	void Start () {
-		player = GameObject.FindGameObjectWithTag ("Player");
+		player = GameObject.Find("zenobia");
 		target = player.GetComponent<CharacterController>();
 	}
 

@@ -36,10 +36,11 @@ public class BasicEnemyAI : MonoBehaviour {
 	public float rollSpeed = 15f;
 	public float rollRotationSpeed = 5f;
 	public float rollDamage = 70f;
-
+	private Animator anim;
 	// Use this for initialization
 	void Awake () {
 		Player = GameObject.Find("zenobia").GetComponent<ThirdPersonController>();
+		anim = GetComponent<Animator>();
 		attackCooldown = 1.0f / attackSpeed;
 		chaseTimer = chaseWaitTime;
 		collider = GetComponent<Rigidbody> ();
@@ -110,14 +111,14 @@ public class BasicEnemyAI : MonoBehaviour {
 	}
 
 	void Wander(){
-
+		anim.SetBool ("walk", false);
 	}
 
 	//move towards player's last known position
 	void Chase(){
 		//we don't want the enemy to move directly in the y direction, so set last known positions y to this object's y
 		Vector3 destination = new Vector3 (lastPlayerSighting.x, transform.position.y, lastPlayerSighting.z);
-
+		anim.SetBool("walk", true);
 		_direction = (destination - transform.position).normalized;
 		_lookRotation = Quaternion.LookRotation(_direction);
 

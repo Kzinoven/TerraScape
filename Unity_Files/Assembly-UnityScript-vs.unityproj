@@ -52,7 +52,6 @@
      <Compile Include="Assets\Scripts\Rockslide.js" />
      <Compile Include="Assets\Scripts\cubeController.js" />
      <Compile Include="Assets\Scripts\destructionController.js" />
-     <Compile Include="Assets\Scripts\selfDestruct.js" />
      <None Include="Assets\Resources\journalEntries.xml" />
      <None Include="Assets\Prefabs\Skyboxes\dunes\Note.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">

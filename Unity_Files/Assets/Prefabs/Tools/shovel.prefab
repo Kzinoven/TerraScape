@@ -361,6 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6fab82913a3404e8f319010860e001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   itemName: Shovel
   itemDesc: A digging tool
   itemType: 1

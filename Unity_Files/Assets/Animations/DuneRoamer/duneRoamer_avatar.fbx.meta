@@ -1,0 +1,186 @@
+fileFormatVersion: 2
+guid: 6cff8163b7655a5409892f37dbb19494
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: ikHandle1
+    100004: ikHandle2
+    100006: ikHandle3
+    100008: ikHandle4
+    100010: ikHandle5
+    100012: ikHandle6
+    100014: ikHandle7
+    100016: ikHandle8
+    100018: joint1
+    100020: joint10
+    100022: joint11
+    100024: joint11 1
+    100026: joint12
+    100028: joint12 1
+    100030: joint13
+    100032: joint13 1
+    100034: joint14
+    100036: joint14 1
+    100038: joint15
+    100040: joint15 1
+    100042: joint16
+    100044: joint16 1
+    100046: joint17
+    100048: joint18
+    100050: joint19
+    100052: joint2
+    100054: joint20
+    100056: joint21
+    100058: joint22
+    100060: joint23
+    100062: joint24
+    100064: joint25
+    100066: joint25 1
+    100068: joint26
+    100070: joint26 1
+    100072: joint27
+    100074: joint27 1
+    100076: joint28
+    100078: joint28 1
+    100080: joint29
+    100082: joint29 1
+    100084: joint3
+    100086: joint30
+    100088: joint30 1
+    100090: joint33
+    100092: joint34
+    100094: joint35
+    100096: joint36
+    100098: joint37
+    100100: joint38
+    100102: joint38 1
+    100104: joint39
+    100106: joint39 1
+    100108: joint4
+    100110: joint40
+    100112: joint5
+    100114: joint6
+    100116: joint7
+    100118: joint8
+    100120: joint9
+    100122: shieldCreature_v7:Mesh
+    400000: //RootNode
+    400002: ikHandle1
+    400004: ikHandle2
+    400006: ikHandle3
+    400008: ikHandle4
+    400010: ikHandle5
+    400012: ikHandle6
+    400014: ikHandle7
+    400016: ikHandle8
+    400018: joint1
+    400020: joint10
+    400022: joint11
+    400024: joint11 1
+    400026: joint12
+    400028: joint12 1
+    400030: joint13
+    400032: joint13 1
+    400034: joint14
+    400036: joint14 1
+    400038: joint15
+    400040: joint15 1
+    400042: joint16
+    400044: joint16 1
+    400046: joint17
+    400048: joint18
+    400050: joint19
+    400052: joint2
+    400054: joint20
+    400056: joint21
+    400058: joint22
+    400060: joint23
+    400062: joint24
+    400064: joint25
+    400066: joint25 1
+    400068: joint26
+    400070: joint26 1
+    400072: joint27
+    400074: joint27 1
+    400076: joint28
+    400078: joint28 1
+    400080: joint29
+    400082: joint29 1
+    400084: joint3
+    400086: joint30
+    400088: joint30 1
+    400090: joint33
+    400092: joint34
+    400094: joint35
+    400096: joint36
+    400098: joint37
+    400100: joint38
+    400102: joint38 1
+    400104: joint39
+    400106: joint39 1
+    400108: joint4
+    400110: joint40
+    400112: joint5
+    400114: joint6
+    400116: joint7
+    400118: joint8
+    400120: joint9
+    400122: shieldCreature_v7:Mesh
+    4300000: shieldCreature_v7:Mesh
+    9500000: //RootNode
+    13700000: shieldCreature_v7:Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

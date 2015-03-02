@@ -10,6 +10,8 @@ TagManager:
   - Laser
   - Shield
   - Snapper
+  - Smash
+  - Breakable
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
