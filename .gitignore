@@ -30,3 +30,7 @@ Unity_Files/[Bb]uild/
 sysinfo.txt
 Unity_Files/Assets/Scenes/FirstPlayableDemo.unity
 Unity_Files/Assets/Scenes/DEBUG_SCENE.unity
+*.unityproj
+*.unityproj
+*.csproj
+*.sln

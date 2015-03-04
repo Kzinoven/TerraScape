@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
 		GUI_Manager.stamina.text = "Stamina: " + Mathf.Floor(currentStamina);
 		GUI_Manager.health.text = "Health: " + currentHealth;
 		regenStaminaNow = true;
-		if (selectedIndex > -1)
+		if (selectedIndex > -1 && inventory.Count > 0)
 		{
 			GameItem item = inventory[selectedIndex];
 			if (item.itemName == "Laser")
