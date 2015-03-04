@@ -50,6 +50,7 @@ public class ThirdPersonController : MonoBehaviour
 		public Transform checkPoint;
 		public GameObject laserPrefab;
 		public GameObject blastPrefab;
+		public GameObject snapperPrefab;
 	// The speed when walking
 	public float walkSpeed= 2.0f;
 	// after trotAfterSeconds of walking we trot with trotSpeed
@@ -130,6 +131,8 @@ public class ThirdPersonController : MonoBehaviour
 	public CapsuleCollider[] slidingColliders;
 
 	private bool isControllable= true;
+
+
 
 	void  Awake ()
 	{
@@ -436,7 +439,7 @@ public class ThirdPersonController : MonoBehaviour
 				movable = true;
 				switching = false;
 			}
-			if (Input.GetKeyDown(KeyCode.E) && !hanging && !jumping && cutScene==0)
+			if (Input.GetKey(KeyCode.E) && !hanging && !jumping && cutScene==0)
 			{
 				//Use selected item or tool
 				management.UseItem(management.selectedIndex);
@@ -636,12 +639,26 @@ public class ThirdPersonController : MonoBehaviour
 		Debug.Log ("Guard is up");
 		itemUse = 1;
 	}
+
+	public float snapDuration = 3f;
+	public float snapTimer = 0f;
+	public Vector3 projectileOffset = new Vector3 (0f, 2f, 0.5f);
 	public void snap(){
 		//stop player movement
+		movement = Vector3.zero;
 		//wait X seconds
+		//play snap windup animation
 		itemUse = 1;
-		//instantiate shot
-		//return player movement
+		Debug.Log ("Winding up snapper... t = " + snapTimer);
+		if ((snapTimer += Time.deltaTime) >= snapDuration)
+		{
+			snapTimer = 0f;
+			//play snapper blowback animation
+			Debug.Log(transform.position + " , " + (transform.position + projectileOffset));
+			Instantiate(snapperPrefab, transform.position + projectileOffset, transform.rotation);
+			//return player movement
+		}
+
 	}
 	public void laser() {
 		itemUse = 1;

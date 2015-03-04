@@ -2160,6 +2160,9 @@ MonoBehaviour:
   cutScene: 0
   toolInUse: 0
   checkPoint: {fileID: 0}
+  laserPrefab: {fileID: 0}
+  blastPrefab: {fileID: 100002, guid: ac1c48d40149d12419da3a4bb4cd5255, type: 2}
+  snapperPrefab: {fileID: 100000, guid: ea2dbfd3b411e204e92c002d98cc247a, type: 2}
   walkSpeed: 7
   trotSpeed: 7
   runSpeed: 15
@@ -2180,6 +2183,9 @@ MonoBehaviour:
   - {fileID: 13600000}
   - {fileID: 13600002}
   - {fileID: 13600004}
+  snapDuration: 3
+  snapTimer: 0
+  projectileOffset: {x: 0, y: 1, z: .5}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
