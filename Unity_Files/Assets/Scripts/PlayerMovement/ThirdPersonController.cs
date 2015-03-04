@@ -31,6 +31,7 @@ public class ThirdPersonController : MonoBehaviour
 	}
 
 	private CharacterState _characterState;
+		public LayerMask notPlayer;
 		private bool animRun = false;
 		private bool animWalk = false;
 		private bool animJump = false;
@@ -382,7 +383,9 @@ public class ThirdPersonController : MonoBehaviour
 	void Update ()
 	{
 		//Debug.Log (transform.eulerAngles.y);
-		//Debug.Log (IsGrounded ());
+		if (verticalSpeed <= -50)
+			moveSpeed = 0;
+		Debug.Log (IsGrounded ());
 		if (Input.GetKeyDown (KeyCode.P) && Input.GetKeyDown (KeyCode.O)){
 			Application.LoadLevel(Application.loadedLevel);
 		}
@@ -663,6 +666,7 @@ public class ThirdPersonController : MonoBehaviour
 		moveSpeed = 0.0f;
 		canJump = true;
 		jumping = false;
+		animJump = false;
 		hanging = false;
 		movable = true;
 	}
@@ -686,7 +690,10 @@ public class ThirdPersonController : MonoBehaviour
 
 	public bool IsGrounded ()
 	{
-		return (collisionFlags & CollisionFlags.CollidedBelow) != 0;
+		//return (collisionFlags & CollisionFlags.CollidedBelow) != 0;
+		Vector3 center = transform.position;
+		center.y = transform.position.y + 0.2f;
+		return (Physics.OverlapSphere(center, 0.2f, notPlayer).Length) !=0;
 	}
 
 	public Vector3 GetDirection ()

@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FaultLine_geom
   m_TagString: FaultLine
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 114: {fileID: 11400000}
   - 65: {fileID: 6500000}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fault Line
   m_TagString: FaultLine
   m_Icon: {fileID: 0}

@@ -11,10 +11,15 @@ public class grabbableLedge : MonoBehaviour {
 	private Vector3 endPos;
 	private Quaternion startRot;
 	private Quaternion endRot;
+	private Vector3 playerMeshPos;
+	private Transform playerMesh;
+	private Vector3 shiftPlayer;
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find("zenobia");
+		playerMesh = player.transform.GetChild (0);
 		target = player.GetComponent<CharacterController>();
+		playerMeshPos = new Vector3 (0f,0.066f,0f);
 	}
 
 	void OnTriggerEnter(Collider other) {
@@ -39,11 +44,12 @@ public class grabbableLedge : MonoBehaviour {
 			endPos.y = this.transform.position.y - charHeight;
 			//endPos.z = player.transform.forward.z;
 			player.transform.position = Vector3.Lerp(startPos,endPos,lerpTime);
-			Vector3 shiftPlayer = Vector3.forward * clingDistance;
-			player.transform.Translate(shiftPlayer);
+			shiftPlayer = Vector3.forward * clingDistance;
+			playerMesh.transform.Translate(shiftPlayer);
 		}
 	}
 	void OnTriggerExit(Collider other) {
+		playerMesh.transform.Translate (-shiftPlayer);
 		player.GetComponent<ThirdPersonController> ().hanging = false;
 		player.GetComponent<ThirdPersonController> ().climb = false;
 		player.GetComponent<ThirdPersonController>().movable = true;

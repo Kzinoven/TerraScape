@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 65: {fileID: 6500000}
   - 114: {fileID: 11400000}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: levelEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32fe367ac1b5974a83e349b087b0215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

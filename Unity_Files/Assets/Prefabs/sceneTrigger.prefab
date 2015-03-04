@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3364588}
   - 65: {fileID: 6564588}
   - 23: {fileID: 2364588}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: playerHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 33: {fileID: 3364590}
   - 65: {fileID: 6564590}
   - 23: {fileID: 2364590}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cameraHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - 65: {fileID: 6564592}
   - 23: {fileID: 2364592}
   - 114: {fileID: 11464588}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sceneTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
