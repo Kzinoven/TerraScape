@@ -2154,7 +2154,7 @@ MonoBehaviour:
   useCurves: 0
   notPlayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   movable: 1
   hanging: 0
   ledgeClimbSpeed: 4
@@ -2165,6 +2165,7 @@ MonoBehaviour:
   checkPoint: {fileID: 0}
   laserPrefab: {fileID: 100002, guid: ac1c48d40149d12419da3a4bb4cd5255, type: 2}
   blastPrefab: {fileID: 0}
+  snapperPrefab: {fileID: 0}
   walkSpeed: 7
   trotSpeed: 7
   runSpeed: 15
@@ -2185,6 +2186,9 @@ MonoBehaviour:
   - {fileID: 13600000}
   - {fileID: 13600002}
   - {fileID: 13600004}
+  snapDuration: 3
+  snapTimer: 0
+  projectileOffset: {x: 0, y: 2, z: .5}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
